@@ -16,6 +16,18 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
 {
     public class Syntax //Primary class must match the file name
     {
+        /*-------  Functions  -------*/
+
+        static void PrintArray(int[] intArray, string message)
+        {
+            foreach (int i in intArray)
+            {
+                Console.WriteLine("{0} : {1}", message, i);
+            }
+        }
+
+
+
         static void Main(string[] args) //Execution of your code begins here
         {
             /*-------  Console Methods -------*/
@@ -105,6 +117,49 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
             string[] customerNames = { "Bob", "Sally", "Sue" };
             var employees = new[] { "Mike", "Paul", "Rick" }; 
             object[] randomArray = { "Paul", 45, 1.254}; //create an array with different data types
+            Console.WriteLine("randomArray 0 : {0}", randomArray[0].GetType());
+            Console.WriteLine("Array Size : {0}", randomArray.Length);
+            for (int i = 0; i < randomArray.Length; i++)  //for loop with array
+            {
+                Console.WriteLine("Array Position : {0}, Value : {1}", i, randomArray[i]);
+            }
+
+            string[,] custNames = new string[2, 2] { { "Bob", "Billy"}, {"Sally", "Samantha" }}; //Multidimensional Array creates columns (first input) and rows (second input)
+            Console.WriteLine("MD Value : {0}", custNames.GetValue(0,1));
+
+            for (int i = 0; i < custNames.GetLength(0); i++)
+            {
+                for (int j = 0; j < custNames.GetLength(1); j++)
+                {
+                    Console.WriteLine("Array Values : {0}", custNames[i, j]);
+                }
+            }
+
+            int[] randNum = { 1, 4, 9, 2 };
+            PrintArray(randNum, "ForEach");
+            Console.WriteLine("----------------------------");
+
+            Array.Sort(randNum);
+            Array.Reverse(randNum);
+            Console.WriteLine("1 at index : {0}", Array.IndexOf(randNum, 1));
+            randNum.SetValue(0, 1);
+            int[] srcArray = { 1, 2, 3, 4, };
+            int[] destArray = { 5, 6, 7, 8 };
+            int startIndex = 0;
+            int length = 2;
+            //Array anotherArray = Array.CreateInstance(typeof(int), srcArray);
+            Array.Copy(srcArray, startIndex, destArray, 0, length);
+            PrintArray(destArray, "Copy");
+
+            Array anotherArray = Array.CreateInstance(typeof(int), 10);
+            srcArray.CopyTo(anotherArray, 0);
+            PrintArray(srcArray, "Another Copy");
+
+            int[] numArray = { 1, 11, 22 };
+            Console.WriteLine("Values > 10 : {0}", Array.Find(numArray, num => num > 10));
+
+
+
 
         }
     }
