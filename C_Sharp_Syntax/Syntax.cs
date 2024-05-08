@@ -9,14 +9,16 @@
  * Block code using ctr K, ctr C - Unblock code using ctr k, ctr U
  */
 
-using System; //Imports classes and functions from the System Class
+using System;
+using System.Globalization;
+using System.Text; //Imports classes and functions from the System Class
 
 /*-------      -------*/
 namespace ConsoleApp1 //Not explicitly required - Organizes your code.
 {
     public class Syntax //Primary class must match the file name
     {
-        /*-------  Functions  -------*/
+        /*-------  Functions Used in initial Sytax -------*/
 
         static void PrintArray(int[] intArray, string message)
         {
@@ -25,12 +27,107 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
                 Console.WriteLine("{0} : {1}", message, i);
             }
         }
+        static double DoDivision(double num1, double num2)
+        {
+            if (num2 == 0)
+            {
+                throw new System.DivideByZeroException();
+            }
+            return num1 / num2;
+        }
+
+        /*-------  Functions 1:38 -------*/
+        //<Access Specifier (private, public, protected)> <Return Type> <Function Name> (Parameters)
+        //{ Body of Function}
+
+        private static void helloworld()
+        {
+            Console.Write("what is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("hello {0}", name);
+        }
+
+        private static double getsum(double x = 1, double y = 1)
+        {
+            return x + y;
+        }
+
+        private static void doubleit(int x, out int solution) //using out parameter, creates a variable that can be used in scope, useful for multiple returns from a function or error handling
+        {
+            solution = x * 2;
+        }
+
+        public static void swap(ref int num, ref int num1)  //passing by reference, useful for large variables reducing copy overhead
+        {
+            int temp = num;
+            num = num1;
+            num1 = temp;
+        }
+
+        static double getsomemore(params double[] numbers) //setting parameter to accept an unknown amount of input
+        {
+            double sum = 0;
+            foreach (int i in numbers)
+            {
+                sum += i;
+            }
+            return sum;
+        }
+
+        static void printinfo(string name, int zipcode)  //named parameters: calling with parameters out of order, and not initializing parameters
+        {
+            Console.WriteLine("{0} lives in the zip code {1}", name, zipcode);
+        }
+
+        static double getsum2(double x = 1, double y = 1) //overloading functions, ex 1
+        {
+            return x + y;
+        }
+
+        static double getsum2(string x = "1", string y = "1") //overloading functions, ex 2
+        {
+            return Convert.ToDouble(x) + Convert.ToDouble(y);
+        }
+
+        static void paintCar(CarColor color)  //function using enum
+        {
+            Console.WriteLine("The car was painted {0} and the code is {1}", color, (int)color);
+        }
+
+        /*-------  Enumerated Types (enums) 2:04 -------*/ //Data type as key valued pairs with limited types
+        enum CarColor : byte
+        {
+            red = 0,
+            green = 1,
+            blue = 2,
+            yellow = 3,
+            purple = 4,
+        }
 
 
 
         static void Main(string[] args) //Execution of your code begins here
         {
-            /*-------  Console Methods -------*/
+            /*-------  Calls for Functions 1:38 -------*/
+            //helloWorld();
+            //Console.WriteLine("5 + 10 = {0}", getSum(5, 10));  //Discussion about scope
+            //doubleIt(15, out int solution); 
+            //Console.WriteLine("15 * 2 = {0}", solution);
+            //int num = 10;
+            //int num1 = 20;
+            //Console.WriteLine("Before swap num : {0} and num1 : {1}", num, num1);
+            //swap(ref num, ref num1);
+            //Console.WriteLine("After swap num : {0} and num1 : {1}", num, num1);
+            //Console.WriteLine("GetSomeMore output: {0}", getSomeMore(1, 3, 5));
+            //printInfo(zipCode: 02854, name: "Briant Becote");
+            //Console.WriteLine("Output getSum2 with doubles : {0}", getSum2(1, 2));
+            //Console.WriteLine("Output getSum2 with strings : {0}", getSum2("1", "2"));
+
+            /*-------  Calls for Enums 2:04 -------*/
+            CarColor car1 = CarColor.yellow;
+            paintCar(car1);
+
+            /*-------  Console Methods Beginning of Tutorial -------*/
             //Console.WriteLine("Hello MS539 Students!");
             //Console.ForegroundColor = ConsoleColor.Yellow;
             //Console.BackgroundColor = ConsoleColor.Black;
@@ -111,54 +208,195 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
             //Console.WriteLine(@"Exactly what I typed\n");
 
             /*-------  Arrays 00:44 ------ - */
-            int[] favNums = new int[3];
-            favNums[0] = 27;
-            Console.WriteLine("favNum 0 : {0}", favNums[0]);
-            string[] customerNames = { "Bob", "Sally", "Sue" };
-            var employees = new[] { "Mike", "Paul", "Rick" }; 
-            object[] randomArray = { "Paul", 45, 1.254}; //create an array with different data types
-            Console.WriteLine("randomArray 0 : {0}", randomArray[0].GetType());
-            Console.WriteLine("Array Size : {0}", randomArray.Length);
-            for (int i = 0; i < randomArray.Length; i++)  //for loop with array
-            {
-                Console.WriteLine("Array Position : {0}, Value : {1}", i, randomArray[i]);
-            }
+            //int[] favNums = new int[3];
+            //favNums[0] = 27;
+            //Console.WriteLine("favNum 0 : {0}", favNums[0]);
+            //string[] customerNames = { "Bob", "Sally", "Sue" };
+            //var employees = new[] { "Mike", "Paul", "Rick" }; 
+            //object[] randomArray = { "Paul", 45, 1.254}; //create an array with different data types
+            //Console.WriteLine("randomArray 0 : {0}", randomArray[0].GetType());
+            //Console.WriteLine("Array Size : {0}", randomArray.Length);
+            //for (int i = 0; i < randomArray.Length; i++)  //for loop with array
+            //{
+            //    Console.WriteLine("Array Position : {0}, Value : {1}", i, randomArray[i]);
+            //}
 
-            string[,] custNames = new string[2, 2] { { "Bob", "Billy"}, {"Sally", "Samantha" }}; //Multidimensional Array creates columns (first input) and rows (second input)
-            Console.WriteLine("MD Value : {0}", custNames.GetValue(0,1));
+            //string[,] custNames = new string[2, 2] { { "Bob", "Billy"}, {"Sally", "Samantha" }}; //Multidimensional Array creates columns (first input) and rows (second input)
+            //Console.WriteLine("MD Value : {0}", custNames.GetValue(0,1));
 
-            for (int i = 0; i < custNames.GetLength(0); i++)
-            {
-                for (int j = 0; j < custNames.GetLength(1); j++)
-                {
-                    Console.WriteLine("Array Values : {0}", custNames[i, j]);
-                }
-            }
+            //for (int i = 0; i < custNames.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < custNames.GetLength(1); j++)
+            //    {
+            //        Console.WriteLine("Array Values : {0}", custNames[i, j]);
+            //    }
+            //}
 
-            int[] randNum = { 1, 4, 9, 2 };
-            PrintArray(randNum, "ForEach");
-            Console.WriteLine("----------------------------");
+            //int[] randNum = { 1, 4, 9, 2 };
+            //PrintArray(randNum, "ForEach");
+            //Console.WriteLine("----------------------------");
 
-            Array.Sort(randNum);
-            Array.Reverse(randNum);
-            Console.WriteLine("1 at index : {0}", Array.IndexOf(randNum, 1));
-            randNum.SetValue(0, 1);
-            int[] srcArray = { 1, 2, 3, 4, };
-            int[] destArray = { 5, 6, 7, 8 };
-            int startIndex = 0;
-            int length = 2;
-            //Array anotherArray = Array.CreateInstance(typeof(int), srcArray);
-            Array.Copy(srcArray, startIndex, destArray, 0, length);
-            PrintArray(destArray, "Copy");
+            //Array.Sort(randNum);
+            //Array.Reverse(randNum);
+            //Console.WriteLine("1 at index : {0}", Array.IndexOf(randNum, 1));
+            //randNum.SetValue(0, 1);
+            //int[] srcArray = { 1, 2, 3, 4, };
+            //int[] destArray = { 5, 6, 7, 8 };
+            //int startIndex = 0;
+            //int length = 2;
+            ////Array anotherArray = Array.CreateInstance(typeof(int), srcArray);
+            //Array.Copy(srcArray, startIndex, destArray, 0, length);
+            //PrintArray(destArray, "Copy");
 
-            Array anotherArray = Array.CreateInstance(typeof(int), 10);
-            srcArray.CopyTo(anotherArray, 0);
-            PrintArray(srcArray, "Another Copy");
+            //Array anotherArray = Array.CreateInstance(typeof(int), 10);
+            //srcArray.CopyTo(anotherArray, 0);
+            //PrintArray(srcArray, "Another Copy");
 
-            int[] numArray = { 1, 11, 22 };
-            Console.WriteLine("Values > 10 : {0}", Array.Find(numArray, num => num > 10));
+            //int[] numArray = { 1, 11, 22 };
+            //Console.WriteLine("Values > 10 : {0}", Array.Find(numArray, num => num > 10));
 
+            /*-------  Operators 01:07 ------ - */
+            //Relational Operators : > < >= <= == !=
+            //Logical Operators : && || !
+            //int age = 17;
+            //if (age > 5 && age <= 7)
+            //{
+            //    Console.WriteLine("Go to elementary school");
+            //}
+            //if (age < 13)
+            //{
+            //    Console.WriteLine("Go to middle school");
+            //}
+            //if (age >= 13 && age < 19)
+            //{
+            //    Console.WriteLine("Go to high school");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Go to college");
+            //}
 
+            //if (age < 16 || age > 65)
+            //{
+            //    Console.WriteLine("You don't need to work");
+            //}
+
+            //Console.WriteLine("!True or False : {0}", !true);
+
+            //bool canDrive = age >= 16 ? true : false; //ternary operator
+
+            //switch (age) //switch will test each case to run the matching output
+            //{
+            //    case 1:
+            //    case 2:
+            //        Console.WriteLine("Go to day care");
+            //        break;
+            //    case 3:
+            //    case 4:
+            //        Console.WriteLine("Go to preschool");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Go to kindergarten");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Stay Home");
+            //        goto OtherSchool;
+            //        break;
+            //}
+            //OtherSchool:
+            //    Console.WriteLine("Homeschool");
+
+            ////String comparison.  Note that == checks if the string is the same object in memory, while .Equals confirms the values are the same.
+            //string name1 = "Briant";
+            //string name2 = "Briant";
+            //if (name1.Equals(name2, StringComparison.Ordinal))
+            //{
+            //    Console.WriteLine("Names are equal");
+            //}
+
+            /*-------  More Loops Do & Do While 01:18 ------- */
+            //int i = 1;
+            //while (i <= 10)
+            //{
+            //    if (i % 2 == 0) //Modulo operator, divides and takes the remainder, often used to check for even (as show) or wrapping (ie, 12 hour format 13%12 = 1)
+            //    {
+            //        i++;
+            //        continue;
+            //    }
+            //    if (i == 9) break;
+            //    {
+            //        Console.WriteLine(i);
+            //        i++;
+            //    }
+            //}
+
+            //Random rnd = new Random();
+            //int secretNumber = rnd.Next(1, 11); //max number not inclusive
+            //int guessedNumber = 0;
+            //do
+            //{
+            //    Console.WriteLine("Pick a random number 1-10 :");
+            //    guessedNumber = Convert.ToInt32(Console.ReadLine()); //Readline input is always a string. Converts it to an interger
+            //    Console.WriteLine("Secret number is : {0}", secretNumber);
+            //} while (secretNumber != guessedNumber);
+            //Console.WriteLine("You got it!");
+
+            /*-------  Exception Handling 01:25 ------- */
+            //double num1 = 5;
+            //double num2 = 0;
+            //try
+            //{
+            //    Console.WriteLine("5 / 0 = {0}", DoDivision(num1, num2));
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    Console.WriteLine("No No No division by zero!");
+            //    Console.WriteLine(ex.Message);
+            //    Console.WriteLine(ex.GetType().Name);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("A random exception was thrown");
+            //    Console.WriteLine(ex.ToString());
+            //}
+
+            //finally  //The finally block is part of the try-catch-finally construct.  Its primary role is to ensure a block of code always executes, regardless of whether an exception occurred in the try block. Usefull for forcing log keeping or closing resources (files, network connections, database etc)
+            //{
+            //    Console.WriteLine("Clearning up");
+            //}
+
+            /*-------  String Builders 01:30 ------- */
+            //StringBuilder sb = new StringBuilder("Random text"); //default sb size is 16
+            //StringBuilder sb1 = new StringBuilder("More random text", 256); //forcing size to 256
+            //Console.WriteLine("Capacity sb1 : {0}", sb1.Capacity);
+            //Console.WriteLine("Length sb1 : {0}", sb1.Length);
+            //sb1.AppendLine(" added even more text!");
+            //CultureInfo enUS = CultureInfo.CreateSpecificCulture("en-US");
+            //string newString = sb.ToString();
+            //sb1.AppendFormat(enUS, newString);
+            //Console.WriteLine(sb1.ToString());
+            //sb1.Replace("text", "characters");
+            //Console.WriteLine(sb1.ToString());
+            //sb1.Clear();
+            //sb1.Append("Random Text");
+            //Console.WriteLine(sb1.Equals(sb));
+            //sb1.Insert(11, " Mo text");
+            //Console.WriteLine(sb1.ToString());
+            //sb1.Remove(11, 8);
+            //Console.WriteLine(sb1.ToString());
+
+            /*-------  Date Times 01:59 ------- */
+            //DateTime dateTime = DateTime.Now;
+            //Console.WriteLine("Day of the week is : {0}", dateTime.DayOfWeek);
+            //dateTime = dateTime.AddDays(4);
+            //dateTime = dateTime.AddMonths(1);
+            //dateTime = dateTime.AddYears(10);
+            //Console.WriteLine("Updated date is : {0}", dateTime.ToString());
+            //TimeSpan lunchTime = new TimeSpan(12, 30, 0);
+            //lunchTime = lunchTime.Subtract(new TimeSpan(0, 15, 0));
+            //Console.WriteLine("New Lunchtime is : {0}", lunchTime.ToString());
+
+            /*-------  Enumerated Types 02:04 ------- */
 
 
         }
