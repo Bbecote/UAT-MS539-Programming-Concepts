@@ -1,0 +1,17 @@
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.exe
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.deps.json
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.runtimeconfig.json
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.dll
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.pdb
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.AssemblyInfoInputs.cache
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.AssemblyInfo.cs
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.csproj.CoreCompileInputs.cache
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.sourcelink.json
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.dll
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\refint\Assignment2.1_GUI_Intro.dll
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.pdb
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.genruntimeconfig.cache
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\ref\Assignment2.1_GUI_Intro.dll
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2._1_GUI_Intro.Form1.resources
+C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.csproj.GenerateResource.cache
