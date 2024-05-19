@@ -34,3 +34,4 @@ C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\ref\CrapsSimC#.dll
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.ChipsButton.resources
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.Properties.Resources.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.DieButton.resources

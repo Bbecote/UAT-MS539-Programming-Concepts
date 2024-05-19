@@ -55,6 +55,7 @@
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
             panel1 = new Panel();
+            panel2 = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             whiteChips = new ChipsButton();
@@ -63,13 +64,17 @@
             greenChips = new ChipsButton();
             blackChips = new ChipsButton();
             purpleChips = new ChipsButton();
-            labelRoll = new Label();
-            lastDie1 = new PictureBox();
-            lastDie2 = new PictureBox();
-            labelLastDie1 = new Label();
-            labelLastDie2 = new Label();
-            onPictureBox = new PictureBox();
             offPictureBox = new PictureBox();
+            clearTable = new Button();
+            tableLayoutPanel15 = new TableLayoutPanel();
+            resetGame = new Button();
+            panel3 = new Panel();
+            pictureBox3 = new PictureBox();
+            label4 = new Label();
+            label1 = new Label();
+            label5 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -77,10 +82,12 @@
             panel1.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)lastDie1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lastDie2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)onPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)offPictureBox).BeginInit();
+            tableLayoutPanel15.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -435,6 +442,7 @@
             // panel1
             // 
             panel1.BackColor = Color.RoyalBlue;
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(tableLayoutPanel5);
             panel1.Controls.Add(tableLayoutPanel2);
             panel1.Controls.Add(tableLayoutPanel1);
@@ -445,6 +453,13 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1222, 542);
             panel1.TabIndex = 15;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(966, 544);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(286, 131);
+            panel2.TabIndex = 32;
             // 
             // tableLayoutPanel5
             // 
@@ -556,70 +571,6 @@
             purpleChips.Text = "$500";
             purpleChips.UseVisualStyleBackColor = true;
             // 
-            // labelRoll
-            // 
-            labelRoll.AutoSize = true;
-            labelRoll.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            labelRoll.Location = new Point(1252, 406);
-            labelRoll.Name = "labelRoll";
-            labelRoll.Size = new Size(164, 45);
-            labelRoll.TabIndex = 22;
-            labelRoll.Text = "Last Roll:";
-            // 
-            // lastDie1
-            // 
-            lastDie1.BackColor = Color.Maroon;
-            lastDie1.BorderStyle = BorderStyle.FixedSingle;
-            lastDie1.Location = new Point(1422, 387);
-            lastDie1.Name = "lastDie1";
-            lastDie1.Size = new Size(75, 75);
-            lastDie1.TabIndex = 23;
-            lastDie1.TabStop = false;
-            // 
-            // lastDie2
-            // 
-            lastDie2.BackColor = Color.Maroon;
-            lastDie2.BorderStyle = BorderStyle.FixedSingle;
-            lastDie2.Location = new Point(1513, 387);
-            lastDie2.Name = "lastDie2";
-            lastDie2.Size = new Size(75, 75);
-            lastDie2.TabIndex = 24;
-            lastDie2.TabStop = false;
-            // 
-            // labelLastDie1
-            // 
-            labelLastDie1.AutoSize = true;
-            labelLastDie1.BackColor = Color.Maroon;
-            labelLastDie1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            labelLastDie1.ForeColor = Color.White;
-            labelLastDie1.Location = new Point(1438, 404);
-            labelLastDie1.Name = "labelLastDie1";
-            labelLastDie1.Size = new Size(37, 41);
-            labelLastDie1.TabIndex = 25;
-            labelLastDie1.Text = "5";
-            // 
-            // labelLastDie2
-            // 
-            labelLastDie2.AutoSize = true;
-            labelLastDie2.BackColor = Color.Maroon;
-            labelLastDie2.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            labelLastDie2.ForeColor = Color.White;
-            labelLastDie2.Location = new Point(1530, 404);
-            labelLastDie2.Name = "labelLastDie2";
-            labelLastDie2.Size = new Size(37, 41);
-            labelLastDie2.TabIndex = 26;
-            labelLastDie2.Text = "5";
-            // 
-            // onPictureBox
-            // 
-            onPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            onPictureBox.Image = (Image)resources.GetObject("onPictureBox.Image");
-            onPictureBox.Location = new Point(1334, 59);
-            onPictureBox.Name = "onPictureBox";
-            onPictureBox.Size = new Size(68, 63);
-            onPictureBox.TabIndex = 28;
-            onPictureBox.TabStop = false;
-            // 
             // offPictureBox
             // 
             offPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -630,19 +581,129 @@
             offPictureBox.TabIndex = 29;
             offPictureBox.TabStop = false;
             // 
+            // clearTable
+            // 
+            clearTable.BackColor = Color.OrangeRed;
+            clearTable.Location = new Point(3, 3);
+            clearTable.Name = "clearTable";
+            clearTable.Size = new Size(209, 48);
+            clearTable.TabIndex = 30;
+            clearTable.Text = "ClearTable";
+            clearTable.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel15
+            // 
+            tableLayoutPanel15.ColumnCount = 1;
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.Controls.Add(resetGame, 0, 1);
+            tableLayoutPanel15.Controls.Add(clearTable, 0, 0);
+            tableLayoutPanel15.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            tableLayoutPanel15.Location = new Point(11, 16);
+            tableLayoutPanel15.Name = "tableLayoutPanel15";
+            tableLayoutPanel15.RowCount = 2;
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.Size = new Size(215, 108);
+            tableLayoutPanel15.TabIndex = 31;
+            // 
+            // resetGame
+            // 
+            resetGame.BackColor = Color.OrangeRed;
+            resetGame.Location = new Point(3, 57);
+            resetGame.Name = "resetGame";
+            resetGame.Size = new Size(208, 48);
+            resetGame.TabIndex = 32;
+            resetGame.Text = "Reset Game";
+            resetGame.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Yellow;
+            panel3.Controls.Add(tableLayoutPanel15);
+            panel3.Location = new Point(994, 573);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(240, 138);
+            panel3.TabIndex = 32;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1346, 59);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(68, 63);
+            pictureBox3.TabIndex = 38;
+            pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(1252, 193);
+            label4.Name = "label4";
+            label4.Size = new Size(164, 45);
+            label4.TabIndex = 40;
+            label4.Text = "Last Roll:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Maroon;
+            label1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(1361, 259);
+            label1.Name = "label1";
+            label1.Size = new Size(37, 41);
+            label1.TabIndex = 44;
+            label1.Text = "5";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Maroon;
+            label5.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(1269, 259);
+            label5.Name = "label5";
+            label5.Size = new Size(37, 41);
+            label5.TabIndex = 43;
+            label5.Text = "5";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Maroon;
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox4.Location = new Point(1344, 242);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(75, 75);
+            pictureBox4.TabIndex = 42;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Maroon;
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Location = new Point(1253, 242);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(75, 75);
+            pictureBox5.TabIndex = 41;
+            pictureBox5.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1827, 1000);
+            Controls.Add(label1);
+            Controls.Add(label5);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox5);
+            Controls.Add(label4);
+            Controls.Add(pictureBox3);
+            Controls.Add(panel3);
             Controls.Add(offPictureBox);
-            Controls.Add(onPictureBox);
-            Controls.Add(labelLastDie2);
-            Controls.Add(labelLastDie1);
-            Controls.Add(lastDie2);
-            Controls.Add(lastDie1);
-            Controls.Add(labelRoll);
             Controls.Add(purpleChips);
             Controls.Add(blackChips);
             Controls.Add(greenChips);
@@ -662,10 +723,12 @@
             panel1.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)lastDie1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lastDie2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)onPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)offPictureBox).EndInit();
+            tableLayoutPanel15.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -707,12 +770,17 @@
         private ChipsButton purpleChips;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel5;
-        private Label labelRoll;
-        private PictureBox lastDie1;
-        private PictureBox lastDie2;
-        private Label labelLastDie1;
-        private Label labelLastDie2;
-        private PictureBox onPictureBox;
         private PictureBox offPictureBox;
+        private Button clearTable;
+        private TableLayoutPanel tableLayoutPanel15;
+        private Button resetGame;
+        private Panel panel2;
+        private Panel panel3;
+        private PictureBox pictureBox3;
+        private Label label4;
+        private Label label1;
+        private Label label5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
     }
 }

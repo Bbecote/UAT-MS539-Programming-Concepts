@@ -13,17 +13,10 @@ namespace CrapsSimC_
 {
     public partial class ChipsButton : Button
     {
-
-        //private Color CustomBackgroundColor;
-        //private Color CustomBorderColor;
-
         public ChipsButton()
         {
             InitializeComponent();
         }
-
-        //public Color CustomBackgroundColor1 { get => CustomBackgroundColor; set => CustomBackgroundColor = value; }
-        //public Color CustomBorderColor1 { get => CustomBorderColor; set => CustomBorderColor = value; }
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
@@ -32,9 +25,6 @@ namespace CrapsSimC_
             GraphicsPath path = new GraphicsPath();
             path.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
             this.Region = new Region(path);
-
-            //pevent.Graphics.FillEllipse(new SolidBrush(CustomBackgroundColor1), 0, 0, ClientSize.Width, ClientSize.Height);
-            //pevent.Graphics.DrawEllipse(new Pen(CustomBorderColor1), 0, 0, ClientSize.Width -1, ClientSize.Height -1);
 
             base.OnPaint(pevent);
         }
