@@ -26,5 +26,15 @@ namespace CrapsSimC_
         {
 
         }
+
+        private void label_PlayerTitle1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
