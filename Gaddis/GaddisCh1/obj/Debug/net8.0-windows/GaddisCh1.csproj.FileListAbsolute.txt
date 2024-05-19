@@ -1,0 +1,17 @@
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\bin\Debug\net8.0-windows\GaddisCh1.exe
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\bin\Debug\net8.0-windows\GaddisCh1.deps.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\bin\Debug\net8.0-windows\GaddisCh1.runtimeconfig.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\bin\Debug\net8.0-windows\GaddisCh1.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\bin\Debug\net8.0-windows\GaddisCh1.pdb
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.Form1.resources
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.AssemblyInfoInputs.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.AssemblyInfo.cs
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.sourcelink.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\refint\GaddisCh1.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.pdb
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\GaddisCh1.genruntimeconfig.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\Gaddis\GaddisCh1\obj\Debug\net8.0-windows\ref\GaddisCh1.dll

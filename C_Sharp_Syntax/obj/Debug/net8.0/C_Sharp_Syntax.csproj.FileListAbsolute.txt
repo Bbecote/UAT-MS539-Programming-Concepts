@@ -1,0 +1,15 @@
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\bin\Debug\net8.0\C_Sharp_Syntax.exe
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\bin\Debug\net8.0\C_Sharp_Syntax.deps.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\bin\Debug\net8.0\C_Sharp_Syntax.runtimeconfig.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\bin\Debug\net8.0\C_Sharp_Syntax.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\bin\Debug\net8.0\C_Sharp_Syntax.pdb
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.AssemblyInfoInputs.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.AssemblyInfo.cs
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.sourcelink.json
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\refint\C_Sharp_Syntax.dll
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.pdb
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\C_Sharp_Syntax.genruntimeconfig.cache
+C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\C_Sharp_Syntax\obj\Debug\net8.0\ref\C_Sharp_Syntax.dll

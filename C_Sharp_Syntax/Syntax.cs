@@ -9,9 +9,9 @@
  * Block code using ctr K, ctr C - Unblock code using ctr k, ctr U
  */
 
-using System;
-using System.Globalization;
-using System.Text; //Imports classes and functions from the System Class
+using System; //Imports classes and functions from the System Class
+//using System.Globalization;
+//using System.Text; 
 
 /*-------      -------*/
 namespace ConsoleApp1 //Not explicitly required - Organizes your code.
@@ -40,31 +40,31 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
         //<Access Specifier (private, public, protected)> <Return Type> <Function Name> (Parameters)
         //{ Body of Function}
 
-        private static void helloworld()
+        private static void Helloworld()
         {
             Console.Write("what is your name?");
             string name = Console.ReadLine();
             Console.WriteLine("hello {0}", name);
         }
 
-        private static double getsum(double x = 1, double y = 1)
+        private static double Getsum(double x = 1, double y = 1)
         {
             return x + y;
         }
 
-        private static void doubleit(int x, out int solution) //using out parameter, creates a variable that can be used in scope, useful for multiple returns from a function or error handling
+        private static void Doubleit(int x, out int solution) //using out parameter, creates a variable that can be used in scope, useful for multiple returns from a function or error handling
         {
             solution = x * 2;
         }
 
-        public static void swap(ref int num, ref int num1)  //passing by reference, useful for large variables reducing copy overhead
+        public static void Swap(ref int num, ref int num1)  //passing by reference, useful for large variables reducing copy overhead
         {
             int temp = num;
             num = num1;
             num1 = temp;
         }
 
-        static double getsomemore(params double[] numbers) //setting parameter to accept an unknown amount of input
+        static double Getsomemore(params double[] numbers) //setting parameter to accept an unknown amount of input
         {
             double sum = 0;
             foreach (int i in numbers)
@@ -74,22 +74,22 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
             return sum;
         }
 
-        static void printinfo(string name, int zipcode)  //named parameters: calling with parameters out of order, and not initializing parameters
+        static void Printinfo(string name, int zipcode)  //named parameters: calling with parameters out of order, and not initializing parameters
         {
             Console.WriteLine("{0} lives in the zip code {1}", name, zipcode);
         }
 
-        static double getsum2(double x = 1, double y = 1) //overloading functions, ex 1
+        static double Getsum2(double x = 1, double y = 1) //overloading functions, ex 1
         {
             return x + y;
         }
 
-        static double getsum2(string x = "1", string y = "1") //overloading functions, ex 2
+        static double Getsum2(string x = "1", string y = "1") //overloading functions, ex 2
         {
             return Convert.ToDouble(x) + Convert.ToDouble(y);
         }
 
-        static void paintCar(CarColor color)  //function using enum
+        static void PaintCar(CarColor color)  //function using enum
         {
             Console.WriteLine("The car was painted {0} and the code is {1}", color, (int)color);
         }
@@ -105,27 +105,54 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
         }
 
 
+        /*-------  Using Internal Classes & Structs 02:22 ------- */
+        struct Rectangle
+        {
+            //Fields
+            public double length { get; set; } = 1;
+            public double width { get; set; } = 1;
+
+            //Constructor
+            public Rectangle(double length, double width)
+            {
+                this.length = length;
+                this.width = width;
+            }
+            public double area()
+            {
+                return length * width;
+            }
+
+        }
 
         static void Main(string[] args) //Execution of your code begins here
         {
+            /*-------  Using Internal Classes & Structs 02:22 ------- */
+            Rectangle rect = new Rectangle();
+            rect.length = 200;
+            rect.width = 50;
+            Console.WriteLine("Area of rect : {0}", rect.area());
+
+
+
             /*-------  Calls for Functions 1:38 -------*/
-            //helloWorld();
-            //Console.WriteLine("5 + 10 = {0}", getSum(5, 10));  //Discussion about scope
-            //doubleIt(15, out int solution); 
+            //HelloWorld();
+            //Console.WriteLine("5 + 10 = {0}", GetSum(5, 10));  //Discussion about scope
+            //DoubleIt(15, out int solution); 
             //Console.WriteLine("15 * 2 = {0}", solution);
             //int num = 10;
             //int num1 = 20;
             //Console.WriteLine("Before swap num : {0} and num1 : {1}", num, num1);
-            //swap(ref num, ref num1);
+            //Swap(ref num, ref num1);
             //Console.WriteLine("After swap num : {0} and num1 : {1}", num, num1);
-            //Console.WriteLine("GetSomeMore output: {0}", getSomeMore(1, 3, 5));
-            //printInfo(zipCode: 02854, name: "Briant Becote");
-            //Console.WriteLine("Output getSum2 with doubles : {0}", getSum2(1, 2));
-            //Console.WriteLine("Output getSum2 with strings : {0}", getSum2("1", "2"));
+            //Console.WriteLine("GetSomeMore output: {0}", GetSomeMore(1, 3, 5));
+            //PrintInfo(zipCode: 02854, name: "Briant Becote");
+            //Console.WriteLine("Output GetSum2 with doubles : {0}", GetSum2(1, 2));
+            //Console.WriteLine("Output GetSum2 with strings : {0}", GetSum2("1", "2"));
 
             /*-------  Calls for Enums 2:04 -------*/
-            CarColor car1 = CarColor.yellow;
-            paintCar(car1);
+            //CarColor car1 = CarColor.yellow;
+            //paintCar(car1);
 
             /*-------  Console Methods Beginning of Tutorial -------*/
             //Console.WriteLine("Hello MS539 Students!");
@@ -396,7 +423,8 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
             //lunchTime = lunchTime.Subtract(new TimeSpan(0, 15, 0));
             //Console.WriteLine("New Lunchtime is : {0}", lunchTime.ToString());
 
-            /*-------  Enumerated Types 02:04 ------- */
+
+
 
 
         }
