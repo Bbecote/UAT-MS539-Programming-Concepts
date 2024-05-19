@@ -93,6 +93,26 @@ namespace CrapsSimC_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap offButton {
+            get {
+                object obj = ResourceManager.GetObject("offButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap onButton {
+            get {
+                object obj = ResourceManager.GetObject("onButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap purplechip {
             get {
                 object obj = ResourceManager.GetObject("purplechip", resourceCulture);

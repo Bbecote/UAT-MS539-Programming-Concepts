@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tableLayoutPanel1 = new TableLayoutPanel();
             button1 = new Button();
             button10 = new Button();
@@ -62,6 +63,13 @@
             greenChips = new ChipsButton();
             blackChips = new ChipsButton();
             purpleChips = new ChipsButton();
+            labelRoll = new Label();
+            lastDie1 = new PictureBox();
+            lastDie2 = new PictureBox();
+            labelLastDie1 = new Label();
+            labelLastDie2 = new Label();
+            onPictureBox = new PictureBox();
+            offPictureBox = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -69,6 +77,10 @@
             panel1.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)lastDie1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lastDie2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)onPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)offPictureBox).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -544,12 +556,93 @@
             purpleChips.Text = "$500";
             purpleChips.UseVisualStyleBackColor = true;
             // 
+            // labelRoll
+            // 
+            labelRoll.AutoSize = true;
+            labelRoll.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelRoll.Location = new Point(1252, 406);
+            labelRoll.Name = "labelRoll";
+            labelRoll.Size = new Size(164, 45);
+            labelRoll.TabIndex = 22;
+            labelRoll.Text = "Last Roll:";
+            // 
+            // lastDie1
+            // 
+            lastDie1.BackColor = Color.Maroon;
+            lastDie1.BorderStyle = BorderStyle.FixedSingle;
+            lastDie1.Location = new Point(1422, 387);
+            lastDie1.Name = "lastDie1";
+            lastDie1.Size = new Size(75, 75);
+            lastDie1.TabIndex = 23;
+            lastDie1.TabStop = false;
+            // 
+            // lastDie2
+            // 
+            lastDie2.BackColor = Color.Maroon;
+            lastDie2.BorderStyle = BorderStyle.FixedSingle;
+            lastDie2.Location = new Point(1513, 387);
+            lastDie2.Name = "lastDie2";
+            lastDie2.Size = new Size(75, 75);
+            lastDie2.TabIndex = 24;
+            lastDie2.TabStop = false;
+            // 
+            // labelLastDie1
+            // 
+            labelLastDie1.AutoSize = true;
+            labelLastDie1.BackColor = Color.Maroon;
+            labelLastDie1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelLastDie1.ForeColor = Color.White;
+            labelLastDie1.Location = new Point(1438, 404);
+            labelLastDie1.Name = "labelLastDie1";
+            labelLastDie1.Size = new Size(37, 41);
+            labelLastDie1.TabIndex = 25;
+            labelLastDie1.Text = "5";
+            // 
+            // labelLastDie2
+            // 
+            labelLastDie2.AutoSize = true;
+            labelLastDie2.BackColor = Color.Maroon;
+            labelLastDie2.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelLastDie2.ForeColor = Color.White;
+            labelLastDie2.Location = new Point(1530, 404);
+            labelLastDie2.Name = "labelLastDie2";
+            labelLastDie2.Size = new Size(37, 41);
+            labelLastDie2.TabIndex = 26;
+            labelLastDie2.Text = "5";
+            // 
+            // onPictureBox
+            // 
+            onPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            onPictureBox.Image = (Image)resources.GetObject("onPictureBox.Image");
+            onPictureBox.Location = new Point(1334, 59);
+            onPictureBox.Name = "onPictureBox";
+            onPictureBox.Size = new Size(68, 63);
+            onPictureBox.TabIndex = 28;
+            onPictureBox.TabStop = false;
+            // 
+            // offPictureBox
+            // 
+            offPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            offPictureBox.Image = (Image)resources.GetObject("offPictureBox.Image");
+            offPictureBox.Location = new Point(1252, 59);
+            offPictureBox.Name = "offPictureBox";
+            offPictureBox.Size = new Size(67, 63);
+            offPictureBox.TabIndex = 29;
+            offPictureBox.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1827, 1000);
+            Controls.Add(offPictureBox);
+            Controls.Add(onPictureBox);
+            Controls.Add(labelLastDie2);
+            Controls.Add(labelLastDie1);
+            Controls.Add(lastDie2);
+            Controls.Add(lastDie1);
+            Controls.Add(labelRoll);
             Controls.Add(purpleChips);
             Controls.Add(blackChips);
             Controls.Add(greenChips);
@@ -569,7 +662,12 @@
             panel1.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)lastDie1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lastDie2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)onPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)offPictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -609,5 +707,12 @@
         private ChipsButton purpleChips;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel5;
+        private Label labelRoll;
+        private PictureBox lastDie1;
+        private PictureBox lastDie2;
+        private Label labelLastDie1;
+        private Label labelLastDie2;
+        private PictureBox onPictureBox;
+        private PictureBox offPictureBox;
     }
 }
