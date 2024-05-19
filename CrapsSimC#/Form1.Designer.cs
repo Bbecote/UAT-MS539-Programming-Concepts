@@ -94,6 +94,9 @@
             label_ActiveBets = new Label();
             tableLayoutPanel16 = new TableLayoutPanel();
             tableLayoutPanel17 = new TableLayoutPanel();
+            pictureBox1 = new PictureBox();
+            label_PlayerTitle1 = new Label();
+            tableLayoutPanel18 = new TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -109,6 +112,8 @@
             ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).BeginInit();
             tableLayoutPanel16.SuspendLayout();
             tableLayoutPanel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tableLayoutPanel18.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -790,10 +795,10 @@
             // 
             // label_BankRoll
             // 
-            label_BankRoll.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label_BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_BankRoll.AutoSize = true;
             label_BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_BankRoll.Location = new Point(47, 0);
+            label_BankRoll.Location = new Point(46, 13);
             label_BankRoll.Name = "label_BankRoll";
             label_BankRoll.Size = new Size(143, 36);
             label_BankRoll.TabIndex = 51;
@@ -801,26 +806,28 @@
             // 
             // textBox_BankRoll
             // 
+            textBox_BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBox_BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_BankRoll.Location = new Point(196, 3);
+            textBox_BankRoll.Location = new Point(195, 3);
             textBox_BankRoll.Name = "textBox_BankRoll";
             textBox_BankRoll.Size = new Size(101, 43);
             textBox_BankRoll.TabIndex = 52;
             // 
             // textBoxWinWalk
             // 
+            textBoxWinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxWinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBoxWinWalk.Location = new Point(509, 3);
+            textBoxWinWalk.Location = new Point(472, 3);
             textBoxWinWalk.Name = "textBoxWinWalk";
             textBoxWinWalk.Size = new Size(101, 43);
             textBoxWinWalk.TabIndex = 54;
             // 
             // label_WinWalk
             // 
-            label_WinWalk.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label_WinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_WinWalk.AutoSize = true;
             label_WinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_WinWalk.Location = new Point(369, 0);
+            label_WinWalk.Location = new Point(332, 13);
             label_WinWalk.Name = "label_WinWalk";
             label_WinWalk.Size = new Size(134, 36);
             label_WinWalk.TabIndex = 53;
@@ -829,10 +836,10 @@
             // textBox_CurrentStanding
             // 
             textBox_CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox_CurrentStanding.Font = new Font("Impact", 27F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_CurrentStanding.Location = new Point(280, 5);
+            textBox_CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_CurrentStanding.Location = new Point(280, 3);
             textBox_CurrentStanding.Name = "textBox_CurrentStanding";
-            textBox_CurrentStanding.Size = new Size(101, 51);
+            textBox_CurrentStanding.Size = new Size(101, 43);
             textBox_CurrentStanding.TabIndex = 56;
             // 
             // label_CurrentStanding
@@ -840,7 +847,7 @@
             label_CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_CurrentStanding.AutoSize = true;
             label_CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_CurrentStanding.Location = new Point(13, 23);
+            label_CurrentStanding.Location = new Point(13, 13);
             label_CurrentStanding.Name = "label_CurrentStanding";
             label_CurrentStanding.Size = new Size(261, 36);
             label_CurrentStanding.TabIndex = 55;
@@ -848,18 +855,19 @@
             // 
             // textBox_LoseWalk
             // 
+            textBox_LoseWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBox_LoseWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_LoseWalk.Location = new Point(509, 52);
+            textBox_LoseWalk.Location = new Point(472, 52);
             textBox_LoseWalk.Name = "textBox_LoseWalk";
             textBox_LoseWalk.Size = new Size(101, 43);
             textBox_LoseWalk.TabIndex = 58;
             // 
             // label_LoseWalk
             // 
-            label_LoseWalk.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label_LoseWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_LoseWalk.AutoSize = true;
             label_LoseWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_LoseWalk.Location = new Point(353, 49);
+            label_LoseWalk.Location = new Point(316, 62);
             label_LoseWalk.Name = "label_LoseWalk";
             label_LoseWalk.Size = new Size(150, 36);
             label_LoseWalk.TabIndex = 57;
@@ -867,18 +875,19 @@
             // 
             // textBox2
             // 
+            textBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBox2.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(196, 52);
+            textBox2.Location = new Point(195, 52);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(101, 43);
             textBox2.TabIndex = 60;
             // 
             // label_ActiveBets
             // 
-            label_ActiveBets.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label_ActiveBets.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_ActiveBets.AutoSize = true;
             label_ActiveBets.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_ActiveBets.Location = new Point(11, 49);
+            label_ActiveBets.Location = new Point(10, 62);
             label_ActiveBets.Name = "label_ActiveBets";
             label_ActiveBets.Size = new Size(179, 36);
             label_ActiveBets.TabIndex = 59;
@@ -889,8 +898,8 @@
             tableLayoutPanel16.ColumnCount = 4;
             tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
             tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
             tableLayoutPanel16.Controls.Add(label_BankRoll, 0, 0);
             tableLayoutPanel16.Controls.Add(textBox_LoseWalk, 3, 1);
             tableLayoutPanel16.Controls.Add(textBox2, 1, 1);
@@ -899,7 +908,7 @@
             tableLayoutPanel16.Controls.Add(label_ActiveBets, 0, 1);
             tableLayoutPanel16.Controls.Add(textBoxWinWalk, 3, 0);
             tableLayoutPanel16.Controls.Add(label_WinWalk, 2, 0);
-            tableLayoutPanel16.Location = new Point(1663, 350);
+            tableLayoutPanel16.Location = new Point(1661, 476);
             tableLayoutPanel16.Margin = new Padding(0);
             tableLayoutPanel16.Name = "tableLayoutPanel16";
             tableLayoutPanel16.RowCount = 2;
@@ -917,13 +926,51 @@
             tableLayoutPanel17.Controls.Add(textBox_CurrentStanding, 1, 0);
             tableLayoutPanel17.Controls.Add(label_CurrentStanding, 0, 0);
             tableLayoutPanel17.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            tableLayoutPanel17.Location = new Point(1772, 291);
+            tableLayoutPanel17.Location = new Point(1770, 427);
             tableLayoutPanel17.Margin = new Padding(0);
             tableLayoutPanel17.Name = "tableLayoutPanel17";
             tableLayoutPanel17.RowCount = 1;
             tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel17.Size = new Size(416, 59);
+            tableLayoutPanel17.Size = new Size(416, 49);
             tableLayoutPanel17.TabIndex = 62;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ActiveCaption;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 46);
+            pictureBox1.Margin = new Padding(0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(220, 301);
+            pictureBox1.TabIndex = 63;
+            pictureBox1.TabStop = false;
+            // 
+            // label_PlayerTitle1
+            // 
+            label_PlayerTitle1.Anchor = AnchorStyles.Bottom;
+            label_PlayerTitle1.AutoSize = true;
+            label_PlayerTitle1.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_PlayerTitle1.Location = new Point(51, 10);
+            label_PlayerTitle1.Margin = new Padding(0);
+            label_PlayerTitle1.Name = "label_PlayerTitle1";
+            label_PlayerTitle1.Size = new Size(118, 36);
+            label_PlayerTitle1.TabIndex = 64;
+            label_PlayerTitle1.Text = "Player 1";
+            // 
+            // tableLayoutPanel18
+            // 
+            tableLayoutPanel18.ColumnCount = 1;
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel18.Controls.Add(label_PlayerTitle1, 0, 0);
+            tableLayoutPanel18.Controls.Add(pictureBox1, 0, 1);
+            tableLayoutPanel18.Location = new Point(1882, 54);
+            tableLayoutPanel18.Name = "tableLayoutPanel18";
+            tableLayoutPanel18.RowCount = 2;
+            tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 13.0872478F));
+            tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 86.91275F));
+            tableLayoutPanel18.Size = new Size(220, 352);
+            tableLayoutPanel18.TabIndex = 65;
             // 
             // form_AmountSelected
             // 
@@ -931,7 +978,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
+            Controls.Add(tableLayoutPanel18);
             Controls.Add(tableLayoutPanel17);
             Controls.Add(tableLayoutPanel16);
             Controls.Add(radioButton_SubtractBet);
@@ -976,6 +1025,9 @@
             tableLayoutPanel16.PerformLayout();
             tableLayoutPanel17.ResumeLayout(false);
             tableLayoutPanel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            tableLayoutPanel18.ResumeLayout(false);
+            tableLayoutPanel18.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1048,5 +1100,8 @@
         private Label label_ActiveBets;
         private TableLayoutPanel tableLayoutPanel16;
         private TableLayoutPanel tableLayoutPanel17;
+        private PictureBox pictureBox1;
+        private Label label_PlayerTitle1;
+        private TableLayoutPanel tableLayoutPanel18;
     }
 }
