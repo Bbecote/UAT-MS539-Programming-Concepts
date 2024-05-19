@@ -89,8 +89,7 @@
               "RelativeToolTip": "DieButton.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:25:04.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T10:25:04.733Z"
             },
             {
               "$type": "Document",
@@ -101,8 +100,7 @@
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs [Design]",
               "RelativeToolTip": "DieButton.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:24:30.241Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-19T10:24:30.241Z"
             },
             {
               "$type": "Document",
@@ -126,8 +124,7 @@
               "RelativeToolTip": "ChipsButton.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T09:01:27.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T09:01:27.362Z"
             },
             {
               "$type": "Document",
@@ -137,7 +134,7 @@
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.Designer.cs*",
               "RelativeToolTip": "Form1.Designer.cs*",
-              "ViewState": "AQIAAJ4CAAAAAAAAAAAwwM0CAAAqAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAwwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T00:09:26.795Z",
               "EditorCaption": ""
@@ -152,8 +149,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T00:08:53.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T00:08:53.576Z"
             },
             {
               "$type": "Document",
@@ -161,12 +157,11 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs*",
-              "RelativeToolTip": "Form1.cs*",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAiwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T00:29:46.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T00:29:46.5Z"
             }
           ]
         }
