@@ -45,8 +45,8 @@
             button2 = new Button();
             button3 = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
-            buttonCOME = new Button();
             buttonDontCome = new Button();
+            buttonCOME = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             buttonField = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
@@ -55,12 +55,14 @@
             buttonPassLine = new Button();
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
+            panel1 = new Panel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -81,7 +83,8 @@
             tableLayoutPanel1.Controls.Add(button9, 4, 0);
             tableLayoutPanel1.Font = new Font("Ink Free", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             tableLayoutPanel1.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
-            tableLayoutPanel1.Location = new Point(128, 78);
+            tableLayoutPanel1.Location = new Point(41, 35);
+            tableLayoutPanel1.Margin = new Padding(0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -290,24 +293,13 @@
             tableLayoutPanel2.Controls.Add(buttonDontCome, 0, 0);
             tableLayoutPanel2.Controls.Add(buttonCOME, 1, 0);
             tableLayoutPanel2.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel2.Location = new Point(128, 203);
+            tableLayoutPanel2.Location = new Point(41, 161);
             tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(968, 93);
             tableLayoutPanel2.TabIndex = 8;
-            // 
-            // buttonCOME
-            // 
-            buttonCOME.BackColor = Color.DarkOrange;
-            buttonCOME.ForeColor = SystemColors.ButtonHighlight;
-            buttonCOME.Location = new Point(328, 3);
-            buttonCOME.Name = "buttonCOME";
-            buttonCOME.Size = new Size(637, 87);
-            buttonCOME.TabIndex = 3;
-            buttonCOME.Text = "COME";
-            buttonCOME.UseVisualStyleBackColor = false;
             // 
             // buttonDontCome
             // 
@@ -321,6 +313,17 @@
             buttonDontCome.UseVisualStyleBackColor = false;
             buttonDontCome.Click += button4_Click;
             // 
+            // buttonCOME
+            // 
+            buttonCOME.BackColor = Color.DarkOrange;
+            buttonCOME.ForeColor = SystemColors.ButtonHighlight;
+            buttonCOME.Location = new Point(328, 3);
+            buttonCOME.Name = "buttonCOME";
+            buttonCOME.Size = new Size(637, 87);
+            buttonCOME.TabIndex = 3;
+            buttonCOME.Text = "COME";
+            buttonCOME.UseVisualStyleBackColor = false;
+            // 
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.BackColor = Color.Orange;
@@ -329,7 +332,7 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel3.Controls.Add(buttonField, 0, 0);
             tableLayoutPanel3.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel3.Location = new Point(128, 296);
+            tableLayoutPanel3.Location = new Point(41, 254);
             tableLayoutPanel3.Margin = new Padding(0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
@@ -369,7 +372,7 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel5.Controls.Add(buttonDontPass, 0, 0);
             tableLayoutPanel5.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel5.Location = new Point(128, 389);
+            tableLayoutPanel5.Location = new Point(41, 347);
             tableLayoutPanel5.Margin = new Padding(0);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
@@ -423,7 +426,7 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel7.Controls.Add(buttonPassLine, 0, 0);
             tableLayoutPanel7.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel7.Location = new Point(128, 429);
+            tableLayoutPanel7.Location = new Point(41, 387);
             tableLayoutPanel7.Margin = new Padding(0);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
@@ -431,26 +434,37 @@
             tableLayoutPanel7.Size = new Size(968, 40);
             tableLayoutPanel7.TabIndex = 14;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.RoyalBlue;
+            panel1.Controls.Add(tableLayoutPanel1);
+            panel1.Controls.Add(tableLayoutPanel7);
+            panel1.Controls.Add(tableLayoutPanel2);
+            panel1.Controls.Add(tableLayoutPanel5);
+            panel1.Controls.Add(tableLayoutPanel3);
+            panel1.Location = new Point(12, 21);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1055, 470);
+            panel1.TabIndex = 15;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1718, 904);
-            Controls.Add(tableLayoutPanel7);
-            Controls.Add(tableLayoutPanel5);
-            Controls.Add(tableLayoutPanel3);
-            Controls.Add(tableLayoutPanel2);
-            Controls.Add(tableLayoutPanel1);
+            ClientSize = new Size(1718, 1091);
+            Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
             WindowState = FormWindowState.Maximized;
+            Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel14.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -484,5 +498,6 @@
         private Button buttonPassLine;
         private TableLayoutPanel tableLayoutPanel6;
         private TableLayoutPanel tableLayoutPanel7;
+        private Panel panel1;
     }
 }
