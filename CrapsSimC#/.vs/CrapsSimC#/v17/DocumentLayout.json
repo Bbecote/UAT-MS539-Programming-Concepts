@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\devops\\ms539 programming concepts\\uat-ms539-programming-concepts\\crapssimc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\devops\\ms539 programming concepts\\uat-ms539-programming-concepts\\crapssimc#\\roundbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:roundbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\custombuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:custombuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,36 +48,63 @@
         },
         {
           "DockedHeight": 117,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RoundButton.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\RoundButton.cs",
+              "RelativeDocumentMoniker": "RoundButton.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\RoundButton.cs",
+              "RelativeToolTip": "RoundButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T02:50:29.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomButtons.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\CustomButtons.cs",
+              "RelativeDocumentMoniker": "CustomButtons.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\CustomButtons.cs",
+              "RelativeToolTip": "CustomButtons.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T02:31:22.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T01:53:57.08Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-19T01:53:57.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAABcBAAAAAAAAAAAiwLMBAAA1AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T00:09:26.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T00:09:26.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -81,13 +116,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T00:29:46.5Z"
             }
