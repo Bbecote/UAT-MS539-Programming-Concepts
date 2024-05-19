@@ -165,6 +165,14 @@
             tableLayoutPanel35 = new TableLayoutPanel();
             textBox22 = new TextBox();
             label23 = new Label();
+            label_ROLL2 = new Label();
+            label_AUTO = new Label();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            dieButton2 = new DieButton();
+            panel9 = new Panel();
+            panel10 = new Panel();
+            panel11 = new Panel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -208,6 +216,11 @@
             tableLayoutPanel31.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             tableLayoutPanel35.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
+            panel11.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -760,7 +773,7 @@
             // 
             label_LastRole.AutoSize = true;
             label_LastRole.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_LastRole.Location = new Point(1252, 193);
+            label_LastRole.Location = new Point(0, 13);
             label_LastRole.Name = "label_LastRole";
             label_LastRole.Size = new Size(177, 46);
             label_LastRole.TabIndex = 40;
@@ -772,7 +785,7 @@
             label_LastRole2.BackColor = Color.Maroon;
             label_LastRole2.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label_LastRole2.ForeColor = Color.White;
-            label_LastRole2.Location = new Point(1361, 259);
+            label_LastRole2.Location = new Point(14, 15);
             label_LastRole2.Name = "label_LastRole2";
             label_LastRole2.Size = new Size(37, 41);
             label_LastRole2.TabIndex = 44;
@@ -784,7 +797,7 @@
             label_LastRole1.BackColor = Color.Maroon;
             label_LastRole1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label_LastRole1.ForeColor = Color.White;
-            label_LastRole1.Location = new Point(1269, 259);
+            label_LastRole1.Location = new Point(15, 15);
             label_LastRole1.Name = "label_LastRole1";
             label_LastRole1.Size = new Size(37, 41);
             label_LastRole1.TabIndex = 43;
@@ -794,7 +807,8 @@
             // 
             pictureBox_LastRoll2.BackColor = Color.Maroon;
             pictureBox_LastRoll2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox_LastRoll2.Location = new Point(1344, 242);
+            pictureBox_LastRoll2.Location = new Point(0, 0);
+            pictureBox_LastRoll2.Margin = new Padding(0);
             pictureBox_LastRoll2.Name = "pictureBox_LastRoll2";
             pictureBox_LastRoll2.Size = new Size(75, 75);
             pictureBox_LastRoll2.TabIndex = 42;
@@ -804,7 +818,8 @@
             // 
             picturebox_LastRole1.BackColor = Color.Maroon;
             picturebox_LastRole1.BorderStyle = BorderStyle.FixedSingle;
-            picturebox_LastRole1.Location = new Point(1253, 242);
+            picturebox_LastRole1.Location = new Point(0, 0);
+            picturebox_LastRole1.Margin = new Padding(0);
             picturebox_LastRole1.Name = "picturebox_LastRole1";
             picturebox_LastRole1.Size = new Size(75, 75);
             picturebox_LastRole1.TabIndex = 41;
@@ -813,9 +828,9 @@
             // pictureBox_dieButton
             // 
             pictureBox_dieButton.BackColor = Color.Maroon;
-            pictureBox_dieButton.Location = new Point(1278, 440);
+            pictureBox_dieButton.Location = new Point(0, 0);
             pictureBox_dieButton.Name = "pictureBox_dieButton";
-            pictureBox_dieButton.Size = new Size(151, 149);
+            pictureBox_dieButton.Size = new Size(163, 158);
             pictureBox_dieButton.TabIndex = 45;
             pictureBox_dieButton.UseVisualStyleBackColor = false;
             // 
@@ -825,7 +840,7 @@
             label_ROLL.BackColor = Color.Maroon;
             label_ROLL.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label_ROLL.ForeColor = Color.White;
-            label_ROLL.Location = new Point(1316, 479);
+            label_ROLL.Location = new Point(38, 45);
             label_ROLL.Name = "label_ROLL";
             label_ROLL.Size = new Size(69, 36);
             label_ROLL.TabIndex = 46;
@@ -1029,7 +1044,7 @@
             label_DICE.BackColor = Color.Maroon;
             label_DICE.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label_DICE.ForeColor = Color.White;
-            label_DICE.Location = new Point(1318, 515);
+            label_DICE.Location = new Point(53, 81);
             label_DICE.Name = "label_DICE";
             label_DICE.Size = new Size(67, 36);
             label_DICE.TabIndex = 66;
@@ -1901,6 +1916,89 @@
             label23.Text = "Dealer Bankroll:";
             label23.Click += label23_Click;
             // 
+            // label_ROLL2
+            // 
+            label_ROLL2.AutoSize = true;
+            label_ROLL2.BackColor = Color.Maroon;
+            label_ROLL2.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_ROLL2.ForeColor = Color.White;
+            label_ROLL2.Location = new Point(53, 81);
+            label_ROLL2.Name = "label_ROLL2";
+            label_ROLL2.Size = new Size(69, 36);
+            label_ROLL2.TabIndex = 74;
+            label_ROLL2.Text = "ROLL";
+            // 
+            // label_AUTO
+            // 
+            label_AUTO.AutoSize = true;
+            label_AUTO.BackColor = Color.Maroon;
+            label_AUTO.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_AUTO.ForeColor = Color.White;
+            label_AUTO.Location = new Point(46, 42);
+            label_AUTO.Name = "label_AUTO";
+            label_AUTO.Size = new Size(74, 36);
+            label_AUTO.TabIndex = 75;
+            label_AUTO.Text = "AUTO";
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(label_ROLL);
+            panel7.Controls.Add(label_DICE);
+            panel7.Controls.Add(pictureBox_dieButton);
+            panel7.Location = new Point(1269, 387);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(171, 165);
+            panel7.TabIndex = 77;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(label_AUTO);
+            panel8.Controls.Add(label_ROLL2);
+            panel8.Controls.Add(dieButton2);
+            panel8.Location = new Point(1269, 553);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(171, 167);
+            panel8.TabIndex = 78;
+            // 
+            // dieButton2
+            // 
+            dieButton2.BackColor = Color.Maroon;
+            dieButton2.Location = new Point(0, 0);
+            dieButton2.Name = "dieButton2";
+            dieButton2.Size = new Size(163, 158);
+            dieButton2.TabIndex = 45;
+            dieButton2.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(label_LastRole2);
+            panel9.Controls.Add(pictureBox_LastRoll2);
+            panel9.Location = new Point(102, 59);
+            panel9.Margin = new Padding(0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(75, 75);
+            panel9.TabIndex = 79;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(label_LastRole1);
+            panel10.Controls.Add(picturebox_LastRole1);
+            panel10.Location = new Point(0, 59);
+            panel10.Margin = new Padding(0);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(75, 75);
+            panel10.TabIndex = 80;
+            // 
+            // panel11
+            // 
+            panel11.Controls.Add(label_LastRole);
+            panel11.Controls.Add(panel9);
+            panel11.Controls.Add(panel10);
+            panel11.Location = new Point(1269, 193);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(177, 134);
+            panel11.TabIndex = 81;
+            // 
             // form_AmountSelected
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1909,6 +2007,9 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
+            Controls.Add(panel11);
+            Controls.Add(panel8);
+            Controls.Add(panel7);
             Controls.Add(tableLayoutPanel35);
             Controls.Add(panel6);
             Controls.Add(panel5);
@@ -1918,14 +2019,6 @@
             Controls.Add(tableLayoutPanel20);
             Controls.Add(tableLayoutPanel19);
             Controls.Add(panel1);
-            Controls.Add(label_DICE);
-            Controls.Add(label_ROLL);
-            Controls.Add(pictureBox_dieButton);
-            Controls.Add(label_LastRole2);
-            Controls.Add(label_LastRole1);
-            Controls.Add(pictureBox_LastRoll2);
-            Controls.Add(picturebox_LastRole1);
-            Controls.Add(label_LastRole);
             Controls.Add(pictureBox_On);
             Controls.Add(panel_ClearAndReset);
             Controls.Add(pictureBox_Off);
@@ -1996,8 +2089,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             tableLayoutPanel35.ResumeLayout(false);
             tableLayoutPanel35.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -2139,5 +2241,13 @@
         private TableLayoutPanel tableLayoutPanel35;
         private Label label23;
         private TextBox textBox22;
+        private Label label_ROLL2;
+        private Label label_AUTO;
+        private Panel panel7;
+        private Panel panel8;
+        private DieButton dieButton2;
+        private Panel panel9;
+        private Panel panel10;
+        private Panel panel11;
     }
 }
