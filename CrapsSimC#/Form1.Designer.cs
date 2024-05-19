@@ -56,6 +56,12 @@
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
             panel1 = new Panel();
+            whiteChips = new ChipsButton();
+            redChips = new ChipsButton();
+            blueChips = new ChipsButton();
+            greenChips = new ChipsButton();
+            blackChips = new ChipsButton();
+            purpleChips = new ChipsButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -83,12 +89,12 @@
             tableLayoutPanel1.Controls.Add(button9, 4, 0);
             tableLayoutPanel1.Font = new Font("Ink Free", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             tableLayoutPanel1.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
-            tableLayoutPanel1.Location = new Point(41, 35);
+            tableLayoutPanel1.Location = new Point(36, 26);
             tableLayoutPanel1.Margin = new Padding(0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(968, 126);
+            tableLayoutPanel1.Size = new Size(847, 94);
             tableLayoutPanel1.TabIndex = 0;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
@@ -96,9 +102,10 @@
             // 
             button10.BackColor = Color.DarkOrange;
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(808, 3);
+            button10.Location = new Point(708, 2);
+            button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
-            button10.Size = new Size(157, 116);
+            button10.Size = new Size(136, 87);
             button10.TabIndex = 6;
             button10.Text = "10";
             button10.UseVisualStyleBackColor = false;
@@ -107,9 +114,10 @@
             // 
             button8.BackColor = Color.DarkOrange;
             button8.ForeColor = SystemColors.ButtonHighlight;
-            button8.Location = new Point(486, 3);
+            button8.Location = new Point(426, 2);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(155, 116);
+            button8.Size = new Size(135, 87);
             button8.TabIndex = 4;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
@@ -118,9 +126,10 @@
             // 
             button6.BackColor = Color.DarkOrange;
             button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(325, 3);
+            button6.Location = new Point(285, 2);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(155, 116);
+            button6.Size = new Size(135, 87);
             button6.TabIndex = 3;
             button6.Text = "SIX";
             button6.UseVisualStyleBackColor = false;
@@ -129,9 +138,10 @@
             // 
             button5.BackColor = Color.DarkOrange;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(164, 3);
+            button5.Location = new Point(144, 2);
+            button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(155, 116);
+            button5.Size = new Size(135, 87);
             button5.TabIndex = 2;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = false;
@@ -140,9 +150,10 @@
             // 
             button1.BackColor = Color.DarkOrange;
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(3, 2);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(155, 116);
+            button1.Size = new Size(135, 87);
             button1.TabIndex = 1;
             button1.Text = "4";
             button1.UseVisualStyleBackColor = false;
@@ -151,9 +162,10 @@
             // 
             button9.BackColor = Color.DarkOrange;
             button9.ForeColor = SystemColors.ButtonHighlight;
-            button9.Location = new Point(647, 3);
+            button9.Location = new Point(567, 2);
+            button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(155, 116);
+            button9.Size = new Size(135, 87);
             button9.TabIndex = 5;
             button9.Text = "NINE";
             button9.UseVisualStyleBackColor = false;
@@ -293,21 +305,22 @@
             tableLayoutPanel2.Controls.Add(buttonDontCome, 0, 0);
             tableLayoutPanel2.Controls.Add(buttonCOME, 1, 0);
             tableLayoutPanel2.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel2.Location = new Point(41, 161);
+            tableLayoutPanel2.Location = new Point(36, 120);
             tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(968, 93);
+            tableLayoutPanel2.Size = new Size(847, 70);
             tableLayoutPanel2.TabIndex = 8;
             // 
             // buttonDontCome
             // 
             buttonDontCome.BackColor = Color.DarkOrange;
             buttonDontCome.ForeColor = SystemColors.ButtonHighlight;
-            buttonDontCome.Location = new Point(3, 3);
+            buttonDontCome.Location = new Point(3, 2);
+            buttonDontCome.Margin = new Padding(3, 2, 3, 2);
             buttonDontCome.Name = "buttonDontCome";
-            buttonDontCome.Size = new Size(319, 87);
+            buttonDontCome.Size = new Size(279, 65);
             buttonDontCome.TabIndex = 2;
             buttonDontCome.Text = "Don't Come";
             buttonDontCome.UseVisualStyleBackColor = false;
@@ -317,9 +330,10 @@
             // 
             buttonCOME.BackColor = Color.DarkOrange;
             buttonCOME.ForeColor = SystemColors.ButtonHighlight;
-            buttonCOME.Location = new Point(328, 3);
+            buttonCOME.Location = new Point(288, 2);
+            buttonCOME.Margin = new Padding(3, 2, 3, 2);
             buttonCOME.Name = "buttonCOME";
-            buttonCOME.Size = new Size(637, 87);
+            buttonCOME.Size = new Size(556, 65);
             buttonCOME.TabIndex = 3;
             buttonCOME.Text = "COME";
             buttonCOME.UseVisualStyleBackColor = false;
@@ -332,21 +346,22 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel3.Controls.Add(buttonField, 0, 0);
             tableLayoutPanel3.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel3.Location = new Point(41, 254);
+            tableLayoutPanel3.Location = new Point(36, 190);
             tableLayoutPanel3.Margin = new Padding(0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(968, 93);
+            tableLayoutPanel3.Size = new Size(847, 70);
             tableLayoutPanel3.TabIndex = 9;
             // 
             // buttonField
             // 
             buttonField.BackColor = Color.DarkOrange;
             buttonField.ForeColor = SystemColors.ButtonHighlight;
-            buttonField.Location = new Point(3, 3);
+            buttonField.Location = new Point(3, 2);
+            buttonField.Margin = new Padding(3, 2, 3, 2);
             buttonField.Name = "buttonField";
-            buttonField.Size = new Size(962, 87);
+            buttonField.Size = new Size(841, 65);
             buttonField.TabIndex = 3;
             buttonField.Text = "2 3 4 9 FIELD 10 11 12";
             buttonField.UseVisualStyleBackColor = false;
@@ -372,12 +387,12 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel5.Controls.Add(buttonDontPass, 0, 0);
             tableLayoutPanel5.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel5.Location = new Point(41, 347);
+            tableLayoutPanel5.Location = new Point(36, 260);
             tableLayoutPanel5.Margin = new Padding(0);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Size = new Size(968, 40);
+            tableLayoutPanel5.Size = new Size(847, 30);
             tableLayoutPanel5.TabIndex = 10;
             // 
             // buttonDontPass
@@ -385,9 +400,10 @@
             buttonDontPass.BackColor = Color.DarkOrange;
             buttonDontPass.Font = new Font("Ink Free", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonDontPass.ForeColor = SystemColors.ButtonHighlight;
-            buttonDontPass.Location = new Point(3, 3);
+            buttonDontPass.Location = new Point(3, 2);
+            buttonDontPass.Margin = new Padding(3, 2, 3, 2);
             buttonDontPass.Name = "buttonDontPass";
-            buttonDontPass.Size = new Size(962, 34);
+            buttonDontPass.Size = new Size(841, 26);
             buttonDontPass.TabIndex = 12;
             buttonDontPass.Text = "Don't Pass";
             buttonDontPass.UseVisualStyleBackColor = false;
@@ -397,9 +413,10 @@
             buttonPassLine.BackColor = Color.DarkOrange;
             buttonPassLine.Font = new Font("Ink Free", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonPassLine.ForeColor = SystemColors.ButtonHighlight;
-            buttonPassLine.Location = new Point(3, 3);
+            buttonPassLine.Location = new Point(3, 2);
+            buttonPassLine.Margin = new Padding(3, 2, 3, 2);
             buttonPassLine.Name = "buttonPassLine";
-            buttonPassLine.Size = new Size(962, 34);
+            buttonPassLine.Size = new Size(841, 26);
             buttonPassLine.TabIndex = 13;
             buttonPassLine.Text = "Pass Line";
             buttonPassLine.UseVisualStyleBackColor = false;
@@ -426,12 +443,12 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
             tableLayoutPanel7.Controls.Add(buttonPassLine, 0, 0);
             tableLayoutPanel7.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel7.Location = new Point(41, 387);
+            tableLayoutPanel7.Location = new Point(36, 290);
             tableLayoutPanel7.Margin = new Padding(0);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Size = new Size(968, 40);
+            tableLayoutPanel7.Size = new Size(847, 30);
             tableLayoutPanel7.TabIndex = 14;
             // 
             // panel1
@@ -442,18 +459,103 @@
             panel1.Controls.Add(tableLayoutPanel2);
             panel1.Controls.Add(tableLayoutPanel5);
             panel1.Controls.Add(tableLayoutPanel3);
-            panel1.Location = new Point(12, 21);
+            panel1.Location = new Point(10, 16);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1055, 470);
+            panel1.Size = new Size(923, 352);
             panel1.TabIndex = 15;
+            // 
+            // whiteChips
+            // 
+            whiteChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            whiteChips.Image = Properties.Resources.whitechip;
+            whiteChips.Location = new Point(231, 373);
+            whiteChips.Margin = new Padding(0);
+            whiteChips.Name = "whiteChips";
+            whiteChips.Size = new Size(100, 100);
+            whiteChips.TabIndex = 16;
+            whiteChips.Text = "$1";
+            whiteChips.UseVisualStyleBackColor = true;
+            // 
+            // redChips
+            // 
+            redChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            redChips.ForeColor = Color.White;
+            redChips.Image = Properties.Resources.redchip;
+            redChips.Location = new Point(331, 370);
+            redChips.Margin = new Padding(0);
+            redChips.Name = "redChips";
+            redChips.Size = new Size(100, 100);
+            redChips.TabIndex = 17;
+            redChips.Text = "$5";
+            redChips.UseVisualStyleBackColor = true;
+            // 
+            // blueChips
+            // 
+            blueChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            blueChips.ForeColor = Color.White;
+            blueChips.Image = Properties.Resources.bluechip;
+            blueChips.Location = new Point(431, 370);
+            blueChips.Margin = new Padding(0);
+            blueChips.Name = "blueChips";
+            blueChips.Size = new Size(100, 100);
+            blueChips.TabIndex = 18;
+            blueChips.Text = "$10";
+            blueChips.UseVisualStyleBackColor = true;
+            // 
+            // greenChips
+            // 
+            greenChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            greenChips.ForeColor = Color.White;
+            greenChips.Image = Properties.Resources.greenchip;
+            greenChips.Location = new Point(531, 370);
+            greenChips.Margin = new Padding(0);
+            greenChips.Name = "greenChips";
+            greenChips.Size = new Size(100, 100);
+            greenChips.TabIndex = 19;
+            greenChips.Text = "$25";
+            greenChips.UseVisualStyleBackColor = true;
+            // 
+            // blackChips
+            // 
+            blackChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            blackChips.ForeColor = Color.White;
+            blackChips.Image = Properties.Resources.blackchip;
+            blackChips.Location = new Point(631, 370);
+            blackChips.Margin = new Padding(0);
+            blackChips.Name = "blackChips";
+            blackChips.Size = new Size(100, 100);
+            blackChips.TabIndex = 20;
+            blackChips.Text = "$100";
+            blackChips.UseVisualStyleBackColor = true;
+            // 
+            // purpleChips
+            // 
+            purpleChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            purpleChips.ForeColor = Color.White;
+            purpleChips.Image = Properties.Resources.purplechip;
+            purpleChips.Location = new Point(731, 370);
+            purpleChips.Margin = new Padding(0);
+            purpleChips.Name = "purpleChips";
+            purpleChips.Size = new Size(100, 100);
+            purpleChips.TabIndex = 21;
+            purpleChips.Text = "$500";
+            purpleChips.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1718, 1091);
+            ClientSize = new Size(1503, 818);
+            Controls.Add(purpleChips);
+            Controls.Add(blackChips);
+            Controls.Add(greenChips);
+            Controls.Add(blueChips);
+            Controls.Add(redChips);
+            Controls.Add(whiteChips);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             WindowState = FormWindowState.Maximized;
@@ -499,5 +601,11 @@
         private TableLayoutPanel tableLayoutPanel6;
         private TableLayoutPanel tableLayoutPanel7;
         private Panel panel1;
+        private ChipsButton whiteChips;
+        private ChipsButton redChips;
+        private ChipsButton blueChips;
+        private ChipsButton greenChips;
+        private ChipsButton blackChips;
+        private ChipsButton purpleChips;
     }
 }
