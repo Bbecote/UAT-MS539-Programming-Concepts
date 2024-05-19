@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tableLayoutPanel1 = new TableLayoutPanel();
-            button1 = new Button();
-            button10 = new Button();
-            button5 = new Button();
-            button9 = new Button();
-            button6 = new Button();
-            button8 = new Button();
+            button_1 = new Button();
+            button_10 = new Button();
+            button_5 = new Button();
+            button_9 = new Button();
+            button_6 = new Button();
+            button_8 = new Button();
             tableLayoutPanel8 = new TableLayoutPanel();
             tableLayoutPanel9 = new TableLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
@@ -45,49 +45,51 @@
             tableLayoutPanel14 = new TableLayoutPanel();
             button2 = new Button();
             button3 = new Button();
-            buttonDontCome = new Button();
-            buttonCOME = new Button();
+            button_DontCome = new Button();
+            button_COME = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
-            buttonField = new Button();
+            button_Field = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
-            buttonDontPass = new Button();
-            buttonPassLine = new Button();
+            button_DontPass = new Button();
+            button_PassLine = new Button();
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
-            panel1 = new Panel();
+            panel_TableBackground = new Panel();
             panel2 = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
-            whiteChips = new ChipsButton();
-            redChips = new ChipsButton();
-            blueChips = new ChipsButton();
-            greenChips = new ChipsButton();
-            blackChips = new ChipsButton();
-            purpleChips = new ChipsButton();
-            offPictureBox = new PictureBox();
-            clearTable = new Button();
+            button_1Chip = new ChipsButton();
+            button_5Chip = new ChipsButton();
+            button_10Chip = new ChipsButton();
+            button_25Chip = new ChipsButton();
+            button_100Chip = new ChipsButton();
+            button_500Chip = new ChipsButton();
+            pictureBox_Off = new PictureBox();
+            button_ClearTable = new Button();
             tableLayoutPanel15 = new TableLayoutPanel();
-            resetGame = new Button();
-            panel3 = new Panel();
-            pictureBox3 = new PictureBox();
-            label4 = new Label();
-            label1 = new Label();
-            label5 = new Label();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            button_ResetGame = new Button();
+            panel_ClearAndReset = new Panel();
+            pictureBox_On = new PictureBox();
+            label_LastRole = new Label();
+            label_LastRole2 = new Label();
+            label_LastRole1 = new Label();
+            pictureBox_LastRoll2 = new PictureBox();
+            picturebox_LastRole1 = new PictureBox();
+            pictureBox_dieButton = new DieButton();
+            label_DieButton = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
-            panel1.SuspendLayout();
+            panel_TableBackground.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)offPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Off).BeginInit();
             tableLayoutPanel15.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel_ClearAndReset.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -100,12 +102,12 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel1.Controls.Add(button1, 0, 0);
-            tableLayoutPanel1.Controls.Add(button10, 5, 0);
-            tableLayoutPanel1.Controls.Add(button5, 1, 0);
-            tableLayoutPanel1.Controls.Add(button9, 4, 0);
-            tableLayoutPanel1.Controls.Add(button6, 2, 0);
-            tableLayoutPanel1.Controls.Add(button8, 3, 0);
+            tableLayoutPanel1.Controls.Add(button_1, 0, 0);
+            tableLayoutPanel1.Controls.Add(button_10, 5, 0);
+            tableLayoutPanel1.Controls.Add(button_5, 1, 0);
+            tableLayoutPanel1.Controls.Add(button_9, 4, 0);
+            tableLayoutPanel1.Controls.Add(button_6, 2, 0);
+            tableLayoutPanel1.Controls.Add(button_8, 3, 0);
             tableLayoutPanel1.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             tableLayoutPanel1.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
             tableLayoutPanel1.Location = new Point(36, 68);
@@ -117,78 +119,78 @@
             tableLayoutPanel1.TabIndex = 0;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
-            // button1
+            // button_1
             // 
-            button1.BackColor = Color.DarkOrange;
-            button1.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(3, 2);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(183, 90);
-            button1.TabIndex = 1;
-            button1.Text = "4";
-            button1.UseVisualStyleBackColor = false;
+            button_1.BackColor = Color.DarkOrange;
+            button_1.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_1.ForeColor = SystemColors.ButtonHighlight;
+            button_1.Location = new Point(3, 2);
+            button_1.Margin = new Padding(3, 2, 3, 2);
+            button_1.Name = "button_1";
+            button_1.Size = new Size(183, 90);
+            button_1.TabIndex = 1;
+            button_1.Text = "4";
+            button_1.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // button_10
             // 
-            button10.BackColor = Color.DarkOrange;
-            button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(948, 2);
-            button10.Margin = new Padding(3, 2, 3, 2);
-            button10.Name = "button10";
-            button10.Size = new Size(184, 90);
-            button10.TabIndex = 6;
-            button10.Text = "10";
-            button10.UseVisualStyleBackColor = false;
+            button_10.BackColor = Color.DarkOrange;
+            button_10.ForeColor = SystemColors.ButtonHighlight;
+            button_10.Location = new Point(948, 2);
+            button_10.Margin = new Padding(3, 2, 3, 2);
+            button_10.Name = "button_10";
+            button_10.Size = new Size(184, 90);
+            button_10.TabIndex = 6;
+            button_10.Text = "10";
+            button_10.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // button_5
             // 
-            button5.BackColor = Color.DarkOrange;
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(192, 2);
-            button5.Margin = new Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new Size(183, 90);
-            button5.TabIndex = 2;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = false;
+            button_5.BackColor = Color.DarkOrange;
+            button_5.ForeColor = SystemColors.ButtonHighlight;
+            button_5.Location = new Point(192, 2);
+            button_5.Margin = new Padding(3, 2, 3, 2);
+            button_5.Name = "button_5";
+            button_5.Size = new Size(183, 90);
+            button_5.TabIndex = 2;
+            button_5.Text = "5";
+            button_5.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // button_9
             // 
-            button9.BackColor = Color.DarkOrange;
-            button9.ForeColor = SystemColors.ButtonHighlight;
-            button9.Location = new Point(759, 2);
-            button9.Margin = new Padding(3, 2, 3, 2);
-            button9.Name = "button9";
-            button9.Size = new Size(183, 90);
-            button9.TabIndex = 5;
-            button9.Text = "NINE";
-            button9.UseVisualStyleBackColor = false;
+            button_9.BackColor = Color.DarkOrange;
+            button_9.ForeColor = SystemColors.ButtonHighlight;
+            button_9.Location = new Point(759, 2);
+            button_9.Margin = new Padding(3, 2, 3, 2);
+            button_9.Name = "button_9";
+            button_9.Size = new Size(183, 90);
+            button_9.TabIndex = 5;
+            button_9.Text = "NINE";
+            button_9.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // button_6
             // 
-            button6.BackColor = Color.DarkOrange;
-            button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(381, 2);
-            button6.Margin = new Padding(3, 2, 3, 2);
-            button6.Name = "button6";
-            button6.Size = new Size(183, 90);
-            button6.TabIndex = 3;
-            button6.Text = "SIX";
-            button6.UseVisualStyleBackColor = false;
+            button_6.BackColor = Color.DarkOrange;
+            button_6.ForeColor = SystemColors.ButtonHighlight;
+            button_6.Location = new Point(381, 2);
+            button_6.Margin = new Padding(3, 2, 3, 2);
+            button_6.Name = "button_6";
+            button_6.Size = new Size(183, 90);
+            button_6.TabIndex = 3;
+            button_6.Text = "SIX";
+            button_6.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // button_8
             // 
-            button8.BackColor = Color.DarkOrange;
-            button8.ForeColor = SystemColors.ButtonHighlight;
-            button8.Location = new Point(570, 2);
-            button8.Margin = new Padding(3, 2, 3, 2);
-            button8.Name = "button8";
-            button8.Size = new Size(183, 90);
-            button8.TabIndex = 4;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = false;
+            button_8.BackColor = Color.DarkOrange;
+            button_8.ForeColor = SystemColors.ButtonHighlight;
+            button_8.Location = new Point(570, 2);
+            button_8.Margin = new Padding(3, 2, 3, 2);
+            button_8.Name = "button_8";
+            button_8.Size = new Size(183, 90);
+            button_8.TabIndex = 4;
+            button_8.Text = "8";
+            button_8.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel8
             // 
@@ -316,31 +318,31 @@
             button3.Text = "8";
             button3.UseVisualStyleBackColor = false;
             // 
-            // buttonDontCome
+            // button_DontCome
             // 
-            buttonDontCome.BackColor = Color.DarkOrange;
-            buttonDontCome.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonDontCome.ForeColor = SystemColors.ButtonHighlight;
-            buttonDontCome.Location = new Point(3, 2);
-            buttonDontCome.Margin = new Padding(3, 2, 3, 2);
-            buttonDontCome.Name = "buttonDontCome";
-            buttonDontCome.Size = new Size(372, 111);
-            buttonDontCome.TabIndex = 2;
-            buttonDontCome.Text = "Don't Come";
-            buttonDontCome.UseVisualStyleBackColor = false;
-            buttonDontCome.Click += button4_Click;
+            button_DontCome.BackColor = Color.DarkOrange;
+            button_DontCome.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button_DontCome.ForeColor = SystemColors.ButtonHighlight;
+            button_DontCome.Location = new Point(3, 2);
+            button_DontCome.Margin = new Padding(3, 2, 3, 2);
+            button_DontCome.Name = "button_DontCome";
+            button_DontCome.Size = new Size(372, 111);
+            button_DontCome.TabIndex = 2;
+            button_DontCome.Text = "Don't Come";
+            button_DontCome.UseVisualStyleBackColor = false;
+            button_DontCome.Click += button4_Click;
             // 
-            // buttonCOME
+            // button_COME
             // 
-            buttonCOME.BackColor = Color.DarkOrange;
-            buttonCOME.ForeColor = SystemColors.ButtonHighlight;
-            buttonCOME.Location = new Point(382, 2);
-            buttonCOME.Margin = new Padding(3, 2, 3, 2);
-            buttonCOME.Name = "buttonCOME";
-            buttonCOME.Size = new Size(750, 111);
-            buttonCOME.TabIndex = 3;
-            buttonCOME.Text = "COME";
-            buttonCOME.UseVisualStyleBackColor = false;
+            button_COME.BackColor = Color.DarkOrange;
+            button_COME.ForeColor = SystemColors.ButtonHighlight;
+            button_COME.Location = new Point(382, 2);
+            button_COME.Margin = new Padding(3, 2, 3, 2);
+            button_COME.Name = "button_COME";
+            button_COME.Size = new Size(750, 111);
+            button_COME.TabIndex = 3;
+            button_COME.Text = "COME";
+            button_COME.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel3
             // 
@@ -348,7 +350,7 @@
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel3.Controls.Add(buttonField, 0, 0);
+            tableLayoutPanel3.Controls.Add(button_Field, 0, 0);
             tableLayoutPanel3.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel3.Location = new Point(36, 264);
             tableLayoutPanel3.Margin = new Padding(0);
@@ -358,17 +360,17 @@
             tableLayoutPanel3.Size = new Size(1135, 115);
             tableLayoutPanel3.TabIndex = 9;
             // 
-            // buttonField
+            // button_Field
             // 
-            buttonField.BackColor = Color.DarkOrange;
-            buttonField.ForeColor = SystemColors.ButtonHighlight;
-            buttonField.Location = new Point(3, 2);
-            buttonField.Margin = new Padding(3, 2, 3, 2);
-            buttonField.Name = "buttonField";
-            buttonField.Size = new Size(1129, 111);
-            buttonField.TabIndex = 3;
-            buttonField.Text = "2 3 4 9 FIELD 10 11 12";
-            buttonField.UseVisualStyleBackColor = false;
+            button_Field.BackColor = Color.DarkOrange;
+            button_Field.ForeColor = SystemColors.ButtonHighlight;
+            button_Field.Location = new Point(3, 2);
+            button_Field.Margin = new Padding(3, 2, 3, 2);
+            button_Field.Name = "button_Field";
+            button_Field.Size = new Size(1129, 111);
+            button_Field.TabIndex = 3;
+            button_Field.Text = "2 3 4 9 FIELD 10 11 12";
+            button_Field.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel4
             // 
@@ -383,31 +385,31 @@
             tableLayoutPanel4.Size = new Size(200, 100);
             tableLayoutPanel4.TabIndex = 0;
             // 
-            // buttonDontPass
+            // button_DontPass
             // 
-            buttonDontPass.BackColor = Color.DarkOrange;
-            buttonDontPass.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonDontPass.ForeColor = SystemColors.ButtonHighlight;
-            buttonDontPass.Location = new Point(3, 2);
-            buttonDontPass.Margin = new Padding(3, 2, 3, 2);
-            buttonDontPass.Name = "buttonDontPass";
-            buttonDontPass.Size = new Size(1129, 61);
-            buttonDontPass.TabIndex = 12;
-            buttonDontPass.Text = "Don't Pass";
-            buttonDontPass.UseVisualStyleBackColor = false;
+            button_DontPass.BackColor = Color.DarkOrange;
+            button_DontPass.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button_DontPass.ForeColor = SystemColors.ButtonHighlight;
+            button_DontPass.Location = new Point(3, 2);
+            button_DontPass.Margin = new Padding(3, 2, 3, 2);
+            button_DontPass.Name = "button_DontPass";
+            button_DontPass.Size = new Size(1129, 61);
+            button_DontPass.TabIndex = 12;
+            button_DontPass.Text = "Don't Pass";
+            button_DontPass.UseVisualStyleBackColor = false;
             // 
-            // buttonPassLine
+            // button_PassLine
             // 
-            buttonPassLine.BackColor = Color.DarkOrange;
-            buttonPassLine.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonPassLine.ForeColor = SystemColors.ButtonHighlight;
-            buttonPassLine.Location = new Point(3, 2);
-            buttonPassLine.Margin = new Padding(3, 2, 3, 2);
-            buttonPassLine.Name = "buttonPassLine";
-            buttonPassLine.Size = new Size(1129, 61);
-            buttonPassLine.TabIndex = 13;
-            buttonPassLine.Text = "Pass Line";
-            buttonPassLine.UseVisualStyleBackColor = false;
+            button_PassLine.BackColor = Color.DarkOrange;
+            button_PassLine.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button_PassLine.ForeColor = SystemColors.ButtonHighlight;
+            button_PassLine.Location = new Point(3, 2);
+            button_PassLine.Margin = new Padding(3, 2, 3, 2);
+            button_PassLine.Name = "button_PassLine";
+            button_PassLine.Size = new Size(1129, 61);
+            button_PassLine.TabIndex = 13;
+            button_PassLine.Text = "Pass Line";
+            button_PassLine.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel6
             // 
@@ -429,7 +431,7 @@
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel7.Controls.Add(buttonPassLine, 0, 0);
+            tableLayoutPanel7.Controls.Add(button_PassLine, 0, 0);
             tableLayoutPanel7.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel7.Location = new Point(36, 441);
             tableLayoutPanel7.Margin = new Padding(0);
@@ -439,20 +441,20 @@
             tableLayoutPanel7.Size = new Size(1135, 65);
             tableLayoutPanel7.TabIndex = 14;
             // 
-            // panel1
+            // panel_TableBackground
             // 
-            panel1.BackColor = Color.RoyalBlue;
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(tableLayoutPanel5);
-            panel1.Controls.Add(tableLayoutPanel2);
-            panel1.Controls.Add(tableLayoutPanel1);
-            panel1.Controls.Add(tableLayoutPanel7);
-            panel1.Controls.Add(tableLayoutPanel3);
-            panel1.Location = new Point(10, 29);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1222, 542);
-            panel1.TabIndex = 15;
+            panel_TableBackground.BackColor = Color.RoyalBlue;
+            panel_TableBackground.Controls.Add(panel2);
+            panel_TableBackground.Controls.Add(tableLayoutPanel5);
+            panel_TableBackground.Controls.Add(tableLayoutPanel2);
+            panel_TableBackground.Controls.Add(tableLayoutPanel1);
+            panel_TableBackground.Controls.Add(tableLayoutPanel7);
+            panel_TableBackground.Controls.Add(tableLayoutPanel3);
+            panel_TableBackground.Location = new Point(10, 29);
+            panel_TableBackground.Margin = new Padding(3, 2, 3, 2);
+            panel_TableBackground.Name = "panel_TableBackground";
+            panel_TableBackground.Size = new Size(1222, 542);
+            panel_TableBackground.TabIndex = 15;
             // 
             // panel2
             // 
@@ -467,7 +469,7 @@
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel5.Controls.Add(buttonDontPass, 0, 0);
+            tableLayoutPanel5.Controls.Add(button_DontPass, 0, 0);
             tableLayoutPanel5.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel5.Location = new Point(36, 377);
             tableLayoutPanel5.Margin = new Padding(0);
@@ -483,8 +485,8 @@
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.39207F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.60793F));
-            tableLayoutPanel2.Controls.Add(buttonDontCome, 0, 0);
-            tableLayoutPanel2.Controls.Add(buttonCOME, 1, 0);
+            tableLayoutPanel2.Controls.Add(button_DontCome, 0, 0);
+            tableLayoutPanel2.Controls.Add(button_COME, 1, 0);
             tableLayoutPanel2.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel2.Location = new Point(36, 162);
             tableLayoutPanel2.Margin = new Padding(0);
@@ -494,110 +496,110 @@
             tableLayoutPanel2.Size = new Size(1135, 115);
             tableLayoutPanel2.TabIndex = 16;
             // 
-            // whiteChips
+            // button_1Chip
             // 
-            whiteChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            whiteChips.Image = Properties.Resources.whitechip;
-            whiteChips.Location = new Point(301, 573);
-            whiteChips.Margin = new Padding(0);
-            whiteChips.Name = "whiteChips";
-            whiteChips.Size = new Size(100, 100);
-            whiteChips.TabIndex = 16;
-            whiteChips.Text = "$1";
-            whiteChips.UseVisualStyleBackColor = true;
+            button_1Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_1Chip.Image = Properties.Resources.whitechip;
+            button_1Chip.Location = new Point(301, 573);
+            button_1Chip.Margin = new Padding(0);
+            button_1Chip.Name = "button_1Chip";
+            button_1Chip.Size = new Size(100, 100);
+            button_1Chip.TabIndex = 16;
+            button_1Chip.Text = "$1";
+            button_1Chip.UseVisualStyleBackColor = true;
             // 
-            // redChips
+            // button_5Chip
             // 
-            redChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            redChips.ForeColor = Color.White;
-            redChips.Image = Properties.Resources.redchip;
-            redChips.Location = new Point(401, 573);
-            redChips.Margin = new Padding(0);
-            redChips.Name = "redChips";
-            redChips.Size = new Size(100, 100);
-            redChips.TabIndex = 17;
-            redChips.Text = "$5";
-            redChips.UseVisualStyleBackColor = true;
+            button_5Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_5Chip.ForeColor = Color.White;
+            button_5Chip.Image = Properties.Resources.redchip;
+            button_5Chip.Location = new Point(401, 573);
+            button_5Chip.Margin = new Padding(0);
+            button_5Chip.Name = "button_5Chip";
+            button_5Chip.Size = new Size(100, 100);
+            button_5Chip.TabIndex = 17;
+            button_5Chip.Text = "$5";
+            button_5Chip.UseVisualStyleBackColor = true;
             // 
-            // blueChips
+            // button_10Chip
             // 
-            blueChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            blueChips.ForeColor = Color.White;
-            blueChips.Image = Properties.Resources.bluechip;
-            blueChips.Location = new Point(501, 573);
-            blueChips.Margin = new Padding(0);
-            blueChips.Name = "blueChips";
-            blueChips.Size = new Size(100, 100);
-            blueChips.TabIndex = 18;
-            blueChips.Text = "$10";
-            blueChips.UseVisualStyleBackColor = true;
+            button_10Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_10Chip.ForeColor = Color.White;
+            button_10Chip.Image = Properties.Resources.bluechip;
+            button_10Chip.Location = new Point(501, 573);
+            button_10Chip.Margin = new Padding(0);
+            button_10Chip.Name = "button_10Chip";
+            button_10Chip.Size = new Size(100, 100);
+            button_10Chip.TabIndex = 18;
+            button_10Chip.Text = "$10";
+            button_10Chip.UseVisualStyleBackColor = true;
             // 
-            // greenChips
+            // button_25Chip
             // 
-            greenChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            greenChips.ForeColor = Color.White;
-            greenChips.Image = Properties.Resources.greenchip;
-            greenChips.Location = new Point(601, 573);
-            greenChips.Margin = new Padding(0);
-            greenChips.Name = "greenChips";
-            greenChips.Size = new Size(100, 100);
-            greenChips.TabIndex = 19;
-            greenChips.Text = "$25";
-            greenChips.UseVisualStyleBackColor = true;
+            button_25Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_25Chip.ForeColor = Color.White;
+            button_25Chip.Image = Properties.Resources.greenchip;
+            button_25Chip.Location = new Point(601, 573);
+            button_25Chip.Margin = new Padding(0);
+            button_25Chip.Name = "button_25Chip";
+            button_25Chip.Size = new Size(100, 100);
+            button_25Chip.TabIndex = 19;
+            button_25Chip.Text = "$25";
+            button_25Chip.UseVisualStyleBackColor = true;
             // 
-            // blackChips
+            // button_100Chip
             // 
-            blackChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            blackChips.ForeColor = Color.White;
-            blackChips.Image = Properties.Resources.blackchip;
-            blackChips.Location = new Point(701, 573);
-            blackChips.Margin = new Padding(0);
-            blackChips.Name = "blackChips";
-            blackChips.Size = new Size(100, 100);
-            blackChips.TabIndex = 20;
-            blackChips.Text = "$100";
-            blackChips.UseVisualStyleBackColor = true;
+            button_100Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_100Chip.ForeColor = Color.White;
+            button_100Chip.Image = Properties.Resources.blackchip;
+            button_100Chip.Location = new Point(701, 573);
+            button_100Chip.Margin = new Padding(0);
+            button_100Chip.Name = "button_100Chip";
+            button_100Chip.Size = new Size(100, 100);
+            button_100Chip.TabIndex = 20;
+            button_100Chip.Text = "$100";
+            button_100Chip.UseVisualStyleBackColor = true;
             // 
-            // purpleChips
+            // button_500Chip
             // 
-            purpleChips.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            purpleChips.ForeColor = Color.White;
-            purpleChips.Image = Properties.Resources.purplechip;
-            purpleChips.Location = new Point(801, 573);
-            purpleChips.Margin = new Padding(0);
-            purpleChips.Name = "purpleChips";
-            purpleChips.Size = new Size(100, 100);
-            purpleChips.TabIndex = 21;
-            purpleChips.Text = "$500";
-            purpleChips.UseVisualStyleBackColor = true;
+            button_500Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button_500Chip.ForeColor = Color.White;
+            button_500Chip.Image = Properties.Resources.purplechip;
+            button_500Chip.Location = new Point(801, 573);
+            button_500Chip.Margin = new Padding(0);
+            button_500Chip.Name = "button_500Chip";
+            button_500Chip.Size = new Size(100, 100);
+            button_500Chip.TabIndex = 21;
+            button_500Chip.Text = "$500";
+            button_500Chip.UseVisualStyleBackColor = true;
             // 
-            // offPictureBox
+            // pictureBox_Off
             // 
-            offPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            offPictureBox.Image = (Image)resources.GetObject("offPictureBox.Image");
-            offPictureBox.Location = new Point(1252, 59);
-            offPictureBox.Name = "offPictureBox";
-            offPictureBox.Size = new Size(67, 63);
-            offPictureBox.TabIndex = 29;
-            offPictureBox.TabStop = false;
+            pictureBox_Off.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox_Off.Image = (Image)resources.GetObject("pictureBox_Off.Image");
+            pictureBox_Off.Location = new Point(1252, 59);
+            pictureBox_Off.Name = "pictureBox_Off";
+            pictureBox_Off.Size = new Size(67, 63);
+            pictureBox_Off.TabIndex = 29;
+            pictureBox_Off.TabStop = false;
             // 
-            // clearTable
+            // button_ClearTable
             // 
-            clearTable.BackColor = Color.OrangeRed;
-            clearTable.Location = new Point(3, 3);
-            clearTable.Name = "clearTable";
-            clearTable.Size = new Size(209, 48);
-            clearTable.TabIndex = 30;
-            clearTable.Text = "ClearTable";
-            clearTable.UseVisualStyleBackColor = false;
+            button_ClearTable.BackColor = Color.OrangeRed;
+            button_ClearTable.Location = new Point(3, 3);
+            button_ClearTable.Name = "button_ClearTable";
+            button_ClearTable.Size = new Size(209, 48);
+            button_ClearTable.TabIndex = 30;
+            button_ClearTable.Text = "ClearTable";
+            button_ClearTable.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel15
             // 
             tableLayoutPanel15.ColumnCount = 1;
             tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel15.Controls.Add(resetGame, 0, 1);
-            tableLayoutPanel15.Controls.Add(clearTable, 0, 0);
+            tableLayoutPanel15.Controls.Add(button_ResetGame, 0, 1);
+            tableLayoutPanel15.Controls.Add(button_ClearTable, 0, 0);
             tableLayoutPanel15.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             tableLayoutPanel15.Location = new Point(11, 16);
             tableLayoutPanel15.Name = "tableLayoutPanel15";
@@ -607,88 +609,109 @@
             tableLayoutPanel15.Size = new Size(215, 108);
             tableLayoutPanel15.TabIndex = 31;
             // 
-            // resetGame
+            // button_ResetGame
             // 
-            resetGame.BackColor = Color.OrangeRed;
-            resetGame.Location = new Point(3, 57);
-            resetGame.Name = "resetGame";
-            resetGame.Size = new Size(208, 48);
-            resetGame.TabIndex = 32;
-            resetGame.Text = "Reset Game";
-            resetGame.UseVisualStyleBackColor = false;
+            button_ResetGame.BackColor = Color.OrangeRed;
+            button_ResetGame.Location = new Point(3, 57);
+            button_ResetGame.Name = "button_ResetGame";
+            button_ResetGame.Size = new Size(208, 48);
+            button_ResetGame.TabIndex = 32;
+            button_ResetGame.Text = "Reset Game";
+            button_ResetGame.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // panel_ClearAndReset
             // 
-            panel3.BackColor = Color.Yellow;
-            panel3.Controls.Add(tableLayoutPanel15);
-            panel3.Location = new Point(994, 573);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(240, 138);
-            panel3.TabIndex = 32;
+            panel_ClearAndReset.BackColor = Color.Yellow;
+            panel_ClearAndReset.Controls.Add(tableLayoutPanel15);
+            panel_ClearAndReset.Location = new Point(994, 573);
+            panel_ClearAndReset.Name = "panel_ClearAndReset";
+            panel_ClearAndReset.Size = new Size(240, 138);
+            panel_ClearAndReset.TabIndex = 32;
             // 
-            // pictureBox3
+            // pictureBox_On
             // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1346, 59);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(68, 63);
-            pictureBox3.TabIndex = 38;
-            pictureBox3.TabStop = false;
+            pictureBox_On.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox_On.Image = (Image)resources.GetObject("pictureBox_On.Image");
+            pictureBox_On.Location = new Point(1346, 59);
+            pictureBox_On.Name = "pictureBox_On";
+            pictureBox_On.Size = new Size(68, 63);
+            pictureBox_On.TabIndex = 38;
+            pictureBox_On.TabStop = false;
             // 
-            // label4
+            // label_LastRole
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(1252, 193);
-            label4.Name = "label4";
-            label4.Size = new Size(164, 45);
-            label4.TabIndex = 40;
-            label4.Text = "Last Roll:";
+            label_LastRole.AutoSize = true;
+            label_LastRole.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_LastRole.Location = new Point(1252, 193);
+            label_LastRole.Name = "label_LastRole";
+            label_LastRole.Size = new Size(164, 45);
+            label_LastRole.TabIndex = 40;
+            label_LastRole.Text = "Last Roll:";
             // 
-            // label1
+            // label_LastRole2
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Maroon;
-            label1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(1361, 259);
-            label1.Name = "label1";
-            label1.Size = new Size(37, 41);
-            label1.TabIndex = 44;
-            label1.Text = "5";
+            label_LastRole2.AutoSize = true;
+            label_LastRole2.BackColor = Color.Maroon;
+            label_LastRole2.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_LastRole2.ForeColor = Color.White;
+            label_LastRole2.Location = new Point(1361, 259);
+            label_LastRole2.Name = "label_LastRole2";
+            label_LastRole2.Size = new Size(37, 41);
+            label_LastRole2.TabIndex = 44;
+            label_LastRole2.Text = "5";
             // 
-            // label5
+            // label_LastRole1
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Maroon;
-            label5.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(1269, 259);
-            label5.Name = "label5";
-            label5.Size = new Size(37, 41);
-            label5.TabIndex = 43;
-            label5.Text = "5";
+            label_LastRole1.AutoSize = true;
+            label_LastRole1.BackColor = Color.Maroon;
+            label_LastRole1.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_LastRole1.ForeColor = Color.White;
+            label_LastRole1.Location = new Point(1269, 259);
+            label_LastRole1.Name = "label_LastRole1";
+            label_LastRole1.Size = new Size(37, 41);
+            label_LastRole1.TabIndex = 43;
+            label_LastRole1.Text = "5";
             // 
-            // pictureBox4
+            // pictureBox_LastRoll2
             // 
-            pictureBox4.BackColor = Color.Maroon;
-            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox4.Location = new Point(1344, 242);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(75, 75);
-            pictureBox4.TabIndex = 42;
-            pictureBox4.TabStop = false;
+            pictureBox_LastRoll2.BackColor = Color.Maroon;
+            pictureBox_LastRoll2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_LastRoll2.Location = new Point(1344, 242);
+            pictureBox_LastRoll2.Name = "pictureBox_LastRoll2";
+            pictureBox_LastRoll2.Size = new Size(75, 75);
+            pictureBox_LastRoll2.TabIndex = 42;
+            pictureBox_LastRoll2.TabStop = false;
             // 
-            // pictureBox5
+            // picturebox_LastRole1
             // 
-            pictureBox5.BackColor = Color.Maroon;
-            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox5.Location = new Point(1253, 242);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(75, 75);
-            pictureBox5.TabIndex = 41;
-            pictureBox5.TabStop = false;
+            picturebox_LastRole1.BackColor = Color.Maroon;
+            picturebox_LastRole1.BorderStyle = BorderStyle.FixedSingle;
+            picturebox_LastRole1.Location = new Point(1253, 242);
+            picturebox_LastRole1.Name = "picturebox_LastRole1";
+            picturebox_LastRole1.Size = new Size(75, 75);
+            picturebox_LastRole1.TabIndex = 41;
+            picturebox_LastRole1.TabStop = false;
+            // 
+            // pictureBox_dieButton
+            // 
+            pictureBox_dieButton.BackColor = Color.Maroon;
+            pictureBox_dieButton.Location = new Point(1283, 450);
+            pictureBox_dieButton.Name = "pictureBox_dieButton";
+            pictureBox_dieButton.Size = new Size(151, 143);
+            pictureBox_dieButton.TabIndex = 45;
+            pictureBox_dieButton.UseVisualStyleBackColor = false;
+            // 
+            // label_DieButton
+            // 
+            label_DieButton.AutoSize = true;
+            label_DieButton.BackColor = Color.Maroon;
+            label_DieButton.Font = new Font("Impact", 24.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_DieButton.ForeColor = Color.White;
+            label_DieButton.Location = new Point(1314, 494);
+            label_DieButton.Name = "label_DieButton";
+            label_DieButton.Size = new Size(84, 41);
+            label_DieButton.TabIndex = 46;
+            label_DieButton.Text = "ROLL";
             // 
             // Form1
             // 
@@ -696,21 +719,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1827, 1000);
-            Controls.Add(label1);
-            Controls.Add(label5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox5);
-            Controls.Add(label4);
-            Controls.Add(pictureBox3);
-            Controls.Add(panel3);
-            Controls.Add(offPictureBox);
-            Controls.Add(purpleChips);
-            Controls.Add(blackChips);
-            Controls.Add(greenChips);
-            Controls.Add(blueChips);
-            Controls.Add(redChips);
-            Controls.Add(whiteChips);
-            Controls.Add(panel1);
+            Controls.Add(label_DieButton);
+            Controls.Add(pictureBox_dieButton);
+            Controls.Add(label_LastRole2);
+            Controls.Add(label_LastRole1);
+            Controls.Add(pictureBox_LastRoll2);
+            Controls.Add(picturebox_LastRole1);
+            Controls.Add(label_LastRole);
+            Controls.Add(pictureBox_On);
+            Controls.Add(panel_ClearAndReset);
+            Controls.Add(pictureBox_Off);
+            Controls.Add(button_500Chip);
+            Controls.Add(button_100Chip);
+            Controls.Add(button_25Chip);
+            Controls.Add(button_10Chip);
+            Controls.Add(button_5Chip);
+            Controls.Add(button_1Chip);
+            Controls.Add(panel_TableBackground);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
@@ -720,15 +745,15 @@
             tableLayoutPanel14.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
-            panel1.ResumeLayout(false);
+            panel_TableBackground.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)offPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Off).EndInit();
             tableLayoutPanel15.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel_ClearAndReset.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -736,12 +761,12 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button6;
-        private Button button5;
-        private Button button1;
+        private Button button_10;
+        private Button button_9;
+        private Button button_8;
+        private Button button_6;
+        private Button button_5;
+        private Button button_1;
         private FlowLayoutPanel flowLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel8;
@@ -753,34 +778,36 @@
         private TableLayoutPanel tableLayoutPanel14;
         private Button button2;
         private Button button3;
-        private Button buttonDontCome;
-        private Button buttonCOME;
-        private Button buttonField;
+        private Button button_DontCome;
+        private Button button_COME;
+        private Button button_Field;
         private TableLayoutPanel tableLayoutPanel4;
-        private Button buttonDontPass;
-        private Button buttonPassLine;
+        private Button button_DontPass;
+        private Button button_PassLine;
         private TableLayoutPanel tableLayoutPanel6;
         private TableLayoutPanel tableLayoutPanel7;
-        private Panel panel1;
-        private ChipsButton whiteChips;
-        private ChipsButton redChips;
-        private ChipsButton blueChips;
-        private ChipsButton greenChips;
-        private ChipsButton blackChips;
-        private ChipsButton purpleChips;
+        private Panel panel_TableBackground;
+        private ChipsButton button_1Chip;
+        private ChipsButton button_5Chip;
+        private ChipsButton button_10Chip;
+        private ChipsButton button_25Chip;
+        private ChipsButton button_100Chip;
+        private ChipsButton button_500Chip;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel5;
-        private PictureBox offPictureBox;
-        private Button clearTable;
+        private PictureBox pictureBox_Off;
+        private Button button_ClearTable;
         private TableLayoutPanel tableLayoutPanel15;
-        private Button resetGame;
+        private Button button_ResetGame;
         private Panel panel2;
-        private Panel panel3;
-        private PictureBox pictureBox3;
-        private Label label4;
-        private Label label1;
-        private Label label5;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
+        private Panel panel_ClearAndReset;
+        private PictureBox pictureBox_On;
+        private Label label_LastRole;
+        private Label label_LastRole2;
+        private Label label_LastRole1;
+        private PictureBox pictureBox_LastRoll2;
+        private PictureBox picturebox_LastRole1;
+        private DieButton pictureBox_dieButton;
+        private Label label_DieButton;
     }
 }
