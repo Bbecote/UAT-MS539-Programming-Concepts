@@ -77,7 +77,7 @@
             pictureBox_LastRoll2 = new PictureBox();
             picturebox_LastRole1 = new PictureBox();
             pictureBox_dieButton = new DieButton();
-            label_DieButton = new Label();
+            label_ROLL = new Label();
             label_AmountSelected = new Label();
             textBox1 = new TextBox();
             radioButton_AddtoBet = new RadioButton();
@@ -97,6 +97,7 @@
             pictureBox1 = new PictureBox();
             label_PlayerTitle1 = new Label();
             tableLayoutPanel18 = new TableLayoutPanel();
+            label_DICE = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -676,10 +677,10 @@
             // label_LastRole
             // 
             label_LastRole.AutoSize = true;
-            label_LastRole.Font = new Font("Impact", 27.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_LastRole.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_LastRole.Location = new Point(1252, 193);
             label_LastRole.Name = "label_LastRole";
-            label_LastRole.Size = new Size(154, 45);
+            label_LastRole.Size = new Size(177, 46);
             label_LastRole.TabIndex = 40;
             label_LastRole.Text = "Last Roll:";
             // 
@@ -730,31 +731,31 @@
             // pictureBox_dieButton
             // 
             pictureBox_dieButton.BackColor = Color.Maroon;
-            pictureBox_dieButton.Location = new Point(1283, 450);
+            pictureBox_dieButton.Location = new Point(1278, 440);
             pictureBox_dieButton.Name = "pictureBox_dieButton";
-            pictureBox_dieButton.Size = new Size(151, 143);
+            pictureBox_dieButton.Size = new Size(151, 149);
             pictureBox_dieButton.TabIndex = 45;
             pictureBox_dieButton.UseVisualStyleBackColor = false;
             // 
-            // label_DieButton
+            // label_ROLL
             // 
-            label_DieButton.AutoSize = true;
-            label_DieButton.BackColor = Color.Maroon;
-            label_DieButton.Font = new Font("Impact", 24.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_DieButton.ForeColor = Color.White;
-            label_DieButton.Location = new Point(1318, 503);
-            label_DieButton.Name = "label_DieButton";
-            label_DieButton.Size = new Size(80, 41);
-            label_DieButton.TabIndex = 46;
-            label_DieButton.Text = "ROLL";
+            label_ROLL.AutoSize = true;
+            label_ROLL.BackColor = Color.Maroon;
+            label_ROLL.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_ROLL.ForeColor = Color.White;
+            label_ROLL.Location = new Point(1316, 479);
+            label_ROLL.Name = "label_ROLL";
+            label_ROLL.Size = new Size(69, 36);
+            label_ROLL.TabIndex = 46;
+            label_ROLL.Text = "ROLL";
             // 
             // label_AmountSelected
             // 
             label_AmountSelected.AutoSize = true;
-            label_AmountSelected.Font = new Font("Impact", 27.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_AmountSelected.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_AmountSelected.Location = new Point(255, 693);
             label_AmountSelected.Name = "label_AmountSelected";
-            label_AmountSelected.Size = new Size(283, 45);
+            label_AmountSelected.Size = new Size(303, 46);
             label_AmountSelected.TabIndex = 47;
             label_AmountSelected.Text = "Amount Selected:";
             label_AmountSelected.Click += label1_Click;
@@ -770,11 +771,11 @@
             // radioButton_AddtoBet
             // 
             radioButton_AddtoBet.AutoSize = true;
-            radioButton_AddtoBet.Font = new Font("Impact", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton_AddtoBet.Font = new Font("Ink Free", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_AddtoBet.Location = new Point(160, 598);
             radioButton_AddtoBet.Name = "radioButton_AddtoBet";
             radioButton_AddtoBet.RightToLeft = RightToLeft.Yes;
-            radioButton_AddtoBet.Size = new Size(106, 27);
+            radioButton_AddtoBet.Size = new Size(126, 27);
             radioButton_AddtoBet.TabIndex = 49;
             radioButton_AddtoBet.TabStop = true;
             radioButton_AddtoBet.Text = "Add to Bet";
@@ -783,11 +784,11 @@
             // radioButton_SubtractBet
             // 
             radioButton_SubtractBet.AutoSize = true;
-            radioButton_SubtractBet.Font = new Font("Impact", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton_SubtractBet.Font = new Font("Ink Free", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_SubtractBet.Location = new Point(138, 631);
             radioButton_SubtractBet.Name = "radioButton_SubtractBet";
             radioButton_SubtractBet.RightToLeft = RightToLeft.Yes;
-            radioButton_SubtractBet.Size = new Size(126, 27);
+            radioButton_SubtractBet.Size = new Size(148, 27);
             radioButton_SubtractBet.TabIndex = 50;
             radioButton_SubtractBet.TabStop = true;
             radioButton_SubtractBet.Text = "Subtract Bet";
@@ -972,6 +973,18 @@
             tableLayoutPanel18.Size = new Size(220, 352);
             tableLayoutPanel18.TabIndex = 65;
             // 
+            // label_DICE
+            // 
+            label_DICE.AutoSize = true;
+            label_DICE.BackColor = Color.Maroon;
+            label_DICE.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_DICE.ForeColor = Color.White;
+            label_DICE.Location = new Point(1318, 515);
+            label_DICE.Name = "label_DICE";
+            label_DICE.Size = new Size(67, 36);
+            label_DICE.TabIndex = 66;
+            label_DICE.Text = "DICE";
+            // 
             // form_AmountSelected
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -980,6 +993,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
+            Controls.Add(label_DICE);
             Controls.Add(tableLayoutPanel18);
             Controls.Add(tableLayoutPanel17);
             Controls.Add(tableLayoutPanel16);
@@ -987,7 +1001,7 @@
             Controls.Add(radioButton_AddtoBet);
             Controls.Add(textBox1);
             Controls.Add(label_AmountSelected);
-            Controls.Add(label_DieButton);
+            Controls.Add(label_ROLL);
             Controls.Add(pictureBox_dieButton);
             Controls.Add(label_LastRole2);
             Controls.Add(label_LastRole1);
@@ -1082,7 +1096,7 @@
         private PictureBox pictureBox_LastRoll2;
         private PictureBox picturebox_LastRole1;
         private DieButton pictureBox_dieButton;
-        private Label label_DieButton;
+        private Label label_ROLL;
         private Label label_AmountSelected;
         private TextBox textBox1;
         private RadioButton radioButton_AddtoBet;
@@ -1103,5 +1117,6 @@
         private PictureBox pictureBox1;
         private Label label_PlayerTitle1;
         private TableLayoutPanel tableLayoutPanel18;
+        private Label label_DICE;
     }
 }

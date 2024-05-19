@@ -1,0 +1,53 @@
+
+Hypothesis: 
+1. Given a betting strategy, we can determine what the average win and loss amount is.
+2. If we set our Win Walk and Loss Walk amounts accordingly, we can maximize the likelihood of maintaining winnings.
+
+
+== CLASSES ==
+
+-- PLAYER --
+- Attributes -
+Has Dice (Should mandate a Pass or Don't Pass Bet, implimenting will require the ability to pass the dice)
+
+[user entered)
+Bank Roll
+Minimum Bet
+Placement Strategy
+Beting Strategy
+Win Walk
+Lose Walk
+
+[calculated]
+Current Standings
+Active Bets
+
+[historicals]
+Active Bet History (Each Roll)
+Standings History (Between Each Come out Roll)
+  Win Average (Between Each Come out Roll)
+  Loss Average (Between Each Come out Roll)
+
+-- DICE --
+- Attributes -
+Last Roll
+Roll History
+Active Player Roll Averages (mean median mode)
+
+- Functions -
+Roll Dice 
+
+-- TABLE --
+- Attributes -
+Button On/Off (Places the ON button at the corresponding number or OFF to the side)
+
+- Functions -
+Add to Amount (activated by clicking on the chips)
+Add to Bet (activated by clicking on the table bet)
+Subtract Bet (activated by clicking on the table bet)
+Add Player
+Clear Table
+Reset Game
+
+- Statistics -
+TODO
