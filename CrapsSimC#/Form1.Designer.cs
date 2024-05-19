@@ -1,6 +1,6 @@
 ﻿namespace CrapsSimC_
 {
-    partial class Form1
+    partial class form_AmountSelected
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_AmountSelected));
             tableLayoutPanel1 = new TableLayoutPanel();
             button_1 = new Button();
             button_10 = new Button();
@@ -77,6 +77,10 @@
             picturebox_LastRole1 = new PictureBox();
             pictureBox_dieButton = new DieButton();
             label_DieButton = new Label();
+            label_AmountSelected = new Label();
+            textBox1 = new TextBox();
+            radioButton_AddtoBet = new RadioButton();
+            radioButton_SubtractBet = new RadioButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -713,12 +717,61 @@
             label_DieButton.TabIndex = 46;
             label_DieButton.Text = "ROLL";
             // 
-            // Form1
+            // label_AmountSelected
+            // 
+            label_AmountSelected.AutoSize = true;
+            label_AmountSelected.Font = new Font("Impact", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_AmountSelected.Location = new Point(255, 693);
+            label_AmountSelected.Name = "label_AmountSelected";
+            label_AmountSelected.Size = new Size(299, 45);
+            label_AmountSelected.TabIndex = 47;
+            label_AmountSelected.Text = "Amount Selected:";
+            label_AmountSelected.Click += label1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Impact", 27F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(570, 687);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(101, 51);
+            textBox1.TabIndex = 48;
+            // 
+            // radioButton_AddtoBet
+            // 
+            radioButton_AddtoBet.AutoSize = true;
+            radioButton_AddtoBet.Font = new Font("Impact", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton_AddtoBet.Location = new Point(160, 598);
+            radioButton_AddtoBet.Name = "radioButton_AddtoBet";
+            radioButton_AddtoBet.RightToLeft = RightToLeft.Yes;
+            radioButton_AddtoBet.Size = new Size(116, 27);
+            radioButton_AddtoBet.TabIndex = 49;
+            radioButton_AddtoBet.TabStop = true;
+            radioButton_AddtoBet.Text = "Add to Bet";
+            radioButton_AddtoBet.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_SubtractBet
+            // 
+            radioButton_SubtractBet.AutoSize = true;
+            radioButton_SubtractBet.Font = new Font("Impact", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton_SubtractBet.Location = new Point(138, 631);
+            radioButton_SubtractBet.Name = "radioButton_SubtractBet";
+            radioButton_SubtractBet.RightToLeft = RightToLeft.Yes;
+            radioButton_SubtractBet.Size = new Size(138, 27);
+            radioButton_SubtractBet.TabIndex = 50;
+            radioButton_SubtractBet.TabStop = true;
+            radioButton_SubtractBet.Text = "Subtract Bet";
+            radioButton_SubtractBet.UseVisualStyleBackColor = true;
+            // 
+            // form_AmountSelected
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1827, 1000);
+            Controls.Add(radioButton_SubtractBet);
+            Controls.Add(radioButton_AddtoBet);
+            Controls.Add(textBox1);
+            Controls.Add(label_AmountSelected);
             Controls.Add(label_DieButton);
             Controls.Add(pictureBox_dieButton);
             Controls.Add(label_LastRole2);
@@ -737,8 +790,7 @@
             Controls.Add(button_1Chip);
             Controls.Add(panel_TableBackground);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "form_AmountSelected";
             WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
@@ -809,5 +861,9 @@
         private PictureBox picturebox_LastRole1;
         private DieButton pictureBox_dieButton;
         private Label label_DieButton;
+        private Label label_AmountSelected;
+        private TextBox textBox1;
+        private RadioButton radioButton_AddtoBet;
+        private RadioButton radioButton_SubtractBet;
     }
 }

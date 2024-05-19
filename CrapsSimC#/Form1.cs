@@ -1,8 +1,8 @@
 namespace CrapsSimC_
 {
-    public partial class Form1 : Form
+    public partial class form_AmountSelected : Form
     {
-        public Form1()
+        public form_AmountSelected()
         {
             InitializeComponent();
         }
@@ -18,6 +18,11 @@ namespace CrapsSimC_
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
