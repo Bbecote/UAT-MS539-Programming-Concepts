@@ -3,6 +3,37 @@ Hypothesis:
 1. Given a betting strategy, we can determine what the average win and loss amount is.
 2. If we set our Win Walk and Loss Walk amounts accordingly, we can maximize the likelihood of maintaining winnings.
 
+Functions:
+
+**Set up Player Strategy and Bankroll implimentation
+
+COME OUT ROLL
+Button_is_OFF_Roll()
+1. PLAYERS - Players Bet
+2. DICE - Die is Rolled
+3. TABLE - Last Roll Updated
+4. TABLE - Update Table (Make Payments/Collect lost bets)
+-- if 7 or 11 is rolled --
+   Make_Payments() pay the pass line
+   collect from the don't pass line
+
+-- if 2 or 3 is rolled -- 
+   Collect_Lost_Bets() pay the don't pass line
+   collect from the don't pass line
+   
+5. Update bankrolls depending on strategy
+
+-- if another number is rolled --
+   set the button ON at that number
+
+5. Bets are made
+--
+
+
+
+
+
+
 
 == CLASSES ==
 
@@ -13,8 +44,8 @@ Has Dice (Should mandate a Pass or Don't Pass Bet, implimenting will require the
 [user entered)
 Bank Roll
 Minimum Bet
-Placement Strategy
-Beting Strategy
+Placement Strategy (implimented in the STRATEGIES class)
+Beting Strategy (implimented in the STRATEGIES class)
 Win Walk
 Lose Walk
 
@@ -27,6 +58,14 @@ Active Bet History (Each Roll)
 Standings History (Between Each Come out Roll)
   Win Average (Between Each Come out Roll)
   Loss Average (Between Each Come out Roll)
+  
+- Functions -
+Player Bet (places an active bet, withdraws from bankroll, adds to the table amount)
+
+
+
+
+
 
 -- DICE --
 - Attributes -
@@ -36,10 +75,24 @@ Active Player Roll Averages (mean median mode)
 
 - Functions -
 Roll Dice 
+   Check if button is ON or OFF 
+      Button_is_OFF_Roll()
+	  Button_is_ON_Roll()
 
 -- TABLE --
 - Attributes -
 Button On/Off (Places the ON button at the corresponding number or OFF to the side)
+Active Bets (Data Structures that manage the amounts of bets each player has made)
+
+- Functions -
+Make Payments()
+   Cycle through table bets, determine whose bet, they're strategy, and apply payment accordingly and update bankrolls
+Collect Lost Bets()
+   Cycle through table bets, take bet, update bankrolls
+Update Bankrolls ()
+
+
+
 
 - Functions -
 Add to Amount (activated by clicking on the chips)
@@ -49,5 +102,12 @@ Add Player
 Clear Table
 Reset Game
 
+-- STRATEGIES --
+Impliment the various strategies used by players
+
+
+
 - Statistics -
 TODO
+
+

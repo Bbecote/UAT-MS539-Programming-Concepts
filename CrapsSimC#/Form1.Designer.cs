@@ -58,6 +58,7 @@
             panel2 = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
+            panel14 = new Panel();
             button_1Chip = new ChipsButton();
             button_5Chip = new ChipsButton();
             button_10Chip = new ChipsButton();
@@ -73,8 +74,6 @@
             label_LastRole = new Label();
             label_LastRole2 = new Label();
             label_LastRole1 = new Label();
-            pictureBox_LastRoll2 = new PictureBox();
-            picturebox_LastRole1 = new PictureBox();
             pictureBox_dieButton = new DieButton();
             label_ROLL = new Label();
             label_AmountSelected = new Label();
@@ -169,10 +168,14 @@
             label_ROLL2 = new Label();
             label_AUTO = new Label();
             panel7 = new Panel();
+            panel12 = new Panel();
             panel8 = new Panel();
             dieButton2 = new DieButton();
+            panel13 = new Panel();
             panel9 = new Panel();
+            pictureBox_LastRoll2 = new PictureBox();
             panel10 = new Panel();
+            picturebox_LastRole1 = new PictureBox();
             panel11 = new Panel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel14.SuspendLayout();
@@ -185,8 +188,6 @@
             tableLayoutPanel15.SuspendLayout();
             panel_ClearAndReset.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).BeginInit();
             tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel18.SuspendLayout();
@@ -220,7 +221,9 @@
             panel7.SuspendLayout();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).BeginInit();
             panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).BeginInit();
             panel11.SuspendLayout();
             SuspendLayout();
             // 
@@ -453,7 +456,7 @@
             // button_DontCome
             // 
             button_DontCome.BackColor = Color.DarkOrange;
-            button_DontCome.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button_DontCome.Font = new Font("Ink Free", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button_DontCome.ForeColor = SystemColors.ButtonHighlight;
             button_DontCome.Location = new Point(3, 2);
             button_DontCome.Margin = new Padding(3, 2, 3, 2);
@@ -467,6 +470,7 @@
             // button_COME
             // 
             button_COME.BackColor = Color.DarkOrange;
+            button_COME.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button_COME.ForeColor = SystemColors.ButtonHighlight;
             button_COME.Location = new Point(382, 2);
             button_COME.Margin = new Padding(3, 2, 3, 2);
@@ -576,16 +580,18 @@
             // panel_TableBackground
             // 
             panel_TableBackground.BackColor = Color.RoyalBlue;
+            panel_TableBackground.BorderStyle = BorderStyle.FixedSingle;
             panel_TableBackground.Controls.Add(panel2);
             panel_TableBackground.Controls.Add(tableLayoutPanel5);
             panel_TableBackground.Controls.Add(tableLayoutPanel2);
             panel_TableBackground.Controls.Add(tableLayoutPanel1);
             panel_TableBackground.Controls.Add(tableLayoutPanel7);
             panel_TableBackground.Controls.Add(tableLayoutPanel3);
-            panel_TableBackground.Location = new Point(10, 29);
+            panel_TableBackground.Controls.Add(panel14);
+            panel_TableBackground.Location = new Point(10, 11);
             panel_TableBackground.Margin = new Padding(3, 2, 3, 2);
             panel_TableBackground.Name = "panel_TableBackground";
-            panel_TableBackground.Size = new Size(1222, 542);
+            panel_TableBackground.Size = new Size(1222, 560);
             panel_TableBackground.TabIndex = 15;
             // 
             // panel2
@@ -627,6 +633,14 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(1135, 115);
             tableLayoutPanel2.TabIndex = 16;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.Black;
+            panel14.Location = new Point(11, 47);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(1178, 474);
+            panel14.TabIndex = 82;
             // 
             // button_1Chip
             // 
@@ -762,8 +776,9 @@
             // panel_ClearAndReset
             // 
             panel_ClearAndReset.BackColor = Color.Yellow;
+            panel_ClearAndReset.BorderStyle = BorderStyle.FixedSingle;
             panel_ClearAndReset.Controls.Add(tableLayoutPanel15);
-            panel_ClearAndReset.Location = new Point(994, 573);
+            panel_ClearAndReset.Location = new Point(996, 587);
             panel_ClearAndReset.Name = "panel_ClearAndReset";
             panel_ClearAndReset.Size = new Size(240, 148);
             panel_ClearAndReset.TabIndex = 32;
@@ -811,28 +826,6 @@
             label_LastRole1.Size = new Size(37, 41);
             label_LastRole1.TabIndex = 43;
             label_LastRole1.Text = "5";
-            // 
-            // pictureBox_LastRoll2
-            // 
-            pictureBox_LastRoll2.BackColor = Color.Maroon;
-            pictureBox_LastRoll2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox_LastRoll2.Location = new Point(0, 0);
-            pictureBox_LastRoll2.Margin = new Padding(0);
-            pictureBox_LastRoll2.Name = "pictureBox_LastRoll2";
-            pictureBox_LastRoll2.Size = new Size(75, 75);
-            pictureBox_LastRoll2.TabIndex = 42;
-            pictureBox_LastRoll2.TabStop = false;
-            // 
-            // picturebox_LastRole1
-            // 
-            picturebox_LastRole1.BackColor = Color.Maroon;
-            picturebox_LastRole1.BorderStyle = BorderStyle.FixedSingle;
-            picturebox_LastRole1.Location = new Point(0, 0);
-            picturebox_LastRole1.Margin = new Padding(0);
-            picturebox_LastRole1.Name = "picturebox_LastRole1";
-            picturebox_LastRole1.Size = new Size(75, 75);
-            picturebox_LastRole1.TabIndex = 41;
-            picturebox_LastRole1.TabStop = false;
             // 
             // pictureBox_dieButton
             // 
@@ -1948,7 +1941,7 @@
             label_ROLL2.BackColor = Color.Maroon;
             label_ROLL2.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label_ROLL2.ForeColor = Color.White;
-            label_ROLL2.Location = new Point(53, 81);
+            label_ROLL2.Location = new Point(53, 78);
             label_ROLL2.Name = "label_ROLL2";
             label_ROLL2.Size = new Size(69, 36);
             label_ROLL2.TabIndex = 74;
@@ -1960,7 +1953,7 @@
             label_AUTO.BackColor = Color.Maroon;
             label_AUTO.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label_AUTO.ForeColor = Color.White;
-            label_AUTO.Location = new Point(46, 42);
+            label_AUTO.Location = new Point(38, 42);
             label_AUTO.Name = "label_AUTO";
             label_AUTO.Size = new Size(74, 36);
             label_AUTO.TabIndex = 75;
@@ -1971,16 +1964,26 @@
             panel7.Controls.Add(label_ROLL);
             panel7.Controls.Add(label_DICE);
             panel7.Controls.Add(pictureBox_dieButton);
+            panel7.Controls.Add(panel12);
             panel7.Location = new Point(1269, 387);
             panel7.Name = "panel7";
             panel7.Size = new Size(171, 165);
             panel7.TabIndex = 77;
             // 
+            // panel12
+            // 
+            panel12.BackColor = Color.MediumTurquoise;
+            panel12.Location = new Point(22, 22);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(121, 111);
+            panel12.TabIndex = 82;
+            // 
             // panel8
             // 
-            panel8.Controls.Add(label_AUTO);
             panel8.Controls.Add(label_ROLL2);
+            panel8.Controls.Add(label_AUTO);
             panel8.Controls.Add(dieButton2);
+            panel8.Controls.Add(panel13);
             panel8.Location = new Point(1269, 553);
             panel8.Name = "panel8";
             panel8.Size = new Size(171, 167);
@@ -1995,8 +1998,17 @@
             dieButton2.TabIndex = 45;
             dieButton2.UseVisualStyleBackColor = false;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.PaleGreen;
+            panel13.Location = new Point(22, 23);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(121, 111);
+            panel13.TabIndex = 83;
+            // 
             // panel9
             // 
+            panel9.BackColor = Color.Black;
             panel9.Controls.Add(label_LastRole2);
             panel9.Controls.Add(pictureBox_LastRoll2);
             panel9.Location = new Point(102, 59);
@@ -2005,15 +2017,37 @@
             panel9.Size = new Size(75, 75);
             panel9.TabIndex = 79;
             // 
+            // pictureBox_LastRoll2
+            // 
+            pictureBox_LastRoll2.BackColor = Color.Maroon;
+            pictureBox_LastRoll2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_LastRoll2.Location = new Point(3, 3);
+            pictureBox_LastRoll2.Margin = new Padding(0);
+            pictureBox_LastRoll2.Name = "pictureBox_LastRoll2";
+            pictureBox_LastRoll2.Size = new Size(72, 72);
+            pictureBox_LastRoll2.TabIndex = 42;
+            pictureBox_LastRoll2.TabStop = false;
+            // 
             // panel10
             // 
+            panel10.BackColor = Color.Black;
             panel10.Controls.Add(label_LastRole1);
             panel10.Controls.Add(picturebox_LastRole1);
             panel10.Location = new Point(0, 59);
-            panel10.Margin = new Padding(0);
             panel10.Name = "panel10";
             panel10.Size = new Size(75, 75);
             panel10.TabIndex = 80;
+            // 
+            // picturebox_LastRole1
+            // 
+            picturebox_LastRole1.BackColor = Color.Maroon;
+            picturebox_LastRole1.BorderStyle = BorderStyle.FixedSingle;
+            picturebox_LastRole1.Location = new Point(3, 3);
+            picturebox_LastRole1.Margin = new Padding(0);
+            picturebox_LastRole1.Name = "picturebox_LastRole1";
+            picturebox_LastRole1.Size = new Size(72, 72);
+            picturebox_LastRole1.TabIndex = 41;
+            picturebox_LastRole1.TabStop = false;
             // 
             // panel11
             // 
@@ -2064,8 +2098,6 @@
             tableLayoutPanel15.ResumeLayout(false);
             panel_ClearAndReset.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).EndInit();
             tableLayoutPanel16.ResumeLayout(false);
             tableLayoutPanel16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -2121,8 +2153,10 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_LastRoll2).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picturebox_LastRole1).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             ResumeLayout(false);
@@ -2175,8 +2209,6 @@
         private Label label_LastRole;
         private Label label_LastRole2;
         private Label label_LastRole1;
-        private PictureBox pictureBox_LastRoll2;
-        private PictureBox picturebox_LastRole1;
         private DieButton pictureBox_dieButton;
         private Label label_ROLL;
         private Label label_AmountSelected;
@@ -2276,5 +2308,10 @@
         private Panel panel10;
         private Panel panel11;
         private ChipsButton button_1000Chip;
+        private PictureBox pictureBox_LastRoll2;
+        private PictureBox picturebox_LastRole1;
+        private Panel panel12;
+        private Panel panel13;
+        private Panel panel14;
     }
 }
