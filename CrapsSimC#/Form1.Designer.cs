@@ -100,7 +100,6 @@
             label22 = new Label();
             tableLayoutPanel19 = new TableLayoutPanel();
             tableLayoutPanel20 = new TableLayoutPanel();
-            panel12 = new Panel();
             button_1000Chip = new ChipsButton();
             tableLayoutPanel21 = new TableLayoutPanel();
             pictureBox2 = new PictureBox();
@@ -195,7 +194,6 @@
             tableLayoutPanel17.SuspendLayout();
             tableLayoutPanel19.SuspendLayout();
             tableLayoutPanel20.SuspendLayout();
-            panel12.SuspendLayout();
             tableLayoutPanel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tableLayoutPanel22.SuspendLayout();
@@ -632,21 +630,27 @@
             // 
             // button_1Chip
             // 
+            button_1Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_1Chip.BackColor = Color.Transparent;
+            button_1Chip.FlatStyle = FlatStyle.Popup;
             button_1Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_1Chip.Image = (Image)resources.GetObject("button_1Chip.Image");
-            button_1Chip.Location = new Point(0, 0);
+            button_1Chip.Location = new Point(0, 2);
             button_1Chip.Margin = new Padding(0);
             button_1Chip.Name = "button_1Chip";
             button_1Chip.Size = new Size(110, 108);
             button_1Chip.TabIndex = 16;
-            button_1Chip.UseVisualStyleBackColor = true;
+            button_1Chip.UseVisualStyleBackColor = false;
             // 
             // button_5Chip
             // 
+            button_5Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_5Chip.FlatAppearance.BorderColor = Color.White;
+            button_5Chip.FlatStyle = FlatStyle.Popup;
             button_5Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_5Chip.ForeColor = Color.White;
             button_5Chip.Image = (Image)resources.GetObject("button_5Chip.Image");
-            button_5Chip.Location = new Point(110, 0);
+            button_5Chip.Location = new Point(110, 2);
             button_5Chip.Margin = new Padding(0);
             button_5Chip.Name = "button_5Chip";
             button_5Chip.Size = new Size(110, 108);
@@ -655,18 +659,22 @@
             // 
             // button_10Chip
             // 
+            button_10Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_10Chip.FlatAppearance.BorderColor = Color.White;
+            button_10Chip.FlatStyle = FlatStyle.Popup;
             button_10Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_10Chip.ForeColor = Color.White;
             button_10Chip.Image = (Image)resources.GetObject("button_10Chip.Image");
-            button_10Chip.Location = new Point(220, 0);
+            button_10Chip.Location = new Point(220, 5);
             button_10Chip.Margin = new Padding(0);
             button_10Chip.Name = "button_10Chip";
-            button_10Chip.Size = new Size(110, 110);
+            button_10Chip.Size = new Size(110, 105);
             button_10Chip.TabIndex = 18;
             button_10Chip.UseVisualStyleBackColor = true;
             // 
             // button_25Chip
             // 
+            button_25Chip.FlatStyle = FlatStyle.Popup;
             button_25Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_25Chip.ForeColor = Color.White;
             button_25Chip.Image = (Image)resources.GetObject("button_25Chip.Image");
@@ -679,6 +687,8 @@
             // 
             // button_100Chip
             // 
+            button_100Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_100Chip.FlatStyle = FlatStyle.Popup;
             button_100Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_100Chip.ForeColor = Color.White;
             button_100Chip.Image = (Image)resources.GetObject("button_100Chip.Image");
@@ -691,6 +701,8 @@
             // 
             // button_500Chip
             // 
+            button_500Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_500Chip.FlatStyle = FlatStyle.Popup;
             button_500Chip.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button_500Chip.ForeColor = Color.White;
             button_500Chip.Image = (Image)resources.GetObject("button_500Chip.Image");
@@ -848,7 +860,8 @@
             label_AmountSelected.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_AmountSelected.AutoSize = true;
             label_AmountSelected.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_AmountSelected.Location = new Point(44, 11);
+            label_AmountSelected.Location = new Point(47, 11);
+            label_AmountSelected.Margin = new Padding(0);
             label_AmountSelected.Name = "label_AmountSelected";
             label_AmountSelected.Size = new Size(303, 46);
             label_AmountSelected.TabIndex = 47;
@@ -1101,7 +1114,7 @@
             tableLayoutPanel19.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel19.Controls.Add(radioButton_AddtoBet, 0, 0);
             tableLayoutPanel19.Controls.Add(radioButton_SubtractBet, 0, 1);
-            tableLayoutPanel19.Location = new Point(10, 595);
+            tableLayoutPanel19.Location = new Point(32, 589);
             tableLayoutPanel19.Name = "tableLayoutPanel19";
             tableLayoutPanel19.RowCount = 2;
             tableLayoutPanel19.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -1111,6 +1124,7 @@
             // 
             // tableLayoutPanel20
             // 
+            tableLayoutPanel20.BackColor = Color.Transparent;
             tableLayoutPanel20.ColumnCount = 7;
             tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
             tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
@@ -1119,14 +1133,14 @@
             tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
             tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
             tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
+            tableLayoutPanel20.Controls.Add(button_1000Chip, 6, 0);
             tableLayoutPanel20.Controls.Add(button_1Chip, 0, 0);
             tableLayoutPanel20.Controls.Add(button_5Chip, 1, 0);
-            tableLayoutPanel20.Controls.Add(panel12, 6, 0);
             tableLayoutPanel20.Controls.Add(button_10Chip, 2, 0);
             tableLayoutPanel20.Controls.Add(button_25Chip, 3, 0);
             tableLayoutPanel20.Controls.Add(button_100Chip, 4, 0);
             tableLayoutPanel20.Controls.Add(button_500Chip, 5, 0);
-            tableLayoutPanel20.Location = new Point(182, 636);
+            tableLayoutPanel20.Location = new Point(217, 635);
             tableLayoutPanel20.Margin = new Padding(0);
             tableLayoutPanel20.Name = "tableLayoutPanel20";
             tableLayoutPanel20.RowCount = 1;
@@ -1134,21 +1148,15 @@
             tableLayoutPanel20.Size = new Size(770, 110);
             tableLayoutPanel20.TabIndex = 69;
             // 
-            // panel12
-            // 
-            panel12.Controls.Add(button_1000Chip);
-            panel12.Location = new Point(663, 3);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(104, 104);
-            panel12.TabIndex = 83;
-            // 
             // button_1000Chip
             // 
+            button_1000Chip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button_1000Chip.FlatStyle = FlatStyle.Popup;
             button_1000Chip.Image = (Image)resources.GetObject("button_1000Chip.Image");
-            button_1000Chip.Location = new Point(0, 1);
+            button_1000Chip.Location = new Point(663, 3);
             button_1000Chip.Name = "button_1000Chip";
             button_1000Chip.Padding = new Padding(3);
-            button_1000Chip.Size = new Size(100, 100);
+            button_1000Chip.Size = new Size(104, 104);
             button_1000Chip.TabIndex = 0;
             button_1000Chip.UseVisualStyleBackColor = true;
             // 
@@ -1157,8 +1165,8 @@
             tableLayoutPanel21.ColumnCount = 2;
             tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70.17115F));
             tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 29.8288517F));
-            tableLayoutPanel21.Controls.Add(label_AmountSelected, 0, 0);
             tableLayoutPanel21.Controls.Add(textBox1, 1, 0);
+            tableLayoutPanel21.Controls.Add(label_AmountSelected, 0, 0);
             tableLayoutPanel21.Location = new Point(316, 576);
             tableLayoutPanel21.Name = "tableLayoutPanel21";
             tableLayoutPanel21.RowCount = 1;
@@ -1652,9 +1660,9 @@
             label12.Location = new Point(71, 10);
             label12.Margin = new Padding(0);
             label12.Name = "label12";
-            label12.Size = new Size(78, 36);
+            label12.Size = new Size(77, 36);
             label12.TabIndex = 64;
-            label12.Text = "Juan";
+            label12.Text = "John";
             // 
             // pictureBox4
             // 
@@ -2069,7 +2077,6 @@
             tableLayoutPanel19.ResumeLayout(false);
             tableLayoutPanel19.PerformLayout();
             tableLayoutPanel20.ResumeLayout(false);
-            panel12.ResumeLayout(false);
             tableLayoutPanel21.ResumeLayout(false);
             tableLayoutPanel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -2268,7 +2275,6 @@
         private Panel panel9;
         private Panel panel10;
         private Panel panel11;
-        private Panel panel12;
         private ChipsButton button_1000Chip;
     }
 }

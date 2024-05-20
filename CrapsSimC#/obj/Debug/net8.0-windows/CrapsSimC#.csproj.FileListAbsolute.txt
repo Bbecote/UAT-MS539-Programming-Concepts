@@ -15,12 +15,16 @@ C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-C
 C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.pdb
 C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.genruntimeconfig.cache
 C:\Users\brian\Desktop\DevOps\MS539 Programming Concepts\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\ref\CrapsSimC#.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.ChipsButton.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.DieButton.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.form_AmountSelected.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.csproj.GenerateResource.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\bin\Debug\net8.0-windows\CrapsSimC#.exe
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\bin\Debug\net8.0-windows\CrapsSimC#.deps.json
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\bin\Debug\net8.0-windows\CrapsSimC#.runtimeconfig.json
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\bin\Debug\net8.0-windows\CrapsSimC#.dll
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\bin\Debug\net8.0-windows\CrapsSimC#.pdb
-C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.Properties.Resources.resources
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.AssemblyInfoInputs.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.AssemblyInfo.cs
@@ -31,7 +35,3 @@ C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.pdb
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.genruntimeconfig.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\ref\CrapsSimC#.dll
-C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.ChipsButton.resources
-C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.Properties.Resources.resources
-C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.DieButton.resources
-C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.form_AmountSelected.resources

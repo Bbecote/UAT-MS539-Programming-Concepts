@@ -63,36 +63,6 @@ namespace CrapsSimC_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blackchip {
-            get {
-                object obj = ResourceManager.GetObject("blackchip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bluechip {
-            get {
-                object obj = ResourceManager.GetObject("bluechip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap greenchip {
-            get {
-                object obj = ResourceManager.GetObject("greenchip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap offButton {
             get {
                 object obj = ResourceManager.GetObject("offButton", resourceCulture);
@@ -106,36 +76,6 @@ namespace CrapsSimC_.Properties {
         internal static System.Drawing.Bitmap onButton {
             get {
                 object obj = ResourceManager.GetObject("onButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap purplechip {
-            get {
-                object obj = ResourceManager.GetObject("purplechip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap redchip {
-            get {
-                object obj = ResourceManager.GetObject("redchip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap whitechip {
-            get {
-                object obj = ResourceManager.GetObject("whitechip", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

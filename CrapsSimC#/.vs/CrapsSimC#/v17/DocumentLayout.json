@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\diebutton.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:diebutton.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\chipsbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:chipsbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\chipsbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:chipsbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\diebutton.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:diebutton.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,7 +56,7 @@
         },
         {
           "DockedHeight": 117,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -64,7 +64,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-20T00:36:01.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DieButton.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs",
               "RelativeDocumentMoniker": "DieButton.cs",
@@ -85,22 +97,12 @@
               "RelativeToolTip": "DieButton.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:25:04.733Z"
+              "WhenOpened": "2024-05-19T10:25:04.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DieButton.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs",
-              "RelativeDocumentMoniker": "DieButton.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs [Design]",
-              "RelativeToolTip": "DieButton.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:24:30.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -112,40 +114,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ChipsButton.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\ChipsButton.cs",
               "RelativeDocumentMoniker": "ChipsButton.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\ChipsButton.cs",
               "RelativeToolTip": "ChipsButton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T09:01:27.362Z"
+              "WhenOpened": "2024-05-19T09:01:27.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.Designer.cs*",
               "RelativeToolTip": "Form1.Designer.cs*",
-              "ViewState": "AQIAABYAAAAAAAAAAAAwwBYAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T00:09:26.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T00:08:53.576Z"
+              "WhenOpened": "2024-05-19T00:08:53.576Z",
+              "EditorCaption": ""
             }
           ]
         }
