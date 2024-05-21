@@ -5,30 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:diebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\crapstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:crapstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\strategies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:strategies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\crapssimc#\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{949B050B-E01C-466E-8824-3149C480867C}|CrapsSimC#.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,93 +27,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 117,
-          "SelectedChildIndex": 7,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrapsTable.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\CrapsTable.cs",
-              "RelativeDocumentMoniker": "CrapsTable.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\CrapsTable.cs",
-              "RelativeToolTip": "CrapsTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T04:56:09.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Strategies.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Strategies.cs",
-              "RelativeDocumentMoniker": "Strategies.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Strategies.cs",
-              "RelativeToolTip": "Strategies.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T04:17:33.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dice.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Dice.cs",
-              "RelativeDocumentMoniker": "Dice.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Dice.cs",
-              "RelativeToolTip": "Dice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:04:38.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Players.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Players.cs",
-              "RelativeDocumentMoniker": "Players.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Players.cs",
-              "RelativeToolTip": "Players.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACkAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T01:45:01.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Properties\\Resources.resx",
-              "RelativeToolTip": "Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-20T00:36:01.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DieButton.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs",
-              "RelativeDocumentMoniker": "DieButton.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\DieButton.cs",
-              "RelativeToolTip": "DieButton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:25:13.847Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -148,8 +37,18 @@
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\CrapsSimC#\\Form1.cs [Design]*",
               "RelativeToolTip": "Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T09:13:36.046Z",
+              "WhenOpened": "2024-05-20T17:15:10.451Z",
               "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 117,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

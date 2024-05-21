@@ -89,9 +89,9 @@
             textBox2 = new TextBox();
             label_ActiveBets = new Label();
             tableLayoutPanel16 = new TableLayoutPanel();
-            pictureBox1 = new PictureBox();
             label_PlayerTitle1 = new Label();
             tableLayoutPanel18 = new TableLayoutPanel();
+            button_Player0 = new Button();
             label_DICE = new Label();
             panel1 = new Panel();
             tableLayoutPanel17 = new TableLayoutPanel();
@@ -123,7 +123,7 @@
             label5 = new Label();
             tableLayoutPanel25 = new TableLayoutPanel();
             label6 = new Label();
-            pictureBox3 = new PictureBox();
+            button_Player1 = new Button();
             panel5 = new Panel();
             tableLayoutPanel33 = new TableLayoutPanel();
             textBox19 = new TextBox();
@@ -142,7 +142,7 @@
             label11 = new Label();
             tableLayoutPanel28 = new TableLayoutPanel();
             label12 = new Label();
-            pictureBox4 = new PictureBox();
+            button_Player2 = new Button();
             panel6 = new Panel();
             tableLayoutPanel34 = new TableLayoutPanel();
             textBox20 = new TextBox();
@@ -161,7 +161,7 @@
             label17 = new Label();
             tableLayoutPanel31 = new TableLayoutPanel();
             label18 = new Label();
-            pictureBox5 = new PictureBox();
+            button_Player3 = new Button();
             tableLayoutPanel35 = new TableLayoutPanel();
             textBox22 = new TextBox();
             label23 = new Label();
@@ -189,7 +189,6 @@
             panel_ClearAndReset.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
             tableLayoutPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel18.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel17.SuspendLayout();
@@ -204,19 +203,16 @@
             tableLayoutPanel23.SuspendLayout();
             tableLayoutPanel24.SuspendLayout();
             tableLayoutPanel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel5.SuspendLayout();
             tableLayoutPanel33.SuspendLayout();
             tableLayoutPanel26.SuspendLayout();
             tableLayoutPanel27.SuspendLayout();
             tableLayoutPanel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel6.SuspendLayout();
             tableLayoutPanel34.SuspendLayout();
             tableLayoutPanel29.SuspendLayout();
             tableLayoutPanel30.SuspendLayout();
             tableLayoutPanel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             tableLayoutPanel35.SuspendLayout();
             panel7.SuspendLayout();
             panel8.SuspendLayout();
@@ -1002,17 +998,6 @@
             tableLayoutPanel16.Size = new Size(628, 98);
             tableLayoutPanel16.TabIndex = 61;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.ActiveCaption;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 46);
-            pictureBox1.Margin = new Padding(0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(220, 301);
-            pictureBox1.TabIndex = 63;
-            pictureBox1.TabStop = false;
-            // 
             // label_PlayerTitle1
             // 
             label_PlayerTitle1.Anchor = AnchorStyles.Bottom;
@@ -1032,7 +1017,7 @@
             tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel18.Controls.Add(label_PlayerTitle1, 0, 0);
-            tableLayoutPanel18.Controls.Add(pictureBox1, 0, 1);
+            tableLayoutPanel18.Controls.Add(button_Player0, 0, 1);
             tableLayoutPanel18.Location = new Point(213, 3);
             tableLayoutPanel18.Name = "tableLayoutPanel18";
             tableLayoutPanel18.RowCount = 2;
@@ -1040,6 +1025,15 @@
             tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 86.91275F));
             tableLayoutPanel18.Size = new Size(220, 352);
             tableLayoutPanel18.TabIndex = 65;
+            // 
+            // button_Player0
+            // 
+            button_Player0.BackgroundImage = (Image)resources.GetObject("button_Player0.BackgroundImage");
+            button_Player0.Location = new Point(3, 49);
+            button_Player0.Name = "button_Player0";
+            button_Player0.Size = new Size(214, 300);
+            button_Player0.TabIndex = 65;
+            button_Player0.UseVisualStyleBackColor = true;
             // 
             // label_DICE
             // 
@@ -1408,7 +1402,7 @@
             tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel25.Controls.Add(label6, 0, 0);
-            tableLayoutPanel25.Controls.Add(pictureBox3, 0, 1);
+            tableLayoutPanel25.Controls.Add(button_Player1, 0, 1);
             tableLayoutPanel25.Location = new Point(210, 13);
             tableLayoutPanel25.Name = "tableLayoutPanel25";
             tableLayoutPanel25.RowCount = 2;
@@ -1429,16 +1423,14 @@
             label6.TabIndex = 64;
             label6.Text = "Amy";
             // 
-            // pictureBox3
+            // button_Player1
             // 
-            pictureBox3.BackColor = SystemColors.ActiveCaption;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(0, 46);
-            pictureBox3.Margin = new Padding(0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(218, 301);
-            pictureBox3.TabIndex = 63;
-            pictureBox3.TabStop = false;
+            button_Player1.BackgroundImage = (Image)resources.GetObject("button_Player1.BackgroundImage");
+            button_Player1.Location = new Point(3, 49);
+            button_Player1.Name = "button_Player1";
+            button_Player1.Size = new Size(214, 300);
+            button_Player1.TabIndex = 65;
+            button_Player1.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -1636,7 +1628,7 @@
             tableLayoutPanel28.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel28.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel28.Controls.Add(label12, 0, 0);
-            tableLayoutPanel28.Controls.Add(pictureBox4, 0, 1);
+            tableLayoutPanel28.Controls.Add(button_Player2, 0, 1);
             tableLayoutPanel28.Location = new Point(206, 13);
             tableLayoutPanel28.Name = "tableLayoutPanel28";
             tableLayoutPanel28.RowCount = 2;
@@ -1657,16 +1649,14 @@
             label12.TabIndex = 64;
             label12.Text = "John";
             // 
-            // pictureBox4
+            // button_Player2
             // 
-            pictureBox4.BackColor = SystemColors.ActiveCaption;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, 46);
-            pictureBox4.Margin = new Padding(0);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(220, 293);
-            pictureBox4.TabIndex = 63;
-            pictureBox4.TabStop = false;
+            button_Player2.BackgroundImage = (Image)resources.GetObject("button_Player2.BackgroundImage");
+            button_Player2.Location = new Point(3, 49);
+            button_Player2.Name = "button_Player2";
+            button_Player2.Size = new Size(214, 300);
+            button_Player2.TabIndex = 65;
+            button_Player2.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -1864,7 +1854,7 @@
             tableLayoutPanel31.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel31.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel31.Controls.Add(label18, 0, 0);
-            tableLayoutPanel31.Controls.Add(pictureBox5, 0, 1);
+            tableLayoutPanel31.Controls.Add(button_Player3, 0, 1);
             tableLayoutPanel31.Location = new Point(213, 3);
             tableLayoutPanel31.Name = "tableLayoutPanel31";
             tableLayoutPanel31.RowCount = 2;
@@ -1885,16 +1875,14 @@
             label18.TabIndex = 64;
             label18.Text = "Betty";
             // 
-            // pictureBox5
+            // button_Player3
             // 
-            pictureBox5.BackColor = SystemColors.ActiveCaption;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(0, 46);
-            pictureBox5.Margin = new Padding(0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(220, 301);
-            pictureBox5.TabIndex = 63;
-            pictureBox5.TabStop = false;
+            button_Player3.BackgroundImage = (Image)resources.GetObject("button_Player3.BackgroundImage");
+            button_Player3.Location = new Point(3, 49);
+            button_Player3.Name = "button_Player3";
+            button_Player3.Size = new Size(214, 300);
+            button_Player3.TabIndex = 65;
+            button_Player3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel35
             // 
@@ -2100,7 +2088,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
             tableLayoutPanel16.ResumeLayout(false);
             tableLayoutPanel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tableLayoutPanel18.ResumeLayout(false);
             tableLayoutPanel18.PerformLayout();
             panel1.ResumeLayout(false);
@@ -2124,7 +2111,6 @@
             tableLayoutPanel24.PerformLayout();
             tableLayoutPanel25.ResumeLayout(false);
             tableLayoutPanel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel5.ResumeLayout(false);
             tableLayoutPanel33.ResumeLayout(false);
             tableLayoutPanel33.PerformLayout();
@@ -2134,7 +2120,6 @@
             tableLayoutPanel27.PerformLayout();
             tableLayoutPanel28.ResumeLayout(false);
             tableLayoutPanel28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel6.ResumeLayout(false);
             tableLayoutPanel34.ResumeLayout(false);
             tableLayoutPanel34.PerformLayout();
@@ -2144,7 +2129,6 @@
             tableLayoutPanel30.PerformLayout();
             tableLayoutPanel31.ResumeLayout(false);
             tableLayoutPanel31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             tableLayoutPanel35.ResumeLayout(false);
             tableLayoutPanel35.PerformLayout();
             panel7.ResumeLayout(false);
@@ -2224,7 +2208,6 @@
         private TextBox textBox2;
         private Label label_ActiveBets;
         private TableLayoutPanel tableLayoutPanel16;
-        private PictureBox pictureBox1;
         private Label label_PlayerTitle1;
         private TableLayoutPanel tableLayoutPanel18;
         private Label label_DICE;
@@ -2251,7 +2234,6 @@
         private Label label5;
         private TableLayoutPanel tableLayoutPanel25;
         private Label label6;
-        private PictureBox pictureBox3;
         private Panel panel5;
         private TableLayoutPanel tableLayoutPanel26;
         private Label label7;
@@ -2267,7 +2249,6 @@
         private Label label11;
         private TableLayoutPanel tableLayoutPanel28;
         private Label label12;
-        private PictureBox pictureBox4;
         private Panel panel6;
         private TableLayoutPanel tableLayoutPanel29;
         private Label label13;
@@ -2283,7 +2264,6 @@
         private Label label17;
         private TableLayoutPanel tableLayoutPanel31;
         private Label label18;
-        private PictureBox pictureBox5;
         private TableLayoutPanel tableLayoutPanel34;
         private TextBox textBox20;
         private Label label21;
@@ -2313,5 +2293,9 @@
         private Panel panel12;
         private Panel panel13;
         private Panel panel14;
+        private Button button_Player0;
+        private Button button_Player1;
+        private Button button_Player2;
+        private Button button_Player3;
     }
 }
