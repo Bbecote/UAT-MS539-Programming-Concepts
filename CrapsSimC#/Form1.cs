@@ -1,10 +1,33 @@
+using System.Runtime.CompilerServices;
+
 namespace CrapsSimC_
 {
-    public partial class form_AmountSelected : Form
+    public partial class form_CrapsTable : Form
     {
-        public form_AmountSelected()
+
+        CrapsTable Table = new CrapsTable();
+        Dice Dice = new Dice();
+        Players Player0 = new Players();
+        Players Player1 = new Players();
+        Players Player2 = new Players();
+        Players Player3 = new Players();
+        public form_CrapsTable()
         {
             InitializeComponent();
+        }
+
+        private void updatePlayer0Text()
+        {
+            textBox_Player0BankRoll.Text = Player0.ActiveBankroll.ToString();
+            int CurrentStanding = Player0.ActiveBankroll - Player0.InitialBankroll;
+            if (CurrentStanding == 0)
+            {
+                textBox_Player0CurrentStanding.Text = "Breaking Even";
+            }
+            else { textBox_Player0CurrentStanding.Text = CurrentStanding.ToString(); }
+            textBox_Player0WinWalk.Text = Player0.WinWalk.ToString();
+            textBox_Player0LossWalk.Text = Player0.LossWalk.ToString();
+            textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -35,6 +58,27 @@ namespace CrapsSimC_
         private void label23_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_Player0_Click(object sender, EventArgs e)
+        {   
+            Form_Player0Setup editForm = new Form_Player0Setup(Player0);
+            editForm.ShowDialog();
+            if (Player0.Watching)
+            {
+                table_Player0CurrentStanding.Visible = false;
+                table_Player0Financials.Visible = false;
+                panel_Player0JustWatching.Visible = true;
+            }
+            else
+            {
+                panel_Player0JustWatching.Visible = false;
+                Player0.ResetPlayer();
+                updatePlayer0Text();
+                table_Player0CurrentStanding.Visible = true;
+                table_Player0Financials.Visible = true;
+                
+            }
         }
     }
 }

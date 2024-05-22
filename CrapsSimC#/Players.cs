@@ -6,36 +6,54 @@ using System.Threading.Tasks;
 
 namespace CrapsSimC_
 {
-    internal class Players
+    public class Players
     {
         //Attributes required on Player Creation
-        public int PlayerID = 0; //Track which player is which without passing the entire player object
-        private bool Watching = true; //A player is Watching until they set a bankroll and begin betting.  Once they bust their bankroll, or hit the Win_Walk or Loss_Walk amount, they also return to Watching.
-        private int InitialBankRoll {  get; set; } //Starting amount of money to play with
-        public List<(string betStrategy, string winningsStrategy, int minimumBet)> Strategy { get; set; } //From the STRATEGIES class, defines automatic play
-        private int WinWalk { get; set; }
-        private int LossWalk { get; set; }
+        internal int PlayerID = 0; //Track which player is which without passing the entire player object
+        internal bool Watching = true; //A player is Watching until they set a bankroll and begin betting.  Once they bust their bankroll, or hit the Win_Walk or Loss_Walk amount, they also return to Watching.
+        internal int InitialBankroll { get; set; } = 0; //Starting amount of money to play with
+
+        //Array to manage the Player Strategy. 0 = string betStrategy 1 = string winningsStrategy, 2 = int minimumBet, 3 = int max maximum bet
+        internal object[] Strategy = new object [4];
+        //From the STRATEGIES class, defines automatic play
+        internal int WinWalk { get; set; } = 0;
+        internal int LossWalk { get; set; } = 0;
 
         //Attributes updated through play
         //private bool HasDice; Requires the player to have a bet on the Pass or Don't Pass Line, may impliment later
-        public int ActiveBankRoll; //The amount the player has not including whats on the Table
-        private int CurrentStandings; //This is the amount won or lost since starting
-        public List<(string bet, int betAmount, int rollcount)> ActiveBetTracker = new List<(string, int, int)>(); //Tracks the individual bets 
+        internal int ActiveBankroll = 0; //The amount the player has not including whats on the Table
+        internal int CurrentStanding = 0; //This is the amount won or lost since starting
+        
+        //TODO Needs to be updated to a List of Tuples
+        internal List<(string bet, int betAmount, int rollcount)> ActiveBetTracker = new List<(string, int, int)>(); //Tracks the active individual bets 
+        internal int totalBetAmount = 0;
 
 
         //Historicals tracked over time
-        private List<int> TableAverage = new List<int>(); //The average amount the player has on the table each roll
-        private List<int> StandingsHistory = new List<int>(); //Tracks the standings between each Come Out roll - later will calculate wins and losses
-        public List<(string bet, int betAmount, bool won, int rollcount)> HistoricalBetTracker  = new List<(string, int, bool, int)>(); //Tracks the individual bets 
-
-        private Players()
-        {
-            Strategy = new List<(string, string, int)>();
-            PlayerID = PlayerID ++;
-        }
+        internal List<int> TableAverage = new List<int>(); //The average amount the player has on the table each roll
+        internal List<int> StandingsHistory = new List<int>(); //Tracks the standings between each Come Out roll - later will calculate wins and losses
+        internal List<(string bet, int betAmount, bool won, int rollcount)> HistoricalBetTracker  = new List<(string, int, bool, int)>(); //Tracks the individual bets 
 
         //Methods
-        private void Player_Bet(CrapsTable table, Dice dice)
+
+        internal void UpdatePlayer()
+        {
+            this.CurrentStanding = 0;
+        }
+
+        internal void ResetPlayer()
+        {
+            this.ActiveBankroll = this.InitialBankroll;
+            this.CurrentStanding = 0;
+            this.ActiveBetTracker.Clear();
+            this.TableAverage.Clear();
+            this.StandingsHistory.Clear();
+            this.HistoricalBetTracker.Clear();
+            this.ActiveBetTracker.Clear();
+            this.totalBetAmount = 0;
+        }
+
+        internal void Player_Bet(CrapsTable table, Dice dice)
         {
             if (Strategy[0].Equals("Free Play"))
             {
@@ -47,6 +65,7 @@ namespace CrapsSimC_
                 Strategy.PlayerBet(table, this, dice);
             }
         }
+
 
 
     }

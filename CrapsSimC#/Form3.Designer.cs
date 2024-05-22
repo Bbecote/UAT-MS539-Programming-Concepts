@@ -30,6 +30,7 @@ namespace CrapsSimC_
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Player0Setup));
             label2 = new Label();
             label_MinBet = new Label();
@@ -54,6 +55,8 @@ namespace CrapsSimC_
             tableLayoutPanel3 = new TableLayoutPanel();
             button1 = new Button();
             button2 = new Button();
+            errorProvider = new ErrorProvider(components);
+            toolTip1 = new ToolTip(components);
             tableLayoutPanel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_Player0BankRoll).BeginInit();
@@ -64,6 +67,7 @@ namespace CrapsSimC_
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -211,6 +215,7 @@ namespace CrapsSimC_
             numericUpDown_Player0BankRoll.Name = "numericUpDown_Player0BankRoll";
             numericUpDown_Player0BankRoll.Size = new Size(117, 37);
             numericUpDown_Player0BankRoll.TabIndex = 89;
+            numericUpDown_Player0BankRoll.Validating += numericUpDown_Player0BankRoll_Validating;
             // 
             // comboBox_Player0WinningsStrategy
             // 
@@ -229,6 +234,8 @@ namespace CrapsSimC_
             numericUpDown_Player0MinBet.Name = "numericUpDown_Player0MinBet";
             numericUpDown_Player0MinBet.Size = new Size(117, 37);
             numericUpDown_Player0MinBet.TabIndex = 91;
+            toolTip1.SetToolTip(numericUpDown_Player0MinBet, "Sam will bet the minimum you set here and increase/decrease bets based on the strategies you set above!");
+            numericUpDown_Player0MinBet.Validating += numericUpDown_Player0MinBet_Validating;
             // 
             // numericUpDown_Player0MaxBet
             // 
@@ -238,6 +245,7 @@ namespace CrapsSimC_
             numericUpDown_Player0MaxBet.Name = "numericUpDown_Player0MaxBet";
             numericUpDown_Player0MaxBet.Size = new Size(117, 37);
             numericUpDown_Player0MaxBet.TabIndex = 92;
+            toolTip1.SetToolTip(numericUpDown_Player0MaxBet, "The default of \"0\" will ensure Sam can continue playing until she runs out of money or the House is beat!");
             // 
             // numericUpDown_Player0WinWalk
             // 
@@ -246,6 +254,7 @@ namespace CrapsSimC_
             numericUpDown_Player0WinWalk.Name = "numericUpDown_Player0WinWalk";
             numericUpDown_Player0WinWalk.Size = new Size(117, 37);
             numericUpDown_Player0WinWalk.TabIndex = 93;
+            toolTip1.SetToolTip(numericUpDown_Player0WinWalk, "This sets a hard maximum limit on your betting strategy! The default of \"0\" will allow Sam to bet according to the Strategy you select up to her current bankroll.");
             // 
             // numericUpDown_Player0LoseWalk
             // 
@@ -255,6 +264,7 @@ namespace CrapsSimC_
             numericUpDown_Player0LoseWalk.Name = "numericUpDown_Player0LoseWalk";
             numericUpDown_Player0LoseWalk.Size = new Size(117, 37);
             numericUpDown_Player0LoseWalk.TabIndex = 94;
+            toolTip1.SetToolTip(numericUpDown_Player0LoseWalk, "The default of \"0\" will ensure Sam can continue playing until she runs out of money or the House is beat!");
             // 
             // tableLayoutPanel1
             // 
@@ -328,6 +338,7 @@ namespace CrapsSimC_
             button1.TabIndex = 98;
             button1.Text = "Just Watching";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -342,6 +353,11 @@ namespace CrapsSimC_
             button2.TabIndex = 99;
             button2.Text = "Let's Go!";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
             // 
             // Form_Player0Setup
             // 
@@ -376,6 +392,7 @@ namespace CrapsSimC_
             tableLayoutPanel2.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
         }
 
@@ -405,5 +422,7 @@ namespace CrapsSimC_
         private TableLayoutPanel tableLayoutPanel3;
         private Button button1;
         private Button button2;
+        private ErrorProvider errorProvider;
+        private ToolTip toolTip1;
     }
 }

@@ -1768,6 +1768,9 @@ Appearance: Think "college student chic meets guerilla warfare." Messy bun, over
 
 Motivation: Sam's driven by a potent mix of righteous indignation, a thirst for adventure, and a deep-seated belief that she can change the world – one roll of the dice at a time. She's the glue that holds our heros together, always ready with a pep talk, a strategy, or a shoulder to cry on (but only when the button is OFF).</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIcAAAAyCAYAAAB24MjMAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
@@ -1804,4 +1807,7 @@ Motivation: Sam's driven by a potent mix of righteous indignation, a thirst for 
         Swsu0wAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

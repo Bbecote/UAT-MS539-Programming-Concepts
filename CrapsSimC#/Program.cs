@@ -12,9 +12,7 @@ namespace CrapsSimC_
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new form_AmountSelected());
-            Application.Run(new Form_Player0Setup());
-            CrapsTable Table = new CrapsTable();
-            Dice Dice = new Dice();
+            Application.Run(new form_CrapsTable());
             
 
 

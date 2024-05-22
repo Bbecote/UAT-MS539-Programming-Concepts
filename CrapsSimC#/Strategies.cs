@@ -36,7 +36,7 @@ namespace CrapsSimC_
                         if (!lastbetTuple.Item3)
                         {
                             int betAmount = lastbetTuple.betAmount * 2;
-                            player.ActiveBankRoll -= betAmount;
+                            player.ActiveBankroll -= betAmount;
                             (string, int, int) newBet = ("PasslineBet", betAmount, dice.rollcount);
                             player.ActiveBetTracker.Add(newBet);
                             table.AddBet(betAmount, player.PlayerID, "PassLineBet");

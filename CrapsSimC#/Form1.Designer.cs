@@ -1,6 +1,6 @@
 ﻿namespace CrapsSimC_
 {
-    partial class form_AmountSelected
+    partial class form_CrapsTable
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_AmountSelected));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_CrapsTable));
             tableLayoutPanel1 = new TableLayoutPanel();
             button_1 = new Button();
             button_10 = new Button();
@@ -81,22 +81,25 @@
             radioButton_AddtoBet = new RadioButton();
             radioButton_SubtractBet = new RadioButton();
             label_BankRoll = new Label();
-            textBox_BankRoll = new TextBox();
-            textBoxWinWalk = new TextBox();
+            textBox_Player0BankRoll = new TextBox();
+            textBox_Player0WinWalk = new TextBox();
             label_WinWalk = new Label();
-            textBox_LoseWalk = new TextBox();
+            textBox_Player0LossWalk = new TextBox();
             label_LoseWalk = new Label();
-            textBox2 = new TextBox();
+            textBox_Player0ActiveBets = new TextBox();
             label_ActiveBets = new Label();
-            tableLayoutPanel16 = new TableLayoutPanel();
+            table_Player0Financials = new TableLayoutPanel();
             label_PlayerTitle1 = new Label();
             tableLayoutPanel18 = new TableLayoutPanel();
             button_Player0 = new Button();
             label_DICE = new Label();
             panel1 = new Panel();
-            tableLayoutPanel17 = new TableLayoutPanel();
-            textBox21 = new TextBox();
+            table_Player0CurrentStanding = new TableLayoutPanel();
+            textBox_Player0CurrentStanding = new TextBox();
             label22 = new Label();
+            panel_Player0JustWatching = new Panel();
+            label25 = new Label();
+            label24 = new Label();
             tableLayoutPanel19 = new TableLayoutPanel();
             tableLayoutPanel20 = new TableLayoutPanel();
             button_1000Chip = new ChipsButton();
@@ -106,17 +109,17 @@
             panel3 = new Panel();
             label_TheHouse = new Label();
             panel4 = new Panel();
-            tableLayoutPanel32 = new TableLayoutPanel();
-            textBox18 = new TextBox();
+            table_Player1CurrentStandings = new TableLayoutPanel();
+            textBox_Player1CurrentStanding = new TextBox();
             label19 = new Label();
-            tableLayoutPanel23 = new TableLayoutPanel();
+            table_Player1Financials = new TableLayoutPanel();
             label1 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            textBox_Player1LossWalk = new TextBox();
+            textBox_Player1ActiveBets = new TextBox();
             label2 = new Label();
-            textBox5 = new TextBox();
+            textBox_Player1BankRoll = new TextBox();
             label3 = new Label();
-            textBox6 = new TextBox();
+            textBox_Player1WinWalk = new TextBox();
             label4 = new Label();
             tableLayoutPanel24 = new TableLayoutPanel();
             textBox7 = new TextBox();
@@ -124,18 +127,21 @@
             tableLayoutPanel25 = new TableLayoutPanel();
             label6 = new Label();
             button_Player1 = new Button();
+            panel_Player1JustWatching = new Panel();
+            label26 = new Label();
+            label27 = new Label();
             panel5 = new Panel();
-            tableLayoutPanel33 = new TableLayoutPanel();
-            textBox19 = new TextBox();
+            table_Player2CurrentStandings = new TableLayoutPanel();
+            textBox_Player2CurrentStanding = new TextBox();
             label20 = new Label();
-            tableLayoutPanel26 = new TableLayoutPanel();
+            table_Player2Financials = new TableLayoutPanel();
             label7 = new Label();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
+            textBox_Player2LossWalk = new TextBox();
+            textBox_Player2ActiveBets = new TextBox();
             label8 = new Label();
-            textBox10 = new TextBox();
+            textBox_Player2BankRoll = new TextBox();
             label9 = new Label();
-            textBox11 = new TextBox();
+            textBox_Player2WinWalk = new TextBox();
             label10 = new Label();
             tableLayoutPanel27 = new TableLayoutPanel();
             textBox12 = new TextBox();
@@ -143,18 +149,21 @@
             tableLayoutPanel28 = new TableLayoutPanel();
             label12 = new Label();
             button_Player2 = new Button();
+            panel_Player2JustWatching = new Panel();
+            label28 = new Label();
+            label29 = new Label();
             panel6 = new Panel();
-            tableLayoutPanel34 = new TableLayoutPanel();
-            textBox20 = new TextBox();
+            table_Player3CurrentStandings = new TableLayoutPanel();
+            textBox_Player3CurrentStanding = new TextBox();
             label21 = new Label();
-            tableLayoutPanel29 = new TableLayoutPanel();
+            table_Player3CurrentFinancials = new TableLayoutPanel();
             label13 = new Label();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
+            textBox_Player3LossWalk = new TextBox();
+            textBox_Player3ActiveBets = new TextBox();
             label14 = new Label();
-            textBox15 = new TextBox();
+            textBox_Player3BankRoll = new TextBox();
             label15 = new Label();
-            textBox16 = new TextBox();
+            textBox_Player3WinWalk = new TextBox();
             label16 = new Label();
             tableLayoutPanel30 = new TableLayoutPanel();
             textBox17 = new TextBox();
@@ -162,9 +171,12 @@
             tableLayoutPanel31 = new TableLayoutPanel();
             label18 = new Label();
             button_Player3 = new Button();
+            panel_Player3JustWatching = new Panel();
+            label_Player3JustWatching = new Label();
+            label31 = new Label();
             tableLayoutPanel35 = new TableLayoutPanel();
-            textBox22 = new TextBox();
             label23 = new Label();
+            textBox_DealerBankroll = new TextBox();
             label_ROLL2 = new Label();
             label_AUTO = new Label();
             panel7 = new Panel();
@@ -188,10 +200,11 @@
             tableLayoutPanel15.SuspendLayout();
             panel_ClearAndReset.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
-            tableLayoutPanel16.SuspendLayout();
+            table_Player0Financials.SuspendLayout();
             tableLayoutPanel18.SuspendLayout();
             panel1.SuspendLayout();
-            tableLayoutPanel17.SuspendLayout();
+            table_Player0CurrentStanding.SuspendLayout();
+            panel_Player0JustWatching.SuspendLayout();
             tableLayoutPanel19.SuspendLayout();
             tableLayoutPanel20.SuspendLayout();
             tableLayoutPanel21.SuspendLayout();
@@ -199,20 +212,23 @@
             tableLayoutPanel22.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            tableLayoutPanel32.SuspendLayout();
-            tableLayoutPanel23.SuspendLayout();
+            table_Player1CurrentStandings.SuspendLayout();
+            table_Player1Financials.SuspendLayout();
             tableLayoutPanel24.SuspendLayout();
             tableLayoutPanel25.SuspendLayout();
+            panel_Player1JustWatching.SuspendLayout();
             panel5.SuspendLayout();
-            tableLayoutPanel33.SuspendLayout();
-            tableLayoutPanel26.SuspendLayout();
+            table_Player2CurrentStandings.SuspendLayout();
+            table_Player2Financials.SuspendLayout();
             tableLayoutPanel27.SuspendLayout();
             tableLayoutPanel28.SuspendLayout();
+            panel_Player2JustWatching.SuspendLayout();
             panel6.SuspendLayout();
-            tableLayoutPanel34.SuspendLayout();
-            tableLayoutPanel29.SuspendLayout();
+            table_Player3CurrentStandings.SuspendLayout();
+            table_Player3CurrentFinancials.SuspendLayout();
             tableLayoutPanel30.SuspendLayout();
             tableLayoutPanel31.SuspendLayout();
+            panel_Player3JustWatching.SuspendLayout();
             tableLayoutPanel35.SuspendLayout();
             panel7.SuspendLayout();
             panel8.SuspendLayout();
@@ -905,23 +921,25 @@
             label_BankRoll.TabIndex = 51;
             label_BankRoll.Text = "Bank Roll:";
             // 
-            // textBox_BankRoll
+            // textBox_Player0BankRoll
             // 
-            textBox_BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox_BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_BankRoll.Location = new Point(195, 3);
-            textBox_BankRoll.Name = "textBox_BankRoll";
-            textBox_BankRoll.Size = new Size(101, 43);
-            textBox_BankRoll.TabIndex = 52;
+            textBox_Player0BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player0BankRoll.BorderStyle = BorderStyle.None;
+            textBox_Player0BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0BankRoll.Location = new Point(195, 10);
+            textBox_Player0BankRoll.Name = "textBox_Player0BankRoll";
+            textBox_Player0BankRoll.Size = new Size(101, 36);
+            textBox_Player0BankRoll.TabIndex = 52;
             // 
-            // textBoxWinWalk
+            // textBox_Player0WinWalk
             // 
-            textBoxWinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBoxWinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBoxWinWalk.Location = new Point(472, 3);
-            textBoxWinWalk.Name = "textBoxWinWalk";
-            textBoxWinWalk.Size = new Size(101, 43);
-            textBoxWinWalk.TabIndex = 54;
+            textBox_Player0WinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player0WinWalk.BorderStyle = BorderStyle.None;
+            textBox_Player0WinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0WinWalk.Location = new Point(472, 10);
+            textBox_Player0WinWalk.Name = "textBox_Player0WinWalk";
+            textBox_Player0WinWalk.Size = new Size(101, 36);
+            textBox_Player0WinWalk.TabIndex = 54;
             // 
             // label_WinWalk
             // 
@@ -934,14 +952,15 @@
             label_WinWalk.TabIndex = 53;
             label_WinWalk.Text = "Win Walk:";
             // 
-            // textBox_LoseWalk
+            // textBox_Player0LossWalk
             // 
-            textBox_LoseWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox_LoseWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_LoseWalk.Location = new Point(472, 52);
-            textBox_LoseWalk.Name = "textBox_LoseWalk";
-            textBox_LoseWalk.Size = new Size(101, 43);
-            textBox_LoseWalk.TabIndex = 58;
+            textBox_Player0LossWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player0LossWalk.BorderStyle = BorderStyle.None;
+            textBox_Player0LossWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0LossWalk.Location = new Point(472, 59);
+            textBox_Player0LossWalk.Name = "textBox_Player0LossWalk";
+            textBox_Player0LossWalk.Size = new Size(101, 36);
+            textBox_Player0LossWalk.TabIndex = 58;
             // 
             // label_LoseWalk
             // 
@@ -952,16 +971,17 @@
             label_LoseWalk.Name = "label_LoseWalk";
             label_LoseWalk.Size = new Size(150, 36);
             label_LoseWalk.TabIndex = 57;
-            label_LoseWalk.Text = "Lose Walk:";
+            label_LoseWalk.Text = "Loss Walk:";
             // 
-            // textBox2
+            // textBox_Player0ActiveBets
             // 
-            textBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox2.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(195, 52);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(101, 43);
-            textBox2.TabIndex = 60;
+            textBox_Player0ActiveBets.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player0ActiveBets.BorderStyle = BorderStyle.None;
+            textBox_Player0ActiveBets.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0ActiveBets.Location = new Point(195, 59);
+            textBox_Player0ActiveBets.Name = "textBox_Player0ActiveBets";
+            textBox_Player0ActiveBets.Size = new Size(101, 36);
+            textBox_Player0ActiveBets.TabIndex = 60;
             // 
             // label_ActiveBets
             // 
@@ -974,29 +994,30 @@
             label_ActiveBets.TabIndex = 59;
             label_ActiveBets.Text = "Active Bets:";
             // 
-            // tableLayoutPanel16
+            // table_Player0Financials
             // 
-            tableLayoutPanel16.ColumnCount = 4;
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel16.Controls.Add(label_BankRoll, 0, 0);
-            tableLayoutPanel16.Controls.Add(textBox_LoseWalk, 3, 1);
-            tableLayoutPanel16.Controls.Add(textBox2, 1, 1);
-            tableLayoutPanel16.Controls.Add(label_LoseWalk, 2, 1);
-            tableLayoutPanel16.Controls.Add(textBox_BankRoll, 1, 0);
-            tableLayoutPanel16.Controls.Add(label_ActiveBets, 0, 1);
-            tableLayoutPanel16.Controls.Add(textBoxWinWalk, 3, 0);
-            tableLayoutPanel16.Controls.Add(label_WinWalk, 2, 0);
-            tableLayoutPanel16.Location = new Point(0, 422);
-            tableLayoutPanel16.Margin = new Padding(0);
-            tableLayoutPanel16.Name = "tableLayoutPanel16";
-            tableLayoutPanel16.RowCount = 2;
-            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.Size = new Size(628, 98);
-            tableLayoutPanel16.TabIndex = 61;
+            table_Player0Financials.ColumnCount = 4;
+            table_Player0Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
+            table_Player0Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
+            table_Player0Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player0Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player0Financials.Controls.Add(label_BankRoll, 0, 0);
+            table_Player0Financials.Controls.Add(textBox_Player0LossWalk, 3, 1);
+            table_Player0Financials.Controls.Add(textBox_Player0ActiveBets, 1, 1);
+            table_Player0Financials.Controls.Add(label_LoseWalk, 2, 1);
+            table_Player0Financials.Controls.Add(textBox_Player0BankRoll, 1, 0);
+            table_Player0Financials.Controls.Add(label_ActiveBets, 0, 1);
+            table_Player0Financials.Controls.Add(textBox_Player0WinWalk, 3, 0);
+            table_Player0Financials.Controls.Add(label_WinWalk, 2, 0);
+            table_Player0Financials.Location = new Point(0, 422);
+            table_Player0Financials.Margin = new Padding(0);
+            table_Player0Financials.Name = "table_Player0Financials";
+            table_Player0Financials.RowCount = 2;
+            table_Player0Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player0Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player0Financials.Size = new Size(628, 98);
+            table_Player0Financials.TabIndex = 61;
+            table_Player0Financials.Visible = false;
             // 
             // label_PlayerTitle1
             // 
@@ -1034,6 +1055,7 @@
             button_Player0.Size = new Size(214, 300);
             button_Player0.TabIndex = 65;
             button_Player0.UseVisualStyleBackColor = true;
+            button_Player0.Click += button_Player0_Click;
             // 
             // label_DICE
             // 
@@ -1049,50 +1071,81 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(tableLayoutPanel17);
-            panel1.Controls.Add(tableLayoutPanel16);
+            panel1.Controls.Add(table_Player0CurrentStanding);
+            panel1.Controls.Add(table_Player0Financials);
             panel1.Controls.Add(tableLayoutPanel18);
+            panel1.Controls.Add(panel_Player0JustWatching);
             panel1.Location = new Point(22, 815);
             panel1.Name = "panel1";
             panel1.Size = new Size(628, 520);
             panel1.TabIndex = 67;
             // 
-            // tableLayoutPanel17
+            // table_Player0CurrentStanding
             // 
-            tableLayoutPanel17.Anchor = AnchorStyles.Bottom;
-            tableLayoutPanel17.ColumnCount = 2;
-            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
-            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel17.Controls.Add(textBox21, 1, 0);
-            tableLayoutPanel17.Controls.Add(label22, 0, 0);
-            tableLayoutPanel17.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            tableLayoutPanel17.Location = new Point(46, 373);
-            tableLayoutPanel17.Margin = new Padding(0);
-            tableLayoutPanel17.Name = "tableLayoutPanel17";
-            tableLayoutPanel17.RowCount = 1;
-            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel17.Size = new Size(527, 49);
-            tableLayoutPanel17.TabIndex = 68;
+            table_Player0CurrentStanding.Anchor = AnchorStyles.Bottom;
+            table_Player0CurrentStanding.ColumnCount = 2;
+            table_Player0CurrentStanding.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.0796967F));
+            table_Player0CurrentStanding.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.9203033F));
+            table_Player0CurrentStanding.Controls.Add(textBox_Player0CurrentStanding, 1, 0);
+            table_Player0CurrentStanding.Controls.Add(label22, 0, 0);
+            table_Player0CurrentStanding.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            table_Player0CurrentStanding.Location = new Point(46, 373);
+            table_Player0CurrentStanding.Margin = new Padding(0);
+            table_Player0CurrentStanding.Name = "table_Player0CurrentStanding";
+            table_Player0CurrentStanding.RowCount = 1;
+            table_Player0CurrentStanding.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            table_Player0CurrentStanding.Size = new Size(527, 49);
+            table_Player0CurrentStanding.TabIndex = 68;
+            table_Player0CurrentStanding.Visible = false;
             // 
-            // textBox21
+            // textBox_Player0CurrentStanding
             // 
-            textBox21.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox21.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox21.Location = new Point(354, 3);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(101, 43);
-            textBox21.TabIndex = 56;
+            textBox_Player0CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player0CurrentStanding.BorderStyle = BorderStyle.None;
+            textBox_Player0CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0CurrentStanding.Location = new Point(288, 10);
+            textBox_Player0CurrentStanding.Name = "textBox_Player0CurrentStanding";
+            textBox_Player0CurrentStanding.Size = new Size(232, 36);
+            textBox_Player0CurrentStanding.TabIndex = 56;
             // 
             // label22
             // 
             label22.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label22.AutoSize = true;
             label22.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label22.Location = new Point(87, 13);
+            label22.Location = new Point(35, 13);
             label22.Name = "label22";
-            label22.Size = new Size(261, 36);
+            label22.Size = new Size(247, 36);
             label22.TabIndex = 55;
-            label22.Text = "Current Standings:";
+            label22.Text = "Current Standing:";
+            // 
+            // panel_Player0JustWatching
+            // 
+            panel_Player0JustWatching.Controls.Add(label25);
+            panel_Player0JustWatching.Controls.Add(label24);
+            panel_Player0JustWatching.Location = new Point(97, 348);
+            panel_Player0JustWatching.Name = "panel_Player0JustWatching";
+            panel_Player0JustWatching.Size = new Size(464, 154);
+            panel_Player0JustWatching.TabIndex = 82;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(117, 116);
+            label25.Name = "label25";
+            label25.Size = new Size(202, 15);
+            label25.TabIndex = 1;
+            label25.Text = "Click on Sam to get her in the action!";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label24.Location = new Point(3, 37);
+            label24.Name = "label24";
+            label24.Size = new Size(457, 79);
+            label24.TabIndex = 0;
+            label24.Text = "Just Watching!";
             // 
             // tableLayoutPanel19
             // 
@@ -1208,76 +1261,80 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(tableLayoutPanel32);
-            panel4.Controls.Add(tableLayoutPanel23);
+            panel4.Controls.Add(table_Player1CurrentStandings);
+            panel4.Controls.Add(table_Player1Financials);
             panel4.Controls.Add(tableLayoutPanel24);
             panel4.Controls.Add(tableLayoutPanel25);
+            panel4.Controls.Add(panel_Player1JustWatching);
             panel4.Location = new Point(653, 815);
             panel4.Name = "panel4";
             panel4.Size = new Size(628, 520);
             panel4.TabIndex = 68;
             // 
-            // tableLayoutPanel32
+            // table_Player1CurrentStandings
             // 
-            tableLayoutPanel32.Anchor = AnchorStyles.Bottom;
-            tableLayoutPanel32.ColumnCount = 2;
-            tableLayoutPanel32.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
-            tableLayoutPanel32.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel32.Controls.Add(textBox18, 1, 0);
-            tableLayoutPanel32.Controls.Add(label19, 0, 0);
-            tableLayoutPanel32.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            tableLayoutPanel32.Location = new Point(46, 373);
-            tableLayoutPanel32.Margin = new Padding(0);
-            tableLayoutPanel32.Name = "tableLayoutPanel32";
-            tableLayoutPanel32.RowCount = 1;
-            tableLayoutPanel32.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel32.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel32.Size = new Size(527, 52);
-            tableLayoutPanel32.TabIndex = 67;
+            table_Player1CurrentStandings.Anchor = AnchorStyles.Bottom;
+            table_Player1CurrentStandings.ColumnCount = 2;
+            table_Player1CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
+            table_Player1CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            table_Player1CurrentStandings.Controls.Add(textBox_Player1CurrentStanding, 1, 0);
+            table_Player1CurrentStandings.Controls.Add(label19, 0, 0);
+            table_Player1CurrentStandings.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            table_Player1CurrentStandings.Location = new Point(46, 373);
+            table_Player1CurrentStandings.Margin = new Padding(0);
+            table_Player1CurrentStandings.Name = "table_Player1CurrentStandings";
+            table_Player1CurrentStandings.RowCount = 1;
+            table_Player1CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            table_Player1CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player1CurrentStandings.Size = new Size(527, 52);
+            table_Player1CurrentStandings.TabIndex = 67;
+            table_Player1CurrentStandings.Visible = false;
             // 
-            // textBox18
+            // textBox_Player1CurrentStanding
             // 
-            textBox18.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox18.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox18.Location = new Point(354, 6);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(101, 43);
-            textBox18.TabIndex = 56;
+            textBox_Player1CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player1CurrentStanding.BorderStyle = BorderStyle.None;
+            textBox_Player1CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player1CurrentStanding.Location = new Point(354, 13);
+            textBox_Player1CurrentStanding.Name = "textBox_Player1CurrentStanding";
+            textBox_Player1CurrentStanding.Size = new Size(101, 36);
+            textBox_Player1CurrentStanding.TabIndex = 56;
             // 
             // label19
             // 
             label19.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label19.AutoSize = true;
             label19.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label19.Location = new Point(87, 16);
+            label19.Location = new Point(101, 16);
             label19.Name = "label19";
-            label19.Size = new Size(261, 36);
+            label19.Size = new Size(247, 36);
             label19.TabIndex = 55;
-            label19.Text = "Current Standings:";
+            label19.Text = "Current Standing:";
             // 
-            // tableLayoutPanel23
+            // table_Player1Financials
             // 
-            tableLayoutPanel23.ColumnCount = 4;
-            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
-            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel23.Controls.Add(label1, 0, 0);
-            tableLayoutPanel23.Controls.Add(textBox3, 3, 1);
-            tableLayoutPanel23.Controls.Add(textBox4, 1, 1);
-            tableLayoutPanel23.Controls.Add(label2, 2, 1);
-            tableLayoutPanel23.Controls.Add(textBox5, 1, 0);
-            tableLayoutPanel23.Controls.Add(label3, 0, 1);
-            tableLayoutPanel23.Controls.Add(textBox6, 3, 0);
-            tableLayoutPanel23.Controls.Add(label4, 2, 0);
-            tableLayoutPanel23.Location = new Point(0, 422);
-            tableLayoutPanel23.Margin = new Padding(0);
-            tableLayoutPanel23.Name = "tableLayoutPanel23";
-            tableLayoutPanel23.RowCount = 2;
-            tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel23.Size = new Size(628, 98);
-            tableLayoutPanel23.TabIndex = 61;
+            table_Player1Financials.ColumnCount = 4;
+            table_Player1Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
+            table_Player1Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
+            table_Player1Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player1Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player1Financials.Controls.Add(label1, 0, 0);
+            table_Player1Financials.Controls.Add(textBox_Player1LossWalk, 3, 1);
+            table_Player1Financials.Controls.Add(textBox_Player1ActiveBets, 1, 1);
+            table_Player1Financials.Controls.Add(label2, 2, 1);
+            table_Player1Financials.Controls.Add(textBox_Player1BankRoll, 1, 0);
+            table_Player1Financials.Controls.Add(label3, 0, 1);
+            table_Player1Financials.Controls.Add(textBox_Player1WinWalk, 3, 0);
+            table_Player1Financials.Controls.Add(label4, 2, 0);
+            table_Player1Financials.Location = new Point(0, 422);
+            table_Player1Financials.Margin = new Padding(0);
+            table_Player1Financials.Name = "table_Player1Financials";
+            table_Player1Financials.RowCount = 2;
+            table_Player1Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player1Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player1Financials.Size = new Size(628, 98);
+            table_Player1Financials.TabIndex = 61;
+            table_Player1Financials.Visible = false;
             // 
             // label1
             // 
@@ -1290,23 +1347,25 @@
             label1.TabIndex = 51;
             label1.Text = "Bank Roll:";
             // 
-            // textBox3
+            // textBox_Player1LossWalk
             // 
-            textBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox3.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(472, 52);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(101, 43);
-            textBox3.TabIndex = 58;
+            textBox_Player1LossWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player1LossWalk.BorderStyle = BorderStyle.None;
+            textBox_Player1LossWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player1LossWalk.Location = new Point(472, 59);
+            textBox_Player1LossWalk.Name = "textBox_Player1LossWalk";
+            textBox_Player1LossWalk.Size = new Size(101, 36);
+            textBox_Player1LossWalk.TabIndex = 58;
             // 
-            // textBox4
+            // textBox_Player1ActiveBets
             // 
-            textBox4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox4.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(195, 52);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(101, 43);
-            textBox4.TabIndex = 60;
+            textBox_Player1ActiveBets.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player1ActiveBets.BorderStyle = BorderStyle.None;
+            textBox_Player1ActiveBets.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player1ActiveBets.Location = new Point(195, 59);
+            textBox_Player1ActiveBets.Name = "textBox_Player1ActiveBets";
+            textBox_Player1ActiveBets.Size = new Size(101, 36);
+            textBox_Player1ActiveBets.TabIndex = 60;
             // 
             // label2
             // 
@@ -1319,14 +1378,15 @@
             label2.TabIndex = 57;
             label2.Text = "Lose Walk:";
             // 
-            // textBox5
+            // textBox_Player1BankRoll
             // 
-            textBox5.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox5.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(195, 3);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(101, 43);
-            textBox5.TabIndex = 52;
+            textBox_Player1BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player1BankRoll.BorderStyle = BorderStyle.None;
+            textBox_Player1BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player1BankRoll.Location = new Point(195, 10);
+            textBox_Player1BankRoll.Name = "textBox_Player1BankRoll";
+            textBox_Player1BankRoll.Size = new Size(101, 36);
+            textBox_Player1BankRoll.TabIndex = 52;
             // 
             // label3
             // 
@@ -1339,14 +1399,15 @@
             label3.TabIndex = 59;
             label3.Text = "Active Bets:";
             // 
-            // textBox6
+            // textBox_Player1WinWalk
             // 
-            textBox6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox6.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(472, 3);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(101, 43);
-            textBox6.TabIndex = 54;
+            textBox_Player1WinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player1WinWalk.BorderStyle = BorderStyle.None;
+            textBox_Player1WinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player1WinWalk.Location = new Point(472, 10);
+            textBox_Player1WinWalk.Name = "textBox_Player1WinWalk";
+            textBox_Player1WinWalk.Size = new Size(101, 36);
+            textBox_Player1WinWalk.TabIndex = 54;
             // 
             // label4
             // 
@@ -1432,43 +1493,74 @@
             button_Player1.TabIndex = 65;
             button_Player1.UseVisualStyleBackColor = true;
             // 
+            // panel_Player1JustWatching
+            // 
+            panel_Player1JustWatching.Controls.Add(label26);
+            panel_Player1JustWatching.Controls.Add(label27);
+            panel_Player1JustWatching.Location = new Point(102, 348);
+            panel_Player1JustWatching.Name = "panel_Player1JustWatching";
+            panel_Player1JustWatching.Size = new Size(464, 154);
+            panel_Player1JustWatching.TabIndex = 83;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(117, 116);
+            label26.Name = "label26";
+            label26.Size = new Size(204, 15);
+            label26.TabIndex = 1;
+            label26.Text = "Click on Amy to get her in the action!";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label27.Location = new Point(3, 37);
+            label27.Name = "label27";
+            label27.Size = new Size(457, 79);
+            label27.TabIndex = 0;
+            label27.Text = "Just Watching!";
+            // 
             // panel5
             // 
-            panel5.Controls.Add(tableLayoutPanel33);
-            panel5.Controls.Add(tableLayoutPanel26);
+            panel5.Controls.Add(table_Player2CurrentStandings);
+            panel5.Controls.Add(table_Player2Financials);
             panel5.Controls.Add(tableLayoutPanel27);
             panel5.Controls.Add(tableLayoutPanel28);
+            panel5.Controls.Add(panel_Player2JustWatching);
             panel5.Location = new Point(1284, 815);
             panel5.Name = "panel5";
             panel5.Size = new Size(628, 520);
             panel5.TabIndex = 68;
             // 
-            // tableLayoutPanel33
+            // table_Player2CurrentStandings
             // 
-            tableLayoutPanel33.Anchor = AnchorStyles.Bottom;
-            tableLayoutPanel33.ColumnCount = 2;
-            tableLayoutPanel33.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
-            tableLayoutPanel33.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel33.Controls.Add(textBox19, 1, 0);
-            tableLayoutPanel33.Controls.Add(label20, 0, 0);
-            tableLayoutPanel33.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            tableLayoutPanel33.Location = new Point(46, 373);
-            tableLayoutPanel33.Margin = new Padding(0);
-            tableLayoutPanel33.Name = "tableLayoutPanel33";
-            tableLayoutPanel33.RowCount = 1;
-            tableLayoutPanel33.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel33.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel33.Size = new Size(527, 49);
-            tableLayoutPanel33.TabIndex = 66;
+            table_Player2CurrentStandings.Anchor = AnchorStyles.Bottom;
+            table_Player2CurrentStandings.ColumnCount = 2;
+            table_Player2CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
+            table_Player2CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            table_Player2CurrentStandings.Controls.Add(textBox_Player2CurrentStanding, 1, 0);
+            table_Player2CurrentStandings.Controls.Add(label20, 0, 0);
+            table_Player2CurrentStandings.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            table_Player2CurrentStandings.Location = new Point(46, 373);
+            table_Player2CurrentStandings.Margin = new Padding(0);
+            table_Player2CurrentStandings.Name = "table_Player2CurrentStandings";
+            table_Player2CurrentStandings.RowCount = 1;
+            table_Player2CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            table_Player2CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player2CurrentStandings.Size = new Size(527, 49);
+            table_Player2CurrentStandings.TabIndex = 66;
+            table_Player2CurrentStandings.Visible = false;
             // 
-            // textBox19
+            // textBox_Player2CurrentStanding
             // 
-            textBox19.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox19.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox19.Location = new Point(354, 3);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(101, 43);
-            textBox19.TabIndex = 56;
+            textBox_Player2CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player2CurrentStanding.BorderStyle = BorderStyle.None;
+            textBox_Player2CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player2CurrentStanding.Location = new Point(354, 10);
+            textBox_Player2CurrentStanding.Name = "textBox_Player2CurrentStanding";
+            textBox_Player2CurrentStanding.Size = new Size(101, 36);
+            textBox_Player2CurrentStanding.TabIndex = 56;
             // 
             // label20
             // 
@@ -1481,29 +1573,30 @@
             label20.TabIndex = 55;
             label20.Text = "Current Standings:";
             // 
-            // tableLayoutPanel26
+            // table_Player2Financials
             // 
-            tableLayoutPanel26.ColumnCount = 4;
-            tableLayoutPanel26.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel26.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
-            tableLayoutPanel26.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel26.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel26.Controls.Add(label7, 0, 0);
-            tableLayoutPanel26.Controls.Add(textBox8, 3, 1);
-            tableLayoutPanel26.Controls.Add(textBox9, 1, 1);
-            tableLayoutPanel26.Controls.Add(label8, 2, 1);
-            tableLayoutPanel26.Controls.Add(textBox10, 1, 0);
-            tableLayoutPanel26.Controls.Add(label9, 0, 1);
-            tableLayoutPanel26.Controls.Add(textBox11, 3, 0);
-            tableLayoutPanel26.Controls.Add(label10, 2, 0);
-            tableLayoutPanel26.Location = new Point(0, 422);
-            tableLayoutPanel26.Margin = new Padding(0);
-            tableLayoutPanel26.Name = "tableLayoutPanel26";
-            tableLayoutPanel26.RowCount = 2;
-            tableLayoutPanel26.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel26.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel26.Size = new Size(628, 98);
-            tableLayoutPanel26.TabIndex = 61;
+            table_Player2Financials.ColumnCount = 4;
+            table_Player2Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
+            table_Player2Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
+            table_Player2Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player2Financials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player2Financials.Controls.Add(label7, 0, 0);
+            table_Player2Financials.Controls.Add(textBox_Player2LossWalk, 3, 1);
+            table_Player2Financials.Controls.Add(textBox_Player2ActiveBets, 1, 1);
+            table_Player2Financials.Controls.Add(label8, 2, 1);
+            table_Player2Financials.Controls.Add(textBox_Player2BankRoll, 1, 0);
+            table_Player2Financials.Controls.Add(label9, 0, 1);
+            table_Player2Financials.Controls.Add(textBox_Player2WinWalk, 3, 0);
+            table_Player2Financials.Controls.Add(label10, 2, 0);
+            table_Player2Financials.Location = new Point(0, 422);
+            table_Player2Financials.Margin = new Padding(0);
+            table_Player2Financials.Name = "table_Player2Financials";
+            table_Player2Financials.RowCount = 2;
+            table_Player2Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player2Financials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player2Financials.Size = new Size(628, 98);
+            table_Player2Financials.TabIndex = 61;
+            table_Player2Financials.Visible = false;
             // 
             // label7
             // 
@@ -1516,23 +1609,25 @@
             label7.TabIndex = 51;
             label7.Text = "Bank Roll:";
             // 
-            // textBox8
+            // textBox_Player2LossWalk
             // 
-            textBox8.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox8.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox8.Location = new Point(472, 52);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(101, 43);
-            textBox8.TabIndex = 58;
+            textBox_Player2LossWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player2LossWalk.BorderStyle = BorderStyle.None;
+            textBox_Player2LossWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player2LossWalk.Location = new Point(472, 59);
+            textBox_Player2LossWalk.Name = "textBox_Player2LossWalk";
+            textBox_Player2LossWalk.Size = new Size(101, 36);
+            textBox_Player2LossWalk.TabIndex = 58;
             // 
-            // textBox9
+            // textBox_Player2ActiveBets
             // 
-            textBox9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox9.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox9.Location = new Point(195, 52);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(101, 43);
-            textBox9.TabIndex = 60;
+            textBox_Player2ActiveBets.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player2ActiveBets.BorderStyle = BorderStyle.None;
+            textBox_Player2ActiveBets.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player2ActiveBets.Location = new Point(195, 59);
+            textBox_Player2ActiveBets.Name = "textBox_Player2ActiveBets";
+            textBox_Player2ActiveBets.Size = new Size(101, 36);
+            textBox_Player2ActiveBets.TabIndex = 60;
             // 
             // label8
             // 
@@ -1545,14 +1640,15 @@
             label8.TabIndex = 57;
             label8.Text = "Lose Walk:";
             // 
-            // textBox10
+            // textBox_Player2BankRoll
             // 
-            textBox10.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox10.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox10.Location = new Point(195, 3);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(101, 43);
-            textBox10.TabIndex = 52;
+            textBox_Player2BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player2BankRoll.BorderStyle = BorderStyle.None;
+            textBox_Player2BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player2BankRoll.Location = new Point(195, 10);
+            textBox_Player2BankRoll.Name = "textBox_Player2BankRoll";
+            textBox_Player2BankRoll.Size = new Size(101, 36);
+            textBox_Player2BankRoll.TabIndex = 52;
             // 
             // label9
             // 
@@ -1565,14 +1661,15 @@
             label9.TabIndex = 59;
             label9.Text = "Active Bets:";
             // 
-            // textBox11
+            // textBox_Player2WinWalk
             // 
-            textBox11.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox11.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox11.Location = new Point(472, 3);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(101, 43);
-            textBox11.TabIndex = 54;
+            textBox_Player2WinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player2WinWalk.BorderStyle = BorderStyle.None;
+            textBox_Player2WinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player2WinWalk.Location = new Point(472, 10);
+            textBox_Player2WinWalk.Name = "textBox_Player2WinWalk";
+            textBox_Player2WinWalk.Size = new Size(101, 36);
+            textBox_Player2WinWalk.TabIndex = 54;
             // 
             // label10
             // 
@@ -1658,43 +1755,74 @@
             button_Player2.TabIndex = 65;
             button_Player2.UseVisualStyleBackColor = true;
             // 
+            // panel_Player2JustWatching
+            // 
+            panel_Player2JustWatching.Controls.Add(label28);
+            panel_Player2JustWatching.Controls.Add(label29);
+            panel_Player2JustWatching.Location = new Point(90, 348);
+            panel_Player2JustWatching.Name = "panel_Player2JustWatching";
+            panel_Player2JustWatching.Size = new Size(464, 154);
+            panel_Player2JustWatching.TabIndex = 84;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(117, 116);
+            label28.Name = "label28";
+            label28.Size = new Size(208, 15);
+            label28.TabIndex = 1;
+            label28.Text = "Click on John to get him in the action!";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label29.Location = new Point(3, 37);
+            label29.Name = "label29";
+            label29.Size = new Size(457, 79);
+            label29.TabIndex = 0;
+            label29.Text = "Just Watching!";
+            // 
             // panel6
             // 
-            panel6.Controls.Add(tableLayoutPanel34);
-            panel6.Controls.Add(tableLayoutPanel29);
+            panel6.Controls.Add(table_Player3CurrentStandings);
+            panel6.Controls.Add(table_Player3CurrentFinancials);
             panel6.Controls.Add(tableLayoutPanel30);
             panel6.Controls.Add(tableLayoutPanel31);
+            panel6.Controls.Add(panel_Player3JustWatching);
             panel6.Location = new Point(1915, 815);
             panel6.Name = "panel6";
             panel6.Size = new Size(628, 520);
             panel6.TabIndex = 69;
             // 
-            // tableLayoutPanel34
+            // table_Player3CurrentStandings
             // 
-            tableLayoutPanel34.Anchor = AnchorStyles.Bottom;
-            tableLayoutPanel34.ColumnCount = 2;
-            tableLayoutPanel34.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
-            tableLayoutPanel34.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel34.Controls.Add(textBox20, 1, 0);
-            tableLayoutPanel34.Controls.Add(label21, 0, 0);
-            tableLayoutPanel34.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            tableLayoutPanel34.Location = new Point(46, 373);
-            tableLayoutPanel34.Margin = new Padding(0);
-            tableLayoutPanel34.Name = "tableLayoutPanel34";
-            tableLayoutPanel34.RowCount = 1;
-            tableLayoutPanel34.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel34.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel34.Size = new Size(574, 52);
-            tableLayoutPanel34.TabIndex = 65;
+            table_Player3CurrentStandings.Anchor = AnchorStyles.Bottom;
+            table_Player3CurrentStandings.ColumnCount = 2;
+            table_Player3CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.6666641F));
+            table_Player3CurrentStandings.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            table_Player3CurrentStandings.Controls.Add(textBox_Player3CurrentStanding, 1, 0);
+            table_Player3CurrentStandings.Controls.Add(label21, 0, 0);
+            table_Player3CurrentStandings.Font = new Font("Ink Free", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            table_Player3CurrentStandings.Location = new Point(46, 373);
+            table_Player3CurrentStandings.Margin = new Padding(0);
+            table_Player3CurrentStandings.Name = "table_Player3CurrentStandings";
+            table_Player3CurrentStandings.RowCount = 1;
+            table_Player3CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            table_Player3CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player3CurrentStandings.Size = new Size(574, 52);
+            table_Player3CurrentStandings.TabIndex = 65;
+            table_Player3CurrentStandings.Visible = false;
             // 
-            // textBox20
+            // textBox_Player3CurrentStanding
             // 
-            textBox20.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox20.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox20.Location = new Point(385, 6);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(101, 43);
-            textBox20.TabIndex = 56;
+            textBox_Player3CurrentStanding.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player3CurrentStanding.BorderStyle = BorderStyle.None;
+            textBox_Player3CurrentStanding.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player3CurrentStanding.Location = new Point(385, 13);
+            textBox_Player3CurrentStanding.Name = "textBox_Player3CurrentStanding";
+            textBox_Player3CurrentStanding.Size = new Size(101, 36);
+            textBox_Player3CurrentStanding.TabIndex = 56;
             // 
             // label21
             // 
@@ -1707,29 +1835,30 @@
             label21.TabIndex = 55;
             label21.Text = "Current Standings:";
             // 
-            // tableLayoutPanel29
+            // table_Player3CurrentFinancials
             // 
-            tableLayoutPanel29.ColumnCount = 4;
-            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
-            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
-            tableLayoutPanel29.Controls.Add(label13, 0, 0);
-            tableLayoutPanel29.Controls.Add(textBox13, 3, 1);
-            tableLayoutPanel29.Controls.Add(textBox14, 1, 1);
-            tableLayoutPanel29.Controls.Add(label14, 2, 1);
-            tableLayoutPanel29.Controls.Add(textBox15, 1, 0);
-            tableLayoutPanel29.Controls.Add(label15, 0, 1);
-            tableLayoutPanel29.Controls.Add(textBox16, 3, 0);
-            tableLayoutPanel29.Controls.Add(label16, 2, 0);
-            tableLayoutPanel29.Location = new Point(0, 422);
-            tableLayoutPanel29.Margin = new Padding(0);
-            tableLayoutPanel29.Name = "tableLayoutPanel29";
-            tableLayoutPanel29.RowCount = 2;
-            tableLayoutPanel29.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel29.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel29.Size = new Size(628, 98);
-            tableLayoutPanel29.TabIndex = 61;
+            table_Player3CurrentFinancials.ColumnCount = 4;
+            table_Player3CurrentFinancials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.76923F));
+            table_Player3CurrentFinancials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.23077F));
+            table_Player3CurrentFinancials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player3CurrentFinancials.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.159235F));
+            table_Player3CurrentFinancials.Controls.Add(label13, 0, 0);
+            table_Player3CurrentFinancials.Controls.Add(textBox_Player3LossWalk, 3, 1);
+            table_Player3CurrentFinancials.Controls.Add(textBox_Player3ActiveBets, 1, 1);
+            table_Player3CurrentFinancials.Controls.Add(label14, 2, 1);
+            table_Player3CurrentFinancials.Controls.Add(textBox_Player3BankRoll, 1, 0);
+            table_Player3CurrentFinancials.Controls.Add(label15, 0, 1);
+            table_Player3CurrentFinancials.Controls.Add(textBox_Player3WinWalk, 3, 0);
+            table_Player3CurrentFinancials.Controls.Add(label16, 2, 0);
+            table_Player3CurrentFinancials.Location = new Point(0, 422);
+            table_Player3CurrentFinancials.Margin = new Padding(0);
+            table_Player3CurrentFinancials.Name = "table_Player3CurrentFinancials";
+            table_Player3CurrentFinancials.RowCount = 2;
+            table_Player3CurrentFinancials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player3CurrentFinancials.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_Player3CurrentFinancials.Size = new Size(628, 98);
+            table_Player3CurrentFinancials.TabIndex = 61;
+            table_Player3CurrentFinancials.Visible = false;
             // 
             // label13
             // 
@@ -1742,23 +1871,25 @@
             label13.TabIndex = 51;
             label13.Text = "Bank Roll:";
             // 
-            // textBox13
+            // textBox_Player3LossWalk
             // 
-            textBox13.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox13.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox13.Location = new Point(472, 52);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(101, 43);
-            textBox13.TabIndex = 58;
+            textBox_Player3LossWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player3LossWalk.BorderStyle = BorderStyle.None;
+            textBox_Player3LossWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player3LossWalk.Location = new Point(472, 59);
+            textBox_Player3LossWalk.Name = "textBox_Player3LossWalk";
+            textBox_Player3LossWalk.Size = new Size(101, 36);
+            textBox_Player3LossWalk.TabIndex = 58;
             // 
-            // textBox14
+            // textBox_Player3ActiveBets
             // 
-            textBox14.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox14.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox14.Location = new Point(195, 52);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(101, 43);
-            textBox14.TabIndex = 60;
+            textBox_Player3ActiveBets.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player3ActiveBets.BorderStyle = BorderStyle.None;
+            textBox_Player3ActiveBets.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player3ActiveBets.Location = new Point(195, 59);
+            textBox_Player3ActiveBets.Name = "textBox_Player3ActiveBets";
+            textBox_Player3ActiveBets.Size = new Size(101, 36);
+            textBox_Player3ActiveBets.TabIndex = 60;
             // 
             // label14
             // 
@@ -1771,14 +1902,15 @@
             label14.TabIndex = 57;
             label14.Text = "Lose Walk:";
             // 
-            // textBox15
+            // textBox_Player3BankRoll
             // 
-            textBox15.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox15.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox15.Location = new Point(195, 3);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(101, 43);
-            textBox15.TabIndex = 52;
+            textBox_Player3BankRoll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player3BankRoll.BorderStyle = BorderStyle.None;
+            textBox_Player3BankRoll.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player3BankRoll.Location = new Point(195, 10);
+            textBox_Player3BankRoll.Name = "textBox_Player3BankRoll";
+            textBox_Player3BankRoll.Size = new Size(101, 36);
+            textBox_Player3BankRoll.TabIndex = 52;
             // 
             // label15
             // 
@@ -1791,14 +1923,15 @@
             label15.TabIndex = 59;
             label15.Text = "Active Bets:";
             // 
-            // textBox16
+            // textBox_Player3WinWalk
             // 
-            textBox16.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox16.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox16.Location = new Point(472, 3);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(101, 43);
-            textBox16.TabIndex = 54;
+            textBox_Player3WinWalk.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_Player3WinWalk.BorderStyle = BorderStyle.None;
+            textBox_Player3WinWalk.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player3WinWalk.Location = new Point(472, 10);
+            textBox_Player3WinWalk.Name = "textBox_Player3WinWalk";
+            textBox_Player3WinWalk.Size = new Size(101, 36);
+            textBox_Player3WinWalk.TabIndex = 54;
             // 
             // label16
             // 
@@ -1884,44 +2017,74 @@
             button_Player3.TabIndex = 65;
             button_Player3.UseVisualStyleBackColor = true;
             // 
+            // panel_Player3JustWatching
+            // 
+            panel_Player3JustWatching.Controls.Add(label_Player3JustWatching);
+            panel_Player3JustWatching.Controls.Add(label31);
+            panel_Player3JustWatching.Location = new Point(91, 348);
+            panel_Player3JustWatching.Name = "panel_Player3JustWatching";
+            panel_Player3JustWatching.Size = new Size(464, 154);
+            panel_Player3JustWatching.TabIndex = 85;
+            // 
+            // label_Player3JustWatching
+            // 
+            label_Player3JustWatching.AutoSize = true;
+            label_Player3JustWatching.Location = new Point(117, 116);
+            label_Player3JustWatching.Name = "label_Player3JustWatching";
+            label_Player3JustWatching.Size = new Size(206, 15);
+            label_Player3JustWatching.TabIndex = 1;
+            label_Player3JustWatching.Text = "Click on Betty to get her in the action!";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label31.Location = new Point(3, 37);
+            label31.Name = "label31";
+            label31.Size = new Size(457, 79);
+            label31.TabIndex = 0;
+            label31.Text = "Just Watching!";
+            // 
             // tableLayoutPanel35
             // 
             tableLayoutPanel35.ColumnCount = 2;
-            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70.17115F));
-            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 29.8288517F));
-            tableLayoutPanel35.Controls.Add(textBox22, 1, 0);
+            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 57.6779022F));
+            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42.3220978F));
             tableLayoutPanel35.Controls.Add(label23, 0, 0);
+            tableLayoutPanel35.Controls.Add(textBox_DealerBankroll, 1, 0);
             tableLayoutPanel35.Location = new Point(1600, 589);
             tableLayoutPanel35.Margin = new Padding(0);
             tableLayoutPanel35.Name = "tableLayoutPanel35";
             tableLayoutPanel35.RowCount = 1;
             tableLayoutPanel35.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel35.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel35.Size = new Size(426, 56);
+            tableLayoutPanel35.Size = new Size(534, 56);
             tableLayoutPanel35.TabIndex = 71;
-            // 
-            // textBox22
-            // 
-            textBox22.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox22.Font = new Font("Ink Free", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox22.Location = new Point(298, 3);
-            textBox22.Margin = new Padding(0);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(101, 53);
-            textBox22.TabIndex = 48;
             // 
             // label23
             // 
             label23.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label23.AutoSize = true;
             label23.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.Location = new Point(17, 10);
+            label23.Location = new Point(27, 10);
             label23.Margin = new Padding(0);
             label23.Name = "label23";
             label23.Size = new Size(281, 46);
             label23.TabIndex = 47;
             label23.Text = "Dealer Bankroll:";
             label23.Click += label23_Click;
+            // 
+            // textBox_DealerBankroll
+            // 
+            textBox_DealerBankroll.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox_DealerBankroll.BorderStyle = BorderStyle.None;
+            textBox_DealerBankroll.Font = new Font("Ink Free", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_DealerBankroll.Location = new Point(308, 10);
+            textBox_DealerBankroll.Margin = new Padding(0);
+            textBox_DealerBankroll.Name = "textBox_DealerBankroll";
+            textBox_DealerBankroll.Size = new Size(209, 46);
+            textBox_DealerBankroll.TabIndex = 48;
+            textBox_DealerBankroll.Text = "1,000,000";
             // 
             // label_ROLL2
             // 
@@ -2047,7 +2210,7 @@
             panel11.Size = new Size(177, 134);
             panel11.TabIndex = 81;
             // 
-            // form_AmountSelected
+            // form_CrapsTable
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -2072,7 +2235,8 @@
             Controls.Add(pictureBox_Off);
             Controls.Add(panel_TableBackground);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "form_AmountSelected";
+            Name = "form_CrapsTable";
+            ShowIcon = false;
             WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
@@ -2086,13 +2250,15 @@
             tableLayoutPanel15.ResumeLayout(false);
             panel_ClearAndReset.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
-            tableLayoutPanel16.ResumeLayout(false);
-            tableLayoutPanel16.PerformLayout();
+            table_Player0Financials.ResumeLayout(false);
+            table_Player0Financials.PerformLayout();
             tableLayoutPanel18.ResumeLayout(false);
             tableLayoutPanel18.PerformLayout();
             panel1.ResumeLayout(false);
-            tableLayoutPanel17.ResumeLayout(false);
-            tableLayoutPanel17.PerformLayout();
+            table_Player0CurrentStanding.ResumeLayout(false);
+            table_Player0CurrentStanding.PerformLayout();
+            panel_Player0JustWatching.ResumeLayout(false);
+            panel_Player0JustWatching.PerformLayout();
             tableLayoutPanel19.ResumeLayout(false);
             tableLayoutPanel19.PerformLayout();
             tableLayoutPanel20.ResumeLayout(false);
@@ -2103,32 +2269,38 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
-            tableLayoutPanel32.ResumeLayout(false);
-            tableLayoutPanel32.PerformLayout();
-            tableLayoutPanel23.ResumeLayout(false);
-            tableLayoutPanel23.PerformLayout();
+            table_Player1CurrentStandings.ResumeLayout(false);
+            table_Player1CurrentStandings.PerformLayout();
+            table_Player1Financials.ResumeLayout(false);
+            table_Player1Financials.PerformLayout();
             tableLayoutPanel24.ResumeLayout(false);
             tableLayoutPanel24.PerformLayout();
             tableLayoutPanel25.ResumeLayout(false);
             tableLayoutPanel25.PerformLayout();
+            panel_Player1JustWatching.ResumeLayout(false);
+            panel_Player1JustWatching.PerformLayout();
             panel5.ResumeLayout(false);
-            tableLayoutPanel33.ResumeLayout(false);
-            tableLayoutPanel33.PerformLayout();
-            tableLayoutPanel26.ResumeLayout(false);
-            tableLayoutPanel26.PerformLayout();
+            table_Player2CurrentStandings.ResumeLayout(false);
+            table_Player2CurrentStandings.PerformLayout();
+            table_Player2Financials.ResumeLayout(false);
+            table_Player2Financials.PerformLayout();
             tableLayoutPanel27.ResumeLayout(false);
             tableLayoutPanel27.PerformLayout();
             tableLayoutPanel28.ResumeLayout(false);
             tableLayoutPanel28.PerformLayout();
+            panel_Player2JustWatching.ResumeLayout(false);
+            panel_Player2JustWatching.PerformLayout();
             panel6.ResumeLayout(false);
-            tableLayoutPanel34.ResumeLayout(false);
-            tableLayoutPanel34.PerformLayout();
-            tableLayoutPanel29.ResumeLayout(false);
-            tableLayoutPanel29.PerformLayout();
+            table_Player3CurrentStandings.ResumeLayout(false);
+            table_Player3CurrentStandings.PerformLayout();
+            table_Player3CurrentFinancials.ResumeLayout(false);
+            table_Player3CurrentFinancials.PerformLayout();
             tableLayoutPanel30.ResumeLayout(false);
             tableLayoutPanel30.PerformLayout();
             tableLayoutPanel31.ResumeLayout(false);
             tableLayoutPanel31.PerformLayout();
+            panel_Player3JustWatching.ResumeLayout(false);
+            panel_Player3JustWatching.PerformLayout();
             tableLayoutPanel35.ResumeLayout(false);
             tableLayoutPanel35.PerformLayout();
             panel7.ResumeLayout(false);
@@ -2200,14 +2372,14 @@
         private RadioButton radioButton_AddtoBet;
         private RadioButton radioButton_SubtractBet;
         private Label label_BankRoll;
-        private TextBox textBox_BankRoll;
-        private TextBox textBoxWinWalk;
+        private TextBox textBox_Player0BankRoll;
+        private TextBox textBox_Player0WinWalk;
         private Label label_WinWalk;
-        private TextBox textBox_LoseWalk;
+        private TextBox textBox_Player0LossWalk;
         private Label label_LoseWalk;
-        private TextBox textBox2;
+        private TextBox textBox_Player0ActiveBets;
         private Label label_ActiveBets;
-        private TableLayoutPanel tableLayoutPanel16;
+        private TableLayoutPanel table_Player0Financials;
         private Label label_PlayerTitle1;
         private TableLayoutPanel tableLayoutPanel18;
         private Label label_DICE;
@@ -2220,14 +2392,14 @@
         private Label label_TheHouse;
         private Panel panel3;
         private Panel panel4;
-        private TableLayoutPanel tableLayoutPanel23;
+        private TableLayoutPanel table_Player1Financials;
         private Label label1;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox textBox_Player1LossWalk;
+        private TextBox textBox_Player1ActiveBets;
         private Label label2;
-        private TextBox textBox5;
+        private TextBox textBox_Player1BankRoll;
         private Label label3;
-        private TextBox textBox6;
+        private TextBox textBox_Player1WinWalk;
         private Label label4;
         private TableLayoutPanel tableLayoutPanel24;
         private TextBox textBox7;
@@ -2235,14 +2407,14 @@
         private TableLayoutPanel tableLayoutPanel25;
         private Label label6;
         private Panel panel5;
-        private TableLayoutPanel tableLayoutPanel26;
+        private TableLayoutPanel table_Player2Financials;
         private Label label7;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox textBox_Player2LossWalk;
+        private TextBox textBox_Player2ActiveBets;
         private Label label8;
-        private TextBox textBox10;
+        private TextBox textBox_Player2BankRoll;
         private Label label9;
-        private TextBox textBox11;
+        private TextBox textBox_Player2WinWalk;
         private Label label10;
         private TableLayoutPanel tableLayoutPanel27;
         private TextBox textBox12;
@@ -2250,35 +2422,35 @@
         private TableLayoutPanel tableLayoutPanel28;
         private Label label12;
         private Panel panel6;
-        private TableLayoutPanel tableLayoutPanel29;
+        private TableLayoutPanel table_Player3CurrentFinancials;
         private Label label13;
-        private TextBox textBox13;
-        private TextBox textBox14;
+        private TextBox textBox_Player3LossWalk;
+        private TextBox textBox_Player3ActiveBets;
         private Label label14;
-        private TextBox textBox15;
+        private TextBox textBox_Player3BankRoll;
         private Label label15;
-        private TextBox textBox16;
+        private TextBox textBox_Player3WinWalk;
         private Label label16;
         private TableLayoutPanel tableLayoutPanel30;
         private TextBox textBox17;
         private Label label17;
         private TableLayoutPanel tableLayoutPanel31;
         private Label label18;
-        private TableLayoutPanel tableLayoutPanel34;
-        private TextBox textBox20;
+        private TableLayoutPanel table_Player3CurrentStandings;
+        private TextBox textBox_Player3CurrentStanding;
         private Label label21;
-        private TableLayoutPanel tableLayoutPanel17;
-        private TextBox textBox21;
+        private TableLayoutPanel table_Player0CurrentStanding;
+        private TextBox textBox_Player0CurrentStanding;
         private Label label22;
-        private TableLayoutPanel tableLayoutPanel32;
-        private TextBox textBox18;
+        private TableLayoutPanel table_Player1CurrentStandings;
+        private TextBox textBox_Player1CurrentStanding;
         private Label label19;
-        private TableLayoutPanel tableLayoutPanel33;
-        private TextBox textBox19;
+        private TableLayoutPanel table_Player2CurrentStandings;
+        private TextBox textBox_Player2CurrentStanding;
         private Label label20;
         private TableLayoutPanel tableLayoutPanel35;
         private Label label23;
-        private TextBox textBox22;
+        private TextBox textBox_DealerBankroll;
         private Label label_ROLL2;
         private Label label_AUTO;
         private Panel panel7;
@@ -2297,5 +2469,17 @@
         private Button button_Player1;
         private Button button_Player2;
         private Button button_Player3;
+        private Panel panel_Player0JustWatching;
+        private Label label25;
+        private Label label24;
+        private Panel panel_Player1JustWatching;
+        private Label label26;
+        private Label label27;
+        private Panel panel_Player2JustWatching;
+        private Label label28;
+        private Label label29;
+        private Panel panel_Player3JustWatching;
+        private Label label_Player3JustWatching;
+        private Label label31;
     }
 }
