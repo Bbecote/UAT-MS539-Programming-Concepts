@@ -1953,7 +1953,7 @@
             panel7.Controls.Add(label_DICE);
             panel7.Controls.Add(pictureBox_dieButton);
             panel7.Controls.Add(panel12);
-            panel7.Location = new Point(1269, 387);
+            panel7.Location = new Point(1269, 389);
             panel7.Name = "panel7";
             panel7.Size = new Size(171, 165);
             panel7.TabIndex = 77;

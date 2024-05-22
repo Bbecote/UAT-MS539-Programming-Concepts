@@ -37,7 +37,7 @@ namespace CrapsSimC_
         //Methods
         private void Player_Bet(CrapsTable table, Dice dice)
         {
-            if (Strategy[0].Equals("FreePlay"))
+            if (Strategy[0].Equals("Free Play"))
             {
                 //Accept input from user inpunt to include PlayerID, Amount, Bet
             }

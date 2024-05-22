@@ -35,3 +35,5 @@ C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.pdb
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC#.genruntimeconfig.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\ref\CrapsSimC#.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.Form2.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\CrapsSimC#\obj\Debug\net8.0-windows\CrapsSimC_.Form_Player0Setup.resources

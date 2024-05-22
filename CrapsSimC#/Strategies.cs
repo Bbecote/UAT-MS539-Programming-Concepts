@@ -16,7 +16,7 @@ namespace CrapsSimC_
 
         public void PlayerBet(CrapsTable table, Players player, Dice dice)
         {
-            if (player.Strategy[0].Equals("betMartingalePassNoOdds"))
+            if (player.Strategy[0].Equals("Martingale Bets on the Passline with No Odds"))
             {
                 betMartingalePassNoOdds(table, player, dice);
             }

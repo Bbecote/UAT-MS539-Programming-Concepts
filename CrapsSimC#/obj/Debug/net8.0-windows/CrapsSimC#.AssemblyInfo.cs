@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrapsSimC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3c507953ba1daf2f77ec970a872acde4f99f0c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac8261b35487c3a7b85690a99eb3a610cd3eb1cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrapsSimC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrapsSimC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
