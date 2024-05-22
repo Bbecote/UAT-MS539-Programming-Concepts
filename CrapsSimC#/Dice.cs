@@ -20,7 +20,6 @@ namespace CrapsSimC_
             Random rnd = new Random();
             LastRoll1 = rnd.Next(1, 7);
             LastRoll2 = rnd.Next(1, 7);
-
             rollcount ++;
             rollHistory.Add((LastRoll1, LastRoll2, rollcount));
         }

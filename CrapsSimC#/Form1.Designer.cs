@@ -804,6 +804,7 @@
             pictureBox_On.Size = new Size(72, 59);
             pictureBox_On.TabIndex = 38;
             pictureBox_On.TabStop = false;
+            pictureBox_On.Visible = false;
             // 
             // label_LastRole
             // 

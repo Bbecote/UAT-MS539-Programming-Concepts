@@ -86,8 +86,15 @@ namespace CrapsSimC_
         private void label_DICE_Click(object sender, EventArgs e)
         {
             Dice.RollDice();
+            int roll = Dice.LastRoll1 + Dice.LastRoll2;
             label_LastRole1.Text = Dice.LastRoll1.ToString();
             label_LastRole2.Text = Dice.LastRoll2.ToString();
+            if (!Table.Button)
+            {
+                //if roll = 4, 5, 6, 7, turn off the OFF image, turn on the ON image at the corresponding square
+                //if a 7, 11 rolled, pay passline and COME bets, take Don't Pass and Don't Come bets
+                //if a 2, 3 rolled, pay dont pass and dont come bets, take passline and COME bets.
+            }
         }
 
         private void pictureBox_dieButton_Click(object sender, EventArgs e)
