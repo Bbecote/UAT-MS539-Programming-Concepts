@@ -10,16 +10,19 @@ namespace CrapsSimC_
     {
         //Properties
         public int rollcount = 0;
-        private List <(int die_1, int die_2, int roll_count)> rollHistory = new List <(int, int, int)> ();  //Keeps track of the roll history in a list of tuples
-        
-        //Methods
-        private void RollDice(out int die_1, out int die_2)
+        private List <(int die_1, int die_2, int roll_count)> rollHistory = new List <(int, int, int)> ();  //Keeps track of the roll history in a list of tuple
+        internal int LastRoll1 = 0;
+        internal int LastRoll2 = 0;
+
+    //Methods
+    internal void RollDice()
         {
             Random rnd = new Random();
-            die_1 = rnd.Next(1, 7);
-            die_2 = rnd.Next(1, 7);
+            LastRoll1 = rnd.Next(1, 7);
+            LastRoll2 = rnd.Next(1, 7);
+
             rollcount ++;
-            rollHistory.Add((die_1, die_2, rollcount));
+            rollHistory.Add((LastRoll1, LastRoll2, rollcount));
         }
     }
 }

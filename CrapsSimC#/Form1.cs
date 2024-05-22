@@ -61,7 +61,7 @@ namespace CrapsSimC_
         }
 
         private void button_Player0_Click(object sender, EventArgs e)
-        {   
+        {
             Form_Player0Setup editForm = new Form_Player0Setup(Player0);
             editForm.ShowDialog();
             if (Player0.Watching)
@@ -77,8 +77,38 @@ namespace CrapsSimC_
                 updatePlayer0Text();
                 table_Player0CurrentStanding.Visible = true;
                 table_Player0Financials.Visible = true;
-                
+
             }
+        }
+
+        // ------- Rolling the Dice --------//
+
+        private void label_DICE_Click(object sender, EventArgs e)
+        {
+            Dice.RollDice();
+            label_LastRole1.Text = Dice.LastRoll1.ToString();
+            label_LastRole2.Text = Dice.LastRoll2.ToString();
+        }
+
+        private void pictureBox_dieButton_Click(object sender, EventArgs e)
+        {
+            Dice.RollDice();
+            label_LastRole1.Text = Dice.LastRoll1.ToString();
+            label_LastRole2.Text = Dice.LastRoll2.ToString();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            Dice.RollDice();
+            label_LastRole1.Text = Dice.LastRoll1.ToString();
+            label_LastRole2.Text = Dice.LastRoll2.ToString();
+        }
+
+        private void label_ROLL_Click(object sender, EventArgs e)
+        {
+            Dice.RollDice();
+            label_LastRole1.Text = Dice.LastRoll1.ToString();
+            label_LastRole2.Text = Dice.LastRoll2.ToString();
         }
     }
 }

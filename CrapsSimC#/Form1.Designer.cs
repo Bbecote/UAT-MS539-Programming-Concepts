@@ -847,6 +847,7 @@
             pictureBox_dieButton.Size = new Size(163, 158);
             pictureBox_dieButton.TabIndex = 45;
             pictureBox_dieButton.UseVisualStyleBackColor = false;
+            pictureBox_dieButton.Click += pictureBox_dieButton_Click;
             // 
             // label_ROLL
             // 
@@ -859,6 +860,7 @@
             label_ROLL.Size = new Size(69, 36);
             label_ROLL.TabIndex = 46;
             label_ROLL.Text = "ROLL";
+            label_ROLL.Click += label_ROLL_Click;
             // 
             // label_AmountSelected
             // 
@@ -1068,6 +1070,7 @@
             label_DICE.Size = new Size(67, 36);
             label_DICE.TabIndex = 66;
             label_DICE.Text = "DICE";
+            label_DICE.Click += label_DICE_Click;
             // 
             // panel1
             // 
@@ -2120,6 +2123,7 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(171, 165);
             panel7.TabIndex = 77;
+            panel7.Paint += panel7_Paint;
             // 
             // panel12
             // 
