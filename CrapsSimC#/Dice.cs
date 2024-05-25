@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CrapsSimC_
 {
 
-    internal class Dice
+    public class Dice
     {
         //Properties
         private readonly Random rnd = new Random();

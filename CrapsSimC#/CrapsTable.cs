@@ -5,24 +5,26 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Markup;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CrapsSimC_
 {
     public class CrapsTable
     {
-        //Attributes
-        public bool Button = false;
-        public int ObjectRoll = 0;
-        public int[] PassLineBets = new int[4];
-        public int dealerBankroll = 1000000;
+        //Properties
+        public bool Button {get; set;} = false;
+        public int ObjectRoll { get; set; } = 0;
+        public int[] PassLineBets { get; set; } = new int[4];
+        public int dealerBankroll { get; set; } = 1000000;
 
 
-        //Attributes & Constructor including Players created in the Form1 Class passed here for update purposes
+        //Fields & Constructor including Players created in the Form1 Class passed here for update purposes
         private Players[] playerTracker = new Players[4];
         private Players player0;
         private Players player1;
         private Players player2;
         private Players player3;
+        private List<string> ActiveBets;
 
         public CrapsTable(Players player0, Players player1, Players player2, Players player3)
         {
@@ -33,78 +35,100 @@ namespace CrapsSimC_
             this.playerTracker = new [] { player0, player1, player2, player3};
         }
 
-        //Manages the Bets on the Table.  The string indicates the type of bet, the array indicates player (by placement in the array) and the current amount bet on the table.
+        //Manages the Bets on the Table.  The string indicates the type of bet, the array indicates player (by placement in the array: 0-3) and the int within is the current amount bet on the table.
         //TODO Odds on Line Bets (that were come bets)
-        //TODO impliment buying a place bet
  //private static Dictionary<string Name, (int[] Bets, double Odds)> betDictionary = new Dictionary<string, (int[], double)>
-          public Dictionary <string, (int[], double)> betDictionary = new Dictionary<string, (int[] PlayerTracker, double Odds)> 
+          public Dictionary <string, (int[], double, bool)> betDictionary = new Dictionary<string, (int[] PlayerTracker, double Odds, bool currentBetSet)> 
        
         {
-            { "PassLineBet", (new int[4], 1) },
-            { "DontPassBet", (new int[4], 1)},
-            { "Field", (new int[4], 1) }, //pays double when a 2 or 12 rolls
-            { "ComeBet", (new int[4], 1) },
-            { "DontComeBet", (new int[4], 1) },
+            { "PassLineBet", (new int[4], 1, false) },
+            { "DontPassBet", (new int[4], 1, false)},
+            { "Field", (new int[4], 1, false) }, //pays double when a 2 or 12 rolls
+            { "ComeBet", (new int[4], 1, false) },
+            { "DontComeBet", (new int[4], 1, false) },
 
-            { "4_LineBet", (new int[4], 1) },
-            { "4_DontLineBet", (new int[4], 1) },
-            { "4_PlaceBet", (new int[4], 1.8) },
-            { "4_LineOdds", (new int[4], 2)},
-            { "4_DontLineOdds", (new int[4], .833)},
-            { "4_BuyBet", (new int[4], 2)},
+            { "4_LineBet", (new int[4], 1, false) },
+            { "4_DontLineBet", (new int[4], 1, false) },
+            { "4_PlaceBet", (new int[4], 1.8, false) },
+            { "4_LineOdds", (new int[4], 2, false)},
+            { "4_DontLineOdds", (new int[4], .833, false)},
+            { "4_BuyBet", (new int[4], 2, false)},
 
-            { "5_LineBet", (new int[4], 1) },
-            { "5_DontLineBet", (new int[4], 1) },
-            { "5_PlaceBet", (new int[4], 1.4) },
-            { "5_LineOdds", (new int[4], 1.5)},
-            { "5_DontLineOdds", (new int[4], .833)},
-            { "5_BuyBet", (new int[4], 1.5)},
+            { "5_LineBet", (new int[4], 1, false) },
+            { "5_DontLineBet", (new int[4], 1, false) },
+            { "5_PlaceBet", (new int[4], 1.4, false) },
+            { "5_LineOdds", (new int[4], 1.5, false)},
+            { "5_DontLineOdds", (new int[4], .833, false)},
+            { "5_BuyBet", (new int[4], 1.5, false)},
 
-            { "6_LineBet", (new int[4], 1) },
-            { "6_DontLineBet", (new int[4], 1) },
-            { "6_PlaceBet", (new int[4], 1.166) },
-            { "6_LineOdds", (new int[4], 1.2)},
-            { "6_DontLineOdds", (new int[4], .833)},
+            { "6_LineBet", (new int[4], 1, false) },
+            { "6_DontLineBet", (new int[4], 1, false) },
+            { "6_PlaceBet", (new int[4], 1.166, false) },
+            { "6_LineOdds", (new int[4], 1.2, false)},
+            { "6_DontLineOdds", (new int[4], .833, false)},
 
-            { "8_LineBet", (new int[4], 1) },
-            { "8_DontLineBet", (new int[4], 1) },
-            { "8_PlaceBet", (new int[4], 1) },
-            { "8_LineOdds", (new int[4], 1.2)},
-            { "8_DontLineOdds", (new int[4], .833)},
+            { "8_LineBet", (new int[4], 1, false) },
+            { "8_DontLineBet", (new int[4], 1, false) },
+            { "8_PlaceBet", (new int[4], 1, false) },
+            { "8_LineOdds", (new int[4], 1.2, false)},
+            { "8_DontLineOdds", (new int[4], .833, false)},
 
-            { "9_LineBet", (new int[4], 1) },
-            { "9_DontLineBet", (new int[4], 1) },
-            { "9_PlaceBet", (new int[4], 1) },
-            { "9_LineOdds", (new int[4], 1.5)},
-            { "9_DontLineOdds", (new int[4], .833)},
-            { "9_BuyBet", (new int[4], 1.5)},
+            { "9_LineBet", (new int[4], 1, false) },
+            { "9_DontLineBet", (new int[4], 1, false) },
+            { "9_PlaceBet", (new int[4], 1, false) },
+            { "9_LineOdds", (new int[4], 1.5, false)},
+            { "9_DontLineOdds", (new int[4], .833, false)},
+            { "9_BuyBet", (new int[4], 1.5, false)},
 
-            { "10LineBet", (new int[4], 1) },
-            { "10DontLineBet", (new int[4], 1) },
-            { "10PlaceBet", (new int[4], 1) },
-            { "10_LineOdds", (new int[4], 2)},
-            { "10_DontLineOdds", (new int[4], .833)},
-            { "10_BuyBet", (new int[4], 2)},
+            { "10_LineBet", (new int[4], 1, false) },
+            { "10_DontLineBet", (new int[4], 1, false) },
+            { "10_PlaceBet", (new int[4], 1, false) },
+            { "10_LineOdds", (new int[4], 2, false)},
+            { "10_DontLineOdds", (new int[4], .833, false)},
+            { "10_BuyBet", (new int[4], 2, false)},
         };
 
-        public int[] GetBetType(string bet)
+        private void UpdatePlaceBets(string placeBet, string lineBet)
         {
-            if (betDictionary.ContainsKey(bet)) { return betDictionary[bet].Item1; }
-            else return null;
+            int[] placeBetArray = betDictionary[placeBet].Item1;
+            int[] lineBetArray = betDictionary[lineBet].Item1;
+            for (int i = 0; i < placeBetArray.Length; i++)
+            {
+                if (placeBetArray[i] > 0)
+                {
+                    lineBetArray[i] = placeBetArray[i];
+                    betDictionary[lineBet] = (lineBetArray, betDictionary[lineBet].Item2, true);
+                    placeBetArray[i] = 0;
+                    betDictionary[placeBet] = (placeBetArray, betDictionary[lineBet].Item2, false);
+                }
+            }
         }
 
-        public void AddBet(int betAmount, int playerID, string bet)
+        public int getTotalBetAmount(Players player, string bet)
         {
-            int[] betArray = GetBetType(bet);
-            if (betArray != null)
+            int[] betArray = betDictionary[bet].Item1;
+            return betArray[player.PlayerID];
+        }
+
+        //Need a means to confirm if a bet is legal
+        public void MakeBet(int betAmount, Players player, string bet)
+        {
+            //If bet is legal
+            if (true)
             {
-                betArray[playerID] = betAmount;
+                int[] betArray = betDictionary[bet].Item1;
+                betArray[player.PlayerID] = betAmount;
+                betDictionary[bet] = (betArray, betDictionary[bet].Item2, true);
+                player.ActiveBankroll -= betAmount;
+                player.ActiveBetTracker.Add((bet, betAmount));
+                player.UpdatePlayer();
             }
             else { throw new Exception("Bad Bet Type");};
         }
 
-        private void BetUpdate(string bet, bool win, int rollamount = 0)
+        private void BetUpdate(string bet, bool win, bool fieldDouble = false)
         {
+            if (!betDictionary[bet].Item3) { return; }
             int[] playerArray = betDictionary[bet].Item1;
             if (win)
             {
@@ -128,6 +152,7 @@ namespace CrapsSimC_
                                 Currentplayer.UpdatePlayer();
                                 break;
                             //Bet and payout goes to the player
+                            //TODO Player Strategy
                             case "4_LineBet":
                             case "4_DontLineBet":
                             case "4_LineOdds":
@@ -164,7 +189,7 @@ namespace CrapsSimC_
 
                             //TODO Strategy for Field
                             case "FieldBet":
-                                if(rollamount == 2 || rollamount == 12)
+                                if(fieldDouble)
                                 {
                                     dealerBankroll -= wonBet;
                                     Currentplayer.ActiveBankroll += wonBet * 2;
@@ -180,8 +205,7 @@ namespace CrapsSimC_
                             default:
                                 // case "4_PlaceBet": case "5_PlaceBet": case "6_PlaceBet": case "8_PlaceBet": case "9_PlaceBet": case "10_PlaceBet": case "4_BuyBet": case "5_BuyBet": case "6_BuyBet": case "9_BuyBet": case "10_BuyBet":
                                 wonBet = (int)(Math.Round(playerArray[i] * betDictionary[bet].Item2) + playerArray[i]);
-                                Strategies.CollectWinnings(this, Currentplayer, rollamount);
-
+                                Strategies.CollectWinnings(this, Currentplayer);
                                 break;
                         }
                     }
@@ -203,9 +227,19 @@ namespace CrapsSimC_
 
                 //run it to the strategy class for rebetting
             }
+            
+            //Sets the boolean flag on the bet to determine if there are active bets on table for this bet
+            if (betDictionary[bet].Item1.All(num => num == 0))
+            {
+                betDictionary[bet] = (playerArray, betDictionary[bet].Item2, false);
+            }
+            else
+            {
+                betDictionary[bet] = (playerArray, betDictionary[bet].Item2, true);
+            }
         }
 
-
+        //Need to intiate placing odds on COME and Dont Bets when the button is off
         public void TableUpdate(int rollAmount)
         {
             if (!Button)
@@ -214,111 +248,224 @@ namespace CrapsSimC_
                 {
 
                     case 2:
-                        BetUpdate("Field", true, 2);
+                        BetUpdate("Field", true, true);
                         break;
                     case 3:
                         BetUpdate("PassLineBet", false);
-                        BetUpdate("ComeBet", false);
-                        BetUpdate("DontComeBet", true);
                         BetUpdate("DontPassBet", true);
                         BetUpdate("Field", true);
-
                         break;
                     case 4:
+                        BetUpdate("4_LineBet", true);
                         BetUpdate("4_DontLineBet", false);
                         BetUpdate("Field", true);
-                        // Need to copy the elements of Passline BbetDictionary["4_LineBet"].Item1 = betDictionary["PassLineBet"].Item1;
-                        //0betDictionary["4_LineBet"].Item1 = betDictionary["PassLineBet"].Item1.Where(x => x > 0).ToArray();
+                        UpdatePlaceBets("PassLineBet", "4_LineBet");
+                        UpdatePlaceBets("DontPassBet", "4_DontLineBet");
 
                         break;
                     case 5:
+                        BetUpdate("5_LineBet", true);
                         BetUpdate("5_DontLineBet", false);
                         BetUpdate("Field", false);
+                        UpdatePlaceBets("PassLineBet", "5_LineBet");
+                        UpdatePlaceBets("DontPassBet", "5_DontLineBet");
                         break;
                     case 6:
+                        BetUpdate("6_LineBet", true);
                         BetUpdate("6_DontLineBet", false);
                         BetUpdate("Field", false);
+                        UpdatePlaceBets("PassLineBet", "6_LineBet");
+                        UpdatePlaceBets("DontPassBet", "6_DontLineBet");
                         break;
                     case 7:
                         BetUpdate("DontPassBet", false);
-                        BetUpdate("DontComeBet", false);
                         BetUpdate("PassLineBet", true);
-                        BetUpdate("ComeBet", true);
                         BetUpdate("Field", false);
+                        BetUpdate("4_DontLineBet", true);
+                        BetUpdate("4_DontLineOdds", true);
+                        BetUpdate("5_DontLineBet", true);
+                        BetUpdate("5_DontLineOdds", true);
+                        BetUpdate("6_DontLineBet", true);
+                        BetUpdate("6_DontLineOdds", true);
+                        BetUpdate("8_DontLineBet", true);
+                        BetUpdate("8_DontLineOdds", true);
+                        BetUpdate("9_DontLineBet", true);
+                        BetUpdate("9_DontLineOdds", true);
+                        BetUpdate("10_DontLineBet", true);
+                        BetUpdate("10_DontLineOdds", true);
+                        BetUpdate("4_LineBet", false);
+                        BetUpdate("4_LineOdds", false);
+                        BetUpdate("5_LineBet", false);
+                        BetUpdate("5_LineOdds", false);
+                        BetUpdate("6_LineBet", false);
+                        BetUpdate("6_LineOdds", false);
+                        BetUpdate("8_LineBet", false);
+                        BetUpdate("8_LineOdds", false);
+                        BetUpdate("9_LineBet", false);
+                        BetUpdate("9_LineOdds", false);
+                        BetUpdate("10_LineBet", false);
+                        BetUpdate("10_LineOdds", false);
                         break;
                     case 8:
+                        BetUpdate("8_LineBet", true);
                         BetUpdate("8_DontLineBet", false);
                         BetUpdate("Field", false);
+                        UpdatePlaceBets("PassLineBet", "8_LineBet");
+                        UpdatePlaceBets("DontPassBet", "8_DontLineBet");
                         break;
                     case 9:
+                        BetUpdate("9_LineBet", true);
                         BetUpdate("9_DontLineBet", false);
                         BetUpdate("Field", true);
+                        UpdatePlaceBets("PassLineBet", "9_LineBet");
+                        UpdatePlaceBets("DontPassBet", "9_DontLineBet");
                         break;
                     case 10:
+                        BetUpdate("10_LineBet", true);
                         BetUpdate("10_DontLineBet", false);
                         BetUpdate("Field", true);
+                        UpdatePlaceBets("PassLineBet", "10_LineBet");
+                        UpdatePlaceBets("DontPassBet", "10_DontLineBet");
                         break;
                     case 11:
                         BetUpdate("DontPassBet", false);
-                        BetUpdate("DontComeBet", false);
                         BetUpdate("PassLineBet", true);
-                        BetUpdate("ComeBet", true);
                         BetUpdate("Field", true);
                         break;
                     case 12:
                         BetUpdate("PassLineBet", false);
-                        BetUpdate("ComeBet", false);
-                        BetUpdate("Field", true, 12);
+                        BetUpdate("Field", true, true);
                         break;
-
                 }
                 
             }
+            //Need to intiate placing odds on Pass and Dont Bets when the button is on
             //If button is ON
             else
             {
                 switch (rollAmount)
                 {
                     case 2:
+                        BetUpdate("ComeBet", false);
                         BetUpdate("DontComeBet", true);
-                        BetUpdate("Field", true, 2);
+                        BetUpdate("Field", true, true);
                         break;
                     case 3:
-                        //Take bets from the Pass Line and Come 
+                        BetUpdate("ComeBet", false);
                         BetUpdate("DontComeBet", true);
                         BetUpdate("Field", true);
                         break;
                     case 4:
                         BetUpdate("Field", true);
+                        BetUpdate("4_LineBet", true);
+                        BetUpdate("4_LineOdds", true);
+                        BetUpdate("4_DontLineBet", false);
+                        BetUpdate("4_DontLineOdds", false);
+                        BetUpdate("4_PlaceBet", true);
+                        BetUpdate("4_BuyBet", true);
+                        UpdatePlaceBets("ComeBet", "4_LineBet");
+                        UpdatePlaceBets("DontComeBet", "4_DontLineBet");
                         break;
-                    //Take Don't Pass, Don't Come on 4
                     case 5:
+                        BetUpdate("5_LineBet", true);
+                        BetUpdate("5_LineOdds", true);
+                        BetUpdate("5_DontLineBet", false);
+                        BetUpdate("5_DontLineOdds", false);
+                        BetUpdate("5_PlaceBet", true);
+                        BetUpdate("5_BuyBet", true);
+                        UpdatePlaceBets("ComeBet", "5_LineBet");
+                        UpdatePlaceBets("DontComeBet", "5_DontLineBet");
+                        break;
                     case 6:
+                        BetUpdate("6_LineBet", true);
+                        BetUpdate("6_LineOdds", true);
+                        BetUpdate("6_DontLineBet", false);
+                        BetUpdate("6_DontLineOdds", false);
+                        BetUpdate("6_PlaceBet", true);
+                        UpdatePlaceBets("ComeBet", "6_LineBet");
+                        UpdatePlaceBets("DontComeBet", "6_DontLineBet");
+                        break;
                     case 7:
-                        //Take bets from the Don't Pass and Don't Come
                         BetUpdate("ComeBet", true);
+                        BetUpdate("DontComeBet", false);
+                        BetUpdate("4_DontLineBet", true);
+                        BetUpdate("4_DontLineOdds", true);
+                        BetUpdate("5_DontLineBet", true);
+                        BetUpdate("5_DontLineOdds", true);
+                        BetUpdate("6_DontLineBet", true);
+                        BetUpdate("6_DontLineOdds", true);
+                        BetUpdate("8_DontLineBet", true);
+                        BetUpdate("8_DontLineOdds", true);
+                        BetUpdate("9_DontLineBet", true);
+                        BetUpdate("9_DontLineOdds", true);
+                        BetUpdate("10_DontLineBet", true);
+                        BetUpdate("10_DontLineOdds", true);
+                        BetUpdate("4_LineBet", false);
+                        BetUpdate("4_LineOdds", false);
+                        BetUpdate("5_LineBet", false);
+                        BetUpdate("5_LineOdds", false);
+                        BetUpdate("6_LineBet", false);
+                        BetUpdate("6_LineOdds", false);
+                        BetUpdate("8_LineBet", false);
+                        BetUpdate("8_LineOdds", false);
+                        BetUpdate("9_LineBet", false);
+                        BetUpdate("9_LineOdds", false);
+                        BetUpdate("10_LineBet", false);
+                        BetUpdate("10_LineOdds", false);
+                        BetUpdate("4_PlaceBet", true);
+                        BetUpdate("4_BuyBet", true);
+                        BetUpdate("5_PlaceBet", true);
+                        BetUpdate("5_BuyBet", true);
+                        BetUpdate("6_PlaceBet", true);
+                        BetUpdate("8_PlaceBet", true);
+                        BetUpdate("9_PlaceBet", true);
+                        BetUpdate("9_BuyBet", true);
+                        BetUpdate("10_PlaceBet", true);
+                        BetUpdate("10_BuyBet", true);
                         break;
                     case 8:
+                        BetUpdate("8_LineBet", true);
+                        BetUpdate("8_LineOdds", true);
+                        BetUpdate("8_DontLineBet", false);
+                        BetUpdate("8_DontLineOdds", false);
+                        BetUpdate("8_PlaceBet", true);
+                        UpdatePlaceBets("ComeBet", "8_LineBet");
+                        UpdatePlaceBets("DontComeBet", "8_DontLineBet");
+                        break;
                     case 9:
+                        BetUpdate("9_LineBet", true);
+                        BetUpdate("9_LineOdds", true);
+                        BetUpdate("9_DontLineBet", false);
+                        BetUpdate("9_DontLineOdds", false);
                         BetUpdate("Field", true);
+                        BetUpdate("9_PlaceBet", true);
+                        BetUpdate("9_BuyBet", true);
+                        UpdatePlaceBets("ComeBet", "9_LineBet");
+                        UpdatePlaceBets("DontComeBet", "9_DontLineBet");
                         break;
                     case 10:
+                        BetUpdate("10_LineBet", true);
+                        BetUpdate("10_LineOdds", true);
+                        BetUpdate("10_DontLineBet", false);
+                        BetUpdate("10_DontLineOdds", false);
+                        BetUpdate("10_PlaceBet", true);
+                        BetUpdate("10_BuyBet", true);
                         BetUpdate("Field", true);
+                        UpdatePlaceBets("ComeBet", "10_LineBet");
+                        UpdatePlaceBets("DontComeBet", "10_DontLineBet");
                         break;
                     case 11:
-                        //Take bets from the Don't Pass and Don't Come
                         BetUpdate("ComeBet", true);
+                        BetUpdate("DontComeBet", false);
                         BetUpdate("Field", true);
                         break;
                     case 12:
-                        BetUpdate("Field", true, 12);
-                        //Take bets from the Pass Line and Come
+                        BetUpdate("ComeBet", false);
+                        BetUpdate("Field", true, true);
                         break;
 
                 }
             }
         }
-
-
     }
 }

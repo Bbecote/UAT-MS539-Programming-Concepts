@@ -69,6 +69,10 @@
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
             panel22 = new Panel();
+            chipsButton_1000Mini = new ChipsButton();
+            chipsButton_5Mini = new ChipsButton();
+            chipsButton_10Mini = new ChipsButton();
+            chipsButton_1Mini = new ChipsButton();
             panel_TableBackground = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
             panel23 = new Panel();
@@ -104,6 +108,7 @@
             button_Player0 = new Button();
             label_DICE = new Label();
             panel1 = new Panel();
+            textBox_Player0Freeplay = new TextBox();
             table_Player0CurrentStanding = new TableLayoutPanel();
             textBox_Player0CurrentStanding = new TextBox();
             label22 = new Label();
@@ -220,6 +225,9 @@
             panel21 = new Panel();
             chipsButton_1000Up = new ChipsButton();
             button_ClearAmount = new ChipsButton();
+            chipsButton_25Mini = new ChipsButton();
+            chipsButton_100Mini = new ChipsButton();
+            chipsButton_500 = new ChipsButton();
             tableLayoutPanel1.SuspendLayout();
             panel_table6.SuspendLayout();
             panel_table4.SuspendLayout();
@@ -735,13 +743,14 @@
             button_PassLine.BackColor = Color.DarkOrange;
             button_PassLine.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_PassLine.ForeColor = SystemColors.ButtonHighlight;
-            button_PassLine.Location = new Point(1, -2);
+            button_PassLine.Location = new Point(1, -3);
             button_PassLine.Margin = new Padding(3, 2, 3, 2);
             button_PassLine.Name = "button_PassLine";
             button_PassLine.Size = new Size(1131, 61);
             button_PassLine.TabIndex = 13;
             button_PassLine.Text = "Pass Line";
             button_PassLine.UseVisualStyleBackColor = false;
+            button_PassLine.Click += button_PassLine_Click;
             // 
             // tableLayoutPanel6
             // 
@@ -775,11 +784,58 @@
             // 
             // panel22
             // 
+            panel22.Controls.Add(chipsButton_1000Mini);
+            panel22.Controls.Add(chipsButton_5Mini);
+            panel22.Controls.Add(chipsButton_10Mini);
             panel22.Controls.Add(button_PassLine);
             panel22.Location = new Point(3, 3);
             panel22.Name = "panel22";
             panel22.Size = new Size(1129, 59);
             panel22.TabIndex = 0;
+            // 
+            // chipsButton_1000Mini
+            // 
+            chipsButton_1000Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_1000Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_1000Mini.Image = (Image)resources.GetObject("chipsButton_1000Mini.Image");
+            chipsButton_1000Mini.Location = new Point(958, 3);
+            chipsButton_1000Mini.Name = "chipsButton_1000Mini";
+            chipsButton_1000Mini.Size = new Size(36, 33);
+            chipsButton_1000Mini.TabIndex = 94;
+            chipsButton_1000Mini.UseVisualStyleBackColor = true;
+            // 
+            // chipsButton_5Mini
+            // 
+            chipsButton_5Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_5Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_5Mini.Image = (Image)resources.GetObject("chipsButton_5Mini.Image");
+            chipsButton_5Mini.Location = new Point(336, 3);
+            chipsButton_5Mini.Name = "chipsButton_5Mini";
+            chipsButton_5Mini.Size = new Size(36, 33);
+            chipsButton_5Mini.TabIndex = 89;
+            chipsButton_5Mini.UseVisualStyleBackColor = true;
+            // 
+            // chipsButton_10Mini
+            // 
+            chipsButton_10Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_10Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_10Mini.Image = (Image)resources.GetObject("chipsButton_10Mini.Image");
+            chipsButton_10Mini.Location = new Point(750, 3);
+            chipsButton_10Mini.Name = "chipsButton_10Mini";
+            chipsButton_10Mini.Size = new Size(36, 33);
+            chipsButton_10Mini.TabIndex = 90;
+            chipsButton_10Mini.UseVisualStyleBackColor = true;
+            // 
+            // chipsButton_1Mini
+            // 
+            chipsButton_1Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_1Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_1Mini.Image = (Image)resources.GetObject("chipsButton_1Mini.Image");
+            chipsButton_1Mini.Location = new Point(32, 577);
+            chipsButton_1Mini.Name = "chipsButton_1Mini";
+            chipsButton_1Mini.Size = new Size(36, 33);
+            chipsButton_1Mini.TabIndex = 83;
+            chipsButton_1Mini.UseVisualStyleBackColor = true;
             // 
             // panel_TableBackground
             // 
@@ -1187,6 +1243,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(textBox_Player0Freeplay);
             panel1.Controls.Add(table_Player0CurrentStanding);
             panel1.Controls.Add(table_Player0Financials);
             panel1.Controls.Add(tableLayoutPanel_Player0);
@@ -1195,6 +1252,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(628, 520);
             panel1.TabIndex = 67;
+            // 
+            // textBox_Player0Freeplay
+            // 
+            textBox_Player0Freeplay.Anchor = AnchorStyles.Top;
+            textBox_Player0Freeplay.BackColor = Color.Lime;
+            textBox_Player0Freeplay.BorderStyle = BorderStyle.None;
+            textBox_Player0Freeplay.Font = new Font("Ink Free", 11.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox_Player0Freeplay.Location = new Point(436, 322);
+            textBox_Player0Freeplay.Name = "textBox_Player0Freeplay";
+            textBox_Player0Freeplay.Size = new Size(81, 20);
+            textBox_Player0Freeplay.TabIndex = 2;
+            textBox_Player0Freeplay.Text = "Free Play!";
+            textBox_Player0Freeplay.Visible = false;
             // 
             // table_Player0CurrentStanding
             // 
@@ -2242,7 +2312,7 @@
             label_AUTO.BackColor = Color.Maroon;
             label_AUTO.Font = new Font("Impact", 21.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label_AUTO.ForeColor = Color.White;
-            label_AUTO.Location = new Point(41, 46);
+            label_AUTO.Location = new Point(34, 54);
             label_AUTO.Name = "label_AUTO";
             label_AUTO.Size = new Size(74, 36);
             label_AUTO.TabIndex = 75;
@@ -2545,6 +2615,39 @@
             button_ClearAmount.UseVisualStyleBackColor = false;
             button_ClearAmount.Click += button_ClearAmount_Click;
             // 
+            // chipsButton_25Mini
+            // 
+            chipsButton_25Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_25Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_25Mini.Image = (Image)resources.GetObject("chipsButton_25Mini.Image");
+            chipsButton_25Mini.Location = new Point(134, 577);
+            chipsButton_25Mini.Name = "chipsButton_25Mini";
+            chipsButton_25Mini.Size = new Size(36, 33);
+            chipsButton_25Mini.TabIndex = 91;
+            chipsButton_25Mini.UseVisualStyleBackColor = true;
+            // 
+            // chipsButton_100Mini
+            // 
+            chipsButton_100Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_100Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_100Mini.Image = (Image)resources.GetObject("chipsButton_100Mini.Image");
+            chipsButton_100Mini.Location = new Point(32, 615);
+            chipsButton_100Mini.Name = "chipsButton_100Mini";
+            chipsButton_100Mini.Size = new Size(36, 33);
+            chipsButton_100Mini.TabIndex = 92;
+            chipsButton_100Mini.UseVisualStyleBackColor = true;
+            // 
+            // chipsButton_500
+            // 
+            chipsButton_500.FlatAppearance.BorderSize = 0;
+            chipsButton_500.FlatStyle = FlatStyle.Flat;
+            chipsButton_500.Image = (Image)resources.GetObject("chipsButton_500.Image");
+            chipsButton_500.Location = new Point(74, 616);
+            chipsButton_500.Name = "chipsButton_500";
+            chipsButton_500.Size = new Size(36, 33);
+            chipsButton_500.TabIndex = 93;
+            chipsButton_500.UseVisualStyleBackColor = true;
+            // 
             // form_CrapsTable
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2553,6 +2656,10 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
+            Controls.Add(chipsButton_500);
+            Controls.Add(chipsButton_1Mini);
+            Controls.Add(chipsButton_100Mini);
+            Controls.Add(chipsButton_25Mini);
             Controls.Add(panel2);
             Controls.Add(pictureBox_On);
             Controls.Add(button_ClearAmount);
@@ -2609,6 +2716,7 @@
             tableLayoutPanel_Player0.ResumeLayout(false);
             tableLayoutPanel_Player0.PerformLayout();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             table_Player0CurrentStanding.ResumeLayout(false);
             table_Player0CurrentStanding.PerformLayout();
             panel_Player0JustWatching.ResumeLayout(false);
@@ -2883,5 +2991,12 @@
         private Panel panel23;
         private Panel panel25;
         private Panel panel26;
+        private TextBox textBox_Player0Freeplay;
+        private ChipsButton chipsButton_1Mini;
+        private ChipsButton chipsButton_5Mini;
+        private ChipsButton chipsButton_10Mini;
+        private ChipsButton chipsButton_25Mini;
+        private ChipsButton chipsButton_100Mini;
+        private ChipsButton chipsButton_1000Mini;
     }
 }

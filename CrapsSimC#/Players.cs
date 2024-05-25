@@ -25,34 +25,35 @@ namespace CrapsSimC_
         internal int CurrentStanding = 0; //This is the amount won or lost since starting
         
         //TODO Needs to be updated to a List of Tuples
-        internal List<(string bet, int betAmount, int rollcount)> ActiveBetTracker = new List<(string, int, int)>(); //Tracks the active individual bets 
+        internal List<(string bet, int betAmount)> ActiveBetTracker = new List<(string, int)>(); //Tracks the active individual bets 
         internal int totalBetAmount = 0;
 
 
         //Historicals tracked over time
         internal List<int> TableAverage = new List<int>(); //The average amount the player has on the table each roll
         internal List<int> StandingsHistory = new List<int>(); //Tracks the standings between each Come Out roll - later will calculate wins and losses
-        internal List<(string bet, int betAmount, bool won, int rollcount)> HistoricalBetTracker  = new List<(string, int, bool, int)>(); //Tracks the individual bets 
+        internal List<(string bet, int betAmount, bool won)> HistoricalBetTracker  = new List<(string, int, bool)>(); //Tracks the individual bets 
 
         //Methods
 
         internal void UpdatePlayer()
         {
-            this.CurrentStanding = ActiveBankroll - InitialBankroll;
-            StandingsHistory.Add(this.CurrentStanding);
+            CurrentStanding = ActiveBankroll - InitialBankroll;
+            StandingsHistory.Add(CurrentStanding);
+            totalBetAmount = ActiveBetTracker.Sum(bet => bet.betAmount);
             //Update Table Average
         }
 
         internal void ResetPlayer()
         {
-            this.ActiveBankroll = this.InitialBankroll;
-            this.CurrentStanding = 0;
-            this.ActiveBetTracker.Clear();
-            this.TableAverage.Clear();
-            this.StandingsHistory.Clear();
-            this.HistoricalBetTracker.Clear();
-            this.ActiveBetTracker.Clear();
-            this.totalBetAmount = 0;
+            ActiveBankroll = InitialBankroll;
+            CurrentStanding = 0;
+            ActiveBetTracker.Clear();
+            TableAverage.Clear();
+            StandingsHistory.Clear();
+            HistoricalBetTracker.Clear();
+            ActiveBetTracker.Clear();
+            totalBetAmount = 0;
         }
 
         internal void Player_Bet()

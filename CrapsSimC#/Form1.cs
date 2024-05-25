@@ -1,4 +1,5 @@
 using System.Diagnostics.Eventing.Reader;
+using System.Drawing;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -32,6 +33,7 @@ namespace CrapsSimC_
             else { textBox_Player0CurrentStanding.Text = CurrentStanding.ToString(); }
             textBox_Player0WinWalk.Text = Player0.WinWalk.ToString();
             textBox_Player0LossWalk.Text = Player0.LossWalk.ToString();
+            textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
             textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
         }
 
@@ -69,15 +71,18 @@ namespace CrapsSimC_
 
         private void button_Player0_Click(object sender, EventArgs e)
         {
-            
-            if (Player0.Watching) { 
-            
-            Form_Player0Setup editForm = new Form_Player0Setup(Player0);
-            editForm.ShowDialog();
+
+            if (Player0.Watching || tableLayoutPanel_Player0.BackColor == Color.Lime)
+            {
+
+                Form_Player0Setup editForm = new Form_Player0Setup(Player0);
+                editForm.ShowDialog();
                 if (Player0.Watching)
                 {
+                    tableLayoutPanel_Player0.BackColor = Color.Transparent;
                     table_Player0CurrentStanding.Visible = false;
                     table_Player0Financials.Visible = false;
+                    textBox_Player0Freeplay.Visible = false;
                     panel_Player0JustWatching.Visible = true;
                 }
                 else
@@ -87,15 +92,23 @@ namespace CrapsSimC_
                     updatePlayer0Text();
                     table_Player0CurrentStanding.Visible = true;
                     table_Player0Financials.Visible = true;
+                    if ((string)Player0.Strategy[0] == "Free Play")
+                    {
+                        textBox_Player0Freeplay.Visible = true;
+                    }
                 }
             }
             else
             {
+                SelectedPlayer = Player0;
                 tableLayoutPanel_Player0.BackColor = Color.Lime;
                 tableLayoutPanel_Player1.BackColor = Color.Transparent;
                 tableLayoutPanel_Player2.BackColor = Color.Transparent;
                 tableLayoutPanel_Player3.BackColor = Color.Transparent;
-                SelectedPlayer = Player0;
+                if ((string)Player0.Strategy[0] == "Free Play")
+                {
+                    textBox_Player0Freeplay.Visible = true;
+                }
             }
         }
 
@@ -175,6 +188,7 @@ namespace CrapsSimC_
                     table.Button = false;
                 }
             }
+            updatePlayer0Text();
         }
 
         private void label_DICE_Click(object sender, EventArgs e)
@@ -200,11 +214,25 @@ namespace CrapsSimC_
         private void dieButton_1_Click(object sender, EventArgs e)
         {
             RollDice();
-            
+
         }
 
 
         // ------- Chip Functionality --------//
+
+        private void createMiniChips(Point point, string chipName)
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_CrapsTable));
+            chipsButton_1Mini.FlatAppearance.BorderSize = 0;
+            chipsButton_1Mini.FlatStyle = FlatStyle.Flat;
+            chipsButton_1Mini.Image = (Image)resources.GetObject(chipName + ".Image");
+            chipsButton_1Mini.Location = point;
+            chipsButton_1Mini.Name = chipName;
+            chipsButton_1Mini.Size = new Size(36, 33);
+            chipsButton_1Mini.TabIndex = 83;
+            chipsButton_1Mini.UseVisualStyleBackColor = true;
+            chipsButton_1Mini.Visible = true;
+        }
 
         private async void chipsButton_1Down_Click(object sender, EventArgs e)
         {
@@ -332,6 +360,41 @@ namespace CrapsSimC_
         private void button_ClearAmount_Click(object sender, EventArgs e)
         {
             textBox_AmountSelected.Text = 0.ToString();
+        }
+
+        private void button_PassLine_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "PassLineBet");
+                updatePlayer0Text();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "PassLineBet");
+                switch (totalBetAmount)
+                {
+                    case < 5:
+                        createMiniChips(new Point(147, 3), "chipsButton_1Mini");
+                        break;
+                    case < 9:
+                        createMiniChips(new Point(147, 3), "chipsButton_5Mini");
+                        break;
+                    case < 24:
+                        createMiniChips(new Point(147, 3), "chipsButton_10Mini");
+                        break;
+                    case < 100:
+                        createMiniChips(new Point(147, 3), "chipsButton_25Mini");
+                        break;
+                    case < 500:
+                        createMiniChips(new Point(147, 3), "chipsButton_100Mini");
+                        break;
+                    case < 1000:
+                        createMiniChips(new Point(147, 3), "chipsButton_500Mini");
+                        break;
+                    default:
+                        createMiniChips(new Point(147, 3), "chipsButton_1000Mini");
+                        break;
+                }
+            }
         }
 
         // ------- Table Functionality - Placing Bets --------//

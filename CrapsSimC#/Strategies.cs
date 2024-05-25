@@ -16,25 +16,25 @@ namespace CrapsSimC_
 
         //--------- Betting Strategies---------//
 
-        public static void PlayerBet(CrapsTable table, Players player, int rollamount)
+        public static void PlayerBet(CrapsTable table, Players player)
         {
             string strategy = (string)player.Strategy[1];
             switch (strategy)
             {
                 case "Martingale Pass With No Odds":
-                    betMartingalePassNoOdds(table, player, rollamount);
+                    betMartingalePassNoOdds(table, player);
                     break;
             }
         }
 
         //--------- Betting Logic---------//
-        public static void betMartingalePassNoOdds(CrapsTable table, Players player, int rollamount)
+        public static void betMartingalePassNoOdds(CrapsTable table, Players player)
         {
             //if the button is off, if there's a bet on there already do nothing. If there's no bet, check to see if the last bet was won or lost.  If won, bet minimum. If lost, bet twice what the last bet was.
             //if the button is on, do nothing.
             if (!table.Button)
             {
-                foreach ((string bet, int amount, int rollcount) in player.ActiveBetTracker){
+                foreach ((string bet, int amount) in player.ActiveBetTracker){
                     if (!bet.Equals("PassLineBet"))
                     {
                         var lastbetTuple = player.HistoricalBetTracker.LastOrDefault(tuple => tuple.Item1 == "PassLineBet");
@@ -42,9 +42,9 @@ namespace CrapsSimC_
                         {
                             int betAmount = lastbetTuple.betAmount * 2;
                             player.ActiveBankroll -= betAmount;
-                            (string, int, int) newBet = ("PasslineBet", betAmount, rollcount);
+                            (string, int) newBet = ("PasslineBet", betAmount);
                             player.ActiveBetTracker.Add(newBet);
-                            table.AddBet(betAmount, player.PlayerID, "PassLineBet");
+                            table.MakeBet(betAmount, player, "PassLineBet");
                         }
                     }
                 }
@@ -52,7 +52,7 @@ namespace CrapsSimC_
         }
 
         //--------- Winnings Strategies---------//
-        public static void CollectWinnings(CrapsTable table, Players player, int rollamount)
+        public static void CollectWinnings(CrapsTable table, Players player)
         {
             string strategy = (string)(player.Strategy[0]);
             switch (strategy)
