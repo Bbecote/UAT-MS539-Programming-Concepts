@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 namespace CrapsSimC_
 {
@@ -14,10 +16,11 @@ namespace CrapsSimC_
     {
         private Players CurrentPlayer = new Players();
 
-        //---------Player Fonts---------//
+        //--------- Attributes ---------//
         private int maxBankroll = 1000;
         private int winLossWalkMax = 500;
 
+        //Form Constructor
         public Form_Player0Setup(Players Player)
         {
             this.CurrentPlayer = Player;
@@ -29,6 +32,7 @@ namespace CrapsSimC_
         Font playerTextItalicsFont = new Font("Comic Sans MS", 14, FontStyle.Italic);
 
         //---------Player Setup---------//
+
         List<string> bettingStrategies = new List<string> { "Free Play", "Martingale Bets on the Passline with No Odds" };
         List<string> winningsStrategies = new List<string> { "Free Play", "Martingale Bets on the Passline with No Odds" };
 
@@ -77,9 +81,10 @@ namespace CrapsSimC_
         {
 
             // ----- Player0 Character Input Setup ----- //
+
+
             comboBox_Player0BettingStrategy.DataSource = bettingStrategies;
             comboBox_Player0WinningsStrategy.DataSource = winningsStrategies;
-
             updateNumericUpDownSettingsBankRoll(numericUpDown_Player0BankRoll);
             updateNumericUpDownSettingsMinMax(numericUpDown_Player0LoseWalk);
             updateNumericUpDownSettingsMinMax(numericUpDown_Player0WinWalk);
@@ -87,7 +92,6 @@ namespace CrapsSimC_
             updateNumericUpDownSettingsMinMax(numericUpDown_Player0MinBet);
             numericUpDown_Player0MinBet.Value = 10;
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             CurrentPlayer.Watching = false;

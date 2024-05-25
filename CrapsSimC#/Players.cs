@@ -38,7 +38,9 @@ namespace CrapsSimC_
 
         internal void UpdatePlayer()
         {
-            this.CurrentStanding = 0;
+            this.CurrentStanding = ActiveBankroll - InitialBankroll;
+            StandingsHistory.Add(this.CurrentStanding);
+            //Update Table Average
         }
 
         internal void ResetPlayer()
@@ -53,20 +55,32 @@ namespace CrapsSimC_
             this.totalBetAmount = 0;
         }
 
-        internal void Player_Bet(CrapsTable table, Dice dice)
+        internal void Player_Bet()
         {
             if (Strategy[0].Equals("Free Play"))
             {
-                //Accept input from user inpunt to include PlayerID, Amount, Bet
+                UpdatePlayer();
+                //Accept input from user inpunt to include PlayerID, Amount, Bet0
+                //Update Historical Tracker
+                //Update ActiveTracker
+                //Update totalbetAmount
+                //Update Table Average
             }
             else
             {
-                Strategies Strategy = new Strategies();
-                Strategy.PlayerBet(table, this, dice);
+                //Strategies Strategy = new Strategies();
+                //Strategy.PlayerBet(table, this, dice);
             }
         }
 
-
-
+        internal void Player_Lost()
+        {
+            UpdatePlayer();
+            //Accept input from user inpunt to include PlayerID, Amount, Bet0
+            //Update Historical Tracker
+            //Update ActiveTracker
+            //Update totalbetAmount
+            //Update Table Average
+        }
     }
 }
