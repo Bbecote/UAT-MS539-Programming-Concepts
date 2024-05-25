@@ -31,18 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_CrapsTable));
             tableLayoutPanel1 = new TableLayoutPanel();
             panel_table6 = new Panel();
+            button5 = new Button();
             button_6 = new Button();
             panel_table4 = new Panel();
+            button1 = new Button();
             button_1 = new Button();
             panel_table8 = new Panel();
+            button6 = new Button();
             button_8 = new Button();
             panel_table9 = new Panel();
+            button7 = new Button();
             button_9 = new Button();
             panel_table10 = new Panel();
-            pictureBox_On = new PictureBox();
+            button8 = new Button();
             button_10 = new Button();
             panel_table5 = new Panel();
+            button4 = new Button();
             button_5 = new Button();
+            pictureBox_On = new PictureBox();
             tableLayoutPanel8 = new TableLayoutPanel();
             tableLayoutPanel9 = new TableLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
@@ -55,15 +61,20 @@
             button_DontCome = new Button();
             button_COME = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
+            panel24 = new Panel();
             button_Field = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
             button_DontPass = new Button();
             button_PassLine = new Button();
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
+            panel22 = new Panel();
             panel_TableBackground = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
+            panel23 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
+            panel25 = new Panel();
+            panel26 = new Panel();
             panel14 = new Panel();
             panel2 = new Panel();
             pictureBox_Off = new PictureBox();
@@ -209,26 +220,25 @@
             panel21 = new Panel();
             chipsButton_1000Up = new ChipsButton();
             button_ClearAmount = new ChipsButton();
-            button1 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
             tableLayoutPanel1.SuspendLayout();
             panel_table6.SuspendLayout();
             panel_table4.SuspendLayout();
             panel_table8.SuspendLayout();
             panel_table9.SuspendLayout();
             panel_table10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
             panel_table5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_On).BeginInit();
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            panel24.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
+            panel22.SuspendLayout();
             panel_TableBackground.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
+            panel23.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            panel25.SuspendLayout();
+            panel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Off).BeginInit();
             tableLayoutPanel15.SuspendLayout();
             panel_ClearAndReset.SuspendLayout();
@@ -314,6 +324,15 @@
             panel_table6.Size = new Size(183, 125);
             panel_table6.TabIndex = 2;
             // 
+            // button5
+            // 
+            button5.BackColor = Color.DarkOrange;
+            button5.Location = new Point(0, 0);
+            button5.Name = "button5";
+            button5.Size = new Size(183, 36);
+            button5.TabIndex = 4;
+            button5.UseVisualStyleBackColor = false;
+            // 
             // button_6
             // 
             button_6.BackColor = Color.DarkOrange;
@@ -336,6 +355,15 @@
             panel_table4.Name = "panel_table4";
             panel_table4.Size = new Size(183, 125);
             panel_table4.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkOrange;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(183, 36);
+            button1.TabIndex = 2;
+            button1.UseVisualStyleBackColor = false;
             // 
             // button_1
             // 
@@ -360,6 +388,15 @@
             panel_table8.Size = new Size(183, 125);
             panel_table8.TabIndex = 3;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.DarkOrange;
+            button6.Location = new Point(0, 0);
+            button6.Name = "button6";
+            button6.Size = new Size(183, 36);
+            button6.TabIndex = 5;
+            button6.UseVisualStyleBackColor = false;
+            // 
             // button_8
             // 
             button_8.BackColor = Color.DarkOrange;
@@ -382,6 +419,15 @@
             panel_table9.Size = new Size(183, 125);
             panel_table9.TabIndex = 4;
             // 
+            // button7
+            // 
+            button7.BackColor = Color.DarkOrange;
+            button7.Location = new Point(0, 0);
+            button7.Name = "button7";
+            button7.Size = new Size(183, 36);
+            button7.TabIndex = 6;
+            button7.UseVisualStyleBackColor = false;
+            // 
             // button_9
             // 
             button_9.BackColor = Color.DarkOrange;
@@ -398,24 +444,20 @@
             // 
             panel_table10.BackColor = Color.DarkOrange;
             panel_table10.Controls.Add(button8);
-            panel_table10.Controls.Add(pictureBox_On);
             panel_table10.Controls.Add(button_10);
             panel_table10.Location = new Point(948, 3);
             panel_table10.Name = "panel_table10";
             panel_table10.Size = new Size(183, 125);
             panel_table10.TabIndex = 5;
             // 
-            // pictureBox_On
+            // button8
             // 
-            pictureBox_On.Anchor = AnchorStyles.Bottom;
-            pictureBox_On.BackColor = Color.Transparent;
-            pictureBox_On.Image = (Image)resources.GetObject("pictureBox_On.Image");
-            pictureBox_On.Location = new Point(3, 36);
-            pictureBox_On.Name = "pictureBox_On";
-            pictureBox_On.Size = new Size(66, 59);
-            pictureBox_On.TabIndex = 38;
-            pictureBox_On.TabStop = false;
-            pictureBox_On.Visible = false;
+            button8.BackColor = Color.DarkOrange;
+            button8.Location = new Point(0, 0);
+            button8.Name = "button8";
+            button8.Size = new Size(183, 36);
+            button8.TabIndex = 7;
+            button8.UseVisualStyleBackColor = false;
             // 
             // button_10
             // 
@@ -439,6 +481,15 @@
             panel_table5.Size = new Size(183, 125);
             panel_table5.TabIndex = 1;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.DarkOrange;
+            button4.Location = new Point(0, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(183, 36);
+            button4.TabIndex = 3;
+            button4.UseVisualStyleBackColor = false;
+            // 
             // button_5
             // 
             button_5.BackColor = Color.DarkOrange;
@@ -451,6 +502,18 @@
             button_5.TabIndex = 2;
             button_5.Text = "5";
             button_5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox_On
+            // 
+            pictureBox_On.Anchor = AnchorStyles.Bottom;
+            pictureBox_On.BackColor = Color.Transparent;
+            pictureBox_On.Image = (Image)resources.GetObject("pictureBox_On.Image");
+            pictureBox_On.Location = new Point(1356, 59);
+            pictureBox_On.Name = "pictureBox_On";
+            pictureBox_On.Size = new Size(66, 59);
+            pictureBox_On.TabIndex = 38;
+            pictureBox_On.TabStop = false;
+            pictureBox_On.Visible = false;
             // 
             // tableLayoutPanel8
             // 
@@ -583,10 +646,10 @@
             button_DontCome.BackColor = Color.DarkOrange;
             button_DontCome.Font = new Font("Ink Free", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button_DontCome.ForeColor = SystemColors.ButtonHighlight;
-            button_DontCome.Location = new Point(3, 2);
+            button_DontCome.Location = new Point(1, -3);
             button_DontCome.Margin = new Padding(3, 2, 3, 2);
             button_DontCome.Name = "button_DontCome";
-            button_DontCome.Size = new Size(372, 111);
+            button_DontCome.Size = new Size(372, 110);
             button_DontCome.TabIndex = 2;
             button_DontCome.Text = "Don't Come";
             button_DontCome.UseVisualStyleBackColor = false;
@@ -597,10 +660,10 @@
             button_COME.BackColor = Color.DarkOrange;
             button_COME.Font = new Font("Ink Free", 47.9999924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button_COME.ForeColor = SystemColors.ButtonHighlight;
-            button_COME.Location = new Point(382, 2);
+            button_COME.Location = new Point(0, -3);
             button_COME.Margin = new Padding(3, 2, 3, 2);
             button_COME.Name = "button_COME";
-            button_COME.Size = new Size(750, 109);
+            button_COME.Size = new Size(750, 110);
             button_COME.TabIndex = 3;
             button_COME.Text = "COME";
             button_COME.UseVisualStyleBackColor = false;
@@ -611,24 +674,32 @@
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel3.Controls.Add(button_Field, 0, 0);
+            tableLayoutPanel3.Controls.Add(panel24, 0, 0);
             tableLayoutPanel3.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel3.Location = new Point(36, 264);
+            tableLayoutPanel3.Location = new Point(36, 277);
             tableLayoutPanel3.Margin = new Padding(0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(1135, 115);
+            tableLayoutPanel3.Size = new Size(1135, 102);
             tableLayoutPanel3.TabIndex = 9;
+            // 
+            // panel24
+            // 
+            panel24.Controls.Add(button_Field);
+            panel24.Location = new Point(3, 3);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(1129, 96);
+            panel24.TabIndex = 0;
             // 
             // button_Field
             // 
             button_Field.BackColor = Color.DarkOrange;
             button_Field.ForeColor = SystemColors.ButtonHighlight;
-            button_Field.Location = new Point(3, 2);
+            button_Field.Location = new Point(3, -1);
             button_Field.Margin = new Padding(3, 2, 3, 2);
             button_Field.Name = "button_Field";
-            button_Field.Size = new Size(1129, 111);
+            button_Field.Size = new Size(1129, 95);
             button_Field.TabIndex = 3;
             button_Field.Text = "2 3 4 9 FIELD 10 11 12";
             button_Field.UseVisualStyleBackColor = false;
@@ -651,7 +722,7 @@
             button_DontPass.BackColor = Color.DarkOrange;
             button_DontPass.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_DontPass.ForeColor = SystemColors.ButtonHighlight;
-            button_DontPass.Location = new Point(3, 2);
+            button_DontPass.Location = new Point(3, -5);
             button_DontPass.Margin = new Padding(3, 2, 3, 2);
             button_DontPass.Name = "button_DontPass";
             button_DontPass.Size = new Size(1129, 61);
@@ -664,10 +735,10 @@
             button_PassLine.BackColor = Color.DarkOrange;
             button_PassLine.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_PassLine.ForeColor = SystemColors.ButtonHighlight;
-            button_PassLine.Location = new Point(3, 2);
+            button_PassLine.Location = new Point(1, -2);
             button_PassLine.Margin = new Padding(3, 2, 3, 2);
             button_PassLine.Name = "button_PassLine";
-            button_PassLine.Size = new Size(1129, 61);
+            button_PassLine.Size = new Size(1131, 61);
             button_PassLine.TabIndex = 13;
             button_PassLine.Text = "Pass Line";
             button_PassLine.UseVisualStyleBackColor = false;
@@ -692,7 +763,7 @@
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel7.Controls.Add(button_PassLine, 0, 0);
+            tableLayoutPanel7.Controls.Add(panel22, 0, 0);
             tableLayoutPanel7.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel7.Location = new Point(36, 441);
             tableLayoutPanel7.Margin = new Padding(0);
@@ -701,6 +772,14 @@
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel7.Size = new Size(1135, 65);
             tableLayoutPanel7.TabIndex = 14;
+            // 
+            // panel22
+            // 
+            panel22.Controls.Add(button_PassLine);
+            panel22.Location = new Point(3, 3);
+            panel22.Name = "panel22";
+            panel22.Size = new Size(1129, 59);
+            panel22.TabIndex = 0;
             // 
             // panel_TableBackground
             // 
@@ -724,7 +803,7 @@
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel5.Controls.Add(button_DontPass, 0, 0);
+            tableLayoutPanel5.Controls.Add(panel23, 0, 0);
             tableLayoutPanel5.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel5.Location = new Point(36, 377);
             tableLayoutPanel5.Margin = new Padding(0);
@@ -734,14 +813,22 @@
             tableLayoutPanel5.Size = new Size(1135, 65);
             tableLayoutPanel5.TabIndex = 17;
             // 
+            // panel23
+            // 
+            panel23.Controls.Add(button_DontPass);
+            panel23.Location = new Point(3, 3);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(1129, 59);
+            panel23.TabIndex = 0;
+            // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.BackColor = Color.Orange;
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.39207F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.60793F));
-            tableLayoutPanel2.Controls.Add(button_DontCome, 0, 0);
-            tableLayoutPanel2.Controls.Add(button_COME, 1, 0);
+            tableLayoutPanel2.Controls.Add(panel25, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel26, 1, 0);
             tableLayoutPanel2.Font = new Font("Ink Free", 24.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel2.Location = new Point(36, 162);
             tableLayoutPanel2.Margin = new Padding(0);
@@ -750,6 +837,22 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(1135, 115);
             tableLayoutPanel2.TabIndex = 16;
+            // 
+            // panel25
+            // 
+            panel25.Controls.Add(button_DontCome);
+            panel25.Location = new Point(3, 3);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(373, 109);
+            panel25.TabIndex = 0;
+            // 
+            // panel26
+            // 
+            panel26.Controls.Add(button_COME);
+            panel26.Location = new Point(382, 3);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(750, 109);
+            panel26.TabIndex = 1;
             // 
             // panel14
             // 
@@ -2438,63 +2541,9 @@
             button_ClearAmount.Name = "button_ClearAmount";
             button_ClearAmount.Size = new Size(66, 56);
             button_ClearAmount.TabIndex = 88;
-            button_ClearAmount.Text = "Clear Bet";
+            button_ClearAmount.Text = "Clear";
             button_ClearAmount.UseVisualStyleBackColor = false;
             button_ClearAmount.Click += button_ClearAmount_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.DarkOrange;
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(186, 36);
-            button1.TabIndex = 2;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.DarkOrange;
-            button4.Location = new Point(0, 0);
-            button4.Name = "button4";
-            button4.Size = new Size(186, 36);
-            button4.TabIndex = 3;
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.DarkOrange;
-            button5.Location = new Point(0, 0);
-            button5.Name = "button5";
-            button5.Size = new Size(186, 36);
-            button5.TabIndex = 4;
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.DarkOrange;
-            button6.Location = new Point(0, 0);
-            button6.Name = "button6";
-            button6.Size = new Size(186, 36);
-            button6.TabIndex = 5;
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.DarkOrange;
-            button7.Location = new Point(0, 0);
-            button7.Name = "button7";
-            button7.Size = new Size(186, 36);
-            button7.TabIndex = 6;
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.DarkOrange;
-            button8.Location = new Point(0, 0);
-            button8.Name = "button8";
-            button8.Size = new Size(186, 36);
-            button8.TabIndex = 7;
-            button8.UseVisualStyleBackColor = false;
             // 
             // form_CrapsTable
             // 
@@ -2505,6 +2554,7 @@
             BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
             Controls.Add(panel2);
+            Controls.Add(pictureBox_On);
             Controls.Add(button_ClearAmount);
             Controls.Add(panel21);
             Controls.Add(panel20);
@@ -2538,14 +2588,19 @@
             panel_table8.ResumeLayout(false);
             panel_table9.ResumeLayout(false);
             panel_table10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
             panel_table5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_On).EndInit();
             tableLayoutPanel14.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
+            panel24.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
+            panel22.ResumeLayout(false);
             panel_TableBackground.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
+            panel23.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
+            panel25.ResumeLayout(false);
+            panel26.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_Off).EndInit();
             tableLayoutPanel15.ResumeLayout(false);
             panel_ClearAndReset.ResumeLayout(false);
@@ -2823,5 +2878,10 @@
         private Button button7;
         private Button button8;
         private Button button4;
+        private Panel panel24;
+        private Panel panel22;
+        private Panel panel23;
+        private Panel panel25;
+        private Panel panel26;
     }
 }
