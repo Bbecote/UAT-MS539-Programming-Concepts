@@ -37,36 +37,6 @@ namespace CrapsSimC_
             textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_PlayerTitle1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
         // ------- Setting Up & Selecting Players --------//
 
         private void button_Player0_Click(object sender, EventArgs e)
@@ -219,6 +189,8 @@ namespace CrapsSimC_
 
 
         // ------- Chip Functionality --------//
+        //TODO Revisit creating dynamic objects or create an object for each play and each bet type
+        //TODO add a hover over with the bet amount
 
         private void createMiniChips(Point point, string chipName)
         {
@@ -230,8 +202,10 @@ namespace CrapsSimC_
             chipsButton_1Mini.Name = chipName;
             chipsButton_1Mini.Size = new Size(36, 33);
             chipsButton_1Mini.TabIndex = 83;
-            chipsButton_1Mini.UseVisualStyleBackColor = true;
+            chipsButton_1Mini.UseVisualStyleBackColor = false;
+            chipsButton_1Mini.BackColor = Color.DarkOrange;
             chipsButton_1Mini.Visible = true;
+            chipsButton_1Mini.BringToFront();
         }
 
         private async void chipsButton_1Down_Click(object sender, EventArgs e)
@@ -365,6 +339,7 @@ namespace CrapsSimC_
         private void button_PassLine_Click(object sender, EventArgs e)
         {
             int betAmount = int.Parse(textBox_AmountSelected.Text);
+            //TODO if no player selected, output message to select a player and return.
             if (SelectedPlayer.ActiveBankroll > betAmount)
             {
                 table.MakeBet(betAmount, SelectedPlayer, "PassLineBet");
@@ -373,25 +348,25 @@ namespace CrapsSimC_
                 switch (totalBetAmount)
                 {
                     case < 5:
-                        createMiniChips(new Point(147, 3), "chipsButton_1Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_1Mini");
                         break;
                     case < 9:
-                        createMiniChips(new Point(147, 3), "chipsButton_5Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_5Mini");
                         break;
                     case < 24:
-                        createMiniChips(new Point(147, 3), "chipsButton_10Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_10Mini");
                         break;
                     case < 100:
-                        createMiniChips(new Point(147, 3), "chipsButton_25Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_25Mini");
                         break;
                     case < 500:
-                        createMiniChips(new Point(147, 3), "chipsButton_100Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_100Mini");
                         break;
                     case < 1000:
-                        createMiniChips(new Point(147, 3), "chipsButton_500Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_500Mini");
                         break;
                     default:
-                        createMiniChips(new Point(147, 3), "chipsButton_1000Mini");
+                        createMiniChips(new Point(185, 460), "chipsButton_1000Mini");
                         break;
                 }
             }

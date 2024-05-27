@@ -103,14 +103,12 @@ namespace CrapsSimC_
             CurrentPlayer.WinWalk = int.Parse(numericUpDown_Player0WinWalk.Text);
             CurrentPlayer.LossWalk = int.Parse(numericUpDown_Player0LoseWalk.Text);
             this.Close();
-            this.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CurrentPlayer.Watching = true;
             this.Close();
-            this.Dispose();
         }
 
         private void numericUpDown_Player0BankRoll_Validating(object sender, CancelEventArgs e)
@@ -126,13 +124,13 @@ namespace CrapsSimC_
                 errorProvider.SetError(numericUpDown_Player0BankRoll, "");
             }
         }
-
+        //TODO this error requirement doesn't make sense
         private void numericUpDown_Player0MinBet_Validating(object sender, CancelEventArgs e)
         {
             int amount = (int)numericUpDown_Player0MinBet.Value;
             if (amount > winLossWalkMax)
             {
-                errorProvider.SetError(numericUpDown_Player0MinBet, $"Bankroll cannot exceed {winLossWalkMax}. Please enter a valid amount.");
+                errorProvider.SetError(numericUpDown_Player0MinBet, $"Minimum bet cannot exceed {winLossWalkMax}. Please enter a valid amount.");
                 e.Cancel = true;
             }
             else

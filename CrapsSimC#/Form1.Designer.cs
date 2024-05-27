@@ -67,7 +67,6 @@
             button_DontPass = new Button();
             button_PassLine = new Button();
             tableLayoutPanel6 = new TableLayoutPanel();
-            tableLayoutPanel7 = new TableLayoutPanel();
             panel22 = new Panel();
             chipsButton_1000Mini = new ChipsButton();
             chipsButton_5Mini = new ChipsButton();
@@ -80,7 +79,6 @@
             panel25 = new Panel();
             panel26 = new Panel();
             panel14 = new Panel();
-            panel2 = new Panel();
             pictureBox_Off = new PictureBox();
             button_ClearTable = new Button();
             tableLayoutPanel15 = new TableLayoutPanel();
@@ -239,7 +237,6 @@
             tableLayoutPanel14.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             panel24.SuspendLayout();
-            tableLayoutPanel7.SuspendLayout();
             panel22.SuspendLayout();
             panel_TableBackground.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
@@ -247,6 +244,7 @@
             tableLayoutPanel2.SuspendLayout();
             panel25.SuspendLayout();
             panel26.SuspendLayout();
+            panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Off).BeginInit();
             tableLayoutPanel15.SuspendLayout();
             panel_ClearAndReset.SuspendLayout();
@@ -320,7 +318,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Size = new Size(1135, 131);
             tableLayoutPanel1.TabIndex = 0;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            //tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // panel_table6
             // 
@@ -661,7 +659,7 @@
             button_DontCome.TabIndex = 2;
             button_DontCome.Text = "Don't Come";
             button_DontCome.UseVisualStyleBackColor = false;
-            button_DontCome.Click += button4_Click;
+            //button_DontCome.Click += button4_Click;
             // 
             // button_COME
             // 
@@ -743,7 +741,7 @@
             button_PassLine.BackColor = Color.DarkOrange;
             button_PassLine.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_PassLine.ForeColor = SystemColors.ButtonHighlight;
-            button_PassLine.Location = new Point(1, -3);
+            button_PassLine.Location = new Point(4, 0);
             button_PassLine.Margin = new Padding(3, 2, 3, 2);
             button_PassLine.Name = "button_PassLine";
             button_PassLine.Size = new Size(1131, 61);
@@ -766,31 +764,13 @@
             tableLayoutPanel6.Size = new Size(200, 100);
             tableLayoutPanel6.TabIndex = 0;
             // 
-            // tableLayoutPanel7
-            // 
-            tableLayoutPanel7.BackColor = Color.Orange;
-            tableLayoutPanel7.ColumnCount = 1;
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel7.Controls.Add(panel22, 0, 0);
-            tableLayoutPanel7.Font = new Font("Ink Free", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tableLayoutPanel7.Location = new Point(36, 441);
-            tableLayoutPanel7.Margin = new Padding(0);
-            tableLayoutPanel7.Name = "tableLayoutPanel7";
-            tableLayoutPanel7.RowCount = 1;
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Size = new Size(1135, 65);
-            tableLayoutPanel7.TabIndex = 14;
-            // 
             // panel22
             // 
-            panel22.Controls.Add(chipsButton_1000Mini);
-            panel22.Controls.Add(chipsButton_5Mini);
-            panel22.Controls.Add(chipsButton_10Mini);
+            panel22.BackColor = Color.DarkOrange;
             panel22.Controls.Add(button_PassLine);
-            panel22.Location = new Point(3, 3);
+            panel22.Location = new Point(15, 423);
             panel22.Name = "panel22";
-            panel22.Size = new Size(1129, 59);
+            panel22.Size = new Size(1135, 63);
             panel22.TabIndex = 0;
             // 
             // chipsButton_1000Mini
@@ -798,7 +778,7 @@
             chipsButton_1000Mini.FlatAppearance.BorderSize = 0;
             chipsButton_1000Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_1000Mini.Image = (Image)resources.GetObject("chipsButton_1000Mini.Image");
-            chipsButton_1000Mini.Location = new Point(958, 3);
+            chipsButton_1000Mini.Location = new Point(1780, 678);
             chipsButton_1000Mini.Name = "chipsButton_1000Mini";
             chipsButton_1000Mini.Size = new Size(36, 33);
             chipsButton_1000Mini.TabIndex = 94;
@@ -809,7 +789,7 @@
             chipsButton_5Mini.FlatAppearance.BorderSize = 0;
             chipsButton_5Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_5Mini.Image = (Image)resources.GetObject("chipsButton_5Mini.Image");
-            chipsButton_5Mini.Location = new Point(336, 3);
+            chipsButton_5Mini.Location = new Point(1756, 641);
             chipsButton_5Mini.Name = "chipsButton_5Mini";
             chipsButton_5Mini.Size = new Size(36, 33);
             chipsButton_5Mini.TabIndex = 89;
@@ -820,7 +800,7 @@
             chipsButton_10Mini.FlatAppearance.BorderSize = 0;
             chipsButton_10Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_10Mini.Image = (Image)resources.GetObject("chipsButton_10Mini.Image");
-            chipsButton_10Mini.Location = new Point(750, 3);
+            chipsButton_10Mini.Location = new Point(1798, 641);
             chipsButton_10Mini.Name = "chipsButton_10Mini";
             chipsButton_10Mini.Size = new Size(36, 33);
             chipsButton_10Mini.TabIndex = 90;
@@ -831,7 +811,7 @@
             chipsButton_1Mini.FlatAppearance.BorderSize = 0;
             chipsButton_1Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_1Mini.Image = (Image)resources.GetObject("chipsButton_1Mini.Image");
-            chipsButton_1Mini.Location = new Point(32, 577);
+            chipsButton_1Mini.Location = new Point(1714, 640);
             chipsButton_1Mini.Name = "chipsButton_1Mini";
             chipsButton_1Mini.Size = new Size(36, 33);
             chipsButton_1Mini.TabIndex = 83;
@@ -844,7 +824,6 @@
             panel_TableBackground.Controls.Add(tableLayoutPanel1);
             panel_TableBackground.Controls.Add(tableLayoutPanel5);
             panel_TableBackground.Controls.Add(tableLayoutPanel2);
-            panel_TableBackground.Controls.Add(tableLayoutPanel7);
             panel_TableBackground.Controls.Add(tableLayoutPanel3);
             panel_TableBackground.Controls.Add(panel14);
             panel_TableBackground.Location = new Point(10, 11);
@@ -913,17 +892,11 @@
             // panel14
             // 
             panel14.BackColor = Color.Black;
+            panel14.Controls.Add(panel22);
             panel14.Location = new Point(21, 18);
             panel14.Name = "panel14";
             panel14.Size = new Size(1178, 517);
             panel14.TabIndex = 82;
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(1446, 669);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(286, 131);
-            panel2.TabIndex = 32;
             // 
             // pictureBox_Off
             // 
@@ -1039,7 +1012,7 @@
             label_AmountSelected.Size = new Size(231, 46);
             label_AmountSelected.TabIndex = 47;
             label_AmountSelected.Text = "Bet Amount:";
-            label_AmountSelected.Click += label1_Click;
+            //label_AmountSelected.Click += label1_Click;
             // 
             // textBox_AmountSelected
             // 
@@ -1200,7 +1173,7 @@
             label_PlayerTitle1.Size = new Size(71, 36);
             label_PlayerTitle1.TabIndex = 64;
             label_PlayerTitle1.Text = "Sam";
-            label_PlayerTitle1.Click += label_PlayerTitle1_Click;
+            //label_PlayerTitle1.Click += label_PlayerTitle1_Click;
             // 
             // tableLayoutPanel_Player0
             // 
@@ -2280,7 +2253,7 @@
             label23.Size = new Size(281, 46);
             label23.TabIndex = 47;
             label23.Text = "Dealer Bankroll:";
-            label23.Click += label23_Click;
+            //label23.Click += label23_Click;
             // 
             // textBox_DealerBankroll
             // 
@@ -2620,7 +2593,7 @@
             chipsButton_25Mini.FlatAppearance.BorderSize = 0;
             chipsButton_25Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_25Mini.Image = (Image)resources.GetObject("chipsButton_25Mini.Image");
-            chipsButton_25Mini.Location = new Point(134, 577);
+            chipsButton_25Mini.Location = new Point(1840, 640);
             chipsButton_25Mini.Name = "chipsButton_25Mini";
             chipsButton_25Mini.Size = new Size(36, 33);
             chipsButton_25Mini.TabIndex = 91;
@@ -2631,7 +2604,7 @@
             chipsButton_100Mini.FlatAppearance.BorderSize = 0;
             chipsButton_100Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_100Mini.Image = (Image)resources.GetObject("chipsButton_100Mini.Image");
-            chipsButton_100Mini.Location = new Point(32, 615);
+            chipsButton_100Mini.Location = new Point(1822, 678);
             chipsButton_100Mini.Name = "chipsButton_100Mini";
             chipsButton_100Mini.Size = new Size(36, 33);
             chipsButton_100Mini.TabIndex = 92;
@@ -2642,7 +2615,7 @@
             chipsButton_500.FlatAppearance.BorderSize = 0;
             chipsButton_500.FlatStyle = FlatStyle.Flat;
             chipsButton_500.Image = (Image)resources.GetObject("chipsButton_500.Image");
-            chipsButton_500.Location = new Point(74, 616);
+            chipsButton_500.Location = new Point(1738, 678);
             chipsButton_500.Name = "chipsButton_500";
             chipsButton_500.Size = new Size(36, 33);
             chipsButton_500.TabIndex = 93;
@@ -2656,11 +2629,13 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
             ClientSize = new Size(2544, 1401);
-            Controls.Add(chipsButton_500);
+            Controls.Add(chipsButton_1000Mini);
             Controls.Add(chipsButton_1Mini);
+            Controls.Add(chipsButton_10Mini);
+            Controls.Add(chipsButton_5Mini);
+            Controls.Add(chipsButton_500);
             Controls.Add(chipsButton_100Mini);
             Controls.Add(chipsButton_25Mini);
-            Controls.Add(panel2);
             Controls.Add(pictureBox_On);
             Controls.Add(button_ClearAmount);
             Controls.Add(panel21);
@@ -2688,7 +2663,7 @@
             Name = "form_CrapsTable";
             ShowIcon = false;
             WindowState = FormWindowState.Maximized;
-            Load += Form1_Load;
+            //Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
             panel_table6.ResumeLayout(false);
             panel_table4.ResumeLayout(false);
@@ -2700,7 +2675,6 @@
             tableLayoutPanel14.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             panel24.ResumeLayout(false);
-            tableLayoutPanel7.ResumeLayout(false);
             panel22.ResumeLayout(false);
             panel_TableBackground.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
@@ -2708,6 +2682,7 @@
             tableLayoutPanel2.ResumeLayout(false);
             panel25.ResumeLayout(false);
             panel26.ResumeLayout(false);
+            panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_Off).EndInit();
             tableLayoutPanel15.ResumeLayout(false);
             panel_ClearAndReset.ResumeLayout(false);
@@ -2812,7 +2787,6 @@
         private Button button_DontPass;
         private Button button_PassLine;
         private TableLayoutPanel tableLayoutPanel6;
-        private TableLayoutPanel tableLayoutPanel7;
         private Panel panel_TableBackground;
         private ChipsButton button_1Chip;
         private ChipsButton button_5Chip;
@@ -2826,7 +2800,6 @@
         private Button button_ClearTable;
         private TableLayoutPanel tableLayoutPanel15;
         private Button button_ResetGame;
-        private Panel panel2;
         private Panel panel_ClearAndReset;
         private PictureBox pictureBox_On;
         private Label label_LastRole;
