@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj": {}
+    "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj": {
+    "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj",
         "projectName": "C_Sharp_Syntax",
-        "projectPath": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj",
+        "projectPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\C_Sharp_Syntax.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\Desktop\\DevOps\\MS539 Programming Concepts\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\obj\\",
+        "outputPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\C_Sharp_Syntax\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

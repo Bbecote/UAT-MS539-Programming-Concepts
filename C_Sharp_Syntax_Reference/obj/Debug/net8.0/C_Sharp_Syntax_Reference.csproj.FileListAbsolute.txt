@@ -1,0 +1,15 @@
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\bin\Debug\net8.0\C_Sharp_Syntax_Reference.exe
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\bin\Debug\net8.0\C_Sharp_Syntax_Reference.deps.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\bin\Debug\net8.0\C_Sharp_Syntax_Reference.runtimeconfig.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\bin\Debug\net8.0\C_Sharp_Syntax_Reference.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\bin\Debug\net8.0\C_Sharp_Syntax_Reference.pdb
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.AssemblyInfoInputs.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.AssemblyInfo.cs
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.sourcelink.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\refint\C_Sharp_Syntax_Reference.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.pdb
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\C_Sharp_Syntax_Reference.genruntimeconfig.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\C_Sharp_Syntax_Reference\obj\Debug\net8.0\ref\C_Sharp_Syntax_Reference.dll
