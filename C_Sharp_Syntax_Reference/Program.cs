@@ -10,7 +10,8 @@
  */
 
 using System;
-using System.Diagnostics.CodeAnalysis; // Not required but used in almost all C#/.Net programs. This line makes all the types (classes, etc.) within the core .NET "System" namespace available for direct use in your code. It's like importing a toolbox full of the common features you'll need. You can add additional "using" statements to import classes to use in your code.
+using System.Collections.Immutable;
+using System.Threading.Tasks.Dataflow; // Not required but used in almost all C#/.Net programs. This line makes all the types (classes, etc.) within the core .NET "System" namespace available for direct use in your code. It's like importing a toolbox full of the common features you'll need. You can add additional "using" statements to import classes to use in your code.
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -101,6 +102,21 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
             double doubleExample = 3.14159265358979;
             float floatExample = 3.141592F;
 
+            //----- Formatting Outputs -----//
+            Console.WriteLine($"Currency: {23.445:C}");
+            Console.WriteLine($"Pad out to 4 places: {23:D4}");
+            Console.WriteLine($"3 Decimals: {23.4:F3}");
+            Console.WriteLine($"Commas: {2300.9:N}");
+
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"{now:yyyy-MM-dd HH:mm:ss}");    // Output: 2024-05-28 21:25:13 
+            Console.WriteLine($"{now:dddd, MMMM d, yyyy}"); // Output: Tuesday, May 28, 2024
+
+            //----- Random Numbers -----//
+            Random rand = new Random();
+            int newRandomDice = rand.Next(2, 13); //Why is this not right for two dice?
+
+
             //----- Char and String -----//
 
             //A single character stored as Unicode (2 bytes of memory).  Uses single quotes
@@ -128,11 +144,11 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
 
             //----- Post and Preix Inc/Decrements -----//
             intExample10 = 10;
-            Console.WriteLine($"++ 10: {++ intExample10}"); //Prefix Increment
+            Console.WriteLine($"++ 10: {++intExample10}"); //Prefix Increment
             intExample10 = 10;
-            Console.WriteLine($"10 ++ : {intExample10 ++}"); //PostFix Increment
+            Console.WriteLine($"10 ++ : {intExample10++}"); //PostFix Increment
             intExample10 = 10;
-            Console.WriteLine($"-- 10: {-- intExample10}"); //Prefix Increment
+            Console.WriteLine($"-- 10: {--intExample10}"); //Prefix Increment
             intExample10 = 10;
             Console.WriteLine($"10 -- : {intExample10--}"); //PostFix Increment
             intExample10 = 10;
@@ -156,9 +172,13 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
 
             //----- Casting from String -----//
             bool boolFromString = bool.Parse("false");
-            Console.WriteLine($"Output from boolFromString {boolFromString}");
+            Console.WriteLine($"Casting from string to bool: {boolFromString}");
             int intFromString = int.Parse("15");
-            Console.WriteLine($"Output from intFromString {intFromString}");
+            Console.WriteLine($"Casting from string to int: {intFromString}");
+
+            //----- Casting to A String -----//
+            string newString = 5.ToString();
+            Console.WriteLine($"Casting from int to string: {newString}");
 
             //----- Casting Numbers One to Another Type -----//
             int intCastExample = (int)floatExample;
@@ -204,11 +224,11 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
             }
             else if (intExample10 > 10)
             {
-                //
+                // Doesn't Execute
             }
             else
             {
-                //Do this code
+                //Equals 10 - execute this.
             }
 
             //Switch Statements
@@ -231,15 +251,102 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
                 1 => 7,
                 2 => 8,  //this will be set to the variable switchResult
                 3 => 9,
-                4 => 10, 
+                4 => 10,
                 _ => 11,
             };
 
+            //----- String Stuff -----//
+            //Immutability: C# strings are immutable, meaning their values cannot be changed after creation. String manipulation operations always return new string objects.
+
+            string hitsFrom80s1 = "Take On Me";
+            string hitsFrom80s2 = "Every Breath You Take";
+            Console.WriteLine("My Favorite 80's songs are {0} and {1}", hitsFrom80s1, hitsFrom80s2);
+            //Alignment
+            Console.WriteLine($"{"Left",-10}{"Center",0}{"Right",10}");
+            //Contatonation
+            Console.WriteLine(hitsFrom80s1 + " heart " + hitsFrom80s2);
+            //Searching - other options include IndexOf, StartsWith, EndsWith
+            bool containsSample = hitsFrom80s1.Contains("take");  //False case sensitive
+            bool containsSample2 = hitsFrom80s1.ToLower().Contains("take");
+            Console.WriteLine($"Boolean test of string.Contains: {containsSample}");
+            Console.WriteLine($"Boolean test of string.Contains with ToLower: {containsSample2}");
+            //Grab a substring
+            string notARealSong = hitsFrom80s1.Substring(0, 7) + " " + hitsFrom80s2.Substring(hitsFrom80s2.Length - 4);
+            Console.WriteLine($"Concatonate two substrings: {notARealSong}");
+            string isARealSong = hitsFrom80s1.Replace("Take", "Living").Replace("Me", "A Prayer");
+            Console.WriteLine($"Two Replaces on a single string: {isARealSong}");
+            Console.WriteLine($"String Length using text.Length(): {hitsFrom80s1.Length}");
+            Console.WriteLine($"To Uppercase: {hitsFrom80s1.ToUpper()}");
+            Console.WriteLine($"To Lowercase: {hitsFrom80s1.ToLower()}");
+            //Verbatim - allows you to print out exactly what's in the quotation marks
+            Console.WriteLine(@"Using Verbatim, these are escape characters:  //// /' \"" \\ \t \a");
+
+            //----- Loops -----//
+            //For Loops - 3 parts separated by semicolons: initialization expression, test expression, and update expression
+            for (int count = 0; count < 10; count++)
+            {
+                Console.Write($"I'm on count: {count}, ");
+            }
+
+            Console.WriteLine("");
+
+            /*
+            while (!true) // Runs indefinitely, often used for networking, logging, background services
+            {
+                //Do stuff
+            }
+            */
+
+            int x = 10;
+            do
+            {
+                //Do stuff
+                x--;
+            } while (x != 0);
 
 
+            Console.WriteLine("//----- Data Structures (Arrays) -----//");
+            //----- Data Structures -----//
 
+            //Arrays
+            //Array Declaration Structure: type[] name = new int[size_of_array_in_int].  Arrays are a fixed length data structure, referenced by the index starting from 0.
+            int[] newArray = new int[10]; //all indexes are set to 0
+            int[] newArray1 = { 10, 100, 1000 }; //length of 3, index 0 = 1, index 1 = 100, index 2 = 1000
+            Console.WriteLine($"As a reference type, printing the array directly will print it's type: {newArray1}"); //
 
+            //Accessing Values: type variable = arrayName[index_of_desired_value]
+            int intFromArray = newArray[1];
+            Console.WriteLine($"Accessing value at index 2 of newArray1: {newArray1[2]}");
 
+            //Join Strings from an array
+            string[] songs = { hitsFrom80s1, hitsFrom80s2, isARealSong };
+            Console.WriteLine($"My favorite 80's songs: {string.Join(", ", songs)}");
+
+            //For Loop with arrays
+            for (int i = 0; i < songs.Length; i++)
+            {
+                Console.WriteLine($"My top 3 favorite 80's songs: {i}:{songs[i]}");
+            }
+
+            //Foreach Loop
+            foreach (int num in newArray1)
+            {
+                Console.WriteLine(num);
+            }
+
+            //Changing the value
+            newArray1[0] = 1;
+
+            //Searching the array
+            int index = Array.IndexOf(newArray1, 100);
+            Console.WriteLine($"The index of newArray1 for 100 is: {index}");
+            bool containsValue = newArray.Contains(100);
+            Console.WriteLine($"My newArray1 contains 1000: {containsValue}");
+
+            //Sorting (retuns a new array
+            int[] unsortedArray = { 5, 3, 4, 2, 1 };
+            Array.Sort(unsortedArray);
+            Console.WriteLine($"Now my unsorted array is sorted: {string.Join(", ", unsortedArray)}");
 
             /* Reference vs Value Types
             * Reference Type: Indirect Storage - Reference types store a reference (memory address) to the actual data. When you assign a reference type variable to another, both variables point to the same object.
@@ -260,12 +367,11 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
             Console.WriteLine($"int2: {int2}");
 
             Console.WriteLine("Reference Types Ouptut");
-
-
-
-
-
-
+            int[] newArray2 = { 1, 2, 3 };
+            int[] newArray3 = newArray2;
+            newArray3[1] = 10;
+            Console.WriteLine($"Values for newArray2: {string.Join(", ", newArray2)}");
+            Console.WriteLine($"Values for newArray3: {string.Join(", ", newArray3)}");
 
             Console.WriteLine("Strings:A Reference Type that acts like a Value Type");
             string string1 = "Hello World!";
@@ -275,20 +381,20 @@ namespace ConsoleApp // Not required. A namespace is like a container or folder 
             Console.WriteLine($"string1: {string1}");
             Console.WriteLine($"string2: {string2}");
 
-
-            
-
-            
-            
-            
-            
-            
-            
-         
+        
 
 
 
-            
+
+
+
+
+
+
+
+
+
+
 
 
 
