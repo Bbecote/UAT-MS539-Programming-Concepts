@@ -743,7 +743,7 @@
             // 
             pictureBox_Off.Anchor = AnchorStyles.Bottom;
             pictureBox_Off.Image = (Image)resources.GetObject("pictureBox_Off.Image");
-            pictureBox_Off.Location = new Point(1252, 59);
+            pictureBox_Off.Location = new Point(1243, 43);
             pictureBox_Off.Name = "pictureBox_Off";
             pictureBox_Off.Size = new Size(76, 59);
             pictureBox_Off.TabIndex = 29;
@@ -799,7 +799,7 @@
             // 
             pictureBox_On.Anchor = AnchorStyles.Bottom;
             pictureBox_On.Image = (Image)resources.GetObject("pictureBox_On.Image");
-            pictureBox_On.Location = new Point(1344, 59);
+            pictureBox_On.Location = new Point(1335, 43);
             pictureBox_On.Name = "pictureBox_On";
             pictureBox_On.Size = new Size(72, 59);
             pictureBox_On.TabIndex = 38;
@@ -1199,7 +1199,7 @@
             button_1000Chip.Image = (Image)resources.GetObject("button_1000Chip.Image");
             button_1000Chip.Location = new Point(663, 3);
             button_1000Chip.Name = "button_1000Chip";
-            button_1000Chip.Padding = new Padding(3);
+            button_1000Chip.Padding = new Padding(3, 3, 3, 3);
             button_1000Chip.Size = new Size(104, 104);
             button_1000Chip.TabIndex = 0;
             button_1000Chip.UseVisualStyleBackColor = true;
@@ -1225,7 +1225,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(3, 68);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(326, 459);
+            pictureBox2.Size = new Size(326, 458);
             pictureBox2.TabIndex = 71;
             pictureBox2.TabStop = false;
             // 
@@ -1289,7 +1289,7 @@
             table_Player1CurrentStandings.Name = "table_Player1CurrentStandings";
             table_Player1CurrentStandings.RowCount = 1;
             table_Player1CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            table_Player1CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player1CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 52F));
             table_Player1CurrentStandings.Size = new Size(527, 52);
             table_Player1CurrentStandings.TabIndex = 67;
             table_Player1CurrentStandings.Visible = false;
@@ -1551,7 +1551,7 @@
             table_Player2CurrentStandings.Name = "table_Player2CurrentStandings";
             table_Player2CurrentStandings.RowCount = 1;
             table_Player2CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            table_Player2CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player2CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 49F));
             table_Player2CurrentStandings.Size = new Size(527, 49);
             table_Player2CurrentStandings.TabIndex = 66;
             table_Player2CurrentStandings.Visible = false;
@@ -1813,7 +1813,7 @@
             table_Player3CurrentStandings.Name = "table_Player3CurrentStandings";
             table_Player3CurrentStandings.RowCount = 1;
             table_Player3CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            table_Player3CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_Player3CurrentStandings.RowStyles.Add(new RowStyle(SizeType.Absolute, 52F));
             table_Player3CurrentStandings.Size = new Size(574, 52);
             table_Player3CurrentStandings.TabIndex = 65;
             table_Player3CurrentStandings.Visible = false;
@@ -2222,7 +2222,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
-            ClientSize = new Size(2544, 1401);
+            ClientSize = new Size(1777, 830);
             Controls.Add(panel11);
             Controls.Add(panel8);
             Controls.Add(panel7);

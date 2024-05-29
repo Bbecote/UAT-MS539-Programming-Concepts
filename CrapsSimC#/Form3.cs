@@ -136,5 +136,10 @@ namespace CrapsSimC_
                 errorProvider.SetError(numericUpDown_Player0MinBet, "");
             }
         }
+
+        private void richTextBox_Sam_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
