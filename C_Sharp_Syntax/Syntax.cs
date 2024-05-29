@@ -9,14 +9,32 @@
  * Block code using ctr K, ctr C - Unblock code using ctr k, ctr U
  */
 
-using System; //Imports classes and functions from the System Class
+using System; // Not required but used in almost all C#/.Net programs. This line makes all the types (classes, etc.) within the core .NET "System" namespace available for direct use in your code. It's like importing a toolbox full of the common features you'll need. 
 //using System.Globalization;
 //using System.Text; 
 
 /*-------      -------*/
-namespace ConsoleApp1 //Not explicitly required - Organizes your code.
+namespace ConsoleApp1 // Not required. A namespace is like a container or folder that helps organize your code.  It groups related classes, types, and other code elements, preventing naming conflicts and making your code more manageable.
 {
-    public class Syntax //Primary class must match the file name
+
+    /* Access Modifiers - note the lower case access modifiers, lower case "class", upercase ClassName convention. Used on classes, methods, and .
+     * These are the most typical ones:
+     * public class PublicClass { }  // Accessible from anywhere in your project or other assemblies (DLLs).
+     * internal class InternalClass { } // Accessible only within the current assembly (project). Generally applicable to helper classes.
+     * private class PrivateClass { } // Accessible only within the same class or struct.
+     * protected class ProtectedClass { } // Only applicable to classes within a class or methods. This modifier adopts the parent class's modifer.
+     * The access modifer is not required (but standard practice to include).  When not explicit, the default modifier is internal. 
+     */
+
+    public class Syntax // Required. Every program must have a class. This declares a class named "Snytax" that is accessible from other parts of your project or even external code (Due to the public accessor).  It's the blueprint for creating objects, which are instances of the class. Some programning languages require the primary class of the file to match the file name, C# doesn't require it, but it's good practice to do so.
+
+
+
+
+
+
+
+        /*------- SKIP DOWN 100 LINES OR SO FOR MAIN() -----*/
     {
         /*-------  Functions Used in initial Sytax -------*/
 
@@ -36,11 +54,11 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
             return num1 / num2;
         }
 
-        /*-------  Functions 1:38 -------*/
-        //<Access Specifier (private, public, protected)> <Return Type> <Function Name> (Parameters)
-        //{ Body of Function}
+        /*-------  Methods 1:38 -------*/
+        //access modifier (private, public, protected), return type, MethodsName (literal parameters, literal parameters)
+        //{ body of the method.  If your method has a return type other than void, it must return that type before exiting the body. }
 
-        private static void Helloworld()
+        private static void Helloworld() // This declares a private method named "HelloWorld" that doesn't return a value (void).  The static keyword means you can call it directly on the class itself without creating an object.
         {
             Console.Write("what is your name?");
             string name = Console.ReadLine();
@@ -136,7 +154,7 @@ namespace ConsoleApp1 //Not explicitly required - Organizes your code.
 
 
             /*-------  Calls for Functions 1:38 -------*/
-            //HelloWorld();
+            HelloWorld();
             //Console.WriteLine("5 + 10 = {0}", GetSum(5, 10));  //Discussion about scope
             //DoubleIt(15, out int solution); 
             //Console.WriteLine("15 * 2 = {0}", solution);
