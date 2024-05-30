@@ -117,7 +117,7 @@ namespace CrapsSimC_
             if (true)
             {
                 int[] betArray = betDictionary[bet].Item1;
-                betArray[player.PlayerID] = betAmount;
+                betArray[player.PlayerID] += betAmount;
                 betDictionary[bet] = (betArray, betDictionary[bet].Item2, true);
                 player.ActiveBankroll -= betAmount;
                 player.ActiveBetTracker.Add((bet, betAmount));
@@ -188,7 +188,7 @@ namespace CrapsSimC_
                                 break;
 
                             //TODO Strategy for Field
-                            case "FieldBet":
+                            case "Field":
                                 if(fieldDouble)
                                 {
                                     dealerBankroll -= wonBet;

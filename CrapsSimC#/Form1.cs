@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Runtime.CompilerServices;
@@ -22,19 +23,65 @@ namespace CrapsSimC_
             this.table = new CrapsTable(Player0, Player1, Player2, Player3);
         }
 
-        private void updatePlayer0Text()
+        private void UpdatePlayerText()
         {
-            textBox_Player0BankRoll.Text = Player0.ActiveBankroll.ToString();
-            int CurrentStanding = Player0.ActiveBankroll - Player0.InitialBankroll;
-            if (CurrentStanding == 0)
+            switch (SelectedPlayer.PlayerID)
             {
-                textBox_Player0CurrentStanding.Text = "Breaking Even";
+                case 0:
+                    textBox_Player0BankRoll.Text = Player0.ActiveBankroll.ToString();
+                    int CurrentStanding = Player0.ActiveBankroll - Player0.InitialBankroll;
+                    if (CurrentStanding == 0)
+                    {
+                        textBox_Player0CurrentStanding.Text = "Breaking Even";
+                    }
+                    else { textBox_Player0CurrentStanding.Text = CurrentStanding.ToString(); }
+                    textBox_Player0WinWalk.Text = Player0.WinWalk.ToString();
+                    textBox_Player0LossWalk.Text = Player0.LossWalk.ToString();
+                    textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
+                    textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
+                    break;
+                case 1:
+                    textBox_Player1BankRoll.Text = Player1.ActiveBankroll.ToString();
+                    int CurrentStanding1 = Player1.ActiveBankroll - Player1.InitialBankroll;
+                    if (CurrentStanding1 == 0)
+                    {
+                        textBox_Player1CurrentStanding.Text = "Breaking Even";
+                    }
+                    else { textBox_Player1CurrentStanding.Text = CurrentStanding1.ToString(); }
+                    textBox_Player1WinWalk.Text = Player1.WinWalk.ToString();
+                    textBox_Player1LossWalk.Text = Player1.LossWalk.ToString();
+                    textBox_Player1ActiveBets.Text = Player1.totalBetAmount.ToString();
+                    textBox_Player1ActiveBets.Text = Player1.totalBetAmount.ToString();
+                    break;
+                case 2:
+                    textBox_Player2BankRoll.Text = Player2.ActiveBankroll.ToString();
+                    int CurrentStanding2 = Player2.ActiveBankroll - Player2.InitialBankroll;
+                    if (CurrentStanding2 == 0)
+                    {
+                        textBox_Player2CurrentStanding.Text = "Breaking Even";
+                    }
+                    else { textBox_Player2CurrentStanding.Text = CurrentStanding2.ToString(); }
+                    textBox_Player2WinWalk.Text = Player2.WinWalk.ToString();
+                    textBox_Player2LossWalk.Text = Player2.LossWalk.ToString();
+                    textBox_Player2ActiveBets.Text = Player2.totalBetAmount.ToString();
+                    textBox_Player2ActiveBets.Text = Player2.totalBetAmount.ToString();
+                    break;
+                case 3:
+                    textBox_Player3BankRoll.Text = Player3.ActiveBankroll.ToString();
+                    int CurrentStanding3 = Player3.ActiveBankroll - Player3.InitialBankroll;
+                    if (CurrentStanding3 == 0)
+                    {
+                        textBox_Player3CurrentStanding.Text = "Breaking Even";
+                    }
+                    else { textBox_Player3CurrentStanding.Text = CurrentStanding3.ToString(); }
+                    textBox_Player3WinWalk.Text = Player3.WinWalk.ToString();
+                    textBox_Player3LossWalk.Text = Player3.LossWalk.ToString();
+                    textBox_Player3ActiveBets.Text = Player3.totalBetAmount.ToString();
+                    textBox_Player3ActiveBets.Text = Player3.totalBetAmount.ToString();
+                    break;
+
+
             }
-            else { textBox_Player0CurrentStanding.Text = CurrentStanding.ToString(); }
-            textBox_Player0WinWalk.Text = Player0.WinWalk.ToString();
-            textBox_Player0LossWalk.Text = Player0.LossWalk.ToString();
-            textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
-            textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
         }
 
         // ------- Setting Up & Selecting Players --------//
@@ -59,9 +106,11 @@ namespace CrapsSimC_
                 {
                     panel_Player0JustWatching.Visible = false;
                     Player0.ResetPlayer();
-                    updatePlayer0Text();
+                    UpdatePlayerText();
                     table_Player0CurrentStanding.Visible = true;
                     table_Player0Financials.Visible = true;
+                    tableLayoutPanel_Player0.BackColor = Color.Lime;
+                    SelectedPlayer = Player0;
                     if ((string)Player0.Strategy[0] == "Free Play")
                     {
                         textBox_Player0Freeplay.Visible = true;
@@ -158,7 +207,7 @@ namespace CrapsSimC_
                     table.Button = false;
                 }
             }
-            updatePlayer0Text();
+            UpdatePlayerText();
         }
 
         private void label_DICE_Click(object sender, EventArgs e)
@@ -192,20 +241,31 @@ namespace CrapsSimC_
         //TODO Revisit creating dynamic objects or create an object for each play and each bet type
         //TODO add a hover over with the bet amount
 
-        private void createMiniChips(Point point, string chipName)
+        private void createMiniChips((Point point, string chipName) betDetails, bool oddsBet = false)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_CrapsTable));
-            chipsButton_1Mini.FlatAppearance.BorderSize = 0;
-            chipsButton_1Mini.FlatStyle = FlatStyle.Flat;
-            chipsButton_1Mini.Image = (Image)resources.GetObject(chipName + ".Image");
-            chipsButton_1Mini.Location = point;
-            chipsButton_1Mini.Name = chipName;
-            chipsButton_1Mini.Size = new Size(36, 33);
-            chipsButton_1Mini.TabIndex = 83;
-            chipsButton_1Mini.UseVisualStyleBackColor = false;
-            chipsButton_1Mini.BackColor = Color.DarkOrange;
-            chipsButton_1Mini.Visible = true;
-            chipsButton_1Mini.BringToFront();
+            ChipsButton newChipsButton = new ChipsButton();
+            newChipsButton.FlatAppearance.BorderSize = 0;
+            newChipsButton.FlatStyle = FlatStyle.Flat;
+            newChipsButton.Image = (Image)resources.GetObject(betDetails.chipName + ".Image");
+            newChipsButton.Location = betDetails.point;
+            newChipsButton.Name = betDetails.chipName;
+            newChipsButton.Size = new Size(36, 33);
+            newChipsButton.TabIndex = 83;
+            newChipsButton.UseVisualStyleBackColor = false;
+            newChipsButton.BackColor = Color.DarkOrange;
+            newChipsButton.Visible = true;
+            this.Controls.Add(newChipsButton);
+            newChipsButton.BringToFront();
+            if(oddsBet)
+            {
+                newChipsButton.Click += newChipsButton_Click;
+            }
+        }
+
+        private void UpdateTable()
+        {
+
         }
 
         private async void chipsButton_1Down_Click(object sender, EventArgs e)
@@ -336,43 +396,216 @@ namespace CrapsSimC_
             textBox_AmountSelected.Text = 0.ToString();
         }
 
+
+        // ------- Table Functionality - Placing Bets --------//
+
         private void button_PassLine_Click(object sender, EventArgs e)
         {
             int betAmount = int.Parse(textBox_AmountSelected.Text);
-            //TODO if no player selected, output message to select a player and return.
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
             if (SelectedPlayer.ActiveBankroll > betAmount)
             {
                 table.MakeBet(betAmount, SelectedPlayer, "PassLineBet");
-                updatePlayer0Text();
+                UpdatePlayerText();
                 int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "PassLineBet");
-                switch (totalBetAmount)
-                {
-                    case < 5:
-                        createMiniChips(new Point(185, 460), "chipsButton_1Mini");
-                        break;
-                    case < 9:
-                        createMiniChips(new Point(185, 460), "chipsButton_5Mini");
-                        break;
-                    case < 24:
-                        createMiniChips(new Point(185, 460), "chipsButton_10Mini");
-                        break;
-                    case < 100:
-                        createMiniChips(new Point(185, 460), "chipsButton_25Mini");
-                        break;
-                    case < 500:
-                        createMiniChips(new Point(185, 460), "chipsButton_100Mini");
-                        break;
-                    case < 1000:
-                        createMiniChips(new Point(185, 460), "chipsButton_500Mini");
-                        break;
-                    default:
-                        createMiniChips(new Point(185, 460), "chipsButton_1000Mini");
-                        break;
-                }
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "PassLineBet", totalBetAmount));
             }
         }
 
-        // ------- Table Functionality - Placing Bets --------//
+        private void button_DontPass_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "DontPassBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "DontPassBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "DontPassBet", totalBetAmount));
+            }
+
+        }
+
+        private void button_Field_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "Field");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "Field");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "Field", totalBetAmount));
+            }
+
+        }
+
+        private void button_DontCome_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "DontComeBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "DontComeBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "DontComeBet", totalBetAmount));
+            }
+        }
+
+        private void button_COME_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "ComeBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "ComeBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "ComeBet", totalBetAmount));
+            }
+        }
+
+        private void button_1_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "4_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "4_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "4_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void button_5_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "5_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "5_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "5_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void button_6_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "6_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "6_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "6_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void button_8_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "8_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "8_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "8_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void button_9_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "9_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "9_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "9_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void button_10_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, "10_PlaceBet");
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, "10_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "10_PlaceBet", totalBetAmount));
+            }
+        }
+
+        private void newChipsButton_Click(object sender, EventArgs e)
+        {
+            int betAmount = int.Parse(textBox_AmountSelected.Text);
+            if (betAmount <= 0)
+            {
+                MessageBox.Show("Please update the Bet Amount");
+                return;
+            }
+            if (SelectedPlayer.ActiveBankroll > betAmount)
+            {
+                table.MakeBet(betAmount, SelectedPlayer, pointRoll + "_PlaceBet"); 
+                UpdatePlayerText();
+                int totalBetAmount = table.getTotalBetAmount(SelectedPlayer, pointRoll+ "_PlaceBet");
+                createMiniChips(ChipHelper.ChipPlacer(SelectedPlayer, "lineOdds", totalBetAmount));
+            }
+        }
+
+
 
     }
 }

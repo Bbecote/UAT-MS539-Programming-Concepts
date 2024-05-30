@@ -74,7 +74,6 @@
             chipsButton_1Mini = new ChipsButton();
             panel_TableBackground = new Panel();
             tableLayoutPanel5 = new TableLayoutPanel();
-            panel23 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             panel25 = new Panel();
             panel26 = new Panel();
@@ -240,7 +239,6 @@
             panel22.SuspendLayout();
             panel_TableBackground.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
-            panel23.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel25.SuspendLayout();
             panel26.SuspendLayout();
@@ -318,7 +316,6 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Size = new Size(1135, 131);
             tableLayoutPanel1.TabIndex = 0;
-            //tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // panel_table6
             // 
@@ -351,6 +348,7 @@
             button_6.TabIndex = 3;
             button_6.Text = "SIX";
             button_6.UseVisualStyleBackColor = false;
+            button_6.Click += button_6_Click;
             // 
             // panel_table4
             // 
@@ -383,6 +381,7 @@
             button_1.TabIndex = 1;
             button_1.Text = "4";
             button_1.UseVisualStyleBackColor = false;
+            button_1.Click += button_1_Click;
             // 
             // panel_table8
             // 
@@ -414,6 +413,7 @@
             button_8.TabIndex = 4;
             button_8.Text = "8";
             button_8.UseVisualStyleBackColor = false;
+            button_8.Click += button_8_Click;
             // 
             // panel_table9
             // 
@@ -445,6 +445,7 @@
             button_9.TabIndex = 5;
             button_9.Text = "NINE";
             button_9.UseVisualStyleBackColor = false;
+            button_9.Click += button_9_Click;
             // 
             // panel_table10
             // 
@@ -476,6 +477,7 @@
             button_10.TabIndex = 6;
             button_10.Text = "10";
             button_10.UseVisualStyleBackColor = false;
+            button_10.Click += button_10_Click;
             // 
             // panel_table5
             // 
@@ -508,6 +510,7 @@
             button_5.TabIndex = 2;
             button_5.Text = "5";
             button_5.UseVisualStyleBackColor = false;
+            button_5.Click += button_5_Click;
             // 
             // pictureBox_On
             // 
@@ -659,7 +662,7 @@
             button_DontCome.TabIndex = 2;
             button_DontCome.Text = "Don't Come";
             button_DontCome.UseVisualStyleBackColor = false;
-            //button_DontCome.Click += button4_Click;
+            button_DontCome.Click += button_DontCome_Click;
             // 
             // button_COME
             // 
@@ -673,6 +676,7 @@
             button_COME.TabIndex = 3;
             button_COME.Text = "COME";
             button_COME.UseVisualStyleBackColor = false;
+            button_COME.Click += button_COME_Click;
             // 
             // tableLayoutPanel3
             // 
@@ -702,13 +706,14 @@
             // 
             button_Field.BackColor = Color.DarkOrange;
             button_Field.ForeColor = SystemColors.ButtonHighlight;
-            button_Field.Location = new Point(3, -1);
+            button_Field.Location = new Point(-1, 0);
             button_Field.Margin = new Padding(3, 2, 3, 2);
             button_Field.Name = "button_Field";
             button_Field.Size = new Size(1129, 95);
             button_Field.TabIndex = 3;
             button_Field.Text = "2 3 4 9 FIELD 10 11 12";
             button_Field.UseVisualStyleBackColor = false;
+            button_Field.Click += button_Field_Click;
             // 
             // tableLayoutPanel4
             // 
@@ -728,13 +733,14 @@
             button_DontPass.BackColor = Color.DarkOrange;
             button_DontPass.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_DontPass.ForeColor = SystemColors.ButtonHighlight;
-            button_DontPass.Location = new Point(3, -5);
+            button_DontPass.Location = new Point(3, 2);
             button_DontPass.Margin = new Padding(3, 2, 3, 2);
             button_DontPass.Name = "button_DontPass";
             button_DontPass.Size = new Size(1129, 61);
             button_DontPass.TabIndex = 12;
             button_DontPass.Text = "Don't Pass";
             button_DontPass.UseVisualStyleBackColor = false;
+            button_DontPass.Click += button_DontPass_Click;
             // 
             // button_PassLine
             // 
@@ -811,7 +817,7 @@
             chipsButton_1Mini.FlatAppearance.BorderSize = 0;
             chipsButton_1Mini.FlatStyle = FlatStyle.Flat;
             chipsButton_1Mini.Image = (Image)resources.GetObject("chipsButton_1Mini.Image");
-            chipsButton_1Mini.Location = new Point(1714, 640);
+            chipsButton_1Mini.Location = new Point(1714, 641);
             chipsButton_1Mini.Name = "chipsButton_1Mini";
             chipsButton_1Mini.Size = new Size(36, 33);
             chipsButton_1Mini.TabIndex = 83;
@@ -838,7 +844,7 @@
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6776848F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.32231F));
-            tableLayoutPanel5.Controls.Add(panel23, 0, 0);
+            tableLayoutPanel5.Controls.Add(button_DontPass, 0, 0);
             tableLayoutPanel5.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel5.Location = new Point(36, 377);
             tableLayoutPanel5.Margin = new Padding(0);
@@ -847,14 +853,6 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel5.Size = new Size(1135, 65);
             tableLayoutPanel5.TabIndex = 17;
-            // 
-            // panel23
-            // 
-            panel23.Controls.Add(button_DontPass);
-            panel23.Location = new Point(3, 3);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(1129, 59);
-            panel23.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
@@ -1006,22 +1004,21 @@
             label_AmountSelected.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label_AmountSelected.AutoSize = true;
             label_AmountSelected.Font = new Font("Ink Free", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_AmountSelected.Location = new Point(18, 11);
+            label_AmountSelected.Location = new Point(66, 11);
             label_AmountSelected.Margin = new Padding(0);
             label_AmountSelected.Name = "label_AmountSelected";
             label_AmountSelected.Size = new Size(231, 46);
             label_AmountSelected.TabIndex = 47;
             label_AmountSelected.Text = "Bet Amount:";
-            //label_AmountSelected.Click += label1_Click;
             // 
             // textBox_AmountSelected
             // 
             textBox_AmountSelected.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBox_AmountSelected.BorderStyle = BorderStyle.None;
             textBox_AmountSelected.Font = new Font("Ink Free", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox_AmountSelected.Location = new Point(252, 8);
+            textBox_AmountSelected.Location = new Point(300, 8);
             textBox_AmountSelected.Name = "textBox_AmountSelected";
-            textBox_AmountSelected.Size = new Size(100, 46);
+            textBox_AmountSelected.Size = new Size(121, 46);
             textBox_AmountSelected.TabIndex = 48;
             textBox_AmountSelected.Text = "0";
             // 
@@ -1173,7 +1170,6 @@
             label_PlayerTitle1.Size = new Size(71, 36);
             label_PlayerTitle1.TabIndex = 64;
             label_PlayerTitle1.Text = "Sam";
-            //label_PlayerTitle1.Click += label_PlayerTitle1_Click;
             // 
             // tableLayoutPanel_Player0
             // 
@@ -1313,7 +1309,7 @@
             tableLayoutPanel19.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel19.Controls.Add(radioButton_AddtoBet, 0, 0);
             tableLayoutPanel19.Controls.Add(radioButton_SubtractBet, 0, 1);
-            tableLayoutPanel19.Location = new Point(296, 576);
+            tableLayoutPanel19.Location = new Point(253, 715);
             tableLayoutPanel19.Name = "tableLayoutPanel19";
             tableLayoutPanel19.RowCount = 2;
             tableLayoutPanel19.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -1388,12 +1384,12 @@
             tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 29.8288517F));
             tableLayoutPanel21.Controls.Add(textBox_AmountSelected, 1, 0);
             tableLayoutPanel21.Controls.Add(label_AmountSelected, 0, 0);
-            tableLayoutPanel21.Location = new Point(461, 576);
+            tableLayoutPanel21.Location = new Point(418, 715);
             tableLayoutPanel21.Name = "tableLayoutPanel21";
             tableLayoutPanel21.RowCount = 1;
             tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel21.Size = new Size(355, 57);
+            tableLayoutPanel21.Size = new Size(424, 57);
             tableLayoutPanel21.TabIndex = 70;
             // 
             // pictureBox2
@@ -2253,7 +2249,6 @@
             label23.Size = new Size(281, 46);
             label23.TabIndex = 47;
             label23.Text = "Dealer Bankroll:";
-            //label23.Click += label23_Click;
             // 
             // textBox_DealerBankroll
             // 
@@ -2418,7 +2413,7 @@
             // 
             panel15.Controls.Add(chipsButton_1Down);
             panel15.Controls.Add(chipsButton_1Up);
-            panel15.Location = new Point(184, 640);
+            panel15.Location = new Point(184, 576);
             panel15.Name = "panel15";
             panel15.Size = new Size(106, 133);
             panel15.TabIndex = 83;
@@ -2427,7 +2422,7 @@
             // 
             panel16.Controls.Add(chipsButton_5Down);
             panel16.Controls.Add(chipsButton_5Up);
-            panel16.Location = new Point(296, 640);
+            panel16.Location = new Point(296, 576);
             panel16.Name = "panel16";
             panel16.Size = new Size(106, 133);
             panel16.TabIndex = 84;
@@ -2448,7 +2443,7 @@
             // 
             panel17.Controls.Add(chipsButton_10Down);
             panel17.Controls.Add(chipsButton_10Up);
-            panel17.Location = new Point(408, 640);
+            panel17.Location = new Point(408, 576);
             panel17.Name = "panel17";
             panel17.Size = new Size(106, 133);
             panel17.TabIndex = 85;
@@ -2469,7 +2464,7 @@
             // 
             panel18.Controls.Add(chipsButton_25Down);
             panel18.Controls.Add(chipsButton_25Up);
-            panel18.Location = new Point(520, 640);
+            panel18.Location = new Point(521, 576);
             panel18.Name = "panel18";
             panel18.Size = new Size(106, 133);
             panel18.TabIndex = 84;
@@ -2490,7 +2485,7 @@
             // 
             panel19.Controls.Add(chipsButton_100Down);
             panel19.Controls.Add(chipsButton_100Up);
-            panel19.Location = new Point(632, 640);
+            panel19.Location = new Point(634, 576);
             panel19.Name = "panel19";
             panel19.Size = new Size(106, 133);
             panel19.TabIndex = 85;
@@ -2523,7 +2518,7 @@
             // 
             panel20.Controls.Add(chipsButton_500Down);
             panel20.Controls.Add(chipsButton_500Up);
-            panel20.Location = new Point(744, 640);
+            panel20.Location = new Point(746, 576);
             panel20.Name = "panel20";
             panel20.Size = new Size(106, 133);
             panel20.TabIndex = 86;
@@ -2556,7 +2551,7 @@
             // 
             panel21.Controls.Add(chipsButton_1000Down);
             panel21.Controls.Add(chipsButton_1000Up);
-            panel21.Location = new Point(856, 638);
+            panel21.Location = new Point(856, 576);
             panel21.Name = "panel21";
             panel21.Size = new Size(106, 133);
             panel21.TabIndex = 87;
@@ -2580,7 +2575,7 @@
             button_ClearAmount.FlatAppearance.BorderSize = 0;
             button_ClearAmount.FlatStyle = FlatStyle.Flat;
             button_ClearAmount.Font = new Font("Ink Free", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button_ClearAmount.Location = new Point(822, 579);
+            button_ClearAmount.Location = new Point(848, 713);
             button_ClearAmount.Name = "button_ClearAmount";
             button_ClearAmount.Size = new Size(66, 56);
             button_ClearAmount.TabIndex = 88;
@@ -2634,6 +2629,7 @@
             Controls.Add(chipsButton_10Mini);
             Controls.Add(chipsButton_5Mini);
             Controls.Add(chipsButton_500);
+            Controls.Add(panel15);
             Controls.Add(chipsButton_100Mini);
             Controls.Add(chipsButton_25Mini);
             Controls.Add(pictureBox_On);
@@ -2644,7 +2640,6 @@
             Controls.Add(panel18);
             Controls.Add(panel17);
             Controls.Add(panel16);
-            Controls.Add(panel15);
             Controls.Add(panel11);
             Controls.Add(panel8);
             Controls.Add(panel7);
@@ -2663,7 +2658,6 @@
             Name = "form_CrapsTable";
             ShowIcon = false;
             WindowState = FormWindowState.Maximized;
-            //Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
             panel_table6.ResumeLayout(false);
             panel_table4.ResumeLayout(false);
@@ -2678,7 +2672,6 @@
             panel22.ResumeLayout(false);
             panel_TableBackground.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
-            panel23.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             panel25.ResumeLayout(false);
             panel26.ResumeLayout(false);
@@ -2795,7 +2788,6 @@
         private ChipsButton button_100Chip;
         private ChipsButton button_500Chip;
         private TableLayoutPanel tableLayoutPanel2;
-        private TableLayoutPanel tableLayoutPanel5;
         private PictureBox pictureBox_Off;
         private Button button_ClearTable;
         private TableLayoutPanel tableLayoutPanel15;
@@ -2961,7 +2953,6 @@
         private Button button4;
         private Panel panel24;
         private Panel panel22;
-        private Panel panel23;
         private Panel panel25;
         private Panel panel26;
         private TextBox textBox_Player0Freeplay;
@@ -2971,5 +2962,6 @@
         private ChipsButton chipsButton_25Mini;
         private ChipsButton chipsButton_100Mini;
         private ChipsButton chipsButton_1000Mini;
+        private TableLayoutPanel tableLayoutPanel5;
     }
 }
