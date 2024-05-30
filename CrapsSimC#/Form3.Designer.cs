@@ -144,12 +144,12 @@ namespace CrapsSimC_
             tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel18.Controls.Add(label_PlayerTitle1, 0, 0);
             tableLayoutPanel18.Controls.Add(pictureBox1, 0, 1);
-            tableLayoutPanel18.Location = new Point(55, 86);
+            tableLayoutPanel18.Location = new Point(62, 81);
             tableLayoutPanel18.Name = "tableLayoutPanel18";
             tableLayoutPanel18.RowCount = 2;
             tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 13.0872478F));
             tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 86.91275F));
-            tableLayoutPanel18.Size = new Size(220, 352);
+            tableLayoutPanel18.Size = new Size(220, 347);
             tableLayoutPanel18.TabIndex = 81;
             // 
             // label_PlayerTitle1
@@ -157,7 +157,7 @@ namespace CrapsSimC_
             label_PlayerTitle1.Anchor = AnchorStyles.Bottom;
             label_PlayerTitle1.AutoSize = true;
             label_PlayerTitle1.Font = new Font("Ink Free", 21.7499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label_PlayerTitle1.Location = new Point(74, 10);
+            label_PlayerTitle1.Location = new Point(74, 9);
             label_PlayerTitle1.Margin = new Padding(0);
             label_PlayerTitle1.Name = "label_PlayerTitle1";
             label_PlayerTitle1.Size = new Size(71, 36);
@@ -167,9 +167,9 @@ namespace CrapsSimC_
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(3, 49);
+            pictureBox1.Location = new Point(3, 48);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(214, 300);
+            pictureBox1.Size = new Size(214, 296);
             pictureBox1.TabIndex = 65;
             pictureBox1.TabStop = false;
             // 
@@ -191,12 +191,13 @@ namespace CrapsSimC_
             richTextBox_Sam.BorderStyle = BorderStyle.None;
             richTextBox_Sam.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             richTextBox_Sam.ForeColor = SystemColors.WindowText;
-            richTextBox_Sam.Location = new Point(370, 21);
+            richTextBox_Sam.Location = new Point(370, 19);
             richTextBox_Sam.Name = "richTextBox_Sam";
             richTextBox_Sam.ReadOnly = true;
             richTextBox_Sam.Size = new Size(925, 451);
             richTextBox_Sam.TabIndex = 0;
             richTextBox_Sam.Text = resources.GetString("richTextBox_Sam.Text");
+            richTextBox_Sam.TextChanged += richTextBox_Sam_TextChanged;
             // 
             // comboBox_Player0BettingStrategy
             // 
