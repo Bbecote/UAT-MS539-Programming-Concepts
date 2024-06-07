@@ -1,0 +1,6 @@
+Install via NuGet 
+	Dapper
+	System.Data.SQLite.Core.NetStandard
+	
+Install directly DB Browser
+

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aAk4YMOygwxXVd+W+K0prLnrgpUJD96aQsJj3x0ml0WvkcW/g/JS+E8bBUGPkPLibt7ZK/YFAlLWVKORCg8QYw==",
+  "dgSpecHash": "ZE0Wl9+qUGk=",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Budget\\Budget.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\brian\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512"
+  ],
   "logs": []
 }
