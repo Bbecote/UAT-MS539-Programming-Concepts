@@ -1,6 +1,20 @@
-Install via NuGet 
+1. Install directly DB Browser
+	Set up a Database in the project's folder
+		In VS, ensure the database is included in the project (right click on the database in VS solution explorer, see the option Include/Exclude in project)
+		In VS, set in the properties of the db, Build Action to "Content", and set Copy to Output Direct to "Copy if Newer"
+		
+
+2. Install via NuGet in Visual Studio
 	Dapper
 	System.Data.SQLite.Core.NetStandard
 	
-Install directly DB Browser
+3. Configure Files properties
+	Build Action: Content
+	Copy to Output Directory: Copy if newer
+	
+4. Modify App.config to add connection string
+
+5. Create Classes and List<Class> to read the db. objects
+
+6. Add reference to System.Configuration
 
