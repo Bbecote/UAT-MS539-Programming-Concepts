@@ -1,5 +1,9 @@
+Initial Setup: https://youtu.be/X0yzOkXSiFU
+Access the data from the list: https://youtu.be/GHzrqt9cdIc?list=PLGtyXSn57qnIN_s_eH9A2jmhgIchTIXDQ
+Visual: https://www.youtube.com/watch?v=4ps8qnS1P4Y&t=3011s
+
 1. Install directly DB Browser
-	Set up a Database in the project's folder
+	Create a database in the project's folder
 		In VS, ensure the database is included in the project (right click on the database in VS solution explorer, see the option Include/Exclude in project)
 		In VS, set in the properties of the db, Build Action to "Content", and set Copy to Output Direct to "Copy if Newer"
 		
@@ -8,13 +12,33 @@
 	Dapper
 	System.Data.SQLite.Core.NetStandard
 	
-3. Configure Files properties
-	Build Action: Content
-	Copy to Output Directory: Copy if newer
-	
-4. Modify App.config to add connection string
+3. Modify App.config to add connection string
+	In VS, right click on the project, add new and add a new configuration file.
+		<?xml version="1.0" encoding="utf-8" ?>
+		<configuration>
+			<connectionStrings>
+				<add name="Default" connectionString="Data Source=.\BudgetDB.db; Version=3;" providerName="System.Data.SqlClient"/>
+			</connectionStrings>
+		</configuration>
 
-5. Create Classes and List<Class> to read the db. objects
+4. Create Classes and List<Class> to read the db. objects
 
-6. Add reference to System.Configuration
+5. Add reference to System.Configuration
+
+
+
+//-----AutoScaling Forms and Controls-----//
+https://www.youtube.com/watch?v=bKnpxTulUIs&list=PLGtyXSn57qnIN_s_eH9A2jmhgIchTIXDQ&index=33
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            System.Drawing.Rectangle workingRectangle = Screen.PrimaryScreen.WorkingArea;
+            //Sets Form1 to full screen - to set to a percentage, change 1 to .75 or .5 as applicable.
+            this.Size = new System.Drawing.Size(Convert.ToInt32(1 * workingRectangle.Width), Convert.ToInt32(1 * workingRectangle.Height));
+            this.Location = new System.Drawing.Point(0, 0);
+        }
+		
+Setting Controls
+1. Anchor the control in the properties
+
 

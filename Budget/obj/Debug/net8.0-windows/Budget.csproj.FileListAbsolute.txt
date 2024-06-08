@@ -16,3 +16,12 @@ C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debu
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debug\net8.0-windows\Budget.pdb
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debug\net8.0-windows\Budget.genruntimeconfig.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debug\net8.0-windows\ref\Budget.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\Budget.dll.config
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\Dapper.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debug\net8.0-windows\Budget.csproj.AssemblyReference.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Budget\obj\Debug\net8.0-windows\Budget.csproj.Up2Date
