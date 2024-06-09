@@ -11,8 +11,9 @@ namespace Budget
         public int TransactionID { get; set; }   
         public int AccountID { get; set; }
         public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
         public double Amount { get; set; }
-        public string TransactionDate { get; set; }
+        public DateTime TransactionDate { get; set; }
         public string Description { get; set; }
         public string TransactionType { get; set; }
         public int isRecurring { get; set; }
@@ -22,6 +23,8 @@ namespace Budget
         public int Variation { get; set; }
         public int AutomaticWithdrawal { get; set; }
         public int IsPaid { get; set; }
+
+        public string LeftColumnText { get; set; }
 
     }
 }

@@ -8,14 +8,19 @@ namespace Budget
 {
     public class Account
     {
-        public Account() { }
+
+        internal static Dictionary<string, List<Account>> Accounts { get; }
+        static Account() 
+        {
+            Accounts = DBManager.GetAccountDetailsFromDatabase();
+        }
 
         public int AccountID { get; set; }
         public string AccountName { get; set; }
         public string AccountType { get; set; }
-        public string OpeningDate { get; set; }
+        public string StartDate { get; set; }
         public string ClosingDate { get; set; }
-        public double StartBalance { get; set; }
+        public decimal OpeningBalance { get; set; }
         public byte[] Image { get; set; }
 
     }

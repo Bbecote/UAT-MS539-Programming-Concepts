@@ -42,3 +42,66 @@ Setting Controls
 1. Anchor the control in the properties
 
 
+Database Tables
+Accounts Table:
+
+AccountID (INTEGER, PK, AI, NN)
+AccountName (TEXT, NN)
+AccountType (TEXT, NN)
+OpeningBalance (REAL, NN)
+StartDate (DATE, NN)
+ClosingDate (DATE, nullable)
+Image (BLOB, nullable)
+
+
+Categories Table:
+
+CategoryID (INTEGER, PK, AI, NN)
+CategoryName (TEXT, NN)
+Description (TEXT, nullable)
+ParentCategoryID (INTEGER, nullable, Foreign Key referencing Categories table)
+CategoryType (TEXT, NN)
+
+
+Transactions Table:
+
+TransactionID (INTEGER, PK, AI, NN)
+AccountID (INTEGER, NN, Foreign Key referencing Accounts table)
+CategoryID (INTEGER, NN, Foreign Key referencing Categories table)
+Amount (REAL, NN)
+TransactionDate (DATE, NN)
+Description (TEXT, nullable)
+TransactionType (TEXT, NN)
+IsRecurring (INTEGER, NN)
+RecurringFrequency (TEXT)
+RecurringEndDate (TEXT)
+URL (TEXT)
+Variation (INTEGER)
+Automatic Withdrawal (INTEGER)
+IsPaid (INTEGER)
+
+
+Debts Table:
+
+DebtID (INTEGER, PK, AI, NN)
+AccountID (INTEGER, NN, Foreign Key referencing Accounts table)
+Description (TEXT, NN)
+Amount (REAL, NN)
+InterestRate (REAL, NN)
+StartDate (DATE, NN)
+EndDate (DATE, nullable)
+
+
+DebtPayments Table:
+
+PaymentID (INTEGER, PK, AI, NN)
+DebtID (INTEGER, NN, Foreign Key referencing Debts table)
+PaymentDate (DATE, NN)
+Amount (REAL, NN)
+
+
+Summary Table:
+
+SummaryText (TEXT, PK, NN)
+CategoryID (TEXT, NN, Foreign Key referencing Categories table)
+TransactionID (TEXT, NN, Foreign Key referencing Categories table)
