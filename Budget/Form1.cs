@@ -1,60 +1,75 @@
 using System.Data;
 using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using System.Drawing.Design;
+using System.Security.Policy;
+using System.Diagnostics;
+using System.Collections;
+using System.ComponentModel;
 
 
 namespace Budget
 {
     public partial class Form1 : Form
     {
-        List<Account> budget = new List<Account>();
+
+        Account CurrentAccount;
+
         public Form1()
         {
+            this.CurrentAccount = DBManager.GetAccountFromDatabase("NavyFed"); //TODO Update this with a user selected option
             InitializeComponent();
-
-            string budgetQuery = "select * from Account";  //Dapper functionality
-            budget = GetBudgetData(budgetQuery);
-
-            dataGridView1.DataSource = budget;
+            SetupDataGridViews();
 
         }
-
-        //Will Move to the Database Class
-        public List<Account> GetBudgetData(string queryStr)
+        private void SetupDataGridViews()
         {
-            using (IDbConnection conn = new SQLiteConnection(LoadConnectionString()))
+            //dataGridView_Main.BackgroundColor = Color.Black;
+            dataGridView_Main.Location = new Point(0, 0);
+            dataGridView_Main.Dock = DockStyle.Fill;
+            dataGridView_Main.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.BottomLeft;
+            dataGridView_Main.ColumnHeadersHeight = 40;
+
+            //Left Column Setup
+            DataGridViewLinkColumn leftColumnTextBoxColumn = new DataGridViewLinkColumn();
+            leftColumnTextBoxColumn.HeaderText = "Summary";
+            leftColumnTextBoxColumn.DataPropertyName = "Label";
+            leftColumnTextBoxColumn.ReadOnly = true;
+            leftColumnTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView_Main.Columns.Add(leftColumnTextBoxColumn);
+
+            createAmountColumns(dataGridView_Main);
+
+            List<Summary> summaryDatasource = Summary.SetSummary(CurrentAccount);
+            dataGridView_Main.DataSource = summaryDatasource;
+            
+        }
+
+        private void createAmountColumns(DataGridView dataGridView)
+        {
+
+            Queue<MonthHeader> MonthList = MonthHeader.GenerateMonthHeaders(CurrentAccount);
+            dataGridView.ScrollBars = ScrollBars.Horizontal;
+            DataGridViewTextBoxColumn[] amountColumns = new DataGridViewTextBoxColumn[MonthList.Count];
+            int countIndex = MonthList.Count;
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            for (int i = 0; i < countIndex; i++)
             {
-                var output = conn.Query<Account>(queryStr, new DynamicParameters());
-                return output.ToList();
+                MonthHeader header = MonthList.Dequeue();
+                amountColumns[i] = new DataGridViewTextBoxColumn
+                {
+                    DataPropertyName = "Amount",
+                    HeaderText = header.HeaderText,
+                    Width = 115,
+                    DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleRight }
+                };
             }
-        }
-
-        //Will move to the database Class
-        public static string LoadConnectionString(string id = "Default")
-        {
-            return ConfigurationManager.ConnectionStrings[id].ConnectionString;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            System.Drawing.Rectangle workingRectangle = Screen.PrimaryScreen.WorkingArea;
-            //Sets Form1 to full screen - to set to a percentage, change 1 to .75 or .5 as applicable.
-            this.Size = new System.Drawing.Size(Convert.ToInt32(1 * workingRectangle.Width), Convert.ToInt32(1 * workingRectangle.Height));
-            this.Location = new System.Drawing.Point(0, 0);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            dataGridView.Columns.AddRange(amountColumns);
         }
     }
 }

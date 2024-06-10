@@ -28,30 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
             panel_Left = new Panel();
+            panel2 = new Panel();
+            button_Accounts = new Button();
+            button_View = new Button();
+            button_Settings = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label_AccountType = new Label();
             label_AccountName = new Label();
-            button_Settings = new Button();
-            panel2 = new Panel();
-            button_View = new Button();
-            button_Accounts = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel_Main = new Panel();
+            dataGridView_Main = new DataGridView();
             panel_Left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel_Main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_Main).BeginInit();
             SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(480, 32);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1008, 972);
-            dataGridView1.TabIndex = 0;
             // 
             // panel_Left
             // 
@@ -62,10 +55,50 @@
             panel_Left.Controls.Add(pictureBox1);
             panel_Left.Controls.Add(label_AccountType);
             panel_Left.Controls.Add(label_AccountName);
-            panel_Left.Location = new Point(0, 1);
+            panel_Left.Location = new Point(0, 0);
             panel_Left.Name = "panel_Left";
-            panel_Left.Size = new Size(432, 1039);
+            panel_Left.Size = new Size(432, 1045);
             panel_Left.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(button_Accounts);
+            panel2.Controls.Add(button_View);
+            panel2.Controls.Add(button_Settings);
+            panel2.Location = new Point(176, 343);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 314);
+            panel2.TabIndex = 9;
+            // 
+            // button_Accounts
+            // 
+            button_Accounts.BackColor = Color.Transparent;
+            button_Accounts.Location = new Point(3, 3);
+            button_Accounts.Name = "button_Accounts";
+            button_Accounts.Size = new Size(197, 43);
+            button_Accounts.TabIndex = 10;
+            button_Accounts.Text = "Accounts";
+            button_Accounts.UseVisualStyleBackColor = false;
+            // 
+            // button_View
+            // 
+            button_View.BackColor = Color.Transparent;
+            button_View.Location = new Point(3, 127);
+            button_View.Name = "button_View";
+            button_View.Size = new Size(197, 43);
+            button_View.TabIndex = 9;
+            button_View.Text = "View";
+            button_View.UseVisualStyleBackColor = false;
+            // 
+            // button_Settings
+            // 
+            button_Settings.BackColor = Color.Transparent;
+            button_Settings.Location = new Point(3, 266);
+            button_Settings.Name = "button_Settings";
+            button_Settings.Size = new Size(197, 43);
+            button_Settings.TabIndex = 8;
+            button_Settings.Text = "Settings";
+            button_Settings.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -106,71 +139,47 @@
             label_AccountName.TabIndex = 0;
             label_AccountName.Text = "Account Name";
             // 
-            // button_Settings
+            // panel_Main
             // 
-            button_Settings.BackColor = Color.Transparent;
-            button_Settings.Location = new Point(3, 266);
-            button_Settings.Name = "button_Settings";
-            button_Settings.Size = new Size(197, 43);
-            button_Settings.TabIndex = 8;
-            button_Settings.Text = "Settings";
-            button_Settings.UseVisualStyleBackColor = false;
+            panel_Main.Controls.Add(dataGridView_Main);
+            panel_Main.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            panel_Main.Location = new Point(438, 12);
+            panel_Main.Name = "panel_Main";
+            panel_Main.Size = new Size(1620, 1080);
+            panel_Main.TabIndex = 2;
             // 
-            // panel2
+            // dataGridView_Main
             // 
-            panel2.Controls.Add(button_Accounts);
-            panel2.Controls.Add(button_View);
-            panel2.Controls.Add(button_Settings);
-            panel2.Location = new Point(176, 343);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(200, 314);
-            panel2.TabIndex = 9;
-            // 
-            // button_View
-            // 
-            button_View.BackColor = Color.Transparent;
-            button_View.Location = new Point(3, 127);
-            button_View.Name = "button_View";
-            button_View.Size = new Size(197, 43);
-            button_View.TabIndex = 9;
-            button_View.Text = "View";
-            button_View.UseVisualStyleBackColor = false;
-            button_View.Click += button1_Click;
-            // 
-            // button_Accounts
-            // 
-            button_Accounts.BackColor = Color.Transparent;
-            button_Accounts.Location = new Point(3, 3);
-            button_Accounts.Name = "button_Accounts";
-            button_Accounts.Size = new Size(197, 43);
-            button_Accounts.TabIndex = 10;
-            button_Accounts.Text = "Accounts";
-            button_Accounts.UseVisualStyleBackColor = false;
+            dataGridView_Main.BackgroundColor = Color.White;
+            dataGridView_Main.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_Main.Location = new Point(0, 0);
+            dataGridView_Main.Name = "dataGridView_Main";
+            dataGridView_Main.Size = new Size(1620, 1080);
+            dataGridView_Main.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1750, 1035);
+            BackColor = Color.White;
+            ClientSize = new Size(1904, 1041);
+            Controls.Add(panel_Main);
             Controls.Add(panel_Left);
-            Controls.Add(dataGridView1);
             Name = "Form1";
             ShowIcon = false;
             StartPosition = FormStartPosition.WindowsDefaultBounds;
             Text = "Form1";
             WindowState = FormWindowState.Maximized;
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel_Left.ResumeLayout(false);
             panel_Left.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel_Main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView_Main).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private Panel panel_Left;
         private Label label_AccountType;
         private Label label_AccountName;
@@ -180,5 +189,12 @@
         private Button button_View;
         private Button button_Settings;
         private Button button_Accounts;
+        private DataGridView DataGridView_Summary;
+        private Panel panel_Income;
+        private Panel panel_Expenses;
+        private Panel panel_Budget;
+        private Panel panel_Main;
+        private DataGridView dataGridView_Main;
+        //private Panel panel_Budget;
     }
 }

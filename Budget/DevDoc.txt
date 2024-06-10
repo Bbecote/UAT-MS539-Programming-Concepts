@@ -42,3 +42,55 @@ Setting Controls
 1. Anchor the control in the properties
 
 
+Database Tables
+Account Table:
+
+AccountName (TEXT, PK, NN)
+AccountType (TEXT, NN)
+StartDate (DATE, NN)
+OpeningBalance (REAL, NN)
+ClosingDate (DATE, nullable)
+Image (BLOB, nullable)
+
+CategoryList Table:
+
+CategoryName (TEXT, PK, NN)
+Description (TEXT, nullable)
+ParentCategoryName (TEXT, nullable, Foreign Key referencing Categories table)
+CategoryType (TEXT, NN)
+
+
+TransactionList Table:
+TransactionID (INTEGER, PK, AI, NN)
+AccountName (TEXT, NN, Foreign Key referencing Accounts table)
+CategoryName (TEXT, NN, Foreign Key referencing Categories table)
+Amount (REAL, NN)
+TransactionDate (DATE, NN)
+Description (TEXT, nullable)
+TransactionType (TEXT, NN)
+IsRecurring (INTEGER, NN)
+RecurringFrequency (TEXT)
+RecurringEndDate (TEXT)
+URL (TEXT)
+IsVariable (INTEGER)
+IsAutomaticWithdrawal (INTEGER)
+IsPaid (INTEGER)
+
+
+Debt Table:
+
+DebtName (TEXT, PK, NN)
+AccountName (TEXT, NN, Foreign Key referencing Accounts table)
+Description (TEXT, NN)
+Amount (REAL, NN)
+InterestRate (REAL, NN)
+StartDate (TEXT, NN)
+EndDate (TEXT, nullable)
+
+
+DebtPayment Table:
+
+PaymentName (TEXT, PK, NN)
+DebtName (TEXT, NN, Foreign Key referencing Debts table)
+PaymentDate (DATE, NN)
+Amount (REAL, NN)
