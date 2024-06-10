@@ -59,7 +59,6 @@
             panel_Left.Name = "panel_Left";
             panel_Left.Size = new Size(432, 1045);
             panel_Left.TabIndex = 1;
-            panel_Left.Visible = false;
             // 
             // panel2
             // 
@@ -143,19 +142,20 @@
             // panel_Main
             // 
             panel_Main.Controls.Add(dataGridView_Main);
+            panel_Main.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel_Main.Location = new Point(438, 12);
             panel_Main.Name = "panel_Main";
-            panel_Main.Size = new Size(1411, 1000);
+            panel_Main.Size = new Size(1620, 1080);
             panel_Main.TabIndex = 2;
             // 
             // dataGridView_Main
             // 
+            dataGridView_Main.BackgroundColor = Color.White;
             dataGridView_Main.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView_Main.Location = new Point(0, 0);
             dataGridView_Main.Name = "dataGridView_Main";
-            dataGridView_Main.Size = new Size(1411, 997);
+            dataGridView_Main.Size = new Size(1620, 1080);
             dataGridView_Main.TabIndex = 0;
-            //dataGridView_Main.CellContentClick += dataGridView_Main_CellContentClick;
             // 
             // Form1
             // 

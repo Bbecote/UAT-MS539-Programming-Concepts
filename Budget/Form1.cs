@@ -29,7 +29,7 @@ namespace Budget
         }
         private void SetupDataGridViews()
         {
-            dataGridView_Main.BackgroundColor = Color.Black;
+            //dataGridView_Main.BackgroundColor = Color.Black;
             dataGridView_Main.Location = new Point(0, 0);
             dataGridView_Main.Dock = DockStyle.Fill;
             dataGridView_Main.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.BottomLeft;

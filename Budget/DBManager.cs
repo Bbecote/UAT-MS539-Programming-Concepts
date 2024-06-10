@@ -31,7 +31,7 @@ namespace Budget
                 var account = connection.QueryFirstOrDefault<Account>(query, new { accountName });
                 if (account == null)
                 {
-                    return account;
+                    return account; //Needs evaluation
                 }
                 else
                 {
@@ -58,16 +58,16 @@ namespace Budget
 
         //----- UPDATING Modified Transactions -----//
         //TODO a method or means of deleting Transactions
-        public static void UpdateModifiedTransactions()
+        public static void UpdateModifiedTransactions(int amount)
         {
             if (modifiedTransactionIDs.Count == 0) return;
             string query = @"
                             UPDATE TransactionList
-                            SET Amount
+                            SET Amount = @amount
                             WHERE TransactionID IN @modfiedTransactionIDs";
             using (var connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute(query, new { modifiedIDs = modifiedTransactionIDs });
+                connection.Execute(query, new { amount,  modifiedTransactionIDs = modifiedTransactionIDs });
             }
         }
 
