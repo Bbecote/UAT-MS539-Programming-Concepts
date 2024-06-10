@@ -43,31 +43,27 @@ Setting Controls
 
 
 Database Tables
-Accounts Table:
+Account Table:
 
-AccountID (INTEGER, PK, AI, NN)
-AccountName (TEXT, NN)
+AccountName (TEXT, PK, NN)
 AccountType (TEXT, NN)
-OpeningBalance (REAL, NN)
 StartDate (DATE, NN)
+OpeningBalance (REAL, NN)
 ClosingDate (DATE, nullable)
 Image (BLOB, nullable)
 
+CategoryList Table:
 
-Categories Table:
-
-CategoryID (INTEGER, PK, AI, NN)
-CategoryName (TEXT, NN)
+CategoryName (TEXT, PK, NN)
 Description (TEXT, nullable)
-ParentCategoryID (INTEGER, nullable, Foreign Key referencing Categories table)
+ParentCategoryName (TEXT, nullable, Foreign Key referencing Categories table)
 CategoryType (TEXT, NN)
 
 
-Transactions Table:
-
+TransactionList Table:
 TransactionID (INTEGER, PK, AI, NN)
-AccountID (INTEGER, NN, Foreign Key referencing Accounts table)
-CategoryID (INTEGER, NN, Foreign Key referencing Categories table)
+AccountName (TEXT, NN, Foreign Key referencing Accounts table)
+CategoryName (TEXT, NN, Foreign Key referencing Categories table)
 Amount (REAL, NN)
 TransactionDate (DATE, NN)
 Description (TEXT, nullable)
@@ -76,32 +72,25 @@ IsRecurring (INTEGER, NN)
 RecurringFrequency (TEXT)
 RecurringEndDate (TEXT)
 URL (TEXT)
-Variation (INTEGER)
-Automatic Withdrawal (INTEGER)
+IsVariable (INTEGER)
+IsAutomaticWithdrawal (INTEGER)
 IsPaid (INTEGER)
 
 
-Debts Table:
+Debt Table:
 
-DebtID (INTEGER, PK, AI, NN)
-AccountID (INTEGER, NN, Foreign Key referencing Accounts table)
+DebtName (TEXT, PK, NN)
+AccountName (TEXT, NN, Foreign Key referencing Accounts table)
 Description (TEXT, NN)
 Amount (REAL, NN)
 InterestRate (REAL, NN)
-StartDate (DATE, NN)
-EndDate (DATE, nullable)
+StartDate (TEXT, NN)
+EndDate (TEXT, nullable)
 
 
-DebtPayments Table:
+DebtPayment Table:
 
-PaymentID (INTEGER, PK, AI, NN)
-DebtID (INTEGER, NN, Foreign Key referencing Debts table)
+PaymentName (TEXT, PK, NN)
+DebtName (TEXT, NN, Foreign Key referencing Debts table)
 PaymentDate (DATE, NN)
 Amount (REAL, NN)
-
-
-Summary Table:
-
-SummaryText (TEXT, PK, NN)
-CategoryID (TEXT, NN, Foreign Key referencing Categories table)
-TransactionID (TEXT, NN, Foreign Key referencing Categories table)

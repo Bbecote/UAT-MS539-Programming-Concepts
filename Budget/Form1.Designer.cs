@@ -37,9 +37,13 @@
             pictureBox1 = new PictureBox();
             label_AccountType = new Label();
             label_AccountName = new Label();
+            panel_Main = new Panel();
+            dataGridView_Main = new DataGridView();
             panel_Left.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel_Main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_Main).BeginInit();
             SuspendLayout();
             // 
             // panel_Left
@@ -53,8 +57,9 @@
             panel_Left.Controls.Add(label_AccountName);
             panel_Left.Location = new Point(0, 0);
             panel_Left.Name = "panel_Left";
-            panel_Left.Size = new Size(432, 1039);
+            panel_Left.Size = new Size(432, 1045);
             panel_Left.TabIndex = 1;
+            panel_Left.Visible = false;
             // 
             // panel2
             // 
@@ -135,12 +140,30 @@
             label_AccountName.TabIndex = 0;
             label_AccountName.Text = "Account Name";
             // 
+            // panel_Main
+            // 
+            panel_Main.Controls.Add(dataGridView_Main);
+            panel_Main.Location = new Point(438, 12);
+            panel_Main.Name = "panel_Main";
+            panel_Main.Size = new Size(1411, 1000);
+            panel_Main.TabIndex = 2;
+            // 
+            // dataGridView_Main
+            // 
+            dataGridView_Main.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_Main.Location = new Point(0, 0);
+            dataGridView_Main.Name = "dataGridView_Main";
+            dataGridView_Main.Size = new Size(1411, 997);
+            dataGridView_Main.TabIndex = 0;
+            //dataGridView_Main.CellContentClick += dataGridView_Main_CellContentClick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1750, 1035);
+            ClientSize = new Size(1904, 1041);
+            Controls.Add(panel_Main);
             Controls.Add(panel_Left);
             Name = "Form1";
             ShowIcon = false;
@@ -151,6 +174,8 @@
             panel_Left.PerformLayout();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel_Main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView_Main).EndInit();
             ResumeLayout(false);
         }
 
@@ -164,6 +189,12 @@
         private Button button_View;
         private Button button_Settings;
         private Button button_Accounts;
-        private DataGridView dataGridView;
+        private DataGridView DataGridView_Summary;
+        private Panel panel_Income;
+        private Panel panel_Expenses;
+        private Panel panel_Budget;
+        private Panel panel_Main;
+        private DataGridView dataGridView_Main;
+        //private Panel panel_Budget;
     }
 }

@@ -18,20 +18,19 @@ namespace Budget
     {
         public string Label { get; set; }
         public decimal Amount { get; set; }
+        
 
 
 
-
-        public static BindingList<Summary> SetSummary(string accountName)
+        public static List<Summary> SetSummary(Account currentAccount)
         {
-            Account account = Account.Accounts[accountName][0];
-            BindingList<Summary> summaryItems = new BindingList<Summary>();
-            DateTime accountStart = DateTime.Parse(account.StartDate);
+            Account CurrentAccount = currentAccount;
+            List<Summary> summaryItems = new List<Summary>();
             
             summaryItems.Add(new Summary
             {
                 Label = "Opening Cash",
-                Amount = account.OpeningBalance, //Grab from Account Object, Take next from Ending Balance
+                Amount = CurrentAccount.OpeningBalance, //Grab from Account Object, Take next from Ending Balance
             });
 
             summaryItems.Add(new Summary
