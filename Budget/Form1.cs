@@ -65,7 +65,7 @@ namespace Budget
                 {
                     DataPropertyName = "Amount",
                     HeaderText = header.HeaderText,
-                    Width = 100,
+                    Width = 115,
                     DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleRight }
                 };
             }

@@ -31,16 +31,16 @@ namespace Budget
 
                 monthHeaders.Enqueue(new MonthHeader
                 {
-                    HeaderText = $"{startDate.ToString("MMM")}",
                     StartDate = new DateTime(year, month, 1),
-                    EndDate = firstHalfEndDate
+                    EndDate = firstHalfEndDate,
+                    HeaderText = $"{startDate.ToString("MMM")} 1-15\n{startDate.Year}"
                 });
 
                 monthHeaders.Enqueue(new MonthHeader
                 {
-                    HeaderText = $"{startDate.ToString("MMM")}",
-                    StartDate = firstHalfEndDate.AddDays(1), 
-                    EndDate = secondHalfEndDate
+                    StartDate = firstHalfEndDate.AddDays(1),
+                    EndDate = secondHalfEndDate,
+                    HeaderText = $"{startDate.ToString("MMM")} 16-{secondHalfEndDate.Day}\n{startDate.Year}"
                 });
                 startDate = startDate.AddMonths(1);
             }
