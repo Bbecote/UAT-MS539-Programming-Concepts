@@ -27,27 +27,18 @@ namespace Budget
         public bool IsDirty { get; set; }
         public string Label { get; set; }
 
-        public static List<Transaction> GetValues(string category, Account currentAccount)
+        public static List<Transaction> GetTransactions(string transactionType, Account currentAccount)
         {
             Account CurrentAccount = currentAccount;
             List<Transaction> valuesList = new List<Transaction>();
             foreach (Transaction transaction in currentAccount.Transactions)
             {
-                if (transaction.CategoryName == category)
+                if (transaction.TransactionType == transactionType)
                 {
                    valuesList.Add(transaction);
                 }
             }
             return valuesList;
         }
-
-
-
-
-
-
-
-
-
     }
 }

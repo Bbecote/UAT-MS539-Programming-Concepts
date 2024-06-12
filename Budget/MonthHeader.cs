@@ -12,6 +12,8 @@ namespace Budget
         internal DateTime StartDate { get; set; }
         internal DateTime EndDate { get; set; }
 
+
+
         internal static Queue<MonthHeader> GenerateMonthHeaders(Account account)
         {
             var monthHeaders = new Queue<MonthHeader>();
@@ -51,5 +53,11 @@ namespace Budget
             int monthsApart = 12 * (startDate.Year - endDate.Year) + startDate.Month - endDate.Month;
             return Math.Abs(monthsApart);
         }
+
+        public bool inBetweenDates(DateTime dateTime)
+        {
+           return dateTime >= this.StartDate && dateTime <= this.EndDate;
+        }
+
     }
 }

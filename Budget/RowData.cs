@@ -14,50 +14,48 @@ using System.ComponentModel;
 
 namespace Budget
 {
-    internal class Summary
+    internal class RowData
     {
         public string Label { get; set; }
         public decimal Amount { get; set; }
-        
+        public Transaction Transaction { get; set; }
 
-
-
-        public static List<Summary> SetSummary(Account currentAccount)
+        public static List<RowData> GetRows(Account currentAccount)
         {
             Account CurrentAccount = currentAccount;
-            List<Summary> summaryItems = new List<Summary>();
+            List<RowData> summaryItems = new List<RowData>();
             
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Opening Cash",
                 Amount = CurrentAccount.OpeningBalance, //Grab from Account Object, Take next from Ending Balance
             });
 
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Total Income",
                 Amount = 00, //Grab from Account Object, fill rest with getNext
             });
 
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Total Expenditures",
                 Amount = 00 //Grab from Account Object, fill rest with getNext
             });
 
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Current Balance",
                 Amount = 00 //Grab from Account Object,. fill rest with getNext
             });
 
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Net Cash Flow",
                 Amount = 00 //Grab from Account Object, fill rest with getNext
             });
 
-            summaryItems.Add(new Summary
+            summaryItems.Add(new RowData
             {
                 Label = "Ending Balance",
                 Amount = 00 //Grab from Account Object, fill rest with getNext

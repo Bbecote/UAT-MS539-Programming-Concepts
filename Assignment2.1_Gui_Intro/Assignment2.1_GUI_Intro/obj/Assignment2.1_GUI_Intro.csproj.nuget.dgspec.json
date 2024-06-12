@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\MS539-Programming Concepts\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj": {}
+    "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\MS539-Programming Concepts\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj": {
+    "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\MS539-Programming Concepts\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj",
         "projectName": "Assignment2.1_GUI_Intro",
-        "projectPath": "C:\\Repos\\MS539-Programming Concepts\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj",
+        "projectPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\Assignment2.1_GUI_Intro.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\MS539-Programming Concepts\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\obj\\",
+        "outputPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\Assignment2.1_Gui_Intro\\Assignment2.1_GUI_Intro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

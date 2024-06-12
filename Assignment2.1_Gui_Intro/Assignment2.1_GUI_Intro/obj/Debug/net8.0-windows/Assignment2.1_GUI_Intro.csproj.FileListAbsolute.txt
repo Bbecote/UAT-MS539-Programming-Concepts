@@ -15,3 +15,20 @@ C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1
 C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\ref\Assignment2.1_GUI_Intro.dll
 C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2._1_GUI_Intro.Form1.resources
 C:\Repos\MS539-Programming Concepts\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.exe
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.deps.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.runtimeconfig.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\bin\Debug\net8.0-windows\Assignment2.1_GUI_Intro.pdb
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2._1_GUI_Intro.Form1.resources
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.AssemblyInfoInputs.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.AssemblyInfo.cs
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.sourcelink.json
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\refint\Assignment2.1_GUI_Intro.dll
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.pdb
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\Assignment2.1_GUI_Intro.genruntimeconfig.cache
+C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\Assignment2.1_Gui_Intro\Assignment2.1_GUI_Intro\obj\Debug\net8.0-windows\ref\Assignment2.1_GUI_Intro.dll
