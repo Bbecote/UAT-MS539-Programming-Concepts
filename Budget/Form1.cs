@@ -11,8 +11,6 @@ using System.Security.Policy;
 using System.Diagnostics;
 using System.Collections;
 using System.ComponentModel;
-using System.Transactions;
-using System.Data.Common;
 
 
 namespace Budget
@@ -48,10 +46,14 @@ namespace Budget
             dataGridView_Main.Columns.Add(leftColumnTextBoxColumn);
 
             //Right Column Setup
-
+            
             //Add Columns and Headers
+<<<<<<< HEAD
             dataGridView_Main.AutoGenerateColumns = false;
             AddColumns(dataGridView_Main);
+=======
+            AddColumns(dataGridView_Main) ;
+>>>>>>> parent of 6983be4 (Updating transactions (not working) - issue with rowdata and not displaying values.)
 
             //Add Rows
             CustomRowBuilder(dataGridView_Main);
@@ -59,6 +61,36 @@ namespace Budget
 
             dataGridView_Main.DataSource = RowData.TransactionsList;
 
+<<<<<<< HEAD
+=======
+        private void AddRows(DataGridView dataGridView)
+        {
+            List<RowData> rows = new List<RowData>();
+
+            //Summary Rows
+            List<RowData> summaryRows = RowData.GetRows(CurrentAccount);
+            rows.AddRange(summaryRows);
+            
+            //Space Between Summary and Income
+            rows.Add(new RowData { Label = null });
+            
+            //Income rows
+            List<Transaction> incomeTransactions = Transaction.GetTransactions("Income", CurrentAccount);
+            List<RowData> incomeRows = incomeTransactions.Select(i => new RowData { Label = i.Description, Amount = i.Amount, Transaction = i }).ToList();
+            rows.AddRange(incomeRows);
+
+            //Space Between Summary and Income
+            rows.Add(new RowData { Label = null });
+
+            //Expense rows
+            List<Transaction> expenseTransactions = Transaction.GetTransactions("Expense", CurrentAccount);
+            List<RowData> expenseRows = expenseTransactions.Select(i => new RowData { Label = i.Description, Amount = i.Amount, Transaction = i }).ToList();
+            rows.AddRange(expenseRows);
+
+            dataGridView_Main.DataSource = rows;
+
+            //Remove the grids associated with the space between Summary, Income, Expense
+>>>>>>> parent of 6983be4 (Updating transactions (not working) - issue with rowdata and not displaying values.)
             dataGridView_Main.CellPainting += (sender, e) =>
             {
                 if (e.RowIndex >= 0)
@@ -74,6 +106,7 @@ namespace Budget
             };
         }
 
+<<<<<<< HEAD
         private void CustomRowBuilder(DataGridView dataGridView_Main)
         {
             int rowIndex = dataGridView_Main.Rows.Add();
@@ -134,51 +167,7 @@ namespace Budget
                 }
             }
         }
+=======
+>>>>>>> parent of 6983be4 (Updating transactions (not working) - issue with rowdata and not displaying values.)
     }
 }
-
-
-
-
-            //int rowIndex = rows.IndexOf(rowData);
-
-            //if (rowIndex != -1)
-            //{
-            //    for (int i = 1; i < dataGridView_Main.ColumnCount; i++)
-            //    {
-            //        var column = dataGridView_Main.Columns[i];
-            //        if (column.Tag is MonthHeader monthHeader)
-            //        {
-            //            if (transaction.TransactionDate >= monthHeader.StartDate && transaction.TransactionDate <= monthHeader.EndDate)
-            //            {
-            //                dataGridView_Main[i, rowIndex].Value = transaction.Amount;
-            //                break;
-            //            }
-            //        }
-            //    }
-            //}
-        
-
-        //private void SetTransactionAmount(RowData rowData, List<RowData> rows, Transaction transaction)
-        //{
-        //    int rowIndex = dataGridView_Main.Rows.Add();
-        //    dataGridView_Main.Rows[rowIndex].Cells[0].Value = rowData.Label;
-
-        //    for (int i = 1; i < dataGridView_Main.ColumnCount; i++)
-        //    {
-        //        var column = dataGridView_Main.Columns[i];
-        //        if (column.Tag is MonthHeader monthHeader)
-        //        {
-        //            if (transaction.TransactionDate >= monthHeader.StartDate && transaction.TransactionDate <= monthHeader.EndDate)
-        //            {
-        //                dataGridView_Main.Rows[rowIndex].Cells[i].Value = transaction.Amount;
-        //            }
-        //            else
-        //            {
-        //                dataGridView_Main.Rows[rowIndex].Cells[i].Value = DBNull.Value;
-        //            }
-        //        }
-        //    }
-        //}
-
-
