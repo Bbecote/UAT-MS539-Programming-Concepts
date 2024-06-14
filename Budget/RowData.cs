@@ -11,86 +11,98 @@ using System.Security.Policy;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Transactions;
 
 namespace Budget
 {
     internal class RowData
     {
-        public string Label { get; set; }
-        public decimal Amount { get; set; }
-        public Transaction Transaction { get; set; }
+        public string Description { get; set; }
+        public static BindingList<List<Transaction>> TransactionsList { get; set; } = new BindingList<List<Transaction>>();
 
-        public static List<RowData> GetRows(Account currentAccount)
+        public static void AddRows(Account currentAccount)
+        {
+            List<Transaction> summaryList = new();
+            //SetSummaryRows(currentAccount);
+
+            //Space Between Summary and Income
+            summaryList.Add(new Transaction { Description = null });  //Need to update the table to all null Descriptions
+            TransactionsList.Add(summaryList);
+
+            //Income rows
+            List<Transaction> incomeTransactions = Transaction.GetTransactions("Income", currentAccount);
+
+            var groupedTransactions = incomeTransactions.GroupBy(t => t.Description).Select(group => group.ToList()).ToList();
+            foreach (var list in groupedTransactions)
+            {
+                TransactionsList.Add(list);
+            }
+
+            //Space Between Summary and Income
+            summaryList.Add(new Transaction { Description = null });  //Need to update the table to all null Descriptions
+            TransactionsList.Add(summaryList);
+
+            //Expense rows
+            List<Transaction> expenseTransactions = Transaction.GetTransactions("Expense", currentAccount);
+
+            groupedTransactions = expenseTransactions.GroupBy(t => t.Description).Select(group => group.ToList()).ToList();
+            foreach (var list in groupedTransactions)
+            {
+                TransactionsList.Add(list);
+            }
+
+            BindingList<List<Transaction>> test = TransactionsList;
+    }
+
+        private static void SetSummaryRows(Account currentAccount)
         {
             Account CurrentAccount = currentAccount;
-            List<RowData> summaryItems = new List<RowData>();
-            
-            summaryItems.Add(new RowData
-            {
-                Label = "Opening Cash",
-                Amount = CurrentAccount.OpeningBalance, //Grab from Account Object, Take next from Ending Balance
-            });
+            List<Transaction> summaryList = new ();
 
-            summaryItems.Add(new RowData
+            summaryList.Add(new Transaction
             {
-                Label = "Total Income",
-                Amount = 00, //Grab from Account Object, fill rest with getNext
+                Description = "Opening Cash",
             });
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
 
-            summaryItems.Add(new RowData
+            summaryList.Add(new Transaction
             {
-                Label = "Total Expenditures",
-                Amount = 00 //Grab from Account Object, fill rest with getNext
+                Description = "Total Income",
             });
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
 
-            summaryItems.Add(new RowData
+            summaryList.Add(new Transaction
             {
-                Label = "Current Balance",
+                Description = "Total Expenditures",
+            });
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
+
+            summaryList.Add(new Transaction
+            {
+                Description = "Current Balance",
                 Amount = 00 //Grab from Account Object,. fill rest with getNext
             });
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
 
-            summaryItems.Add(new RowData
+            summaryList.Add(new Transaction
             {
-                Label = "Net Cash Flow",
+                Description = "Net Cash Flow",
                 Amount = 00 //Grab from Account Object, fill rest with getNext
             });
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
 
-            summaryItems.Add(new RowData
+            summaryList.Add(new Transaction
             {
-                Label = "Ending Balance",
+                Description = "Ending Balance",
                 Amount = 00 //Grab from Account Object, fill rest with getNext
             });
-
-            return summaryItems;
-        }
-
-        private decimal getNextOpeningCash()
-        {
-            return 0;
-        }
-
-        private decimal getNextTotalIncome()
-        {
-            return 0;
-        }
-
-        private decimal getNextTotalExpenditures()
-        {
-            return 0;
-        }
-        private decimal getNextCurrentBalance()
-        {
-            return 0;
-        }
-
-        private decimal getNextNetCashFlow()
-        {
-            return 0;
-        }
-
-        private decimal getNextEndingBalance()
-        {
-            return 0;
+            TransactionsList.Add(summaryList);
+            summaryList.Clear();
         }
     }
 }

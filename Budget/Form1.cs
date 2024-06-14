@@ -27,6 +27,7 @@ namespace Budget
             this.CurrentAccount = DBManager.GetAccountFromDatabase("NavyFed"); //TODO Update this with a user selected option
             InitializeComponent();
             SetupDataGridViews();
+            dataGridView_Main.Refresh();
         }
         private void SetupDataGridViews()
         {
@@ -39,6 +40,7 @@ namespace Budget
             //Left Column Setup
             DataGridViewLinkColumn leftColumnTextBoxColumn = new DataGridViewLinkColumn();
             leftColumnTextBoxColumn.HeaderText = "Summary";
+            leftColumnTextBoxColumn.Name = "Summary";
             leftColumnTextBoxColumn.DataPropertyName = "Label";
             leftColumnTextBoxColumn.ReadOnly = true;
             leftColumnTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -48,88 +50,21 @@ namespace Budget
             //Right Column Setup
 
             //Add Columns and Headers
+            dataGridView_Main.AutoGenerateColumns = false;
             AddColumns(dataGridView_Main);
 
             //Add Rows
-            AddRows(dataGridView_Main);
-        }
+            CustomRowBuilder(dataGridView_Main);
+            RowData.AddRows(CurrentAccount);
 
-        private void AddColumns(DataGridView dataGridView)
-        {
-            Queue<MonthHeader> MonthList = MonthHeader.GenerateMonthHeaders(CurrentAccount);
-            dataGridView.ScrollBars = ScrollBars.Horizontal;
-            DataGridViewTextBoxColumn[] amountColumns = new DataGridViewTextBoxColumn[MonthList.Count];
-            int countIndex = MonthList.Count;
-            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            for (int i = 0; i < countIndex; i++)
-            {
-                MonthHeader header = MonthList.Dequeue();
-                amountColumns[i] = new DataGridViewTextBoxColumn
-                {
-                    DataPropertyName = "Amount" + i,
-                    HeaderText = header.HeaderText,
-                    Width = 115,
-                    DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleRight },
-                    Tag = header
-                };
-            }
-            dataGridView.Columns.AddRange(amountColumns);
-        }
+            dataGridView_Main.DataSource = RowData.TransactionsList;
 
-        private void AddRows(DataGridView dataGridView)
-        {
-            List<RowData> rows = new List<RowData>();
-
-            //Summary Rows
-            List<RowData> summaryRows = RowData.GetRows(CurrentAccount);
-            rows.AddRange(summaryRows);
-
-            //Space Between Summary and Income
-            //rows.Add(new RowData { Label = null });
-
-            //Income rows
-            List<Transaction> incomeTransactions = Transaction.GetTransactions("Income", CurrentAccount);
-            foreach (Transaction transaction in incomeTransactions)
-            {
-                var existingRow = rows.FirstOrDefault(r => r.Transaction != null && r.Transaction.Description == transaction.Description);
-                if (existingRow == null)
-                {
-                    var newRow = new RowData { Label = transaction.Description, Transaction = transaction };
-                    rows.Add(newRow);
-                }
-            }
-
-            //Space Between Summary and Income
-            //rows.Add(new RowData { Label = null });
-
-            //Expense rows
-            int index = 0;
-            List<Transaction> expenseTransactions = Transaction.GetTransactions("Expenses", CurrentAccount);
-            foreach (var transaction in expenseTransactions)
-            {
-                var existingRow = rows.FirstOrDefault(r => r.Transaction != null && r.Transaction.Description == transaction.Description);
-                if (existingRow == null)
-                {
-                    var newRow = new RowData { Label = transaction.Description, Transaction = transaction };
-                    rows.Add(newRow);
-                }
-            }
-
-            //Set the rows to the DataGrid
-            dataGridView_Main.DataSource = rows;
-
-            incomeTransactions.AddRange(expenseTransactions);
-
-            SetTransactionAmount(incomeTransactions, dataGridView_Main);
-
-
-            //Remove the grids associated with the space between Summary, Income, Expense
             dataGridView_Main.CellPainting += (sender, e) =>
             {
                 if (e.RowIndex >= 0)
                 {
                     var rowData = dataGridView_Main.Rows[e.RowIndex].DataBoundItem as RowData;
-                    if (rowData != null && rowData.Label == null)
+                    if (rowData != null && rowData.Description == null)
                     {
                         e.AdvancedBorderStyle.Top = DataGridViewAdvancedCellBorderStyle.None;
                         e.AdvancedBorderStyle.Left = DataGridViewAdvancedCellBorderStyle.None;
@@ -138,6 +73,34 @@ namespace Budget
                 };
             };
         }
+
+        private void CustomRowBuilder(DataGridView dataGridView_Main)
+        {
+            int rowIndex = dataGridView_Main.Rows.Add();
+            dataGridView_Main.Rows[rowIndex].Cells["Summary"].Value = "Opening Cash";
+        }
+
+        private void AddColumns(DataGridView dataGridView)
+        {
+            Queue<ColumnData> ColumnDataList = ColumnData.GenerateColumnData(CurrentAccount);
+            dataGridView.ScrollBars = ScrollBars.Horizontal;
+            //DataGridViewTextBoxColumn[] amountColumns = new DataGridViewTextBoxColumn[ColumnDataList.Count];
+            //int countIndex = ColumnDataList.Count;
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            foreach (var columnData in ColumnDataList)
+            {
+                var column = new DataGridViewTextBoxColumn
+                {
+                    HeaderText = columnData.HeaderText,
+                    Width = 115,
+                    DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleRight },
+                    Tag = columnData
+                };
+                dataGridView.Columns.AddRange(column);
+            }
+        }
+
+        
 
         private void SetTransactionAmount(List<Transaction> allTransactions, DataGridView dataGridView_Main)
         {
@@ -148,7 +111,7 @@ namespace Budget
                 {
                     var rowDataItem = row.DataBoundItem as RowData;
                     {
-                        if (rowDataItem.Label == transaction.Description)
+                        if (rowDataItem.Description == transaction.Description)
                         {
                             rowIndex = row.Index;
                             break;
@@ -159,13 +122,13 @@ namespace Budget
                 for (int i = 1; i < dataGridView_Main.ColumnCount; i++)
                 {
                     var column = dataGridView_Main.Columns[i];
-                    if (column.Tag is MonthHeader monthHeader)
+                    if (column.Tag is ColumnData monthHeader)
                     {
                         if (transaction.TransactionDate >= monthHeader.StartDate && transaction.TransactionDate <= monthHeader.EndDate)
                         {
                             dataGridView_Main[i, rowIndex].Value = transaction.Amount;
+                            dataGridView_Main.Visible = true;
                             break;
-
                         }
                     }
                 }

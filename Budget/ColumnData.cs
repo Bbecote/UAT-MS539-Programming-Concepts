@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Budget
 {
-    internal class MonthHeader
+    internal class ColumnData
     {
         internal string HeaderText { get; set; }
         internal DateTime StartDate { get; set; }
@@ -14,9 +14,9 @@ namespace Budget
 
 
 
-        internal static Queue<MonthHeader> GenerateMonthHeaders(Account account)
+        internal static Queue<ColumnData> GenerateColumnData(Account account)
         {
-            var monthHeaders = new Queue<MonthHeader>();
+            var columnHeaders = new Queue<ColumnData>();
             DateTime startDate = account.StartDate;
             int numMonths = GetMonthsBetween(startDate, DateTime.Today) + 6;
             for (int i = 0; i < numMonths; i++)
@@ -31,14 +31,14 @@ namespace Budget
                 // Calculate the end of the month
                 DateTime secondHalfEndDate = new DateTime(year, month, 1).AddMonths(1).AddDays(-1);
 
-                monthHeaders.Enqueue(new MonthHeader
+                columnHeaders.Enqueue(new ColumnData
                 {
                     StartDate = new DateTime(year, month, 1),
                     EndDate = firstHalfEndDate,
                     HeaderText = $"{startDate.ToString("MMM")} 1-15\n{startDate.Year}"
                 });
 
-                monthHeaders.Enqueue(new MonthHeader
+                columnHeaders.Enqueue(new ColumnData
                 {
                     StartDate = firstHalfEndDate.AddDays(1),
                     EndDate = secondHalfEndDate,
@@ -46,7 +46,7 @@ namespace Budget
                 });
                 startDate = startDate.AddMonths(1);
             }
-            return monthHeaders;
+            return columnHeaders;
         }
         public static int GetMonthsBetween(DateTime startDate, DateTime endDate)
         {

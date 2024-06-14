@@ -38,7 +38,6 @@ namespace CrapsSimC_
                     textBox_Player0WinWalk.Text = Player0.WinWalk.ToString();
                     textBox_Player0LossWalk.Text = Player0.LossWalk.ToString();
                     textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
-                    textBox_Player0ActiveBets.Text = Player0.totalBetAmount.ToString();
                     break;
                 case 1:
                     textBox_Player1BankRoll.Text = Player1.ActiveBankroll.ToString();
@@ -50,7 +49,6 @@ namespace CrapsSimC_
                     else { textBox_Player1CurrentStanding.Text = CurrentStanding1.ToString(); }
                     textBox_Player1WinWalk.Text = Player1.WinWalk.ToString();
                     textBox_Player1LossWalk.Text = Player1.LossWalk.ToString();
-                    textBox_Player1ActiveBets.Text = Player1.totalBetAmount.ToString();
                     textBox_Player1ActiveBets.Text = Player1.totalBetAmount.ToString();
                     break;
                 case 2:
@@ -64,7 +62,6 @@ namespace CrapsSimC_
                     textBox_Player2WinWalk.Text = Player2.WinWalk.ToString();
                     textBox_Player2LossWalk.Text = Player2.LossWalk.ToString();
                     textBox_Player2ActiveBets.Text = Player2.totalBetAmount.ToString();
-                    textBox_Player2ActiveBets.Text = Player2.totalBetAmount.ToString();
                     break;
                 case 3:
                     textBox_Player3BankRoll.Text = Player3.ActiveBankroll.ToString();
@@ -76,7 +73,6 @@ namespace CrapsSimC_
                     else { textBox_Player3CurrentStanding.Text = CurrentStanding3.ToString(); }
                     textBox_Player3WinWalk.Text = Player3.WinWalk.ToString();
                     textBox_Player3LossWalk.Text = Player3.LossWalk.ToString();
-                    textBox_Player3ActiveBets.Text = Player3.totalBetAmount.ToString();
                     textBox_Player3ActiveBets.Text = Player3.totalBetAmount.ToString();
                     break;
 

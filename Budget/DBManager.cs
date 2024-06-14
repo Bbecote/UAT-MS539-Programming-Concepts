@@ -70,8 +70,5 @@ namespace Budget
                 connection.Execute(query, new { amount,  modifiedTransactionIDs = modifiedTransactionIDs });
             }
         }
-
-
-
     }
 }

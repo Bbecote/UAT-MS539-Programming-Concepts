@@ -24,21 +24,18 @@ namespace Budget
         public bool IsVariable { get; set; }
         public bool IsAutomaticWithdrawal { get; set; }
         public bool IsPaid { get; set; }
-        public bool IsDirty { get; set; }
-        public string Label { get; set; }
 
         public static List<Transaction> GetTransactions(string transactionType, Account currentAccount)
         {
-            Account CurrentAccount = currentAccount;
-            List<Transaction> valuesList = new List<Transaction>();
+            List<Transaction> transactionList = new List<Transaction>();
             foreach (Transaction transaction in currentAccount.Transactions)
             {
                 if (transaction.TransactionType == transactionType)
                 {
-                   valuesList.Add(transaction);
+                   transactionList.Add(transaction);
                 }
             }
-            return valuesList;
+            return transactionList;
         }
     }
 }
