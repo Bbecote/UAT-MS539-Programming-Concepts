@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 283,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionData.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
+              "RelativeDocumentMoniker": "TransactionData.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
+              "RelativeToolTip": "TransactionData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T22:34:37.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
+              "RelativeDocumentMoniker": "DBManager.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
+              "RelativeToolTip": "DBManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:43:40.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ColumnData.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\ColumnData.cs",
+              "RelativeDocumentMoniker": "ColumnData.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\ColumnData.cs",
+              "RelativeToolTip": "ColumnData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T15:01:29.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Transaction.cs",
+              "RelativeDocumentMoniker": "Transaction.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Transaction.cs",
+              "RelativeToolTip": "Transaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:50:25.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAwwEIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T04:09:18.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Account.cs",
+              "RelativeDocumentMoniker": "Account.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Account.cs",
+              "RelativeToolTip": "Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:41:27.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T04:08:04.344Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 117,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

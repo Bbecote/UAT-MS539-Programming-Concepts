@@ -39,6 +39,7 @@ namespace Budget
             }
 
             //Space Between Summary and Income
+            summaryList.Clear();
             summaryList.Add(new Transaction { Description = null });  //Need to update the table to all null Descriptions
             TransactionsList.Add(summaryList);
 

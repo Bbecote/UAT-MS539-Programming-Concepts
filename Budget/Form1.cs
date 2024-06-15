@@ -59,6 +59,8 @@ namespace Budget
 
             dataGridView_Main.DataSource = RowData.TransactionsList;
 
+            SetDataRows(dataGridView_Main);
+
             dataGridView_Main.CellPainting += (sender, e) =>
             {
                 if (e.RowIndex >= 0)
@@ -73,6 +75,15 @@ namespace Budget
                 };
             };
         }
+
+        private void SetDataRows(DataGridView dataGridView_Main)
+        {
+            foreach (DataGridViewRowCollection rows in dataGridView_Main.Rows)
+            {
+
+            }
+        }
+
 
         private void CustomRowBuilder(DataGridView dataGridView_Main)
         {
@@ -99,8 +110,6 @@ namespace Budget
                 dataGridView.Columns.AddRange(column);
             }
         }
-
-        
 
         private void SetTransactionAmount(List<Transaction> allTransactions, DataGridView dataGridView_Main)
         {
