@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\budgetapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:budgetapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,22 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:columndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|c:\\users\\brian\\desktop\\code\\ms539\\uat-ms539-programming-concepts\\budgetapp\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C6932CC-5C3A-46A1-A2D4-D6433E6DF4AE}|BudgetApp.csproj|solutionrelative:dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,42 +58,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TransactionData.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
-              "RelativeDocumentMoniker": "TransactionData.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
-              "RelativeToolTip": "TransactionData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T22:34:37.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DBManager.cs",
-              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
-              "RelativeDocumentMoniker": "DBManager.cs",
-              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
-              "RelativeToolTip": "DBManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T14:43:40.861Z",
+              "DocumentIndex": 0,
+              "Title": "BudgetApp.csproj",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\BudgetApp.csproj",
+              "RelativeDocumentMoniker": "BudgetApp.csproj",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\BudgetApp.csproj",
+              "RelativeToolTip": "BudgetApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-20T02:18:07.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "TransactionData.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
+              "RelativeDocumentMoniker": "TransactionData.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\TransactionData.cs",
+              "RelativeToolTip": "TransactionData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T22:34:37.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
+              "RelativeDocumentMoniker": "DBManager.cs",
+              "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\DBManager.cs",
+              "RelativeToolTip": "DBManager.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwC0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:43:40.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ColumnData.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\ColumnData.cs",
               "RelativeDocumentMoniker": "ColumnData.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\ColumnData.cs",
               "RelativeToolTip": "ColumnData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T15:01:29.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T15:01:29.74Z"
             },
             {
               "$type": "Document",
@@ -101,46 +115,43 @@
               "RelativeToolTip": "Transaction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T14:50:25.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T14:50:25.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAwwEIAAAASAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowEIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T04:09:18.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Account.cs",
               "RelativeDocumentMoniker": "Account.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Account.cs",
               "RelativeToolTip": "Account.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T14:41:27.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T14:41:27.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T04:08:04.344Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-14T04:08:04.344Z"
             }
           ]
         },
