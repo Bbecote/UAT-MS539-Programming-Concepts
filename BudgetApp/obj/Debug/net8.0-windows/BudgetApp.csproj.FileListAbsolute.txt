@@ -34,3 +34,39 @@ C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\BudgetApp\bin\D
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\BudgetApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.AssemblyReference.cache
 C:\Users\brian\Desktop\Code\MS539\UAT-MS539-Programming-Concepts\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.Up2Date
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetDB.db
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.exe
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.dll.config
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.deps.json
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.runtimeconfig.json
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\BudgetApp.pdb
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\Dapper.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.AssemblyReference.cache
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.Form1.resources
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.AssemblyInfoInputs.cache
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.AssemblyInfo.cs
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.sourcelink.json
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.csproj.Up2Date
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\refint\BudgetApp.dll
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.pdb
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.genruntimeconfig.cache
+C:\Users\brian\Desktop\MS539 New Repo\BudgetApp\obj\Debug\net8.0-windows\ref\BudgetApp.dll

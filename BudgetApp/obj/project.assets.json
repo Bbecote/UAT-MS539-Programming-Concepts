@@ -1255,11 +1255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\BudgetApp.csproj",
+      "projectUniqueName": "C:\\Users\\brian\\Desktop\\MS539 New Repo\\BudgetApp\\BudgetApp.csproj",
       "projectName": "BudgetApp",
-      "projectPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\BudgetApp.csproj",
+      "projectPath": "C:\\Users\\brian\\Desktop\\MS539 New Repo\\BudgetApp\\BudgetApp.csproj",
       "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brian\\Desktop\\Code\\MS539\\UAT-MS539-Programming-Concepts\\BudgetApp\\obj\\",
+      "outputPath": "C:\\Users\\brian\\Desktop\\MS539 New Repo\\BudgetApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1321,7 +1321,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
